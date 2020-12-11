@@ -14,8 +14,11 @@ namespace Assets.Scripts.Player
         public bool DashInput { get; private set; }
 
         public bool JumpInput { get; private set; }
+        public bool AttackInput { get; private set; }
+        public bool AttackInput2 { get; private set; }
         float jumpInputHoldTime;
         public int JumpInputCounter = 0;
+        
         const int MAX_JUMP_COUNTER = 2;
         const float MAX_JUMP_HOLD_TIME = 0.25f;
 
@@ -27,7 +30,7 @@ namespace Assets.Scripts.Player
 
         private void OnJumpInput()
         {
-            if (Input.GetButtonDown("Jump") && JumpInputCounter < MAX_JUMP_COUNTER && JumpInputCounter < MAX_JUMP_COUNTER)
+            if (Input.GetButtonDown("Jump") && JumpInputCounter < MAX_JUMP_COUNTER )
             {
                 JumpInput = true;
                 jumpInputHoldTime = 0;
@@ -44,7 +47,6 @@ namespace Assets.Scripts.Player
             else if (Input.GetButtonUp("Jump"))
             {
                 JumpInput = false;
-                jumpInputHoldTime = 0;
             }
         }
 
@@ -63,17 +65,38 @@ namespace Assets.Scripts.Player
             {
                 DashInput = false;
             }
-            else if (Input.GetButtonUp("Dash"))
-            {
-                DashInput = false;
-            }   
         }
-
+        private void OnAttackInput()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0) )
+            { 
+                AttackInput = true;              
+            }
+            else 
+            {
+                AttackInput = false;
+            }
+            Debug.Log(AttackInput);
+           
+        }
+        private void OnAttackInput2()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                AttackInput2 = true;
+            }
+            else
+            {
+                AttackInput2 = false;
+            }
+        }
         public void InputUpdate()
         {
             OnJumpInput();
             OnRunInput();
             OnDashInput();
+            OnAttackInput();
+            OnAttackInput2();
         }
     }
 }

@@ -203,12 +203,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &28283193 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-    type: 3}
-  m_PrefabInstance: {fileID: 1858349725}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &40734168
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40734169}
   - component: {fileID: 40734170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75506604}
   - component: {fileID: 75506605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_242
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +542,7 @@ GameObject:
   - component: {fileID: 91765415}
   - component: {fileID: 91765416}
   - component: {fileID: 91765417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_438
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104072549}
   - component: {fileID: 104072550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_520
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124079087}
   - component: {fileID: 124079088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_525
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1016,7 +1010,7 @@ GameObject:
   - component: {fileID: 199453223}
   - component: {fileID: 199453224}
   - component: {fileID: 199453225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248247978}
   - component: {fileID: 248247979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_435 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1447,7 @@ GameObject:
   - component: {fileID: 258322206}
   - component: {fileID: 258322207}
   - component: {fileID: 258322208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_224
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1719,7 @@ GameObject:
   - component: {fileID: 272084444}
   - component: {fileID: 272084445}
   - component: {fileID: 272084446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,7 +1908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289681322}
   - component: {fileID: 289681323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_413
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2104,7 +2098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306024612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tuong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2237,7 +2231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350568005}
   - component: {fileID: 350568006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_486
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2413,7 +2407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415341514}
   - component: {fileID: 415341515}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_444
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2635,7 +2629,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 6352946344209967668, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -2850,7 +2844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487317565}
   - component: {fileID: 487317566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_423 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3123,7 +3117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490692515}
   - component: {fileID: 490692516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_420
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3815,7 +3809,7 @@ GameObject:
   - component: {fileID: 588729255}
   - component: {fileID: 588729256}
   - component: {fileID: 588729257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_438 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3923,7 +3917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589048989}
   - component: {fileID: 589048990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_435
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4005,7 +3999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 596698285}
   - component: {fileID: 596698286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4145,7 +4139,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7551384519378008208, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -4169,7 +4163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 616113601}
   - component: {fileID: 616113602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4472,7 +4466,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: -1
   m_Sprite: {fileID: -7551384519378008208, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -4554,7 +4548,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 3912317914575887856, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -4660,7 +4654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658600862}
   - component: {fileID: 658600863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_432
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4743,7 +4737,7 @@ GameObject:
   - component: {fileID: 676174374}
   - component: {fileID: 676174375}
   - component: {fileID: 676174376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_283 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4984,7 +4978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 694036180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5224,7 +5218,9 @@ GameObject:
   m_Component:
   - component: {fileID: 723706034}
   - component: {fileID: 723706035}
-  m_Layer: 0
+  - component: {fileID: 723706036}
+  - component: {fileID: 723706037}
+  m_Layer: 10
   m_Name: stiltVillage_438 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,6 +5292,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &723706036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723706033}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 30}
+    newSize: {x: 30, y: 116.89396}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 116}
+  m_EdgeRadius: 0
+--- !u!251 &723706037
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723706033}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &728352410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,7 +5592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 755572440}
   - component: {fileID: 755572441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_241
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5633,7 +5674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 757331862}
   - component: {fileID: 757331863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_520 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5716,7 +5757,7 @@ GameObject:
   - component: {fileID: 761173177}
   - component: {fileID: 761173178}
   - component: {fileID: 761173179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5931,7 +5972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781046821}
   - component: {fileID: 781046822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_378
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6122,7 +6163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 789705753}
   - component: {fileID: 789705754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_242 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6395,7 +6436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829279950}
   - component: {fileID: 829279951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_440 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6477,7 +6518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829371980}
   - component: {fileID: 829371981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_419 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6560,7 +6601,7 @@ GameObject:
   - component: {fileID: 844287163}
   - component: {fileID: 844287164}
   - component: {fileID: 844287165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6916,7 +6957,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 6871236928405696361, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -7021,7 +7062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876556426}
   - component: {fileID: 876556427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_419
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7184,7 +7225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886590733}
   - component: {fileID: 886590734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_440
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7512,7 +7553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926643460}
   - component: {fileID: 926643461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7594,7 +7635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942018026}
   - component: {fileID: 942018027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_378 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7785,7 +7826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950869219}
   - component: {fileID: 950869220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7867,7 +7908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000759969}
   - component: {fileID: 1000759970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_423
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7949,7 +7990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1033007784}
   - component: {fileID: 1033007785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8032,7 +8073,7 @@ GameObject:
   - component: {fileID: 1036429247}
   - component: {fileID: 1036429248}
   - component: {fileID: 1036429249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_234
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8440,7 +8481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053357915}
   - component: {fileID: 1053357916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_280 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8523,7 +8564,7 @@ GameObject:
   - component: {fileID: 1092219564}
   - component: {fileID: 1092219565}
   - component: {fileID: 1092219566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8713,7 +8754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101276041}
   - component: {fileID: 1101276042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_269
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8935,7 +8976,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7551384519378008208, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -8959,7 +9000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121601343}
   - component: {fileID: 1121601344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_378 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9195,85 +9236,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1189058790
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 28283193}
-    m_Modifications:
-    - target: {fileID: 2976589663951676147, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: staticBackgrounds
-      value: 
-      objectReference: {fileID: 129793342}
-    - target: {fileID: 3646276665953126153, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_Name
-      value: Camera Parallax
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 63
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -480
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276667044435194, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
 --- !u!1 &1218984472
 GameObject:
   m_ObjectHideFlags: 0
@@ -9284,7 +9246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218984473}
   - component: {fileID: 1218984474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_548 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9346,7 +9308,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 1921287691826895560, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
-  m_Color: {r: 0.7169812, g: 0.7138923, b: 0.6865433, a: 1}
+  m_Color: {r: 0.49056602, g: 0.47986382, b: 0.40494835, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9556,7 +9518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246721504}
   - component: {fileID: 1246721505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_238
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9801,7 +9763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1282633867}
   - component: {fileID: 1282633868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: vertical-graveyard-spritesheet_31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9964,7 +9926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300273650}
   - component: {fileID: 1300273651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10047,7 +10009,8 @@ GameObject:
   - component: {fileID: 1300316090}
   - component: {fileID: 1300316091}
   - component: {fileID: 1300316092}
-  m_Layer: 0
+  - component: {fileID: 1300316093}
+  m_Layer: 10
   m_Name: stiltVillage_438 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10145,6 +10108,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30, y: 78}
   m_EdgeRadius: 0
+--- !u!251 &1300316093
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300316089}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1301022664
 GameObject:
   m_ObjectHideFlags: 0
@@ -10401,7 +10383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355368440}
   - component: {fileID: 1355368441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_419 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10565,7 +10547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364460423}
   - component: {fileID: 1364460424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_548
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10647,7 +10629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1373455228}
   - component: {fileID: 1373455229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_525 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10730,7 +10712,7 @@ GameObject:
   - component: {fileID: 1376852174}
   - component: {fileID: 1376852175}
   - component: {fileID: 1376852176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10837,7 +10819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394404135}
   - component: {fileID: 1394404136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_507
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10919,7 +10901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400409419}
   - component: {fileID: 1400409420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_283
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11535,7 +11517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464271058}
   - component: {fileID: 1464271059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_440 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11617,7 +11599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471731295}
   - component: {fileID: 1471731296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11699,7 +11681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471875278}
   - component: {fileID: 1471875279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_378 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11863,7 +11845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502440293}
   - component: {fileID: 1502440294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_538
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11945,7 +11927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1503209628}
   - component: {fileID: 1503209629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_378 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12109,7 +12091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1528921903}
   - component: {fileID: 1528921904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_215
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12191,7 +12173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551822863}
   - component: {fileID: 1551822864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_149 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12710,7 +12692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650646844}
   - component: {fileID: 1650646845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12983,7 +12965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1686867113}
   - component: {fileID: 1686867114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_486
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13301,6 +13283,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1730100973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666973949323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &1730944309
 GameObject:
   m_ObjectHideFlags: 0
@@ -13393,7 +13474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1732542766}
   - component: {fileID: 1732542767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_465
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14347,7 +14428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811479324}
   - component: {fileID: 1811479325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_560
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14429,7 +14510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1817553894}
   - component: {fileID: 1817553895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_228
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14501,75 +14582,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1858349725
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 442
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 335
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &1859005022
 GameObject:
   m_ObjectHideFlags: 0
@@ -14638,7 +14650,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7503643696837385119, guid: b7e4a7368f7756441ada25d5009f5596,
     type: 3}
@@ -14662,7 +14674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1873979049}
   - component: {fileID: 1873979050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14744,7 +14756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879582589}
   - component: {fileID: 1879582590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_149
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14991,7 +15003,7 @@ GameObject:
   - component: {fileID: 1914872295}
   - component: {fileID: 1914872296}
   - component: {fileID: 1914872297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_438 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15175,7 +15187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1947178360}
   - component: {fileID: 1947178361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_465 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15258,7 +15270,7 @@ GameObject:
   - component: {fileID: 1963751542}
   - component: {fileID: 1963751543}
   - component: {fileID: 1963751544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15366,7 +15378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980342257}
   - component: {fileID: 1980342258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: archcathedral-spritesheet_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15528,7 +15540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002019945}
   - component: {fileID: 2002019946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_219
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15692,7 +15704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019848671}
   - component: {fileID: 2019848672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_187 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16102,7 +16114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091707149}
   - component: {fileID: 2091707150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_560 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16820,7 +16832,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1992113383
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 2617751904169619133, guid: 1c2d6ba62dc3ea54ebc1bdf46e140110,
     type: 3}

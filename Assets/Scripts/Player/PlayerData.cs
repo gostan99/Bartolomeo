@@ -62,7 +62,9 @@ namespace Assets.Scripts.Player
                 { "Wallclimb_unhanged", 0.632f },
                 { "Wallclimbing_jump", 0.544f },
                 { "Tiep_dat_Animation", 0.571f },
-                { "Stop_Run_Animation", 0.175f }
+                { "Stop_Run_Animation", 0.175f },
+                { "Left_swing_attack", 0.5f },
+                {"Right_swing_attack",0.389f }
             };
         }
     }

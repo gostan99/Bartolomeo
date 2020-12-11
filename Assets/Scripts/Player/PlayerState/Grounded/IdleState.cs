@@ -37,6 +37,11 @@ namespace Assets.Scripts.Player
             else if (pInput.DashInput && pData.DashCooldownTimer <= 0)
             {
                 newState = pController.DashingState;
+
+            }
+            else if(pInput.AttackInput)
+            {
+                newState = pController.PrimaryAttackState;
             }
         }
 

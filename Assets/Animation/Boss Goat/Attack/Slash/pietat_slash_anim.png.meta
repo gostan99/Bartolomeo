@@ -1,0 +1,1388 @@
+fileFormatVersion: 2
+guid: d15e7612b71c497458974bf4935105db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9015099799297033961
+    second: pietat_slash_anim_0
+  - first:
+      213: -4890140531646147881
+    second: pietat_slash_anim_1
+  - first:
+      213: 7996374215454369799
+    second: pietat_slash_anim_2
+  - first:
+      213: 5607920667416757556
+    second: pietat_slash_anim_3
+  - first:
+      213: 5991535750749756871
+    second: pietat_slash_anim_4
+  - first:
+      213: -6600585491982736189
+    second: pietat_slash_anim_5
+  - first:
+      213: -799825533101139910
+    second: pietat_slash_anim_6
+  - first:
+      213: 898931521401079288
+    second: pietat_slash_anim_7
+  - first:
+      213: 4190383707562014336
+    second: pietat_slash_anim_8
+  - first:
+      213: -8399752862243115548
+    second: pietat_slash_anim_9
+  - first:
+      213: 3099191186998759366
+    second: pietat_slash_anim_10
+  - first:
+      213: -5828674373252190331
+    second: pietat_slash_anim_11
+  - first:
+      213: 2920933989924415562
+    second: pietat_slash_anim_12
+  - first:
+      213: 416069408041760595
+    second: pietat_slash_anim_13
+  - first:
+      213: 8139941036956606344
+    second: pietat_slash_anim_14
+  - first:
+      213: 8589712027681302901
+    second: pietat_slash_anim_15
+  - first:
+      213: -8834248444248420805
+    second: pietat_slash_anim_16
+  - first:
+      213: 634154732493966973
+    second: pietat_slash_anim_17
+  - first:
+      213: 8037050032061338580
+    second: pietat_slash_anim_18
+  - first:
+      213: 4591543975859011316
+    second: pietat_slash_anim_19
+  - first:
+      213: 265968100908956433
+    second: pietat_slash_anim_20
+  - first:
+      213: -7929482810405799668
+    second: pietat_slash_anim_21
+  - first:
+      213: 686282559293248524
+    second: pietat_slash_anim_22
+  - first:
+      213: 5964459631621126065
+    second: pietat_slash_anim_23
+  - first:
+      213: -6222892712869272149
+    second: pietat_slash_anim_24
+  - first:
+      213: -1311017337141626139
+    second: pietat_slash_anim_25
+  - first:
+      213: 7517585611413984902
+    second: pietat_slash_anim_26
+  - first:
+      213: -6917529717776867511
+    second: pietat_slash_anim_27
+  - first:
+      213: 4882459767406629558
+    second: pietat_slash_anim_28
+  - first:
+      213: 1316339132156357514
+    second: pietat_slash_anim_29
+  - first:
+      213: 4727544743810263400
+    second: pietat_slash_anim_30
+  - first:
+      213: 2971546243001096205
+    second: pietat_slash_anim_31
+  - first:
+      213: 2058806171477330506
+    second: pietat_slash_anim_32
+  - first:
+      213: 1511342061501267764
+    second: pietat_slash_anim_33
+  - first:
+      213: 4274086317152961019
+    second: pietat_slash_anim_34
+  - first:
+      213: -4020090470261716092
+    second: pietat_slash_anim_35
+  - first:
+      213: -2093201313094410545
+    second: pietat_slash_anim_36
+  - first:
+      213: -7500163532734984304
+    second: pietat_slash_anim_37
+  - first:
+      213: -6586264468934783175
+    second: pietat_slash_anim_38
+  - first:
+      213: 7471550460315776905
+    second: pietat_slash_anim_39
+  - first:
+      213: 6125890623821989558
+    second: pietat_slash_anim_40
+  - first:
+      213: -8137958148447097985
+    second: pietat_slash_anim_41
+  - first:
+      213: -7870575439245517564
+    second: pietat_slash_anim_42
+  - first:
+      213: -8959762879165669380
+    second: pietat_slash_anim_43
+  - first:
+      213: 3546288234984188194
+    second: pietat_slash_anim_44
+  - first:
+      213: -2715709180675652284
+    second: pietat_slash_anim_45
+  - first:
+      213: 5120005923172122558
+    second: pietat_slash_anim_46
+  - first:
+      213: -7742473725809779386
+    second: pietat_slash_anim_47
+  - first:
+      213: -1513044238483381306
+    second: pietat_slash_anim_48
+  - first:
+      213: -5057762962625459382
+    second: pietat_slash_anim_49
+  - first:
+      213: -7397671984304727951
+    second: pietat_slash_anim_50
+  - first:
+      213: -8128301797543950399
+    second: pietat_slash_anim_51
+  - first:
+      213: -2953675023737724561
+    second: pietat_slash_anim_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pietat_slash_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1814
+        width: 146
+        height: 227
+      alignment: 9
+      pivot: {x: 0.518, y: 0.482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71974302f7ee3e280800000000000000
+      internalID: -9015099799297033961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1715
+        width: 144
+        height: 223
+      alignment: 9
+      pivot: {x: 0.513, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2dd75781bb22cb0800000000000000
+      internalID: -4890140531646147881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1670
+        width: 141
+        height: 177
+      alignment: 9
+      pivot: {x: 0.485, y: 0.626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708204b7bf3d8fe60800000000000000
+      internalID: 7996374215454369799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1629
+        width: 186
+        height: 185
+      alignment: 9
+      pivot: {x: 0.565, y: 0.597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43582fd822653dd40800000000000000
+      internalID: 5607920667416757556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1492
+        width: 144
+        height: 223
+      alignment: 9
+      pivot: {x: 0.51, y: 0.492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd1e725506362350800000000000000
+      internalID: 5991535750749756871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1476
+        width: 143
+        height: 197
+      alignment: 9
+      pivot: {x: 0.503, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4a5c867720664a0800000000000000
+      internalID: -6600585491982736189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1402
+        width: 153
+        height: 227
+      alignment: 9
+      pivot: {x: 0.545, y: 0.482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3818315ae276e4f0800000000000000
+      internalID: -799825533101139910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1268
+        width: 144
+        height: 224
+      alignment: 9
+      pivot: {x: 0.516, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5438ab475a97c00800000000000000
+      internalID: 898931521401079288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_8
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1257
+        width: 143
+        height: 216
+      alignment: 9
+      pivot: {x: 0.525, y: 0.512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08671d9c7cb372a30800000000000000
+      internalID: 4190383707562014336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1175
+        width: 167
+        height: 227
+      alignment: 9
+      pivot: {x: 0.58, y: 0.482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edadec86451e6b80800000000000000
+      internalID: -8399752862243115548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1044
+        width: 144
+        height: 224
+      alignment: 9
+      pivot: {x: 0.513, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf0510e6f9820b20800000000000000
+      internalID: 3099191186998759366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1038
+        width: 144
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f61e60a836c1fa0800000000000000
+      internalID: -5828674373252190331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 205
+        height: 185
+      alignment: 9
+      pivot: {x: 0.605, y: 0.598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a482fc1fcfd398820800000000000000
+      internalID: 2920933989924415562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 819
+        width: 144
+        height: 225
+      alignment: 9
+      pivot: {x: 0.513, y: 0.486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3577c341cec26c500800000000000000
+      internalID: 416069408041760595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 815
+        width: 144
+        height: 223
+      alignment: 9
+      pivot: {x: 0.526, y: 0.491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f5c60fe31e6f070800000000000000
+      internalID: 8139941036956606344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 764
+        width: 171
+        height: 226
+      alignment: 9
+      pivot: {x: 0.588, y: 0.484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57928d43499c43770800000000000000
+      internalID: 8589712027681302901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_16
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 594
+        width: 144
+        height: 225
+      alignment: 9
+      pivot: {x: 0.513, y: 0.488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e860788d1766580800000000000000
+      internalID: -8834248444248420805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_17
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 592
+        width: 144
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e8fea8e58fcc800800000000000000
+      internalID: 634154732493966973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_18
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 752
+        width: 146
+        height: 191
+      alignment: 9
+      pivot: {x: 0.51, y: 0.582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3de0b0c66598f60800000000000000
+      internalID: 8037050032061338580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 579
+        width: 214
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe39a34be078bf30800000000000000
+      internalID: 4591543975859011316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 370
+        width: 145
+        height: 224
+      alignment: 9
+      pivot: {x: 0.53, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b73402498e0b300800000000000000
+      internalID: 265968100908956433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 556
+        width: 149
+        height: 196
+      alignment: 9
+      pivot: {x: 0.49, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0932396561d4f190800000000000000
+      internalID: -7929482810405799668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_22
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 556
+        width: 151
+        height: 190
+      alignment: 9
+      pivot: {x: 0.488, y: 0.588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0458320a5a268900800000000000000
+      internalID: 686282559293248524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 218
+        height: 185
+      alignment: 9
+      pivot: {x: 0.628, y: 0.598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b73fe31f6406c250800000000000000
+      internalID: 5964459631621126065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_24
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 369
+        width: 166
+        height: 187
+      alignment: 9
+      pivot: {x: 0.51, y: 0.595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba56f064c08d3a9a0800000000000000
+      internalID: -6222892712869272149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_25
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 369
+        width: 157
+        height: 187
+      alignment: 9
+      pivot: {x: 0.48, y: 0.593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea7b4d8da45ecde0800000000000000
+      internalID: -1311017337141626139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_26
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 369
+        width: 153
+        height: 176
+      alignment: 9
+      pivot: {x: 0.47, y: 0.618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6861be0a844d35860800000000000000
+      internalID: 7517585611413984902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_27
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 369
+        width: 152
+        height: 176
+      alignment: 9
+      pivot: {x: 0.466, y: 0.622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f93b05f5fffff90800000000000000
+      internalID: -6917529717776867511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_28
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 369
+        width: 146
+        height: 183
+      alignment: 9
+      pivot: {x: 0.49, y: 0.605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b298624a4bf1c340800000000000000
+      internalID: 4882459767406629558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_29
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 369
+        width: 151
+        height: 176
+      alignment: 9
+      pivot: {x: 0.534, y: 0.628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b20286773944210800000000000000
+      internalID: 1316339132156357514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_30
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 369
+        width: 150
+        height: 174
+      alignment: 9
+      pivot: {x: 0.46, y: 0.628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869639a95ec9b9140800000000000000
+      internalID: 4727544743810263400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_31
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 369
+        width: 146
+        height: 175
+      alignment: 9
+      pivot: {x: 0.475, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d081ab7609d0d3920800000000000000
+      internalID: 2971546243001096205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 205
+        height: 206
+      alignment: 9
+      pivot: {x: 0.678, y: 0.513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ac9401e49529c10800000000000000
+      internalID: 2058806171477330506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_33
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 183
+        width: 236
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fb3e5f89d59f410800000000000000
+      internalID: 1511342061501267764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_34
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 183
+        width: 164
+        height: 185
+      alignment: 9
+      pivot: {x: 0.505, y: 0.598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf182414cda905b30800000000000000
+      internalID: 4274086317152961019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_35
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 183
+        width: 168
+        height: 177
+      alignment: 9
+      pivot: {x: 0.435, y: 0.612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b0e134405c538c0800000000000000
+      internalID: -4020090470261716092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_36
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 183
+        width: 168
+        height: 177
+      alignment: 9
+      pivot: {x: 0.435, y: 0.613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce50a9fe7473f2e0800000000000000
+      internalID: -2093201313094410545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_37
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 183
+        width: 167
+        height: 175
+      alignment: 9
+      pivot: {x: 0.43, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f0ef921011ae790800000000000000
+      internalID: -7500163532734984304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_38
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 183
+        width: 156
+        height: 186
+      alignment: 9
+      pivot: {x: 0.48, y: 0.595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f8d5c6c53e894a0800000000000000
+      internalID: -6586264468934783175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_39
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 183
+        width: 164
+        height: 173
+      alignment: 9
+      pivot: {x: 0.437, y: 0.627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9873784ce8740b760800000000000000
+      internalID: 7471550460315776905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_40
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 183
+        width: 162
+        height: 174
+      alignment: 9
+      pivot: {x: 0.442, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b64ec5e019830550800000000000000
+      internalID: 6125890623821989558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_41
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 183
+        width: 152
+        height: 184
+      alignment: 9
+      pivot: {x: 0.482, y: 0.605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ba0d44e2a201f80800000000000000
+      internalID: -8137958148447097985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_42
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 183
+        width: 157
+        height: 175
+      alignment: 9
+      pivot: {x: 0.458, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d5bdd865916c290800000000000000
+      internalID: -7870575439245517564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_43
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 258
+        height: 183
+      alignment: 9
+      pivot: {x: 0.285, y: 0.61}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff599bd12788a380800000000000000
+      internalID: -8959762879165669380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_44
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 248
+        height: 182
+      alignment: 9
+      pivot: {x: 0.295, y: 0.615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22921655c52f63130800000000000000
+      internalID: 3546288234984188194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_45
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 0
+        width: 228
+        height: 182
+      alignment: 9
+      pivot: {x: 0.321, y: 0.614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4458f8c73ecdf4ad0800000000000000
+      internalID: -2715709180675652284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_46
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 0
+        width: 210
+        height: 180
+      alignment: 9
+      pivot: {x: 0.348, y: 0.615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff19a924aed0740800000000000000
+      internalID: 5120005923172122558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_47
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 0
+        width: 191
+        height: 181
+      alignment: 9
+      pivot: {x: 0.387, y: 0.605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d1052fa253d8490800000000000000
+      internalID: -7742473725809779386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_48
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 0
+        width: 175
+        height: 178
+      alignment: 9
+      pivot: {x: 0.415, y: 0.61}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c32fb31846900be0800000000000000
+      internalID: -1513044238483381306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_49
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 0
+        width: 170
+        height: 177
+      alignment: 9
+      pivot: {x: 0.43, y: 0.612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b0596f1673fc9b0800000000000000
+      internalID: -5057762962625459382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_50
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 0
+        width: 170
+        height: 176
+      alignment: 9
+      pivot: {x: 0.426, y: 0.616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17858aa5680365990800000000000000
+      internalID: -7397671984304727951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_51
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 247
+        height: 184
+      alignment: 9
+      pivot: {x: 0.282, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7493aa498723f80800000000000000
+      internalID: -8128301797543950399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_slash_anim_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 370
+        width: 139
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f616b2417307207d0800000000000000
+      internalID: -2953675023737724561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

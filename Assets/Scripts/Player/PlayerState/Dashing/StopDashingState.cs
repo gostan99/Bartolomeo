@@ -4,12 +4,12 @@ namespace Assets.Scripts.Player
 {
     public class StopDashingState : PlayerState
     {
-        float animtionLength;
+        float animationLength;
 
 
         public StopDashingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
-            pData.AnimationLength.TryGetValue(animation, out animtionLength);
+            pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
 
         public override void Enter()
@@ -27,7 +27,7 @@ namespace Assets.Scripts.Player
         {
             timer += Time.deltaTime;
             pInput.InputUpdate();
-            if (timer>=animtionLength)
+            if (timer>=animationLength)
             {
                 newState = pController.IdleState;
             }

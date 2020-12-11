@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: 075d2eadda4a2534ba5240369553f8ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3863794836317309010
+    second: pietat_walk_alt_anim_0
+  - first:
+      213: -4258891292794275586
+    second: pietat_walk_alt_anim_1
+  - first:
+      213: 7498830029872997197
+    second: pietat_walk_alt_anim_2
+  - first:
+      213: -7581551976174265899
+    second: pietat_walk_alt_anim_3
+  - first:
+      213: 324632029956685106
+    second: pietat_walk_alt_anim_4
+  - first:
+      213: -2433214731592749466
+    second: pietat_walk_alt_anim_5
+  - first:
+      213: -1504077228940859408
+    second: pietat_walk_alt_anim_6
+  - first:
+      213: 2564775593398760161
+    second: pietat_walk_alt_anim_7
+  - first:
+      213: 4079483232173106038
+    second: pietat_walk_alt_anim_8
+  - first:
+      213: 6725631738008143372
+    second: pietat_walk_alt_anim_9
+  - first:
+      213: -1473847723131385379
+    second: pietat_walk_alt_anim_10
+  - first:
+      213: 2047535476627278183
+    second: pietat_walk_alt_anim_11
+  - first:
+      213: 6855937256123455435
+    second: pietat_walk_alt_anim_12
+  - first:
+      213: 3551205090126705671
+    second: pietat_walk_alt_anim_13
+  - first:
+      213: 7055386580063036342
+    second: pietat_walk_alt_anim_14
+  - first:
+      213: -2402603301852353618
+    second: pietat_walk_alt_anim_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 685
+        width: 140
+        height: 223
+      alignment: 9
+      pivot: {x: 0.528, y: 0.514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea77150511b016ac0800000000000000
+      internalID: -3863794836317309010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 675
+        width: 137
+        height: 224
+      alignment: 9
+      pivot: {x: 0.495, y: 0.484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef83efb0fe065e4c0800000000000000
+      internalID: -4258891292794275586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 665
+        width: 112
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43ac918e22311860800000000000000
+      internalID: 7498830029872997197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 141
+        height: 226
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9d8fd75aae8c690800000000000000
+      internalID: -7581551976174265899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 450
+        width: 142
+        height: 225
+      alignment: 9
+      pivot: {x: 0.5, y: 0.478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d384c7c13518400800000000000000
+      internalID: 324632029956685106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 453
+        width: 124
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66eaa25e71c7b3ed0800000000000000
+      internalID: -2433214731592749466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_6
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 223
+        width: 111
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7e93eaab1702be0800000000000000
+      internalID: -1504077228940859408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 141
+        height: 231
+      alignment: 9
+      pivot: {x: 0.52, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2ff1d30d9e79320800000000000000
+      internalID: 2564775593398760161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 217
+        width: 142
+        height: 227
+      alignment: 9
+      pivot: {x: 0.55, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67327d8b26c3d9830800000000000000
+      internalID: 4079483232173106038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_9
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 223
+        width: 143
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06811a8e6e365d50800000000000000
+      internalID: 6725631738008143372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_10
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 223
+        width: 106
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5, y: 0.479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd94cb9fd47db8be0800000000000000
+      internalID: -1473847723131385379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 145
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 0.487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769016deaae4a6c10800000000000000
+      internalID: 2047535476627278183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 139
+        height: 221
+      alignment: 9
+      pivot: {x: 0.5, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7da913c9e252f50800000000000000
+      internalID: 6855937256123455435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_13
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 135
+        height: 219
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704bf81e63a684130800000000000000
+      internalID: 3551205090126705671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 140
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b327b9a6b4c9e160800000000000000
+      internalID: 7055386580063036342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_walk_alt_anim_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 138
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 0.514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabe8e8c60d38aed0800000000000000
+      internalID: -2402603301852353618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

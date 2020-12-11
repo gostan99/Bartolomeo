@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 4cfafffbc6103014baa6912c5fec8e6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8417736362915895690
+    second: pietat_turnaround_anim_0
+  - first:
+      213: -8311737347986139520
+    second: pietat_turnaround_anim_1
+  - first:
+      213: -6251399534258268430
+    second: pietat_turnaround_anim_2
+  - first:
+      213: -5724064389945224498
+    second: pietat_turnaround_anim_3
+  - first:
+      213: -1206465262451350032
+    second: pietat_turnaround_anim_4
+  - first:
+      213: -9163809010067123660
+    second: pietat_turnaround_anim_5
+  - first:
+      213: -5041703204700670982
+    second: pietat_turnaround_anim_6
+  - first:
+      213: -4541793967269905977
+    second: pietat_turnaround_anim_7
+  - first:
+      213: -1998231331142218904
+    second: pietat_turnaround_anim_8
+  - first:
+      213: -2207735727338159456
+    second: pietat_turnaround_anim_9
+  - first:
+      213: -6018713601388544205
+    second: pietat_turnaround_anim_10
+  - first:
+      213: 7091523077405038715
+    second: pietat_turnaround_anim_11
+  - first:
+      213: 6296697261651940916
+    second: pietat_turnaround_anim_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 140
+        height: 226
+      alignment: 9
+      pivot: {x: 0.52, y: 0.503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a899d7c7f9ec1d470800000000000000
+      internalID: 8417736362915895690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 229
+        width: 135
+        height: 224
+      alignment: 9
+      pivot: {x: 0.503, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08650f26be6c6ac80800000000000000
+      internalID: -8311737347986139520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 222
+        width: 132
+        height: 226
+      alignment: 9
+      pivot: {x: 0.5, y: 0.498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f65e73be319e39a0800000000000000
+      internalID: -6251399534258268430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_3
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 224
+        width: 132
+        height: 222
+      alignment: 9
+      pivot: {x: 0.51, y: 0.488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec21ad5c3c90090b0800000000000000
+      internalID: -5724064389945224498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_4
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 221
+        width: 128
+        height: 222
+      alignment: 9
+      pivot: {x: 0.529, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f52db56c36c14fe0800000000000000
+      internalID: -1206465262451350032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 226
+      alignment: 9
+      pivot: {x: 0.52, y: 0.493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432dc6dd14c93d080800000000000000
+      internalID: -9163809010067123660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_6
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 135
+        height: 229
+      alignment: 9
+      pivot: {x: 0.517, y: 0.487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af33edcb5a5480ab0800000000000000
+      internalID: -5041703204700670982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 138
+        height: 222
+      alignment: 9
+      pivot: {x: 0.555, y: 0.495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c97dd1437e48f0c0800000000000000
+      internalID: -4541793967269905977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_8
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 0
+        width: 134
+        height: 221
+      alignment: 9
+      pivot: {x: 0.555, y: 0.495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4630013bd444e0800000000000000
+      internalID: -1998231331142218904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_9
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 132
+        height: 221
+      alignment: 9
+      pivot: {x: 0.508, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a202169d0c8c51e0800000000000000
+      internalID: -2207735727338159456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 227
+        width: 143
+        height: 224
+      alignment: 9
+      pivot: {x: 0.55, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f7c683edb397ca0800000000000000
+      internalID: -6018713601388544205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 143
+        height: 225
+      alignment: 9
+      pivot: {x: 0.56, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7856399aa62a6260800000000000000
+      internalID: 7091523077405038715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_turnaround_anim_12
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0
+        width: 131
+        height: 220
+      alignment: 9
+      pivot: {x: 0.518, y: 0.507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43650f25ccc526750800000000000000
+      internalID: 6296697261651940916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

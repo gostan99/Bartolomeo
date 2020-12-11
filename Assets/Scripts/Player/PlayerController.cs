@@ -23,6 +23,8 @@ public partial class PlayerController : MonoBehaviour
     public WallSlideState WallSlideState { get; private set; }
     public DashingState DashingState { get; private set; }
     public StopDashingState StopDashingState { get; private set; }
+    public PrimaryAttackState PrimaryAttackState { get; private set; }
+    public SecondaryAttackGroundState SecondaryAttackGroundState { get; private set; }
     #endregion
 
     public PlayerState currentState { get; private set; }
@@ -35,7 +37,6 @@ public partial class PlayerController : MonoBehaviour
 
         #region Initialize States 
         IdleState = new IdleState( this,  pInput,  pData, "Idle_Animation");
-        currentState = IdleState;
         StartRunState = new StartRunState( this,  pInput,  pData, "Start_Run_Animation");
         RunningState = new RunningState( this,  pInput,  pData, "Running_Animation");
         FallingState = new FallingState( this,  pInput,  pData, "Falling_Animation");
@@ -48,6 +49,9 @@ public partial class PlayerController : MonoBehaviour
         WallSlideState = new WallSlideState( this,  pInput,  pData, "Wall_slide");
         DashingState = new DashingState( this,  pInput,  pData, "Dash_Animation");
         StopDashingState = new StopDashingState( this,  pInput,  pData, "Stop_Run_Animation");
+        PrimaryAttackState = new PrimaryAttackState(this, pInput, pData, "Left_swing_attack");
+        SecondaryAttackGroundState = new SecondaryAttackGroundState(this, pInput, pData, "Right_swing_attack");
+        currentState = IdleState;
         #endregion
 
     }

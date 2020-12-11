@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 97cb29ebf027fbb4189e936512f66d3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2062854269953446802
+    second: pietat_idle_anim_0
+  - first:
+      213: 7900177765539820254
+    second: pietat_idle_anim_1
+  - first:
+      213: 4374895248921362870
+    second: pietat_idle_anim_2
+  - first:
+      213: -5479257534634849019
+    second: pietat_idle_anim_3
+  - first:
+      213: -2724333494307157250
+    second: pietat_idle_anim_4
+  - first:
+      213: 3058237771125261567
+    second: pietat_idle_anim_5
+  - first:
+      213: 5556863578088685660
+    second: pietat_idle_anim_6
+  - first:
+      213: -1312892172422862306
+    second: pietat_idle_anim_7
+  - first:
+      213: 171511802370808156
+    second: pietat_idle_anim_8
+  - first:
+      213: -5654195319209853799
+    second: pietat_idle_anim_9
+  - first:
+      213: 3286988392520969003
+    second: pietat_idle_anim_10
+  - first:
+      213: 6486161647612232525
+    second: pietat_idle_anim_11
+  - first:
+      213: -3992982396982395689
+    second: pietat_idle_anim_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pietat_idle_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 140
+        height: 227
+      alignment: 9
+      pivot: {x: 0.53, y: 0.488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ce60098f44f53e0800000000000000
+      internalID: -2062854269953446802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 225
+        width: 141
+        height: 225
+      alignment: 9
+      pivot: {x: 0.525, y: 0.492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2b07122d113ad60800000000000000
+      internalID: 7900177765539820254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_2
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 224
+        width: 142
+        height: 223
+      alignment: 9
+      pivot: {x: 0.52, y: 0.495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b18089bc00c6bc30800000000000000
+      internalID: 4374895248921362870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_3
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 223
+        width: 142
+        height: 223
+      alignment: 9
+      pivot: {x: 0.52, y: 0.497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d05377d44c5f3b0800000000000000
+      internalID: -5479257534634849019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 141
+        height: 227
+      alignment: 9
+      pivot: {x: 0.525, y: 0.487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa8f1efe19313ad0800000000000000
+      internalID: -2724333494307157250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 140
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48a92bc0b017a20800000000000000
+      internalID: 3058237771125261567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_6
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 142
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5048459bf1fd1d40800000000000000
+      internalID: 5556863578088685660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 138
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a2852768ba7cde0800000000000000
+      internalID: -1312892172422862306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_8
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 0
+        width: 140
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5959175315516200800000000000000
+      internalID: 171511802370808156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_9
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 0
+        width: 144
+        height: 223
+      alignment: 9
+      pivot: {x: 0.515, y: 0.497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cf1db70534881b0800000000000000
+      internalID: -5654195319209853799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 228
+        width: 144
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b6b0d178abd9d20800000000000000
+      internalID: 3286988392520969003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_11
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 225
+        width: 142
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4380b147a9730a50800000000000000
+      internalID: 6486161647612232525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_idle_anim_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 143
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcf9796aa31698c0800000000000000
+      internalID: -3992982396982395689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

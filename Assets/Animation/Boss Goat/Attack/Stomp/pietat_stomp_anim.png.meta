@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 9daa7f31d1e790f4fb8889972a442846
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7954846393427124102
+    second: pietat_stomp_anim_0
+  - first:
+      213: 2389808046571164991
+    second: pietat_stomp_anim_1
+  - first:
+      213: -8532184661599590039
+    second: pietat_stomp_anim_2
+  - first:
+      213: 2979791868801189025
+    second: pietat_stomp_anim_3
+  - first:
+      213: -8145020186535614858
+    second: pietat_stomp_anim_4
+  - first:
+      213: 1177674238976126612
+    second: pietat_stomp_anim_5
+  - first:
+      213: 6235092639359358311
+    second: pietat_stomp_anim_6
+  - first:
+      213: -2238835129066391700
+    second: pietat_stomp_anim_7
+  - first:
+      213: -2374145583975524008
+    second: pietat_stomp_anim_8
+  - first:
+      213: 7185880760991037938
+    second: pietat_stomp_anim_9
+  - first:
+      213: -6244085324033639659
+    second: pietat_stomp_anim_10
+  - first:
+      213: -7132498215784551858
+    second: pietat_stomp_anim_11
+  - first:
+      213: -3601745980475077115
+    second: pietat_stomp_anim_12
+  - first:
+      213: 6317737817708157256
+    second: pietat_stomp_anim_13
+  - first:
+      213: 3121593302812557290
+    second: pietat_stomp_anim_14
+  - first:
+      213: 3662227700614364071
+    second: pietat_stomp_anim_15
+  - first:
+      213: 1670299357420972148
+    second: pietat_stomp_anim_16
+  - first:
+      213: 4541301407782601422
+    second: pietat_stomp_anim_17
+  - first:
+      213: 3766178770909991372
+    second: pietat_stomp_anim_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pietat_stomp_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f5503f5aa456e60800000000000000
+      internalID: 7954846393427124102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 615
+        width: 142
+        height: 216
+      alignment: 9
+      pivot: {x: 0.492, y: 0.497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359e31b1cd4a2120800000000000000
+      internalID: 2389808046571164991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 610
+        width: 106
+        height: 200
+      alignment: 9
+      pivot: {x: 1.04, y: 0.548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969e1577147979980800000000000000
+      internalID: -8532184661599590039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 144
+        height: 220
+      alignment: 9
+      pivot: {x: 0.707, y: 0.502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a40e74cae85a5920800000000000000
+      internalID: 2979791868801189025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 392
+        width: 139
+        height: 223
+      alignment: 9
+      pivot: {x: 0.56, y: 0.497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676a8256b4317fe80800000000000000
+      internalID: -8145020186535614858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 388
+        width: 136
+        height: 222
+      alignment: 9
+      pivot: {x: 0.528, y: 0.502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eec431b70f75010800000000000000
+      internalID: 1177674238976126612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_6
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 388
+        width: 203
+        height: 118
+      alignment: 9
+      pivot: {x: 0.384, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765daa678bf778650800000000000000
+      internalID: 6235092639359358311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_7
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 388
+        width: 203
+        height: 113
+      alignment: 9
+      pivot: {x: 0.384, y: 0.895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67f45ddf4f0ee0e0800000000000000
+      internalID: -2238835129066391700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 173
+        height: 204
+      alignment: 9
+      pivot: {x: 0.44, y: 0.533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859931e8b275d0fd0800000000000000
+      internalID: -2374145583975524008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 169
+        width: 142
+        height: 223
+      alignment: 9
+      pivot: {x: 0.506, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f93f2dca7069b360800000000000000
+      internalID: 7185880760991037938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 169
+        width: 143
+        height: 219
+      alignment: 9
+      pivot: {x: 0.713, y: 0.501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bbeb9fa7d8859a0800000000000000
+      internalID: -6244085324033639659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_11
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 169
+        width: 142
+        height: 200
+      alignment: 9
+      pivot: {x: 0.767, y: 0.548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4aed0f89a6440d90800000000000000
+      internalID: -7132498215784551858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_12
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 169
+        width: 118
+        height: 210
+      alignment: 9
+      pivot: {x: 0.754, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e87961d17040ec0800000000000000
+      internalID: -3601745980475077115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_13
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 169
+        width: 203
+        height: 119
+      alignment: 9
+      pivot: {x: 0.384, y: 0.858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849db88821d1da750800000000000000
+      internalID: 6317737817708157256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 217
+      alignment: 9
+      pivot: {x: 0.478, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef716be190225b20800000000000000
+      internalID: 3121593302812557290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 199
+        height: 169
+      alignment: 9
+      pivot: {x: 0.395, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abf6bdb0b8d2d230800000000000000
+      internalID: 3662227700614364071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_16
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 205
+        height: 134
+      alignment: 9
+      pivot: {x: 0.38, y: 0.76}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478e3ab7a681e2710800000000000000
+      internalID: 1670299357420972148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_17
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 0
+        width: 202
+        height: 125
+      alignment: 9
+      pivot: {x: 0.38, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec20ddcc191f50f30800000000000000
+      internalID: 4541301407782601422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pietat_stomp_anim_18
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 0
+        width: 201
+        height: 169
+      alignment: 9
+      pivot: {x: 0.384, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc115b853a7244430800000000000000
+      internalID: 3766178770909991372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
