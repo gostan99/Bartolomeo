@@ -16,6 +16,7 @@ namespace Assets.Scripts.Player
         {
             newState = this;
             timer = 0f;
+            pData.canDash = true;
         }
 
         public override void Exit()

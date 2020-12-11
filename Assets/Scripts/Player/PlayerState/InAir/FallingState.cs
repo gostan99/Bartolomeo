@@ -51,9 +51,10 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.LandingState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0)
+            else if (pInput.DashInput && pData.DashCooldownTimer <= 0 && pData.canDash)
             {
                 newState = pController.DashingState;
+                pData.canDash = false;
             }
         }
 

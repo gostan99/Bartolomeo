@@ -25,12 +25,13 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             WallDetectorDirectionUpdate();
+            WallJumpDirectionUpdate();
 
             if (!IsWallContacted() || IsGrounded() || pInput.xInput == 0)
             {
                 newState = pController.UnhangedState; 
             }
-            else if (pInput.JumpInput)
+            else if (pInput.JumpInput && IsWallContacted())
             {
                 newState = pController.WallJumpState;
             }

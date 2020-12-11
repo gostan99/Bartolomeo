@@ -14,8 +14,7 @@ namespace Assets.Scripts.Player
         public bool DashInput { get; private set; }
 
         public bool JumpInput { get; private set; }
-        public bool AttackInput { get; private set; }
-        public bool AttackInput2 { get; private set; }
+        public bool AttackInput { get; set; }
         float jumpInputHoldTime;
         public int JumpInputCounter = 0;
         
@@ -76,19 +75,6 @@ namespace Assets.Scripts.Player
             {
                 AttackInput = false;
             }
-            Debug.Log(AttackInput);
-           
-        }
-        private void OnAttackInput2()
-        {
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                AttackInput2 = true;
-            }
-            else
-            {
-                AttackInput2 = false;
-            }
         }
         public void InputUpdate()
         {
@@ -96,7 +82,6 @@ namespace Assets.Scripts.Player
             OnRunInput();
             OnDashInput();
             OnAttackInput();
-            OnAttackInput2();
         }
     }
 }

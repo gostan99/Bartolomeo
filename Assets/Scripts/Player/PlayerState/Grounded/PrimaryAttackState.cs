@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,9 @@ namespace Assets.Scripts.Player
 {
     public class PrimaryAttackState : PlayerState
     {
-        
+
         float animationLength;
+        bool hasAttackTwice = false;
         public PrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
@@ -20,6 +22,8 @@ namespace Assets.Scripts.Player
             pInput.JumpInputCounter = 0;
             timer = 0f;
             newState = this;
+            pInput.AttackInput = false;
+            hasAttackTwice = false;
         }
 
         public override void Exit()
@@ -30,13 +34,15 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            if (timer >= animationLength && pInput.xInput == 0)
+
+            if (timer <= animationLength && pInput.AttackInput)
+            {
+                hasAttackTwice = true;
+                pController.StartCoroutine(WaitAfter(animationLength - timer));
+            }
+            else if (timer >= animationLength && pInput.xInput == 0 && !hasAttackTwice)
             {
                 newState = pController.IdleState;
-            }
-            else if(timer>=animationLength )
-            {
-                newState = pController.SecondaryAttackGroundState;
             }
         }
 
@@ -45,6 +51,12 @@ namespace Assets.Scripts.Player
             pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
         }
 
+
+        IEnumerator WaitAfter(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            newState = pController.GroundedSecondaryAttackState;
+        }
 
     }
 }

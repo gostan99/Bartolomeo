@@ -11,13 +11,13 @@ namespace Assets.Scripts.Player
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
 
-            pInput.JumpInputCounter = 1;
         }
 
         public override void Enter()
         {
             timer = 0;
             newState = this;
+            pInput.JumpInputCounter = 1;
 
         }
 

@@ -24,7 +24,7 @@ public partial class PlayerController : MonoBehaviour
     public DashingState DashingState { get; private set; }
     public StopDashingState StopDashingState { get; private set; }
     public PrimaryAttackState PrimaryAttackState { get; private set; }
-    public SecondaryAttackGroundState SecondaryAttackGroundState { get; private set; }
+    public GroundedSecondaryAttackState GroundedSecondaryAttackState { get; private set; }
     #endregion
 
     public PlayerState currentState { get; private set; }
@@ -50,7 +50,7 @@ public partial class PlayerController : MonoBehaviour
         DashingState = new DashingState( this,  pInput,  pData, "Dash_Animation");
         StopDashingState = new StopDashingState( this,  pInput,  pData, "Stop_Run_Animation");
         PrimaryAttackState = new PrimaryAttackState(this, pInput, pData, "Left_swing_attack");
-        SecondaryAttackGroundState = new SecondaryAttackGroundState(this, pInput, pData, "Right_swing_attack");
+        GroundedSecondaryAttackState = new GroundedSecondaryAttackState(this, pInput, pData, "Right_swing_attack");
         currentState = IdleState;
         #endregion
 
@@ -76,4 +76,5 @@ public partial class PlayerController : MonoBehaviour
     {
         currentState.PhysicUpdate();
     }
+
 }

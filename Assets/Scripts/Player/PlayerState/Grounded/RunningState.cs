@@ -13,6 +13,7 @@ namespace Assets.Scripts.Player
         {
             pInput.JumpInputCounter = 0;
             newState = this;
+            pData.canDash = true;
         }
 
         public override void Exit()

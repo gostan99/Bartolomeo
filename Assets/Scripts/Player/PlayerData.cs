@@ -22,6 +22,7 @@ namespace Assets.Scripts.Player
         public float DashCooldown = 0.3f;
         public float DashVelocityX = 320f;
         public float DashDuration = 0.625f/4f;// = 0.15625f
+        public bool canDash = true;
 
         public float JumpVelocityY = 347.0f;
 

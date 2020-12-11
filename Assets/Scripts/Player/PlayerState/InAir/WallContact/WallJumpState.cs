@@ -15,6 +15,8 @@ namespace Assets.Scripts.Player
         public override void Enter()
         {
             newState = this;
+            timer = 0f;
+            hasAddForce = false;
         }
 
         public override void Exit()
@@ -26,8 +28,9 @@ namespace Assets.Scripts.Player
         {
             timer += Time.deltaTime;
             pInput.InputUpdate();
+            WallJumpDirectionUpdate();
 
-            if (hasAddForce && pData.Rb.velocity.y < 15.0f)
+            if (hasAddForce && pData.Rb.velocity.y < 0f)
             {
                 pInput.JumpInputCounter = 1;
                 newState = pController.StartFallingState;
@@ -38,7 +41,6 @@ namespace Assets.Scripts.Player
         {
             if (timer >= animtionLength && !hasAddForce)
             {
-                this.WallJumpDirectionUpdate();
                 pData.Rb.velocity = pData.WallJumpDirection * pData.WallJumpVelocity;
                 hasAddForce = true;
             }

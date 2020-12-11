@@ -17,6 +17,7 @@ namespace Assets.Scripts.Player
         protected PlayerState newState;
         protected float timer;
 
+
         private PlayerState()
         {
 
@@ -27,7 +28,7 @@ namespace Assets.Scripts.Player
             pController = playerController;
             pInput = playerInput;
             pData = playerData;
-
+            
             this.animation = animation;
 
             timer = 0f;

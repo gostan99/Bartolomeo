@@ -13,6 +13,7 @@ namespace Assets.Scripts.Player
         {
             timer = 0f;
             newState = this;
+            pInput.JumpInputCounter = 1;
         }
 
         public override void Exit()
@@ -38,6 +39,11 @@ namespace Assets.Scripts.Player
             {
                 pData.DashCooldownTimer = pData.DashCooldown;
                 newState = pController.StartFallingState;
+            }
+            else if (timer >= pData.DashDuration && pInput.JumpInput)
+            {
+                pData.DashCooldownTimer = pData.DashCooldown;
+                newState = pController.JumpState;
             }
         }
 
