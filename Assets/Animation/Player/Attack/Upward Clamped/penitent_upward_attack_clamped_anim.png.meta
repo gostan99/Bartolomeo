@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 8a668314f9443a14d8129dc63b5a2bc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1371466845309972010
+    second: penitent_upward_attack_clamped_anim_0
+  - first:
+      213: -4204584591977565322
+    second: penitent_upward_attack_clamped_anim_1
+  - first:
+      213: 8257846449468992788
+    second: penitent_upward_attack_clamped_anim_2
+  - first:
+      213: -8194091224604290041
+    second: penitent_upward_attack_clamped_anim_3
+  - first:
+      213: -3138467160157559357
+    second: penitent_upward_attack_clamped_anim_4
+  - first:
+      213: -4825696154068024439
+    second: penitent_upward_attack_clamped_anim_5
+  - first:
+      213: 1378953507827812
+    second: penitent_upward_attack_clamped_anim_6
+  - first:
+      213: -7032290583050097774
+    second: penitent_upward_attack_clamped_anim_7
+  - first:
+      213: -1059209489084801654
+    second: penitent_upward_attack_clamped_anim_8
+  - first:
+      213: -3815874532843015408
+    second: penitent_upward_attack_clamped_anim_9
+  - first:
+      213: 1056720692923684926
+    second: penitent_upward_attack_clamped_anim_10
+  - first:
+      213: -129244722373010130
+    second: penitent_upward_attack_clamped_anim_11
+  - first:
+      213: 2783621349633151869
+    second: penitent_upward_attack_clamped_anim_0
+  - first:
+      213: -6955988641437479603
+    second: penitent_upward_attack_clamped_anim_1
+  - first:
+      213: -351663376410697202
+    second: penitent_upward_attack_clamped_anim_2
+  - first:
+      213: -6254476527700579709
+    second: penitent_upward_attack_clamped_anim_3
+  - first:
+      213: 1534123057028693606
+    second: penitent_upward_attack_clamped_anim_4
+  - first:
+      213: 1007398938666822515
+    second: penitent_upward_attack_clamped_anim_5
+  - first:
+      213: 2821409627966712740
+    second: penitent_upward_attack_clamped_anim_6
+  - first:
+      213: 8365878369955604477
+    second: penitent_upward_attack_clamped_anim_7
+  - first:
+      213: -7914583743087633654
+    second: penitent_upward_attack_clamped_anim_8
+  - first:
+      213: 3733800193718433037
+    second: penitent_upward_attack_clamped_anim_9
+  - first:
+      213: 8966791425615869132
+    second: penitent_upward_attack_clamped_anim_10
+  - first:
+      213: -7439501983970507598
+    second: penitent_upward_attack_clamped_anim_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 128
+        width: 67
+        height: 72
+      alignment: 9
+      pivot: {x: 0.7, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73d3168ed861a620800000000000000
+      internalID: 2783621349633151869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 128
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.62, y: 0.366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d877d5f2d577f90800000000000000
+      internalID: -6955988641437479603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 128
+        width: 47
+        height: 66
+      alignment: 9
+      pivot: {x: 0.575, y: 0.383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02a688b504ae1bf0800000000000000
+      internalID: -351663376410697202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 128
+        width: 41
+        height: 69
+      alignment: 9
+      pivot: {x: 0.56, y: 0.367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a63665cb2a339a0800000000000000
+      internalID: -6254476527700579709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 128
+        width: 51
+        height: 73
+      alignment: 9
+      pivot: {x: 0.475, y: 0.3465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e7eefcacc4a4510800000000000000
+      internalID: 1534123057028693606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_5
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 128
+        width: 65
+        height: 74
+      alignment: 9
+      pivot: {x: 0.554, y: 0.343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b675e4ffffafd00800000000000000
+      internalID: 1007398938666822515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_6
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 128
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.36, y: 0.343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aba2d0bb19a72720800000000000000
+      internalID: 2821409627966712740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_7
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 128
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.3608, y: 0.3435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7e35b9d02991470800000000000000
+      internalID: 8365878369955604477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.3615, y: 0.344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b1e28d400c92290800000000000000
+      internalID: -7914583743087633654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_9
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.36, y: 0.343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d053fd06e7f11d330800000000000000
+      internalID: 3733800193718433037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.36, y: 0.344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc43ad22b41707c70800000000000000
+      internalID: 8966791425615869132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_upward_attack_clamped_anim_11
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 45
+        height: 70
+      alignment: 9
+      pivot: {x: 0.6, y: 0.363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4cf9b9c5491c890800000000000000
+      internalID: -7439501983970507598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Parallax
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG
+    uniqueID: 1992113383
+    locked: 0
+  - name: BG2
+    uniqueID: 4133961987
+    locked: 0
+  - name: BG_giua
+    uniqueID: 845226041
+    locked: 0
+  - name: Platform
+    uniqueID: 3608765667
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: entity
+    uniqueID: 1744509693
+    locked: 0
+  - name: Trang_Tri
+    uniqueID: 1413116931
+    locked: 0

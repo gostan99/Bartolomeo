@@ -1,0 +1,3209 @@
+fileFormatVersion: 2
+guid: 4df829c900272964b8739db3de541fe5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5584156959300642040
+    second: penitent_charged_attack_v2_anim_0
+  - first:
+      213: -6617602079689978636
+    second: penitent_charged_attack_v2_anim_1
+  - first:
+      213: 9184409688640388482
+    second: penitent_charged_attack_v2_anim_2
+  - first:
+      213: 7491699942280698866
+    second: penitent_charged_attack_v2_anim_3
+  - first:
+      213: -3016164674169285799
+    second: penitent_charged_attack_v2_anim_4
+  - first:
+      213: 9003920285331158178
+    second: penitent_charged_attack_v2_anim_5
+  - first:
+      213: 1418977227378506927
+    second: penitent_charged_attack_v2_anim_6
+  - first:
+      213: -1642062836772397438
+    second: penitent_charged_attack_v2_anim_7
+  - first:
+      213: 5057378220191093118
+    second: penitent_charged_attack_v2_anim_8
+  - first:
+      213: 1973154251505789508
+    second: penitent_charged_attack_v2_anim_9
+  - first:
+      213: -397466969733586585
+    second: penitent_charged_attack_v2_anim_10
+  - first:
+      213: -1313821252944529636
+    second: penitent_charged_attack_v2_anim_11
+  - first:
+      213: 8590587838764959076
+    second: penitent_charged_attack_v2_anim_12
+  - first:
+      213: -4410669011733906884
+    second: penitent_charged_attack_v2_anim_13
+  - first:
+      213: 5482839418935427844
+    second: penitent_charged_attack_v2_anim_14
+  - first:
+      213: -2781182893623079130
+    second: penitent_charged_attack_v2_anim_15
+  - first:
+      213: -2531092752009206977
+    second: penitent_charged_attack_v2_anim_16
+  - first:
+      213: 3627880502108341259
+    second: penitent_charged_attack_v2_anim_17
+  - first:
+      213: -5336000172851534369
+    second: penitent_charged_attack_v2_anim_18
+  - first:
+      213: -5237670990556263680
+    second: penitent_charged_attack_v2_anim_19
+  - first:
+      213: 8868548020936968877
+    second: penitent_charged_attack_v2_anim_20
+  - first:
+      213: 2380169527428222131
+    second: penitent_charged_attack_v2_anim_21
+  - first:
+      213: 445446885760110457
+    second: penitent_charged_attack_v2_anim_22
+  - first:
+      213: 5170412110424931253
+    second: penitent_charged_attack_v2_anim_23
+  - first:
+      213: 2945427121972396441
+    second: penitent_charged_attack_v2_anim_24
+  - first:
+      213: 7623922859888268470
+    second: penitent_charged_attack_v2_anim_25
+  - first:
+      213: -191774319287020130
+    second: penitent_charged_attack_v2_anim_26
+  - first:
+      213: 345859219778683013
+    second: penitent_charged_attack_v2_anim_27
+  - first:
+      213: -706548370471032899
+    second: penitent_charged_attack_v2_anim_28
+  - first:
+      213: -5991738179705175492
+    second: penitent_charged_attack_v2_anim_29
+  - first:
+      213: -2296523855690194424
+    second: penitent_charged_attack_v2_anim_30
+  - first:
+      213: 5430468364884308353
+    second: penitent_charged_attack_v2_anim_31
+  - first:
+      213: 7671356887286047761
+    second: penitent_charged_attack_v2_anim_32
+  - first:
+      213: -664316287741601272
+    second: penitent_charged_attack_v2_anim_33
+  - first:
+      213: 5363374462799080666
+    second: penitent_charged_attack_v2_anim_34
+  - first:
+      213: -1827854507706944033
+    second: penitent_charged_attack_v2_anim_35
+  - first:
+      213: -7440314144405082741
+    second: penitent_charged_attack_v2_anim_36
+  - first:
+      213: -706784075105093312
+    second: penitent_charged_attack_v2_anim_37
+  - first:
+      213: 5137749047719742159
+    second: penitent_charged_attack_v2_anim_38
+  - first:
+      213: -1569970967606155755
+    second: penitent_charged_attack_v2_anim_39
+  - first:
+      213: 3303853211562324949
+    second: penitent_charged_attack_v2_anim_40
+  - first:
+      213: 2691939399451331962
+    second: penitent_charged_attack_v2_anim_41
+  - first:
+      213: -1218253852195840082
+    second: penitent_charged_attack_v2_anim_42
+  - first:
+      213: -2918183010269604530
+    second: penitent_charged_attack_v2_anim_43
+  - first:
+      213: -4223970525803113999
+    second: penitent_charged_attack_v2_anim_44
+  - first:
+      213: 3959946247747271602
+    second: penitent_charged_attack_v2_anim_45
+  - first:
+      213: -1957307137053057099
+    second: penitent_charged_attack_v2_anim_46
+  - first:
+      213: 2538331329366162069
+    second: penitent_charged_attack_v2_anim_47
+  - first:
+      213: 2974244159857977564
+    second: penitent_charged_attack_v2_anim_48
+  - first:
+      213: 3476271648147241609
+    second: penitent_charged_attack_v2_anim_49
+  - first:
+      213: -4622625062709550365
+    second: penitent_charged_attack_v2_anim_50
+  - first:
+      213: -3158491514602881314
+    second: penitent_charged_attack_v2_anim_51
+  - first:
+      213: 6880773380363394251
+    second: penitent_charged_attack_v2_anim_52
+  - first:
+      213: 3361549457963368989
+    second: penitent_charged_attack_v2_anim_53
+  - first:
+      213: -3048715618725087799
+    second: penitent_charged_attack_v2_anim_54
+  - first:
+      213: -6811325028345598297
+    second: penitent_charged_attack_v2_anim_55
+  - first:
+      213: 2319560539095431058
+    second: penitent_charged_attack_v2_anim_56
+  - first:
+      213: 1675958708333243822
+    second: penitent_charged_attack_v2_anim_57
+  - first:
+      213: -6309179487926834241
+    second: penitent_charged_attack_v2_anim_58
+  - first:
+      213: -8199557857916175961
+    second: penitent_charged_attack_v2_anim_59
+  - first:
+      213: -8475181437860575638
+    second: penitent_charged_attack_v2_anim_60
+  - first:
+      213: 8256735690899643578
+    second: penitent_charged_attack_v2_anim_61
+  - first:
+      213: -2849490687878429002
+    second: penitent_charged_attack_v2_anim_62
+  - first:
+      213: -1086278030419534657
+    second: penitent_charged_attack_v2_anim_63
+  - first:
+      213: -5160652067791159756
+    second: penitent_charged_attack_v2_anim_64
+  - first:
+      213: -8607594440195047627
+    second: penitent_charged_attack_v2_anim_65
+  - first:
+      213: -8535330628905354936
+    second: penitent_charged_attack_v2_anim_66
+  - first:
+      213: -7554848694750439067
+    second: penitent_charged_attack_v2_anim_67
+  - first:
+      213: -8954113087537472342
+    second: penitent_charged_attack_v2_anim_68
+  - first:
+      213: 7657092925615401486
+    second: penitent_charged_attack_v2_anim_69
+  - first:
+      213: 1773609896479847626
+    second: penitent_charged_attack_v2_anim_70
+  - first:
+      213: 161962801885482323
+    second: penitent_charged_attack_v2_anim_71
+  - first:
+      213: 7416415171952548693
+    second: penitent_charged_attack_v2_anim_72
+  - first:
+      213: -2365190661966092482
+    second: penitent_charged_attack_v2_anim_73
+  - first:
+      213: 2009421234114264694
+    second: penitent_charged_attack_v2_anim_74
+  - first:
+      213: 4913206252266612516
+    second: penitent_charged_attack_v2_anim_75
+  - first:
+      213: 2330465829294722178
+    second: penitent_charged_attack_v2_anim_76
+  - first:
+      213: 6172891800014556514
+    second: penitent_charged_attack_v2_anim_77
+  - first:
+      213: 7064771131182143056
+    second: penitent_charged_attack_v2_anim_78
+  - first:
+      213: -6324230759926226156
+    second: penitent_charged_attack_v2_anim_79
+  - first:
+      213: -4101619909767109901
+    second: penitent_charged_attack_v2_anim_80
+  - first:
+      213: 27850942897629913
+    second: penitent_charged_attack_v2_anim_81
+  - first:
+      213: -7874952920417139969
+    second: penitent_charged_attack_v2_anim_82
+  - first:
+      213: -436602463934193657
+    second: penitent_charged_attack_v2_anim_83
+  - first:
+      213: 4100774534557010902
+    second: penitent_charged_attack_v2_anim_84
+  - first:
+      213: 2702519073580705763
+    second: penitent_charged_attack_v2_anim_85
+  - first:
+      213: -5829023016756563463
+    second: penitent_charged_attack_v2_anim_86
+  - first:
+      213: -3007148491633723806
+    second: penitent_charged_attack_v2_anim_87
+  - first:
+      213: -2059297221259691262
+    second: penitent_charged_attack_v2_anim_88
+  - first:
+      213: -6880085916249568549
+    second: penitent_charged_attack_v2_anim_89
+  - first:
+      213: 5998962820897013475
+    second: penitent_charged_attack_v2_anim_90
+  - first:
+      213: -8836659696444676526
+    second: penitent_charged_attack_v2_anim_91
+  - first:
+      213: -2279498265038760834
+    second: penitent_charged_attack_v2_anim_92
+  - first:
+      213: 4578778399759011302
+    second: penitent_charged_attack_v2_anim_93
+  - first:
+      213: -987469582400108760
+    second: penitent_charged_attack_v2_anim_94
+  - first:
+      213: 7211557207261507573
+    second: penitent_charged_attack_v2_anim_95
+  - first:
+      213: 2579165349422480814
+    second: penitent_charged_attack_v2_anim_96
+  - first:
+      213: -7394571366480387291
+    second: penitent_charged_attack_v2_anim_97
+  - first:
+      213: -8177704758359338441
+    second: penitent_charged_attack_v2_anim_98
+  - first:
+      213: 744533735397836021
+    second: penitent_charged_attack_v2_anim_99
+  - first:
+      213: 8389929333328297404
+    second: penitent_charged_attack_v2_anim_100
+  - first:
+      213: 4517842704390832593
+    second: penitent_charged_attack_v2_anim_101
+  - first:
+      213: 3558069228050987592
+    second: penitent_charged_attack_v2_anim_102
+  - first:
+      213: -3126728530871043266
+    second: penitent_charged_attack_v2_anim_103
+  - first:
+      213: 46673138587817281
+    second: penitent_charged_attack_v2_anim_104
+  - first:
+      213: -6913323786509638836
+    second: penitent_charged_attack_v2_anim_105
+  - first:
+      213: -6452276606399103526
+    second: penitent_charged_attack_v2_anim_106
+  - first:
+      213: 1834828829064210460
+    second: penitent_charged_attack_v2_anim_107
+  - first:
+      213: 5996163438819381318
+    second: penitent_charged_attack_v2_anim_108
+  - first:
+      213: -3718149052444690009
+    second: penitent_charged_attack_v2_anim_109
+  - first:
+      213: -5878376012787869312
+    second: penitent_charged_attack_v2_anim_110
+  - first:
+      213: -875594124483137069
+    second: penitent_charged_attack_v2_anim_111
+  - first:
+      213: 2763162716405680027
+    second: penitent_charged_attack_v2_anim_112
+  - first:
+      213: 5035538636283323034
+    second: penitent_charged_attack_v2_anim_113
+  - first:
+      213: 1090836122507911142
+    second: penitent_charged_attack_v2_anim_114
+  - first:
+      213: -2660407086566212463
+    second: penitent_charged_attack_v2_anim_115
+  - first:
+      213: -3408911652407655804
+    second: penitent_charged_attack_v2_anim_116
+  - first:
+      213: -8098509035447329564
+    second: penitent_charged_attack_v2_anim_117
+  - first:
+      213: -3085267547644022267
+    second: penitent_charged_attack_v2_anim_118
+  - first:
+      213: 9020599886649257704
+    second: penitent_charged_attack_v2_anim_119
+  - first:
+      213: -9188627954133188443
+    second: penitent_charged_attack_v2_anim_120
+  - first:
+      213: -8589771598771041500
+    second: penitent_charged_attack_v2_anim_121
+  - first:
+      213: -585932053707724781
+    second: penitent_charged_attack_v2_anim_122
+  - first:
+      213: -3866852354272629445
+    second: penitent_charged_attack_v2_anim_123
+  - first:
+      213: -2738379642056954055
+    second: penitent_charged_attack_v2_anim_124
+  - first:
+      213: -239194863443869721
+    second: penitent_charged_attack_v2_anim_125
+  - first:
+      213: -2299205240147920069
+    second: penitent_charged_attack_v2_anim_126
+  - first:
+      213: -1490430072252513858
+    second: penitent_charged_attack_v2_anim_127
+  - first:
+      213: 4431636569216288446
+    second: penitent_charged_attack_v2_anim_128
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 435
+        width: 52
+        height: 76
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b1cd6e4d61182b0800000000000000
+      internalID: -5584156959300642040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 437
+        width: 68
+        height: 71
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc413758fd8924a0800000000000000
+      internalID: -6617602079689978636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 420
+        width: 79
+        height: 90
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28df01363f3957f70800000000000000
+      internalID: 9184409688640388482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 422
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb947f976dd7f760800000000000000
+      internalID: 7491699942280698866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 452
+        width: 74
+        height: 60
+      alignment: 9
+      pivot: {x: 0.75, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953de0c853e6426d0800000000000000
+      internalID: -3016164674169285799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 417
+        width: 59
+        height: 89
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4f8117bc954fc70800000000000000
+      internalID: 9003920285331158178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 490
+        width: 12
+        height: 16
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facb34e254831b310800000000000000
+      internalID: 1418977227378506927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_7
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 423
+        width: 39
+        height: 66
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e9f4bcc883639e0800000000000000
+      internalID: -1642062836772397438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_8
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 486
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71994532ba6f2640800000000000000
+      internalID: 5057378220191093118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 17
+        height: 14
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aed08665d026b10800000000000000
+      internalID: 1973154251505789508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 443
+        width: 6
+        height: 15
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761241b95e9eb7af0800000000000000
+      internalID: -397466969733586585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 441
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f1e7088e54cde0800000000000000
+      internalID: -1313821252944529636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_12
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 401
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465406ddf16e73770800000000000000
+      internalID: 8590587838764959076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 438
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3af6cd07e72ac2c0800000000000000
+      internalID: -4410669011733906884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 426
+        width: 10
+        height: 13
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403c726f665f61c40800000000000000
+      internalID: 5482839418935427844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 371
+        width: 43
+        height: 79
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f0432c4e04769d0800000000000000
+      internalID: -2781182893623079130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 36
+        height: 77
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33ece66d80cfdcd0800000000000000
+      internalID: -2531092752009206977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 412
+        width: 36
+        height: 24
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04cbb76812d85230800000000000000
+      internalID: 3627880502108341259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 419
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5e2c73d18b2f5b0800000000000000
+      internalID: -5336000172851534369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 432
+        width: 11
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b86850cfd0057b0800000000000000
+      internalID: -5237670990556263680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 420
+        width: 33
+        height: 17
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa017dff69631b70800000000000000
+      internalID: 8868548020936968877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 424
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc8193139f080120800000000000000
+      internalID: 2380169527428222131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_22
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 429
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f0900259b8e2600800000000000000
+      internalID: 445446885760110457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 387
+        width: 37
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb7140ab6ef0c740800000000000000
+      internalID: 5170412110424931253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 415
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99147f4ac5240e820800000000000000
+      internalID: 2945427121972396441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_25
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 321
+        width: 39
+        height: 102
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4de92a27d9dc960800000000000000
+      internalID: 7623922859888268470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 397
+        width: 20
+        height: 21
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95daddc54ea65df0800000000000000
+      internalID: -191774319287020130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_27
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 401
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580c331c02dbcc400800000000000000
+      internalID: 345859219778683013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_28
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 407
+        width: 16
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db761712006d136f0800000000000000
+      internalID: -706548370471032899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_29
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 275
+        width: 71
+        height: 134
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3207830fd119dca0800000000000000
+      internalID: -5991738179705175492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_30
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 329
+        width: 68
+        height: 77
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802206388bb1120e0800000000000000
+      internalID: -2296523855690194424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 220
+        width: 164
+        height: 178
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181fcecb436ec5b40800000000000000
+      internalID: 5430468364884308353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_32
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 396
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1146ee3c172267a60800000000000000
+      internalID: 7671356887286047761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_33
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 387
+        width: 11
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ad7a22bdfd7c6f0800000000000000
+      internalID: -664316287741601272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_34
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 396
+        width: 10
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc6a8458a88e6a40800000000000000
+      internalID: 5363374462799080666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_35
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 394
+        width: 8
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5f707720822a6e0800000000000000
+      internalID: -1827854507706944033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_36
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 390
+        width: 8
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dab65c4b1beb890800000000000000
+      internalID: -7440314144405082741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_37
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 388
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049357ed0aff036f0800000000000000
+      internalID: -706784075105093312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_38
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 312
+        width: 39
+        height: 80
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcacf66b983fc4740800000000000000
+      internalID: 5137749047719742159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 328
+        width: 63
+        height: 24
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516a82819b7563ae0800000000000000
+      internalID: -1569970967606155755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_40
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 312
+        width: 54
+        height: 17
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3b439cdf4a9dd20800000000000000
+      internalID: 3303853211562324949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_41
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 292
+        width: 58
+        height: 78
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dcc2d0f90bb5520800000000000000
+      internalID: 2691939399451331962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_42
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 302
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf9d957394e71fe0800000000000000
+      internalID: -1218253852195840082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 326
+        width: 51
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45dc4b63088087d0800000000000000
+      internalID: -2918183010269604530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 219
+        width: 78
+        height: 77
+      alignment: 9
+      pivot: {x: 0.85, y: 0.3265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.351532, y: -38.5}
+        - {x: -4.1339684, y: -16.407013}
+        - {x: -28.260529, y: -24.981567}
+        - {x: -39, y: -15.991943}
+        - {x: -39, y: 7.507141}
+        - {x: -26.698786, y: 7.5190125}
+        - {x: 8.904545, y: 38.5}
+        - {x: 39, y: 38.5}
+        - {x: 39, y: -38.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f119c3bf217165c0800000000000000
+      internalID: -4223970525803113999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_45
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 314
+        width: 18
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbfd92b12e84f630800000000000000
+      internalID: 3959946247747271602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_46
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 237
+        width: 41
+        height: 81
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf9d93778f36d4e0800000000000000
+      internalID: -1957307137053057099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_47
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 316
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a7d1935e6f93320800000000000000
+      internalID: 2538331329366162069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_48
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 307
+        width: 10
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd86d9f1e43a64920800000000000000
+      internalID: 2974244159857977564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_49
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 307
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98af39a55a23e3030800000000000000
+      internalID: 3476271648147241609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_50
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 297
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e221674ff229dfb0800000000000000
+      internalID: -4622625062709550365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_51
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 245
+        width: 52
+        height: 70
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede720ea3b8ca24d0800000000000000
+      internalID: -3158491514602881314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_52
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 233
+        width: 39
+        height: 78
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc168cfeea6d7f50800000000000000
+      internalID: 6880773380363394251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_53
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 252
+        width: 18
+        height: 44
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1240d8fb6f96ae20800000000000000
+      internalID: 3361549457963368989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_54
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 283
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5b4bc2c49c0b5d0800000000000000
+      internalID: -3048715618725087799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_55
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 287
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeabb389ff4971a0800000000000000
+      internalID: -6811325028345598297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_56
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 272
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297fbcf450cb03020800000000000000
+      internalID: 2319560539095431058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_57
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 210
+        width: 70
+        height: 77
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadec6cc093324710800000000000000
+      internalID: 1675958708333243822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_58
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 209
+        width: 61
+        height: 67
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba0f5eeaa4178a0800000000000000
+      internalID: -6309179487926834241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_59
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 229
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9b4a34291553e80800000000000000
+      internalID: -8199557857916175961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_60
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 240
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66065db26b126a80800000000000000
+      internalID: -8475181437860575638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_61
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 233
+        width: 13
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcdc546d51d59270800000000000000
+      internalID: 8256735690899643578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_62
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 237
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6093e01539478d0800000000000000
+      internalID: -2849490687878429002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_63
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 218
+        width: 64
+        height: 22
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc588df2e3cce0f0800000000000000
+      internalID: -1086278030419534657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_64
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 163
+        width: 61
+        height: 71
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e3ce1694ea168b0800000000000000
+      internalID: -5160652067791159756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_65
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 157
+        width: 41
+        height: 79
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ffb8d267eab8880800000000000000
+      internalID: -8607594440195047627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_66
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 230
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849b59fd30a6c8980800000000000000
+      internalID: -8535330628905354936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_67
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 151
+        width: 50
+        height: 81
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5699391b329c72790800000000000000
+      internalID: -7554848694750439067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_68
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 224
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac17aa76999cb380800000000000000
+      internalID: -8954113087537472342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 170
+        height: 108
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a66736275734a60800000000000000
+      internalID: 7657092925615401486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_70
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 199
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac47cc9cdc02d9810800000000000000
+      internalID: 1773609896479847626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_71
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 207
+        width: 18
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d06396f486f3200800000000000000
+      internalID: 161962801885482323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_72
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 206
+        width: 28
+        height: 16
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b9c071e466ce660800000000000000
+      internalID: 7416415171952548693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_73
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 208
+        width: 12
+        height: 7
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37a07fcf972d2fd0800000000000000
+      internalID: -2365190661966092482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_74
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 213
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ef18f47f5e2eb10800000000000000
+      internalID: 2009421234114264694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_75
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 196
+        width: 27
+        height: 22
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427649e1e073f2440800000000000000
+      internalID: 4913206252266612516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 203
+        width: 10
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c4c4c035a775020800000000000000
+      internalID: 2330465829294722178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_77
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 205
+        width: 12
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d0ac003648aa550800000000000000
+      internalID: 6172891800014556514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_78
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 141
+        width: 74
+        height: 68
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056db8db9eb1b0260800000000000000
+      internalID: 7064771131182143056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_79
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 109
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413affc81a1db38a0800000000000000
+      internalID: -6324230759926226156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_80
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 189
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f269a26c6e1417c0800000000000000
+      internalID: -4101619909767109901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_81
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 184
+        width: 11
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daa216f842f26000800000000000000
+      internalID: 27850942897629913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_82
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 179
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff28c9bca0c86b290800000000000000
+      internalID: -7874952920417139969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 178
+        width: 9
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700642d4f50e0f9f0800000000000000
+      internalID: -436602463934193657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_84
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 182
+        width: 4
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0d3c56b0e8e830800000000000000
+      internalID: 4100774534557010902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_85
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 175
+        width: 13
+        height: 11
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ee7367c6418520800000000000000
+      internalID: 2702519073580705763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_86
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 168
+        width: 8
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f136a223762b1fa0800000000000000
+      internalID: -5829023016756563463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_87
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 105
+        width: 76
+        height: 76
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266f15121667446d0800000000000000
+      internalID: -3007148491633723806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_88
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 158
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bfddf7618eb63e0800000000000000
+      internalID: -2059297221259691262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_89
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 140
+        width: 4
+        height: 13
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdac6c9bf460580a0800000000000000
+      internalID: -6880085916249568549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_90
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 143
+        width: 10
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee7758d6e8904350800000000000000
+      internalID: 5998962820897013475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_91
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 80
+        width: 58
+        height: 74
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256676023d0ed5580800000000000000
+      internalID: -8836659696444676526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_92
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 74
+        width: 47
+        height: 79
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74de3eb7689d50e0800000000000000
+      internalID: -2279498265038760834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_93
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 76
+        width: 46
+        height: 78
+      alignment: 9
+      pivot: {x: 0.6, y: 0.323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed0ed6f1b61b8f30800000000000000
+      internalID: 4578778399759011302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_94
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 70
+        width: 174
+        height: 77
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827c98a85adcb42f0800000000000000
+      internalID: -987469582400108760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_95
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 136
+        width: 9
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffea305219941460800000000000000
+      internalID: 7211557207261507573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_96
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 69
+        width: 69
+        height: 72
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadb25568390bc320800000000000000
+      internalID: 2579165349422480814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_97
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 125
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52369a23584316990800000000000000
+      internalID: -7394571366480387291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_98
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 107
+        width: 48
+        height: 27
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73258ff79d4f28e80800000000000000
+      internalID: -8177704758359338441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_99
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 76
+        width: 58
+        height: 56
+      alignment: 9
+      pivot: {x: 0.631, y: 0.469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4cea5dc7d155a00800000000000000
+      internalID: 744533735397836021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_100
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 109
+        width: 55
+        height: 14
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdb9a3e6440f6470800000000000000
+      internalID: 8389929333328297404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 109
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d14e4ac00a92be30800000000000000
+      internalID: 4517842704390832593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_102
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 162
+        height: 109
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3a388c1dc06130800000000000000
+      internalID: 3558069228050987592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_103
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 96
+        width: 13
+        height: 8
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b3a50a7f0ab94d0800000000000000
+      internalID: -3126728530871043266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_104
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 100
+        width: 11
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1455416e8f0d5a000800000000000000
+      internalID: 46673138587817281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_105
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 68
+        width: 9
+        height: 14
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43a5dff4a0fe00a0800000000000000
+      internalID: -6913323786509638836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_106
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 81
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addb403bc98e476a0800000000000000
+      internalID: -6452276606399103526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_107
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 78
+        width: 10
+        height: 6
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18a404491f967910800000000000000
+      internalID: 1834828829064210460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_108
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 72
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640930ae0e6a63350800000000000000
+      internalID: 5996163438819381318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_109
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 72
+        width: 15
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9341be22b766cc0800000000000000
+      internalID: -3718149052444690009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_110
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 84
+        height: 78
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0891a9d4920db6ea0800000000000000
+      internalID: -5878376012787869312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_111
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 69
+        width: 12
+        height: 10
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d173ca68c349d3f0800000000000000
+      internalID: -875594124483137069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_112
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 0
+        width: 58
+        height: 73
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97c6f7c9d9b85620800000000000000
+      internalID: 2763162716405680027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_113
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 0
+        width: 46
+        height: 75
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a922c64d5b3d1e540800000000000000
+      internalID: 5035538636283323034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_114
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 46
+        width: 8
+        height: 16
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9f368cad632f00800000000000000
+      internalID: 1090836122507911142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_115
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 43
+        width: 17
+        height: 26
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cf947a9d5541bd0800000000000000
+      internalID: -2660407086566212463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_116
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 32
+        width: 14
+        height: 19
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4824d8fc9ec11b0d0800000000000000
+      internalID: -3408911652407655804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_117
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 53
+        height: 71
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecded3a0f05c9f80800000000000000
+      internalID: -8098509035447329564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_118
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 88
+        height: 69
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50233a9038dee25d0800000000000000
+      internalID: -3085267547644022267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_119
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 41
+        height: 63
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee68a0cdcb9f2d70800000000000000
+      internalID: 9020599886649257704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_120
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 66
+        height: 68
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0caa42f8f6b7080800000000000000
+      internalID: -9188627954133188443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_121
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 0
+        width: 47
+        height: 63
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b4381dd300bc880800000000000000
+      internalID: -8589771598771041500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_122
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 0
+        width: 41
+        height: 63
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3186c3cc6e95ed7f0800000000000000
+      internalID: -585932053707724781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_123
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 0
+        width: 51
+        height: 65
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d62b0754e265ac0800000000000000
+      internalID: -3866852354272629445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_124
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 59
+        height: 56
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fa80f59325ff9d0800000000000000
+      internalID: -2738379642056954055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_125
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 25
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef745cf9853eacf0800000000000000
+      internalID: -239194863443869721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_126
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 23
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b344b04059710e0800000000000000
+      internalID: -2299205240147920069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_127
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1
+        width: 52
+        height: 29
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb144d4febde05be0800000000000000
+      internalID: -1490430072252513858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_charged_attack_v2_anim_128
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 13
+        height: 5
+      alignment: 9
+      pivot: {x: 0.65, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb684c9daf5508d30800000000000000
+      internalID: 4431636569216288446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

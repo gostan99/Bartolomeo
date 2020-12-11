@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: b7ca3c314ba8a874f8e91213f1c41bfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5836067276566258012
+    second: penitent_running_anim_0
+  - first:
+      213: 2785793899087317109
+    second: penitent_running_anim_1
+  - first:
+      213: 2049238078206818934
+    second: penitent_running_anim_2
+  - first:
+      213: 544746498931493776
+    second: penitent_running_anim_3
+  - first:
+      213: 1827093384599751157
+    second: penitent_running_anim_4
+  - first:
+      213: 4665479199734909794
+    second: penitent_running_anim_5
+  - first:
+      213: -4680858232109292193
+    second: penitent_running_anim_6
+  - first:
+      213: 1308720988088773159
+    second: penitent_running_anim_7
+  - first:
+      213: 3901174870797300411
+    second: penitent_running_anim_8
+  - first:
+      213: 6142953222565117332
+    second: penitent_running_anim_9
+  - first:
+      213: 1325299070145612248
+    second: penitent_running_anim_10
+  - first:
+      213: 8311933330989512515
+    second: penitent_running_anim_11
+  - first:
+      213: -7115194319343639003
+    second: penitent_running_anim_12
+  - first:
+      213: -7709364439665567236
+    second: penitent_running_anim_13
+  - first:
+      213: -4770262328567703045
+    second: penitent_running_anim_14
+  - first:
+      213: 1749952381297387837
+    second: penitent_running_anim_0
+  - first:
+      213: 1445360002171515315
+    second: penitent_running_anim_1
+  - first:
+      213: -5506520458955206982
+    second: penitent_running_anim_2
+  - first:
+      213: -7656982340627812242
+    second: penitent_running_anim_3
+  - first:
+      213: -7168372788918724586
+    second: penitent_running_anim_4
+  - first:
+      213: -4517113145642082874
+    second: penitent_running_anim_5
+  - first:
+      213: 3568446817661644389
+    second: penitent_running_anim_6
+  - first:
+      213: 8015135941781249475
+    second: penitent_running_anim_7
+  - first:
+      213: -3000407740817303996
+    second: penitent_running_anim_8
+  - first:
+      213: 7423582299162546576
+    second: penitent_running_anim_9
+  - first:
+      213: -6741853151367102973
+    second: penitent_running_anim_10
+  - first:
+      213: -6049489540838923697
+    second: penitent_running_anim_11
+  - first:
+      213: -3729092618697131311
+    second: penitent_running_anim_12
+  - first:
+      213: 23731026712525622
+    second: penitent_running_anim_13
+  - first:
+      213: -7001767112681555453
+    second: penitent_running_anim_15
+  - first:
+      213: 3941008037081845095
+    second: penitent_running_anim_16
+  - first:
+      213: 3457187574359288274
+    second: penitent_running_anim_17
+  - first:
+      213: -6242602895261819459
+    second: penitent_running_anim_18
+  - first:
+      213: -5418627200891013055
+    second: penitent_running_anim_19
+  - first:
+      213: 1743308892136799079
+    second: penitent_running_anim_20
+  - first:
+      213: -3129061456189753452
+    second: penitent_running_anim_21
+  - first:
+      213: 4108523280809187130
+    second: penitent_running_anim_22
+  - first:
+      213: 8962282253357541406
+    second: penitent_running_anim_23
+  - first:
+      213: -4293792786015503385
+    second: penitent_running_anim_24
+  - first:
+      213: 5528133891888135831
+    second: penitent_running_anim_25
+  - first:
+      213: -5177925835319738281
+    second: penitent_running_anim_26
+  - first:
+      213: -2252610952997544090
+    second: penitent_running_anim_27
+  - first:
+      213: -6679789181654418523
+    second: penitent_running_anim_28
+  - first:
+      213: -3577875254670877762
+    second: penitent_running_anim_29
+  - first:
+      213: -8045238221678525925
+    second: penitent_running_anim_30
+  - first:
+      213: -2666578244507025715
+    second: penitent_running_anim_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_running_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 76
+        height: 67
+      alignment: 9
+      pivot: {x: 0.7, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39641d4b64194810800000000000000
+      internalID: 1749952381297387837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 138
+        width: 71
+        height: 67
+      alignment: 9
+      pivot: {x: 0.68, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1bdfd9343fe0410800000000000000
+      internalID: 1445360002171515315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 135
+        width: 68
+        height: 66
+      alignment: 9
+      pivot: {x: 0.73, y: 0.378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abecd8f31d8e493b0800000000000000
+      internalID: -5506520458955206982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 130
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.7, y: 0.374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60b07f212fecb590800000000000000
+      internalID: -7656982340627812242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 76
+        height: 67
+      alignment: 9
+      pivot: {x: 0.68, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6185cea9de2d48c90800000000000000
+      internalID: -7168372788918724586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 69
+        width: 70
+        height: 69
+      alignment: 9
+      pivot: {x: 0.72, y: 0.362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd91c7d68dff41c0800000000000000
+      internalID: -4517113145642082874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 68
+        width: 71
+        height: 67
+      alignment: 9
+      pivot: {x: 0.68, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e6896697ba58130800000000000000
+      internalID: 3568446817661644389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 65
+        width: 69
+        height: 65
+      alignment: 9
+      pivot: {x: 0.72, y: 0.365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd565c4cab7b3f60800000000000000
+      internalID: 8015135941781249475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 78
+        height: 70
+      alignment: 9
+      pivot: {x: 0.67, y: 0.355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446904b7e096c56d0800000000000000
+      internalID: -3000407740817303996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 72
+        height: 69
+      alignment: 9
+      pivot: {x: 0.7, y: 0.363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091167ee4ccd50760800000000000000
+      internalID: 7423582299162546576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 73
+        height: 68
+      alignment: 9
+      pivot: {x: 0.7, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e7ae857402072a0800000000000000
+      internalID: -6741853151367102973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 76
+        height: 65
+      alignment: 9
+      pivot: {x: 0.67, y: 0.355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42eadd6055eb0ca0800000000000000
+      internalID: -6049489540838923697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 0
+        width: 67
+        height: 66
+      alignment: 9
+      pivot: {x: 0.73, y: 0.378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab608550a9f3cc0800000000000000
+      internalID: -3729092618697131311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_running_anim_13
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 68
+        height: 65
+      alignment: 9
+      pivot: {x: 0.72, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bfa593e3f445000800000000000000
+      internalID: 23731026712525622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

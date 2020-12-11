@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 4ddef77657d8d114f81523ca67cc316e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1882972801675414564
+    second: penitent_wallclimbing_contact_anim_0
+  - first:
+      213: 1950197656173147590
+    second: penitent_wallclimbing_contact_anim_1
+  - first:
+      213: -5589555982060073441
+    second: penitent_wallclimbing_contact_anim_2
+  - first:
+      213: -630447523844980277
+    second: penitent_wallclimbing_contact_anim_3
+  - first:
+      213: 3331709473640624631
+    second: penitent_wallclimbing_contact_anim_4
+  - first:
+      213: 1836863024173464275
+    second: penitent_wallclimbing_contact_anim_5
+  - first:
+      213: -60319900125800967
+    second: penitent_wallclimbing_contact_anim_6
+  - first:
+      213: -2063861282106518579
+    second: penitent_wallclimbing_contact_anim_7
+  - first:
+      213: 6232850669418008978
+    second: penitent_wallclimbing_contact_anim_8
+  - first:
+      213: 4565282290220274188
+    second: penitent_wallclimbing_contact_anim_9
+  - first:
+      213: -6780781392864784284
+    second: penitent_wallclimbing_contact_anim_10
+  - first:
+      213: 1747504121149912210
+    second: penitent_wallclimbing_contact_anim_11
+  - first:
+      213: -2253124004342907477
+    second: penitent_wallclimbing_contact_anim_12
+  - first:
+      213: -4397872722134890767
+    second: penitent_wallclimbing_contact_anim_13
+  - first:
+      213: 8690722057579135577
+    second: penitent_wallclimbing_contact_anim_14
+  - first:
+      213: 8852754992331002895
+    second: penitent_wallclimbing_contact_anim_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd33a6a96365ed5e0800000000000000
+      internalID: -1882972801675414564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 130
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc102bb31533047f0800000000000000
+      internalID: -630447523844980277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f137273d1c9c3e20800000000000000
+      internalID: 3331709473640624631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 54
+        height: 66
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dab8e83039dd7910800000000000000
+      internalID: 1836863024173464275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 64
+        width: 53
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f55d14de53b92ff0800000000000000
+      internalID: -60319900125800967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 61
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49, y: 0.29}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3db564911bb53e0800000000000000
+      internalID: -2063861282106518579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 60
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.29}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29157b829a88f7650800000000000000
+      internalID: 6232850669418008978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_9
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 50
+        height: 62
+      alignment: 9
+      pivot: {x: 0.705, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0216f71e042b5f30800000000000000
+      internalID: 4565282290220274188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 198
+        width: 39
+        height: 68
+      alignment: 9
+      pivot: {x: 0.624, y: 0.29}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46057b2df33d5e1a0800000000000000
+      internalID: -6780781392864784284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 198
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5fff98f6e701b10800000000000000
+      internalID: 1950197656173147590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 198
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294fba05db1604810800000000000000
+      internalID: 1747504121149912210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 130
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e4625f278ed62b0800000000000000
+      internalID: -5589555982060073441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 130
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad3c36d7ab4bb0e0800000000000000
+      internalID: -2253124004342907477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 130
+        width: 42
+        height: 68
+      alignment: 9
+      pivot: {x: 0.65, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f605c56f0e97f2c0800000000000000
+      internalID: -4397872722134890767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 130
+        width: 46
+        height: 68
+      alignment: 9
+      pivot: {x: 0.685, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95208ab7aa5ab9870800000000000000
+      internalID: 8690722057579135577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_contact_anim_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f049479f2cd4bda70800000000000000
+      internalID: 8852754992331002895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

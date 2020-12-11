@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 22f4082f1f1cd9245bdbe5ff6e903370
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3826903058818434353
+    second: penitent_wallclimbing_unhang_anim_0
+  - first:
+      213: 1599920786700028089
+    second: penitent_wallclimbing_unhang_anim_1
+  - first:
+      213: 7602946401626395181
+    second: penitent_wallclimbing_unhang_anim_2
+  - first:
+      213: 4632701742745064438
+    second: penitent_wallclimbing_unhang_anim_3
+  - first:
+      213: 2980934591406946022
+    second: penitent_wallclimbing_unhang_anim_4
+  - first:
+      213: -171222872566885647
+    second: penitent_wallclimbing_unhang_anim_5
+  - first:
+      213: -5108432606168840044
+    second: penitent_wallclimbing_unhang_anim_6
+  - first:
+      213: -8303531436130227486
+    second: penitent_wallclimbing_unhang_anim_7
+  - first:
+      213: 3838536541221687761
+    second: penitent_wallclimbing_unhang_anim_8
+  - first:
+      213: -2977383859887275393
+    second: penitent_wallclimbing_unhang_anim_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 48
+        height: 68
+      alignment: 9
+      pivot: {x: 0.49, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca754d91fb14eac0800000000000000
+      internalID: -3826903058818434353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 128
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8c4009a7f043610800000000000000
+      internalID: 1599920786700028089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 58
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22964b5877138960800000000000000
+      internalID: 7602946401626395181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 61
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f317ae90b9aa4040800000000000000
+      internalID: 4632701742745064438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 61
+        width: 39
+        height: 68
+      alignment: 9
+      pivot: {x: 0.63, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e63c7b97386e5920800000000000000
+      internalID: 2980934591406946022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_5
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 61
+        width: 39
+        height: 68
+      alignment: 9
+      pivot: {x: 0.63, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f29a3f54b1bf9df0800000000000000
+      internalID: -171222872566885647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 59
+        height: 67
+      alignment: 9
+      pivot: {x: 0.53, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498884e3c933b19b0800000000000000
+      internalID: -5108432606168840044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 61
+        height: 61
+      alignment: 9
+      pivot: {x: 0.6, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea2b20272ee3cc80800000000000000
+      internalID: -8303531436130227486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 52
+        height: 57
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d110e495a8354530800000000000000
+      internalID: 3838536541221687761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_wallclimbing_unhang_anim_9
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 49
+        height: 59
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72007f77253ea6d0800000000000000
+      internalID: -2977383859887275393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
