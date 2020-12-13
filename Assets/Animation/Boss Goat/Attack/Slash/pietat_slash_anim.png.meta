@@ -329,7 +329,7 @@ TextureImporter:
         width: 186
         height: 185
       alignment: 9
-      pivot: {x: 0.565, y: 0.597}
+      pivot: {x: 0.5476, y: 0.6027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: pietat_slash_anim_5
       rect:
         serializedVersion: 2
-        x: 370
-        y: 1476
+        x: 367
+        y: 1473
         width: 143
         height: 197
       alignment: 9
-      pivot: {x: 0.503, y: 0.54}
+      pivot: {x: 0.50352, y: 0.566}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,7 +518,7 @@ TextureImporter:
         width: 205
         height: 185
       alignment: 9
-      pivot: {x: 0.605, y: 0.598}
+      pivot: {x: 0.5895, y: 0.603}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,7 +644,7 @@ TextureImporter:
         width: 146
         height: 191
       alignment: 9
-      pivot: {x: 0.51, y: 0.582}
+      pivot: {x: 0.493, y: 0.584}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,9 +682,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 220
-        y: 370
-        width: 145
-        height: 224
+        y: 369
+        width: 148
+        height: 225
       alignment: 9
       pivot: {x: 0.53, y: 0.485}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -749,7 +749,7 @@ TextureImporter:
         width: 218
         height: 185
       alignment: 9
-      pivot: {x: 0.628, y: 0.598}
+      pivot: {x: 0.614, y: 0.603}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -770,7 +770,7 @@ TextureImporter:
         width: 166
         height: 187
       alignment: 9
-      pivot: {x: 0.51, y: 0.595}
+      pivot: {x: 0.493, y: 0.5963}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -791,7 +791,7 @@ TextureImporter:
         width: 157
         height: 187
       alignment: 9
-      pivot: {x: 0.48, y: 0.593}
+      pivot: {x: 0.463, y: 0.5963}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -870,9 +870,9 @@ TextureImporter:
       name: pietat_slash_anim_29
       rect:
         serializedVersion: 2
-        x: 1274
+        x: 1286
         y: 369
-        width: 151
+        width: 139
         height: 176
       alignment: 9
       pivot: {x: 0.534, y: 0.628}
@@ -934,11 +934,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 188
-        width: 205
-        height: 206
+        y: 183
+        width: 220
+        height: 211
       alignment: 9
-      pivot: {x: 0.678, y: 0.513}
+      pivot: {x: 0.6175, y: 0.5285}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -975,12 +975,12 @@ TextureImporter:
       name: pietat_slash_anim_34
       rect:
         serializedVersion: 2
-        x: 467
+        x: 456
         y: 183
         width: 164
         height: 185
       alignment: 9
-      pivot: {x: 0.505, y: 0.598}
+      pivot: {x: 0.487, y: 0.6028}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1064,7 +1064,7 @@ TextureImporter:
         width: 156
         height: 186
       alignment: 9
-      pivot: {x: 0.48, y: 0.595}
+      pivot: {x: 0.4605, y: 0.5995}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1127,7 +1127,7 @@ TextureImporter:
         width: 152
         height: 184
       alignment: 9
-      pivot: {x: 0.482, y: 0.605}
+      pivot: {x: 0.475, y: 0.606}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1169,7 +1169,7 @@ TextureImporter:
         width: 258
         height: 183
       alignment: 9
-      pivot: {x: 0.285, y: 0.61}
+      pivot: {x: 0.28, y: 0.6101}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1190,7 +1190,7 @@ TextureImporter:
         width: 248
         height: 182
       alignment: 9
-      pivot: {x: 0.295, y: 0.615}
+      pivot: {x: 0.2913, y: 0.614}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1211,7 +1211,7 @@ TextureImporter:
         width: 228
         height: 182
       alignment: 9
-      pivot: {x: 0.321, y: 0.614}
+      pivot: {x: 0.31745613, y: 0.614}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1232,7 +1232,7 @@ TextureImporter:
         width: 210
         height: 180
       alignment: 9
-      pivot: {x: 0.348, y: 0.615}
+      pivot: {x: 0.34466666, y: 0.6154444}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1253,7 +1253,7 @@ TextureImporter:
         width: 191
         height: 181
       alignment: 9
-      pivot: {x: 0.387, y: 0.605}
+      pivot: {x: 0.37884817, y: 0.60662985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1274,7 +1274,7 @@ TextureImporter:
         width: 175
         height: 178
       alignment: 9
-      pivot: {x: 0.415, y: 0.61}
+      pivot: {x: 0.4136, y: 0.61685395}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1332,12 +1332,12 @@ TextureImporter:
       name: pietat_slash_anim_51
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 247
-        height: 184
+        x: 0
+        y: 0
+        width: 259
+        height: 183
       alignment: 9
-      pivot: {x: 0.282, y: 0.6}
+      pivot: {x: 0.279, y: 0.6085}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1355,8 +1355,8 @@ TextureImporter:
         serializedVersion: 2
         x: 368
         y: 370
-        width: 139
-        height: 220
+        width: 143
+        height: 222
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
