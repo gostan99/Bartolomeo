@@ -41,6 +41,45 @@ TextureImporter:
   - first:
       213: -3992982396982395689
     second: pietat_idle_anim_12
+  - first:
+      213: 524402036049715293
+    second: pietat_idle_anim_0
+  - first:
+      213: -3135405517166251849
+    second: pietat_idle_anim_1
+  - first:
+      213: -5036097002540084010
+    second: pietat_idle_anim_2
+  - first:
+      213: -3740854398993718028
+    second: pietat_idle_anim_3
+  - first:
+      213: -5454352119453500234
+    second: pietat_idle_anim_4
+  - first:
+      213: 6066360365912368763
+    second: pietat_idle_anim_5
+  - first:
+      213: -3040935346734749981
+    second: pietat_idle_anim_6
+  - first:
+      213: -2307478843563311932
+    second: pietat_idle_anim_7
+  - first:
+      213: 8144654700479021080
+    second: pietat_idle_anim_8
+  - first:
+      213: -3939937134532284542
+    second: pietat_idle_anim_9
+  - first:
+      213: 824143655733473244
+    second: pietat_idle_anim_10
+  - first:
+      213: 5798399862274445490
+    second: pietat_idle_anim_11
+  - first:
+      213: 3140550028051653019
+    second: pietat_idle_anim_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -143,17 +182,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 227
-        width: 140
+        width: 142
         height: 227
-      alignment: 9
-      pivot: {x: 0.53, y: 0.488}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ce60098f44f53e0800000000000000
-      internalID: -2062854269953446802
+      spriteID: d502c369fdc074700800000000000000
+      internalID: 524402036049715293
       vertices: []
       indices: 
       edges: []
@@ -164,17 +203,17 @@ TextureImporter:
         serializedVersion: 2
         x: 284
         y: 225
-        width: 141
+        width: 142
         height: 225
-      alignment: 9
-      pivot: {x: 0.525, y: 0.492}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed2b07122d113ad60800000000000000
-      internalID: 7900177765539820254
+      spriteID: 7b071825b4dcc74d0800000000000000
+      internalID: -3135405517166251849
       vertices: []
       indices: 
       edges: []
@@ -187,15 +226,15 @@ TextureImporter:
         y: 224
         width: 142
         height: 223
-      alignment: 9
-      pivot: {x: 0.52, y: 0.495}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b18089bc00c6bc30800000000000000
-      internalID: 4374895248921362870
+      spriteID: 6d4503565703c1ab0800000000000000
+      internalID: -5036097002540084010
       vertices: []
       indices: 
       edges: []
@@ -208,15 +247,15 @@ TextureImporter:
         y: 223
         width: 142
         height: 223
-      alignment: 9
-      pivot: {x: 0.52, y: 0.497}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50d05377d44c5f3b0800000000000000
-      internalID: -5479257534634849019
+      spriteID: 4f4a5877eb0d51cc0800000000000000
+      internalID: -3740854398993718028
       vertices: []
       indices: 
       edges: []
@@ -227,17 +266,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 141
+        width: 142
         height: 227
-      alignment: 9
-      pivot: {x: 0.525, y: 0.487}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa8f1efe19313ad0800000000000000
-      internalID: -2724333494307157250
+      spriteID: 6bc331055af3e44b0800000000000000
+      internalID: -5454352119453500234
       vertices: []
       indices: 
       edges: []
@@ -246,19 +285,19 @@ TextureImporter:
       name: pietat_idle_anim_5
       rect:
         serializedVersion: 2
-        x: 287
-        y: 0
-        width: 140
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 142
+        y: 227
+        width: 142
+        height: 226
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff48a92bc0b017a20800000000000000
-      internalID: 3058237771125261567
+      spriteID: b7627b1ac9a003450800000000000000
+      internalID: 6066360365912368763
       vertices: []
       indices: 
       edges: []
@@ -267,19 +306,19 @@ TextureImporter:
       name: pietat_idle_anim_6
       rect:
         serializedVersion: 2
-        x: 428
-        y: 0
+        x: 426
+        y: 225
         width: 142
         height: 224
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5048459bf1fd1d40800000000000000
-      internalID: 5556863578088685660
+      spriteID: 3e622f8e96d6cc5d0800000000000000
+      internalID: -3040935346734749981
       vertices: []
       indices: 
       edges: []
@@ -288,19 +327,19 @@ TextureImporter:
       name: pietat_idle_anim_7
       rect:
         serializedVersion: 2
-        x: 572
+        x: 142
         y: 0
-        width: 138
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 142
+        height: 227
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1a2852768ba7cde0800000000000000
-      internalID: -1312892172422862306
+      spriteID: 4ccfda2a7303affd0800000000000000
+      internalID: -2307478843563311932
       vertices: []
       indices: 
       edges: []
@@ -309,19 +348,19 @@ TextureImporter:
       name: pietat_idle_anim_8
       rect:
         serializedVersion: 2
-        x: 711
+        x: 284
         y: 0
-        width: 140
-        height: 222
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 142
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5959175315516200800000000000000
-      internalID: 171511802370808156
+      spriteID: 81084404c40a70170800000000000000
+      internalID: 8144654700479021080
       vertices: []
       indices: 
       edges: []
@@ -330,19 +369,19 @@ TextureImporter:
       name: pietat_idle_anim_9
       rect:
         serializedVersion: 2
-        x: 852
+        x: 426
         y: 0
-        width: 144
-        height: 223
-      alignment: 9
-      pivot: {x: 0.515, y: 0.497}
+        width: 142
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99cf1db70534881b0800000000000000
-      internalID: -5654195319209853799
+      spriteID: 28f25d20d088259c0800000000000000
+      internalID: -3939937134532284542
       vertices: []
       indices: 
       edges: []
@@ -351,19 +390,19 @@ TextureImporter:
       name: pietat_idle_anim_10
       rect:
         serializedVersion: 2
-        x: 140
-        y: 228
-        width: 144
-        height: 227
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 568
+        y: 0
+        width: 142
+        height: 224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b6b0d178abd9d20800000000000000
-      internalID: 3286988392520969003
+      spriteID: cdfa2e3d942ff6b00800000000000000
+      internalID: 824143655733473244
       vertices: []
       indices: 
       edges: []
@@ -372,19 +411,19 @@ TextureImporter:
       name: pietat_idle_anim_11
       rect:
         serializedVersion: 2
-        x: 424
-        y: 225
+        x: 710
+        y: 0
         width: 142
-        height: 227
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 223
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4380b147a9730a50800000000000000
-      internalID: 6486161647612232525
+      spriteID: 2b0da8814fd087050800000000000000
+      internalID: 5798399862274445490
       vertices: []
       indices: 
       edges: []
@@ -393,19 +432,19 @@ TextureImporter:
       name: pietat_idle_anim_12
       rect:
         serializedVersion: 2
-        x: 142
+        x: 852
         y: 0
-        width: 143
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 142
+        height: 223
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dcf9796aa31698c0800000000000000
-      internalID: -3992982396982395689
+      spriteID: b91ac557c99759b20800000000000000
+      internalID: 3140550028051653019
       vertices: []
       indices: 
       edges: []
