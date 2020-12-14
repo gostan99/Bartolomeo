@@ -5440,6 +5440,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028886, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
       propertyPath: m_SpriteSortPoint

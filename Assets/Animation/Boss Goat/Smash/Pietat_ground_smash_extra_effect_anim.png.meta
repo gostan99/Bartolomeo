@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: ee40ea9c31fcac94b9118f814ab3f14c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7619099560622240689
+    second: Pietat_ground_smash_extra_effect_anim_0
+  - first:
+      213: -5474836303426075468
+    second: Pietat_ground_smash_extra_effect_anim_1
+  - first:
+      213: -3802509372998103242
+    second: Pietat_ground_smash_extra_effect_anim_2
+  - first:
+      213: -5246995650863537291
+    second: Pietat_ground_smash_extra_effect_anim_3
+  - first:
+      213: -7884272537700106352
+    second: Pietat_ground_smash_extra_effect_anim_4
+  - first:
+      213: 6935021562256088202
+    second: Pietat_ground_smash_extra_effect_anim_5
+  - first:
+      213: -6287703829334817193
+    second: Pietat_ground_smash_extra_effect_anim_6
+  - first:
+      213: 6878892133989020022
+    second: Pietat_ground_smash_extra_effect_anim_7
+  - first:
+      213: -7191444872713113307
+    second: Pietat_ground_smash_extra_effect_anim_8
+  - first:
+      213: 6706449723113372426
+    second: Pietat_ground_smash_extra_effect_anim_9
+  - first:
+      213: -633642796190784911
+    second: Pietat_ground_smash_extra_effect_anim_10
+  - first:
+      213: 2895817244564609315
+    second: Pietat_ground_smash_extra_effect_anim_11
+  - first:
+      213: -751445103116546811
+    second: Pietat_ground_smash_extra_effect_anim_12
+  - first:
+      213: -2523452998138369221
+    second: Pietat_ground_smash_extra_effect_anim_13
+  - first:
+      213: -1841064018431835782
+    second: Pietat_ground_smash_extra_effect_anim_14
+  - first:
+      213: 4479480391895985319
+    second: Pietat_ground_smash_extra_effect_anim_15
+  - first:
+      213: 4558283024517752595
+    second: Pietat_ground_smash_extra_effect_anim_16
+  - first:
+      213: -493467657897268712
+    second: Pietat_ground_smash_extra_effect_anim_17
+  - first:
+      213: -2577015910586883473
+    second: Pietat_ground_smash_extra_effect_anim_18
+  - first:
+      213: -3050109287340095798
+    second: Pietat_ground_smash_extra_effect_anim_19
+  - first:
+      213: 829658080997728495
+    second: Pietat_ground_smash_extra_effect_anim_20
+  - first:
+      213: -2886302214394806952
+    second: Pietat_ground_smash_extra_effect_anim_21
+  - first:
+      213: -6433724981627404429
+    second: Pietat_ground_smash_extra_effect_anim_22
+  - first:
+      213: -1860167651945463828
+    second: Pietat_ground_smash_extra_effect_anim_23
+  - first:
+      213: 3604380384805256061
+    second: Pietat_ground_smash_extra_effect_anim_24
+  - first:
+      213: 2300497419769865485
+    second: Pietat_ground_smash_extra_effect_anim_25
+  - first:
+      213: 4751049394572873295
+    second: Pietat_ground_smash_extra_effect_anim_26
+  - first:
+      213: 1837058318693716862
+    second: Pietat_ground_smash_extra_effect_anim_27
+  - first:
+      213: -5564945412841703730
+    second: Pietat_ground_smash_extra_effect_anim_28
+  - first:
+      213: -7476980785066101618
+    second: Pietat_ground_smash_extra_effect_anim_29
+  - first:
+      213: 1259947093779587473
+    second: Pietat_ground_smash_extra_effect_anim_30
+  - first:
+      213: -7408294073855687645
+    second: Pietat_ground_smash_extra_effect_anim_31
+  - first:
+      213: -2214029344735907416
+    second: Pietat_ground_smash_extra_effect_anim_32
+  - first:
+      213: 1029919048860107640
+    second: Pietat_ground_smash_extra_effect_anim_33
+  - first:
+      213: -4455400978031753730
+    second: Pietat_ground_smash_extra_effect_anim_34
+  - first:
+      213: 1056749706966091045
+    second: Pietat_ground_smash_extra_effect_anim_35
+  - first:
+      213: 6567145883055558384
+    second: Pietat_ground_smash_extra_effect_anim_36
+  - first:
+      213: 7647033211209146416
+    second: Pietat_ground_smash_extra_effect_anim_37
+  - first:
+      213: 2299390449823383969
+    second: Pietat_ground_smash_extra_effect_anim_38
+  - first:
+      213: -595242641250711300
+    second: Pietat_ground_smash_extra_effect_anim_39
+  - first:
+      213: 804562696609360835
+    second: Pietat_ground_smash_extra_effect_anim_40
+  - first:
+      213: 7952875802845523708
+    second: Pietat_ground_smash_extra_effect_anim_41
+  - first:
+      213: -8878986063433289433
+    second: Pietat_ground_smash_extra_effect_anim_42
+  - first:
+      213: 8969044831563004449
+    second: Pietat_ground_smash_extra_effect_anim_43
+  - first:
+      213: -1686592061418662019
+    second: Pietat_ground_smash_extra_effect_anim_44
+  - first:
+      213: 6918768262619660539
+    second: Pietat_ground_smash_extra_effect_anim_45
+  - first:
+      213: -5574131660934778611
+    second: Pietat_ground_smash_extra_effect_anim_46
+  - first:
+      213: -1145710079174469528
+    second: Pietat_ground_smash_extra_effect_anim_47
+  - first:
+      213: 791321597544435352
+    second: Pietat_ground_smash_extra_effect_anim_48
+  - first:
+      213: 110250588053464890
+    second: Pietat_ground_smash_extra_effect_anim_49
+  - first:
+      213: -1174326547869862831
+    second: Pietat_ground_smash_extra_effect_anim_50
+  - first:
+      213: 4364442003284955133
+    second: Pietat_ground_smash_extra_effect_anim_51
+  - first:
+      213: -1776455797776775007
+    second: Pietat_ground_smash_extra_effect_anim_52
+  - first:
+      213: 1481545642974263115
+    second: Pietat_ground_smash_extra_effect_anim_53
+  - first:
+      213: 931068229938465318
+    second: Pietat_ground_smash_extra_effect_anim_54
+  - first:
+      213: -5170419271170102324
+    second: Pietat_ground_smash_extra_effect_anim_55
+  - first:
+      213: -7527202454066462695
+    second: Pietat_ground_smash_extra_effect_anim_56
+  - first:
+      213: 1799657930426015595
+    second: Pietat_ground_smash_extra_effect_anim_57
+  - first:
+      213: 3400789393480855065
+    second: Pietat_ground_smash_extra_effect_anim_58
+  - first:
+      213: 2355031978496178351
+    second: Pietat_ground_smash_extra_effect_anim_59
+  - first:
+      213: -1166433617905380788
+    second: Pietat_ground_smash_extra_effect_anim_60
+  - first:
+      213: 2261929168774595278
+    second: Pietat_ground_smash_extra_effect_anim_61
+  - first:
+      213: 7496544928815815849
+    second: Pietat_ground_smash_extra_effect_anim_62
+  - first:
+      213: 8571119175553133585
+    second: Pietat_ground_smash_extra_effect_anim_63
+  - first:
+      213: 887427758878302888
+    second: Pietat_ground_smash_extra_effect_anim_64
+  - first:
+      213: 5564604918240823257
+    second: Pietat_ground_smash_extra_effect_anim_65
+  - first:
+      213: -6466492483147930845
+    second: Pietat_ground_smash_extra_effect_anim_66
+  - first:
+      213: -4530177572854868889
+    second: Pietat_ground_smash_extra_effect_anim_67
+  - first:
+      213: 8298890656373117563
+    second: Pietat_ground_smash_extra_effect_anim_68
+  - first:
+      213: -4071619900153778427
+    second: Pietat_ground_smash_extra_effect_anim_69
+  - first:
+      213: 5261074521051955788
+    second: Pietat_ground_smash_extra_effect_anim_70
+  - first:
+      213: -1774923117424035048
+    second: Pietat_ground_smash_extra_effect_anim_71
+  - first:
+      213: -4675918880633495528
+    second: Pietat_ground_smash_extra_effect_anim_72
+  - first:
+      213: 6141215354045614229
+    second: Pietat_ground_smash_extra_effect_anim_73
+  - first:
+      213: -899340062001072798
+    second: Pietat_ground_smash_extra_effect_anim_74
+  - first:
+      213: -3921154578050031137
+    second: Pietat_ground_smash_extra_effect_anim_75
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 714
+        width: 249
+        height: 181
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b440e293697504b0800000000000000
+      internalID: -5474836303426075468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 702
+        width: 182
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fca5f2fd5ca3bc0800000000000000
+      internalID: -3802509372998103242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_3
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 720
+        width: 142
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573624c514dee27b0800000000000000
+      internalID: -5246995650863537291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_4
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 687
+        width: 147
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f740e46ef659290800000000000000
+      internalID: -7884272537700106352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_5
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 686
+        width: 146
+        height: 227
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cd2f71e552e3060800000000000000
+      internalID: 6935021562256088202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_6
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 685
+        width: 142
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75682af4ea69db8a0800000000000000
+      internalID: -6287703829334817193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 685
+        width: 142
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671f4ae23fbb67f50800000000000000
+      internalID: 6878892133989020022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_8
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 646
+        width: 141
+        height: 188
+      alignment: 9
+      pivot: {x: 0.504, y: -0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521712c7dfad23c90800000000000000
+      internalID: -7191444872713113307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 315
+        height: 145
+      alignment: 9
+      pivot: {x: 0.482, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172209aeb39d437f0800000000000000
+      internalID: -633642796190784911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_13
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 557
+        width: 269
+        height: 145
+      alignment: 9
+      pivot: {x: 0.54, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b61963ed4eafcd0800000000000000
+      internalID: -2523452998138369221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 601
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a710e94970a3376e0800000000000000
+      internalID: -1841064018431835782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_15
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 490
+        width: 142
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aca941eeaf4a2e30800000000000000
+      internalID: 4479480391895985319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_16
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 458
+        width: 148
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317e21e8246424f30800000000000000
+      internalID: 4558283024517752595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_17
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 458
+        width: 146
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81aa3e697c9d629f0800000000000000
+      internalID: -493467657897268712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_18
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 456
+        width: 142
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6260f4dea99c3cd0800000000000000
+      internalID: -2577015910586883473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_19
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 456
+        width: 142
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac649f963c5dba5d0800000000000000
+      internalID: -3050109287340095798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_20
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 455
+        width: 141
+        height: 191
+      alignment: 9
+      pivot: {x: 0.504, y: -0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0e6e201a9838b00800000000000000
+      internalID: 829658080997728495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 321
+        height: 144
+      alignment: 9
+      pivot: {x: 0.492, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05e518f6320def10800000000000000
+      internalID: 2300497419769865485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_28
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 424
+        width: 296
+        height: 133
+      alignment: 9
+      pivot: {x: 0.54, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67121a1a755c2b0800000000000000
+      internalID: -5564945412841703730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_29
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 256
+        width: 142
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84b6b9379d6c3890800000000000000
+      internalID: -7476980785066101618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_32
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 230
+        width: 148
+        height: 229
+      alignment: 9
+      pivot: {x: 0.52, y: -0.005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1b9b89a003641e0800000000000000
+      internalID: -2214029344735907416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_33
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 228
+        width: 145
+        height: 230
+      alignment: 9
+      pivot: {x: 0.51, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87307be0be10b4e00800000000000000
+      internalID: 1029919048860107640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_34
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 227
+        width: 142
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: -0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef54d7c8a6c3b22c0800000000000000
+      internalID: -4455400978031753730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 328
+        height: 143
+      alignment: 9
+      pivot: {x: 0.503, y: 0.074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0306cbb9038bf1a60800000000000000
+      internalID: 7647033211209146416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_39
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 266
+        width: 178
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf80615b8f54db7f0800000000000000
+      internalID: -595242641250711300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 335
+        height: 138
+      alignment: 9
+      pivot: {x: 0.58, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7213a6bd73187c480800000000000000
+      internalID: -8878986063433289433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_45
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 132
+        width: 341
+        height: 134
+      alignment: 9
+      pivot: {x: 0.57, y: 0.048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf001b0e317640060800000000000000
+      internalID: 6918768262619660539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_46
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 0
+        width: 142
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0179b299c4b4a2b0800000000000000
+      internalID: -5574131660934778611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_47
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 0
+        width: 148
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8689833d0ce9910f0800000000000000
+      internalID: -1145710079174469528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_48
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 0
+        width: 147
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e0bb4ecc65bfa00800000000000000
+      internalID: 791321597544435352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_49
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 0
+        width: 146
+        height: 227
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3764316350b78100800000000000000
+      internalID: 110250588053464890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_50
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 143
+        height: 224
+      alignment: 9
+      pivot: {x: 0.495, y: -0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154f7eff934f3bfe0800000000000000
+      internalID: -1174326547869862831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_51
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 0
+        width: 140
+        height: 223
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff0890d0ec919c30800000000000000
+      internalID: 4364442003284955133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_52
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 0
+        width: 140
+        height: 222
+      alignment: 9
+      pivot: {x: 0.5, y: 0.005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8055e2dd2c857e0800000000000000
+      internalID: -1776455797776775007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 348
+        height: 143
+      alignment: 9
+      pivot: {x: 0.58, y: 0.075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323eb37f8576246a0800000000000000
+      internalID: -6466492483147930845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_68
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 384
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b729de225159b2370800000000000000
+      internalID: 8298890656373117563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_0
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 0
+        width: 140
+        height: 222
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b33933ceaa7cb960800000000000000
+      internalID: 7619099560622240689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_9
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 142
+        height: 221
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b703aad78121d50800000000000000
+      internalID: 6706449723113372426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_11
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 227
+        width: 143
+        height: 208
+      alignment: 9
+      pivot: {x: 0.494, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32959b4f072003820800000000000000
+      internalID: 2895817244564609315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_12
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 227
+        width: 142
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d0888f8a45295f0800000000000000
+      internalID: -751445103116546811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_21
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 227
+        width: 142
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85df294ad6bc1f7d0800000000000000
+      internalID: -2886302214394806952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_22
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 227
+        width: 142
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fba8f6731d6b6a0800000000000000
+      internalID: -6433724981627404429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pietat_ground_smash_extra_effect_anim_23
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 227
+        width: 144
+        height: 229
+      alignment: 9
+      pivot: {x: 0.508, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef3e1b406b5f26e0800000000000000
+      internalID: -1860167651945463828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
