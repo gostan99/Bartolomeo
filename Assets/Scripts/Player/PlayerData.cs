@@ -65,7 +65,11 @@ namespace Assets.Scripts.Player
                 { "Tiep_dat_Animation", 0.571f },
                 { "Stop_Run_Animation", 0.175f },
                 { "Left_swing_attack", 0.5f },
-                {"Right_swing_attack",0.389f }
+                {"Right_swing_attack",0.389f },
+                {"Upward_clamped",0.6f },
+                {"Downward",0.444f },
+                {"Right_swing_jump",0.385f },
+                {"Left_swing_jump",0.417f }
             };
         }
     }

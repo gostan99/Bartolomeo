@@ -23,6 +23,8 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.AttackInput = false;
             hasAttackTwice = false;
+            pInput.UpwardAttackInput = false;
+            pInput.DownwardAttackInput = false;
         }
 
         public override void Exit()
@@ -36,11 +38,19 @@ namespace Assets.Scripts.Player
             if (timer <= animationLength && pInput.AttackInput)
             {
                 hasAttackTwice = true;
-                pController.StartCoroutine(WaitAfter(animationLength - timer));
+                pController.StartCoroutine(WaitAfter(animationLength - timer)); 
             }
             else if (timer >= animationLength && pInput.xInput == 0 && !hasAttackTwice)
             {
                 newState = pController.IdleState;
+            }
+            else if (timer >= animationLength && pInput.yInput<0 )
+            {
+                newState = pController.GroundedUpwardAttackState;
+            }
+            else if (timer >= animationLength && pInput.yInput > 0)
+            {
+                newState = pController.GroundedDownwardAttackState;
             }
         }
 

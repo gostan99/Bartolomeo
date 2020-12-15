@@ -10,11 +10,15 @@ namespace Assets.Scripts.Player
     public class PlayerInput
     {
         public float xInput { get; private set; }
+        public float yInput { get; private set; }
+        
 
         public bool DashInput { get; private set; }
 
         public bool JumpInput { get; private set; }
         public bool AttackInput { get; set; }
+        public bool UpwardAttackInput { get; set; }
+        public bool DownwardAttackInput { get; set; }
         float jumpInputHoldTime;
         public int JumpInputCounter = 0;
         
@@ -68,20 +72,27 @@ namespace Assets.Scripts.Player
         private void OnAttackInput()
         {
             if (Input.GetKeyDown(KeyCode.Mouse0) )
-            { 
-                AttackInput = true;              
+            {
+                AttackInput = true;             
             }
             else 
             {
                 AttackInput = false;
-            }
+            } 
         }
+
+        private void OnVerticalInput()
+        {
+            yInput = Input.GetAxis("Vertical");
+        }
+        
         public void InputUpdate()
         {
             OnJumpInput();
             OnRunInput();
             OnDashInput();
-            OnAttackInput();
+            OnAttackInput();          
+            OnVerticalInput();
         }
     }
 }

@@ -25,6 +25,10 @@ public partial class PlayerController : MonoBehaviour
     public StopDashingState StopDashingState { get; private set; }
     public PrimaryAttackState PrimaryAttackState { get; private set; }
     public GroundedSecondaryAttackState GroundedSecondaryAttackState { get; private set; }
+    public GroundedUpwardAttackState GroundedUpwardAttackState { get; private set; }
+    public GroundedDownwardAttackState GroundedDownwardAttackState { get; private set; }
+    public InAirPrimaryAttackState InAirPrimaryAttackState { get; private set; }    
+    public InAirSecondaryAttackState InAirSecondaryAttackState { get; private set; }
     #endregion
 
     public PlayerState currentState { get; private set; }
@@ -51,6 +55,11 @@ public partial class PlayerController : MonoBehaviour
         StopDashingState = new StopDashingState( this,  pInput,  pData, "Stop_Run_Animation");
         PrimaryAttackState = new PrimaryAttackState(this, pInput, pData, "Left_swing_attack");
         GroundedSecondaryAttackState = new GroundedSecondaryAttackState(this, pInput, pData, "Right_swing_attack");
+        GroundedUpwardAttackState = new GroundedUpwardAttackState(this, pInput,pData, "Upward_clamped");
+        GroundedDownwardAttackState = new GroundedDownwardAttackState(this, pInput, pData, "Downward"); ;
+        InAirPrimaryAttackState = new InAirPrimaryAttackState(this, pInput, pData, "Right_swing_jump");
+        InAirSecondaryAttackState = new InAirSecondaryAttackState(this, pInput, pData, "Left_swing_jump");
+
         currentState = IdleState;
         #endregion
 

@@ -56,6 +56,15 @@ namespace Assets.Scripts.Player
                 newState = pController.DashingState;
                 pData.canDash = false;
             }
+            else if (pInput.AttackInput)
+            {
+                newState = pController.InAirPrimaryAttackState;
+            }
+            else if (pInput.AttackInput)
+            {
+                newState = pController.InAirPrimaryAttackState;
+            }
+
         }
 
         public override void PhysicUpdate()

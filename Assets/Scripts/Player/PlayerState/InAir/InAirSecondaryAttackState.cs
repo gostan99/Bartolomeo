@@ -8,24 +8,22 @@ using UnityEngine;
 
 namespace Assets.Scripts.Player
 {
-    public class PrimaryAttackState : PlayerState
+    public class InAirSecondaryAttackState : PlayerState
     {
-
         float animationLength;
-        bool hasAttackTwice = false;
-        public PrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
+        bool hasAttackTwice;
+        public InAirSecondaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
-            timer = 0f;
+            timer = 0F;
             newState = this;
             pInput.AttackInput = false;
             hasAttackTwice = false;
-            pInput.UpwardAttackInput = false;
-            pInput.DownwardAttackInput = false;
+
         }
 
         public override void Exit()
@@ -36,36 +34,33 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-
-            if (timer <= animationLength && pInput.AttackInput)
+            FacingDirectionUpdate();
+            //if (timer <= animationLength && pInput.AttackInput)
+            //{
+            //    hasAttackTwice = true;
+            //    pController.StartCoroutine(WaitAfter(animationLength - timer));
+            //}
+            if(timer >=animationLength && pInput.AttackInput)
             {
-                hasAttackTwice = true;
-                pController.StartCoroutine(WaitAfter(animationLength - timer));
+                newState = pController.InAirPrimaryAttackState;
             }
             else if (timer >= animationLength && pInput.xInput == 0 && !hasAttackTwice)
             {
                 newState = pController.IdleState;
             }
-            else if (timer >= animationLength && pInput.yInput < 0)
-            {
-                newState = pController.GroundedUpwardAttackState;
-            }
-            else if (timer >= animationLength && pInput.yInput > 0)
-            {
-                newState = pController.GroundedDownwardAttackState;
-            }
+            //Debug.Log(pInput.AttackInput);
         }
 
         public override void PhysicUpdate()
         {
-            pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
-        }
+            pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
 
+        }
 
         IEnumerator WaitAfter(float seconds)
         {
             yield return new WaitForSeconds(seconds);
-            newState = pController.GroundedSecondaryAttackState;
+            newState = pController.PrimaryAttackState;
         }
 
     }

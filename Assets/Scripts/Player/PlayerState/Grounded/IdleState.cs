@@ -39,10 +39,21 @@ namespace Assets.Scripts.Player
                 newState = pController.DashingState;
 
             }
-            else if(pInput.AttackInput)
+            else if(pInput.AttackInput && pInput.yInput == 0)
             {
                 newState = pController.PrimaryAttackState;
             }
+            else if (pInput.yInput<0 && pInput.AttackInput)
+            {
+                newState = pController.GroundedUpwardAttackState;
+            }
+            else if (pInput.yInput>0 && pInput.AttackInput)
+            {
+                newState = pController.GroundedDownwardAttackState;
+            }
+
+            //Debug.Log(pInput.JumpInput && pInput.AttackInput);
+            
         }
 
         public override void PhysicUpdate()
@@ -54,6 +65,8 @@ namespace Assets.Scripts.Player
             pInput.JumpInputCounter = 0;
             newState = this;
             pData.canDash = true;
+            pInput.DownwardAttackInput = false;
+            
         }
 
         public override void Exit()

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,12 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
-{ 
-    public class GroundedUpwardAttackState : PlayerState
+{
+    public class GroundedDownwardAttackState : PlayerState
     {
+
         float animationLength;
-        public GroundedUpwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
+        public GroundedDownwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
@@ -20,8 +20,8 @@ namespace Assets.Scripts.Player
             pInput.JumpInputCounter = 0;
             timer = 0f;
             newState = this;
-            pInput.UpwardAttackInput = false;
-            
+            //pInput.DownwardAttackInput = false;
+
         }
 
         public override void Exit()
@@ -33,7 +33,7 @@ namespace Assets.Scripts.Player
             pInput.InputUpdate();
             timer += Time.deltaTime;
             FacingDirectionUpdate();
-            if (timer >= animationLength  && pInput.xInput == 0 )
+            if (timer >= animationLength && pInput.xInput == 0)
             {
                 newState = pController.IdleState;
             }
