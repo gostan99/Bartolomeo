@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Entity
+  - Grounded
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Ground
   - Parallax
   - Wall
-  - Damageable
-  - 
+  - Entity
+  - Player
   - 
   - 
   - 

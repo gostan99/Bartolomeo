@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasicEnemy : MonoBehaviour
 {
     public float Speed = 150f;
-    private float direction = 1;          //hướng di chuyển
+    private int direction = 1;          //hướng di chuyển
     private Rigidbody2D rb;
     private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast
     private int groundMask;               //Ground layer
@@ -16,6 +16,7 @@ public class BasicEnemy : MonoBehaviour
         groundDetector = transform.Find("GroundDetector");
         groundMask = LayerMask.GetMask("Ground");
         rb = GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame
@@ -24,6 +25,13 @@ public class BasicEnemy : MonoBehaviour
         Patrol();
         DirectionUpdate();
         FacingDirectionUpdate();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+            Debug.Log(collision.gameObject.layer);
+        
     }
 
     void DirectionUpdate()

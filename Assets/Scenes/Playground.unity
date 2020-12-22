@@ -4466,6 +4466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 659628290, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4531,16 +4535,41 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2053253114307555602, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3646276665884221049, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221049, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: far clip plane
       value: 481
       objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 7479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507104, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: near clip plane
@@ -4561,10 +4590,25 @@ PrefabInstance:
       propertyPath: field of view
       value: 34.640213
       objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162326, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3646276666973949323, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: near clip plane
       value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666973949326, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914537460694683475, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
@@ -10871,11 +10915,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2633465494576976841, guid: 87b1f8d613b366b4faca60e760b55775,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10935,16 +10974,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Devil
-      objectReference: {fileID: 0}
-    - target: {fileID: 2633465495222359961, guid: 87b1f8d613b366b4faca60e760b55775,
-        type: 3}
-      propertyPath: m_TagString
-      value: Entity
-      objectReference: {fileID: 0}
-    - target: {fileID: 2633465495222359961, guid: 87b1f8d613b366b4faca60e760b55775,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b1f8d613b366b4faca60e760b55775, type: 3}
