@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006689}
   - component: {fileID: 1006690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ Transform:
   m_Children:
   - {fileID: 698811890}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113794785
 GameObject:
@@ -888,7 +888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199542176}
   - component: {fileID: 199542177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278089812}
   - component: {fileID: 278089813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292528600}
   - component: {fileID: 292528601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1948,7 +1948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 338183431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vach Nui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1992,7 +1992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 345557369}
   - component: {fileID: 345557370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2074,7 +2074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347089256}
   - component: {fileID: 347089257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 347788428}
   - component: {fileID: 347788430}
   - component: {fileID: 347788429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2346,7 +2346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 382764120}
   - component: {fileID: 382764121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_32 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,7 +3043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540940390}
   - component: {fileID: 540940391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3368,7 +3368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603815413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3406,7 +3406,7 @@ Transform:
   - {fileID: 1818596778}
   - {fileID: 338183431}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604758850
 GameObject:
@@ -3499,7 +3499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638897130}
   - component: {fileID: 638897131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_51 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3661,7 +3661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661259549}
   - component: {fileID: 661259550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4020,7 +4020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707114509}
   - component: {fileID: 707114510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4387,7 +4387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 790626092}
   - component: {fileID: 790626093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4459,6 +4459,115 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &826991748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 836
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 889
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221049, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666973949323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &827982609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,7 +4943,7 @@ GameObject:
   - component: {fileID: 868497460}
   - component: {fileID: 868497462}
   - component: {fileID: 868497461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906743872}
   - component: {fileID: 906743873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5295,89 +5404,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &911070883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 911070884}
-  - component: {fileID: 911070886}
-  - component: {fileID: 911070885}
-  m_Layer: 0
-  m_Name: BackGroundCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &911070884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911070883}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2002371927}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &911070885
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911070883}
-  m_Enabled: 1
---- !u!20 &911070886
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911070883}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 316
-  far clip plane: 2000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 180
-  m_Depth: -3
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 311
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &912434330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5423,7 +5449,7 @@ PrefabInstance:
     - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
@@ -5820,7 +5846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951436051}
   - component: {fileID: 951436052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5902,7 +5928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963455745}
   - component: {fileID: 963455746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_32 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6517,7 +6543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118923521}
   - component: {fileID: 1118923522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6599,7 +6625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130825863}
   - component: {fileID: 1130825864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7089,7 +7115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241717258}
   - component: {fileID: 1241717259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7365,7 +7391,7 @@ Transform:
   - {fileID: 435500737}
   - {fileID: 1112191572}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308399288
 GameObject:
@@ -7460,7 +7486,7 @@ GameObject:
   - component: {fileID: 1320643608}
   - component: {fileID: 1320643610}
   - component: {fileID: 1320643609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7557,89 +7583,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1333034683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1333034684}
-  - component: {fileID: 1333034686}
-  - component: {fileID: 1333034685}
-  m_Layer: 0
-  m_Name: Parallax Camera Near
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1333034684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333034683}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2002371927}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1333034685
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333034683}
-  m_Enabled: 1
---- !u!20 &1333034686
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333034683}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 3
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.01
-  far clip plane: 316
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 512
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &1344912459
 GameObject:
   m_ObjectHideFlags: 0
@@ -8059,7 +8002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1532550051}
   - component: {fileID: 1532550052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forest-spritesheet_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8141,7 +8084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534300167}
   - component: {fileID: 1534300168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_32 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8387,7 +8330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563081694}
   - component: {fileID: 1563081695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8469,7 +8412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576630929}
   - component: {fileID: 1576630930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_31 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9122,7 +9065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1694862925}
   - component: {fileID: 1694862926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9285,7 +9228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1709850779}
   - component: {fileID: 1709850780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_32 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9366,7 +9309,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1716222646}
-  - component: {fileID: 1716222645}
   m_Layer: 9
   m_Name: BG
   m_TagString: Untagged
@@ -9374,18 +9316,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1716222645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716222644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 511580ce666b6954fbcaf03a33af95a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1716222646
 Transform:
   m_ObjectHideFlags: 0
@@ -9399,7 +9329,7 @@ Transform:
   m_Children:
   - {fileID: 1522258220}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745608814
 GameObject:
@@ -9563,89 +9493,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1795382349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1795382350}
-  - component: {fileID: 1795382352}
-  - component: {fileID: 1795382351}
-  m_Layer: 0
-  m_Name: Parallax Camera Far
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1795382350
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795382349}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2002371927}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1795382351
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795382349}
-  m_Enabled: 1
---- !u!20 &1795382352
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795382349}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 316
-  far clip plane: 2000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 512
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &1818596777
 GameObject:
   m_ObjectHideFlags: 0
@@ -9656,7 +9503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818596778}
   - component: {fileID: 1818596779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10146,7 +9993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908829075}
   - component: {fileID: 1908829076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10228,7 +10075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950552634}
   - component: {fileID: 1950552635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10310,7 +10157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957802674}
   - component: {fileID: 1957802675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: churches-field-spritesheet-improved_65 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10464,92 +10311,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2002371924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2002371927}
-  - component: {fileID: 2002371926}
-  - component: {fileID: 2002371925}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &2002371925
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002371924}
-  m_Enabled: 1
---- !u!20 &2002371926
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002371924}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 316
-  field of view: 60
-  orthographic: 1
-  orthographic size: 180
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 311
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &2002371927
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002371924}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -316, y: 944, z: -316}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 911070884}
-  - {fileID: 1333034684}
-  - {fileID: 1795382350}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2004406496
 GameObject:
   m_ObjectHideFlags: 0
@@ -10559,7 +10320,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2004406497}
-  - component: {fileID: 2004406498}
   m_Layer: 0
   m_Name: Follow Cam BG
   m_TagString: Untagged
@@ -10575,25 +10335,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004406496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1424, z: 1500}
+  m_LocalPosition: {x: -374.63, y: 932.1788, z: 1500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 941088957}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2004406498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004406496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7f150572c7a93e479f36af8923646ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2032008639
 GameObject:
   m_ObjectHideFlags: 0
@@ -10871,7 +10619,7 @@ Transform:
   - {fileID: 1845927077}
   - {fileID: 2062253759}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080725574
 GameObject:
@@ -11116,3 +10864,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2633465494149788458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2633465494576976841, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1060.0214
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 624.51843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -352.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359952, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359961, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_Name
+      value: Devil
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359961, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_TagString
+      value: Entity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633465495222359961, guid: 87b1f8d613b366b4faca60e760b55775,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87b1f8d613b366b4faca60e760b55775, type: 3}
