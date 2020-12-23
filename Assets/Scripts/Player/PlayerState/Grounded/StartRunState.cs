@@ -51,9 +51,27 @@ namespace Assets.Scripts.Player
                 ++pInput.JumpInputCounter;
                 newState = pController.StartFallingState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0)
+            else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
+                if (pData.DashCooldownTimer <= 0 && pData.HasDash)
+                {
+                    newState = pController.DashingState;
+                }
+            }
+            else if (pInput.AttackInput)
+            {
+                if (pInput.yInput == 0)
+                {
+                    newState = pController.PrimaryAttackState;
+                }
+                else if (pInput.yInput > 0)
+                {
+                    newState = pController.GroundedDownwardAttackState;
+                }
+                else
+                {
+                    newState = pController.GroundedUpwardAttackState;
+                }
             }
         }
 

@@ -120,6 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 150
+  KnockBackForce: 150
+  MaxHealth: 100
+  CurrentHealth: 0
 --- !u!58 &7225697033324808714
 CircleCollider2D:
   m_ObjectHideFlags: 0

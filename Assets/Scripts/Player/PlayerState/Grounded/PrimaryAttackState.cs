@@ -13,6 +13,8 @@ namespace Assets.Scripts.Player
 
         float animationLength;
         bool hasAttackTwice = false;
+        private bool hasAttackUp = false;
+
         public PrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
@@ -24,8 +26,10 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.AttackInput = false;
             hasAttackTwice = false;
+            hasAttackUp = false;
             pInput.UpwardAttackInput = false;
             pInput.DownwardAttackInput = false;
+            FacingDirectionUpdate();
         }
 
         public override void Exit()
@@ -37,22 +41,37 @@ namespace Assets.Scripts.Player
             pInput.InputUpdate();
             timer += Time.deltaTime;
 
+            if (pData.CollidedObjects.Count !=0 )
+            {
+                foreach (var collider in pData.CollidedObjects)
+                {
+                    object[] package = new object[2];
+                    package[0] = pData.AttackDamage;
+                    package[1] = pData.FacingDirection;
+                    collider.SendMessage("GetHit", package);
+                }
+                pData.CollidedObjects.Clear();
+            }
+
             if (timer <= animationLength && pInput.AttackInput)
             {
-                hasAttackTwice = true;
+                _ = pInput.yInput < 0 ? hasAttackUp = true : hasAttackTwice = true;
                 pController.StartCoroutine(WaitAfter(animationLength - timer));
             }
-            else if (timer >= animationLength && pInput.xInput == 0 && !hasAttackTwice)
+            else if (timer >= animationLength)
             {
-                newState = pController.IdleState;
-            }
-            else if (timer >= animationLength && pInput.yInput < 0)
-            {
-                newState = pController.GroundedUpwardAttackState;
-            }
-            else if (timer >= animationLength && pInput.yInput > 0)
-            {
-                newState = pController.GroundedDownwardAttackState;
+                if (hasAttackTwice || hasAttackTwice)
+                {
+
+                }
+                else if (pInput.xInput == 0)
+                {
+                    newState = pController.IdleState;
+                }
+                else if (pInput.xInput != 0)
+                {
+                    newState = pController.StartRunState;
+                }
             }
         }
 
@@ -61,12 +80,17 @@ namespace Assets.Scripts.Player
             pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
         }
 
-
         IEnumerator WaitAfter(float seconds)
         {
             yield return new WaitForSeconds(seconds);
-            newState = pController.GroundedSecondaryAttackState;
+            if (hasAttackTwice)
+            {
+                newState = pController.GroundedSecondaryAttackState;
+            }
+            else if (hasAttackUp)
+            {
+                newState = pController.GroundedUpwardAttackState;
+            }
         }
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace Assets.Scripts.Player
     public class InAirPrimaryAttackState : PlayerState
     {
         float animationLength;
+        bool hasAttackTwice = false;
+        private bool hasAttackUp = false;
+
         public InAirPrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
@@ -20,7 +24,9 @@ namespace Assets.Scripts.Player
             timer = 0F;
             newState = this;
             pInput.AttackInput = false;
-      
+            hasAttackTwice = false;
+            hasAttackUp = false;
+            FacingDirectionUpdate();
         }
 
         public override void Exit()
@@ -31,14 +37,21 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            FacingDirectionUpdate();
-            if (timer >= animationLength && pInput.xInput == 0 )
+
+            if (timer <= animationLength && pInput.AttackInput && !IsGrounded())
             {
-                newState = pController.IdleState;
+                _ = pInput.yInput < 0 ? hasAttackUp = true : hasAttackTwice = true;
+                pController.StartCoroutine(WaitAfter(animationLength - timer));
             }
-            else if(timer>= animationLength && pInput.AttackInput)
+            else if (timer >= animationLength)
             {
-                newState = pController.InAirSecondaryAttackState;
+                if (hasAttackTwice || hasAttackUp)
+                {
+                }
+                else
+                {
+                    newState = pController.IdleState;
+                }
             }
         }
 
@@ -48,8 +61,18 @@ namespace Assets.Scripts.Player
 
         }
 
-        
-
+        IEnumerator WaitAfter(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            if (hasAttackTwice)
+            {
+                newState = pController.InAirSecondaryAttackState;
+            }
+            else if (hasAttackUp)
+            {
+               newState = pController.InAirUpwardAttackState;
+            }
+        }
     }
 }
 

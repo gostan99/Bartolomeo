@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,30 +10,42 @@ namespace Assets.Scripts.Player
 {
     public class PlayerData : MonoBehaviour
     {
+        //-- COMPONENT-------------------------------------------------
         public Rigidbody2D Rb { get; private set; }
         public Animator Animator { get; private set; }
         public CapsuleCollider2D CapsuleCollider{ get; private set; }
 
+        //--LAYER------------------------------------------------------
         public LayerMask GroundMask{ get; private set; }
         public LayerMask WallMask{ get; private set; }
+        public LayerMask EntityMask{ get; private set; }
 
+        //--HITBOX-----------------------------------------------------
+        public Transform HitboxPos;
+        public Vector2 HitboxSize = new Vector2(90,40);
+        public CapsuleDirection2D CapsuleHitboxDirection = CapsuleDirection2D.Horizontal;
+        public float AttackDamage = 20f; 
+        public List<Collider2D> CollidedObjects = new List<Collider2D>();
+
+        //--PARAMETER--------------------------------------------------
         public float Speed = 20.0f;
-
         public float DashCooldownTimer = 0.0f;
         public float DashCooldown = 0.3f;
         public float DashVelocityX = 320f;
         public float DashDuration = 0.625f/4f;// = 0.15625f
         public bool canDash = true;
-
+        public bool HasDash = true;
         public float JumpVelocityY = 347.0f;
-
         public float WallSlideVelocityY = 20.0f;
         public Vector2 WallJumpDirection;
         public float WallJumpVelocity = 347.0f;
+        public static int MaxJumpCounter = 2;
 
+        //--GROUND DETECTOR--------------------------------------------
         public Transform GroundDetector { get; private set; }
         public Vector2 GroundDetectorSize = new Vector2(20, 11);
 
+        //--WALL DETECTOR----------------------------------------------
         public Transform WallDetector { get; private set; }
         public float WallDetectorLength = 13f;
         public Vector2 WallDetectorDir = Vector2.right;
@@ -49,9 +62,11 @@ namespace Assets.Scripts.Player
 
             GroundMask = LayerMask.GetMask("Ground");
             WallMask = LayerMask.GetMask("Wall");
+            EntityMask = LayerMask.GetMask("Entity");
 
             GroundDetector = transform.Find("GroundDetector");
             WallDetector = transform.Find("WallDetector");
+            HitboxPos = transform.Find("Hitbox");
 
             WallJumpDirection = new Vector2(1, 5);
 
@@ -69,7 +84,8 @@ namespace Assets.Scripts.Player
                 {"Upward_clamped",0.6f },
                 {"Downward",0.444f },
                 {"Right_swing_jump",0.385f },
-                {"Left_swing_jump",0.417f }
+                {"Left_swing_jump",0.417f },
+                {"Upward_jump",0.526f }
             };
         }
     }

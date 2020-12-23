@@ -11,7 +11,8 @@ namespace Assets.Scripts.Player
     public class InAirSecondaryAttackState : PlayerState
     {
         float animationLength;
-        bool hasAttackTwice;
+        bool hasAttackTwice = false;
+        bool hasAttackUp = false;
         public InAirSecondaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
@@ -23,7 +24,8 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.AttackInput = false;
             hasAttackTwice = false;
-
+            hasAttackUp = false;
+            FacingDirectionUpdate();
         }
 
         public override void Exit()
@@ -34,21 +36,22 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            FacingDirectionUpdate();
-            //if (timer <= animationLength && pInput.AttackInput)
-            //{
-            //    hasAttackTwice = true;
-            //    pController.StartCoroutine(WaitAfter(animationLength - timer));
-            //}
-            if(timer >=animationLength && pInput.AttackInput)
+
+            if (timer <= animationLength && pInput.AttackInput && !IsGrounded())
             {
-                newState = pController.InAirPrimaryAttackState;
+                _ = pInput.yInput < 0 ? hasAttackUp = true : hasAttackTwice = true;
+                pController.StartCoroutine(WaitAfter(animationLength - timer));
             }
-            else if (timer >= animationLength && pInput.xInput == 0 && !hasAttackTwice)
+            else if (timer >= animationLength)
             {
-                newState = pController.IdleState;
+                if (hasAttackTwice || hasAttackUp)
+                {
+                }
+                else
+                {
+                    newState = pController.IdleState;
+                }
             }
-            //Debug.Log(pInput.AttackInput);
         }
 
         public override void PhysicUpdate()
@@ -60,7 +63,14 @@ namespace Assets.Scripts.Player
         IEnumerator WaitAfter(float seconds)
         {
             yield return new WaitForSeconds(seconds);
-            newState = pController.PrimaryAttackState;
+            if (hasAttackTwice)
+            {
+                newState = pController.InAirPrimaryAttackState;
+            }
+            else if (hasAttackUp)
+            {
+                newState = pController.InAirUpwardAttackState;
+            }
         }
 
     }

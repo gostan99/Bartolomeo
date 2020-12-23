@@ -9,8 +9,6 @@ namespace Assets.Scripts.Player
 {
     public class JumpState : PlayerState
     {
-        float animationLength;
-
         public JumpState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
         }
@@ -18,24 +16,35 @@ namespace Assets.Scripts.Player
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
-            timer += Time.deltaTime;
             FacingDirectionUpdate();
             if (pData.DashCooldownTimer > 0)
             {
                 pData.DashCooldownTimer -= Time.deltaTime;
-            }         
+            }       
+            
+
             if (pData.Rb.velocity.y < 0f)
             {
                 newState = pController.StartFallingState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0 && pData.canDash)
+            else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
-                pData.canDash = false;
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                {
+                    newState = pController.DashingState;
+                    pData.canDash = false;
+                }
             }
-            else if(pInput.AttackInput)
+            else if (pInput.AttackInput)
             {
-                newState = pController.InAirPrimaryAttackState;
+                if (pInput.yInput < 0)
+                {
+                    newState = pController.InAirUpwardAttackState;
+                }
+                else
+                {
+                    newState = pController.InAirPrimaryAttackState;
+                }
             }
 
         }

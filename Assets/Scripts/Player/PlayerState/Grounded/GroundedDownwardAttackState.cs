@@ -33,7 +33,7 @@ namespace Assets.Scripts.Player
             pInput.InputUpdate();
             timer += Time.deltaTime;
             FacingDirectionUpdate();
-            if (timer >= animationLength && pInput.xInput == 0)
+            if (timer >= animationLength)
             {
                 newState = pController.IdleState;
             }

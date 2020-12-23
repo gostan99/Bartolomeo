@@ -13,7 +13,7 @@ namespace Assets.Scripts.Player
         {
             timer = 0f;
             newState = this;
-            pInput.JumpInputCounter = 1;
+            pInput.JumpInputCounter = PlayerData.MaxJumpCounter - 1;
         }
 
         public override void Exit()
@@ -25,25 +25,26 @@ namespace Assets.Scripts.Player
         {
             timer += Time.deltaTime;
             pInput.InputUpdate();
-            if (timer >= pData.DashDuration && pInput.xInput == 0 && IsGrounded())
+            if (timer >= pData.DashDuration)
             {
-                pData.DashCooldownTimer = pData.DashCooldown;
-                newState = pController.StopDashingState;
-            }
-            else if (timer >= pData.DashDuration && pInput.xInput != 0 && IsGrounded())
-            {
-                pData.DashCooldownTimer = pData.DashCooldown;
-                newState = pController.RunningState;
-            }
-            else if (timer >= pData.DashDuration && !IsGrounded())
-            {
-                pData.DashCooldownTimer = pData.DashCooldown;
-                newState = pController.StartFallingState;
-            }
-            else if (timer >= pData.DashDuration && pInput.JumpInput)
-            {
-                pData.DashCooldownTimer = pData.DashCooldown;
-                newState = pController.JumpState;
+                if (IsGrounded())
+                {
+                    if (pInput.xInput == 0)
+                    {
+                        pData.DashCooldownTimer = pData.DashCooldown;
+                        newState = pController.StopDashingState;
+                    }
+                    else
+                    {
+                        pData.DashCooldownTimer = pData.DashCooldown;
+                        newState = pController.RunningState;
+                    }
+                }
+                else
+                {
+                    pData.DashCooldownTimer = pData.DashCooldown;
+                    newState = pController.StartFallingState;
+                }
             }
         }
 
