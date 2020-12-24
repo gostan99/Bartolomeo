@@ -50,6 +50,30 @@ TextureImporter:
   - first:
       213: 3609158369233631715
     second: devil_15
+  - first:
+      213: -3118857494192169307
+    second: devil_16
+  - first:
+      213: 3627194818254956861
+    second: devil_17
+  - first:
+      213: 4106349953612024710
+    second: devil_18
+  - first:
+      213: 3248258586250543589
+    second: devil_19
+  - first:
+      213: -4775919475097288316
+    second: devil_20
+  - first:
+      213: -255592294160184165
+    second: devil_21
+  - first:
+      213: 3727845756333280940
+    second: devil_22
+  - first:
+      213: -59980232259896700
+    second: devil_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,18 +155,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -150,10 +162,10 @@ TextureImporter:
       name: devil_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 146
-        width: 23
-        height: 44
+        x: 0
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +183,10 @@ TextureImporter:
       name: devil_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 146
-        width: 20
-        height: 43
+        x: 32
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +204,10 @@ TextureImporter:
       name: devil_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 146
-        width: 23
-        height: 44
+        x: 64
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +225,10 @@ TextureImporter:
       name: devil_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 146
-        width: 20
-        height: 43
+        x: 96
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +246,10 @@ TextureImporter:
       name: devil_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 97
-        width: 20
-        height: 45
+        x: 0
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +267,10 @@ TextureImporter:
       name: devil_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 97
-        width: 20
-        height: 44
+        x: 32
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +288,10 @@ TextureImporter:
       name: devil_6
       rect:
         serializedVersion: 2
-        x: 70
-        y: 97
-        width: 20
-        height: 45
+        x: 64
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +309,10 @@ TextureImporter:
       name: devil_7
       rect:
         serializedVersion: 2
-        x: 102
-        y: 97
-        width: 21
-        height: 44
+        x: 96
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +330,10 @@ TextureImporter:
       name: devil_8
       rect:
         serializedVersion: 2
-        x: 6
-        y: 49
-        width: 20
-        height: 45
+        x: 0
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +351,10 @@ TextureImporter:
       name: devil_9
       rect:
         serializedVersion: 2
-        x: 38
-        y: 49
-        width: 20
-        height: 44
+        x: 32
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +372,10 @@ TextureImporter:
       name: devil_10
       rect:
         serializedVersion: 2
-        x: 70
-        y: 49
-        width: 20
-        height: 45
+        x: 64
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +393,10 @@ TextureImporter:
       name: devil_11
       rect:
         serializedVersion: 2
-        x: 101
-        y: 49
-        width: 21
-        height: 44
+        x: 96
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,10 +414,10 @@ TextureImporter:
       name: devil_12
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2
-        width: 23
-        height: 44
+        x: 0
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,10 +435,10 @@ TextureImporter:
       name: devil_13
       rect:
         serializedVersion: 2
-        x: 38
-        y: 2
-        width: 21
-        height: 43
+        x: 32
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +456,10 @@ TextureImporter:
       name: devil_14
       rect:
         serializedVersion: 2
-        x: 69
-        y: 2
-        width: 23
-        height: 44
+        x: 64
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +477,10 @@ TextureImporter:
       name: devil_15
       rect:
         serializedVersion: 2
-        x: 102
-        y: 2
-        width: 21
-        height: 43
+        x: 96
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

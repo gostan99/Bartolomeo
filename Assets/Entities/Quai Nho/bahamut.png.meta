@@ -50,6 +50,66 @@ TextureImporter:
   - first:
       213: 3431179903229072581
     second: bahamut_15
+  - first:
+      213: -2991614130968881215
+    second: bahamut_16
+  - first:
+      213: -8252132386290469586
+    second: bahamut_17
+  - first:
+      213: -5751103397143751351
+    second: bahamut_18
+  - first:
+      213: 7826418767994253119
+    second: bahamut_19
+  - first:
+      213: -9217989915091613919
+    second: bahamut_20
+  - first:
+      213: 8851564195817621861
+    second: bahamut_21
+  - first:
+      213: 9193402820056472899
+    second: bahamut_22
+  - first:
+      213: 9058942460118191048
+    second: bahamut_23
+  - first:
+      213: 3431720446544497065
+    second: bahamut_24
+  - first:
+      213: 2021716630307180574
+    second: bahamut_25
+  - first:
+      213: 2653973270415103156
+    second: bahamut_26
+  - first:
+      213: 802256482127657490
+    second: bahamut_27
+  - first:
+      213: -4922882939950589032
+    second: bahamut_28
+  - first:
+      213: 4790543375360198841
+    second: bahamut_29
+  - first:
+      213: 1654800916107284199
+    second: bahamut_30
+  - first:
+      213: -6879555719145875553
+    second: bahamut_31
+  - first:
+      213: -9039713811707813531
+    second: bahamut_32
+  - first:
+      213: -466492693822642894
+    second: bahamut_33
+  - first:
+      213: 3543104979994779886
+    second: bahamut_34
+  - first:
+      213: 5258830421595010001
+    second: bahamut_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,18 +191,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -150,10 +198,10 @@ TextureImporter:
       name: bahamut_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 291
-        width: 94
-        height: 90
+        x: 0
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +219,10 @@ TextureImporter:
       name: bahamut_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 291
-        width: 87
-        height: 91
+        x: 96
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +240,10 @@ TextureImporter:
       name: bahamut_2
       rect:
         serializedVersion: 2
-        x: 193
-        y: 291
-        width: 94
-        height: 90
+        x: 192
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +261,10 @@ TextureImporter:
       name: bahamut_3
       rect:
         serializedVersion: 2
-        x: 294
-        y: 291
-        width: 87
-        height: 91
+        x: 288
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +282,10 @@ TextureImporter:
       name: bahamut_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 193
-        width: 94
-        height: 90
+        x: 0
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +303,10 @@ TextureImporter:
       name: bahamut_5
       rect:
         serializedVersion: 2
-        x: 97
-        y: 194
-        width: 94
-        height: 91
+        x: 96
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +324,10 @@ TextureImporter:
       name: bahamut_6
       rect:
         serializedVersion: 2
-        x: 194
-        y: 193
-        width: 94
-        height: 90
+        x: 192
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +345,10 @@ TextureImporter:
       name: bahamut_7
       rect:
         serializedVersion: 2
-        x: 290
-        y: 194
-        width: 93
-        height: 89
+        x: 288
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,9 +367,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 97
-        width: 94
-        height: 90
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +387,10 @@ TextureImporter:
       name: bahamut_9
       rect:
         serializedVersion: 2
-        x: 97
-        y: 98
-        width: 94
-        height: 91
+        x: 96
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,9 +409,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 97
-        width: 94
-        height: 90
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +429,10 @@ TextureImporter:
       name: bahamut_11
       rect:
         serializedVersion: 2
-        x: 289
-        y: 98
-        width: 93
-        height: 89
+        x: 288
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,9 +450,9 @@ TextureImporter:
       name: bahamut_12
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 91
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -423,10 +471,10 @@ TextureImporter:
       name: bahamut_13
       rect:
         serializedVersion: 2
-        x: 107
-        y: 2
-        width: 79
-        height: 92
+        x: 96
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,9 +492,9 @@ TextureImporter:
       name: bahamut_14
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 91
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -465,10 +513,10 @@ TextureImporter:
       name: bahamut_15
       rect:
         serializedVersion: 2
-        x: 295
-        y: 2
-        width: 79
-        height: 92
+        x: 288
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
