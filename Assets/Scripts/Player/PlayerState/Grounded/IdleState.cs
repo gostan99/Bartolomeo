@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Player
 {
@@ -51,9 +52,12 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.GroundedDownwardAttackState;
             }
-
+            else if (pData.OurHealth<0)
+            {
+                SceneManager.LoadScene(0);
+            }
             //Debug.Log(pInput.JumpInput && pInput.AttackInput);
-            
+
         }
 
         public override void PhysicUpdate()

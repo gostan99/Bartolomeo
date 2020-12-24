@@ -121,6 +121,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &7902790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983563, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866266533423983564, guid: 21b3808a63cbfb442b811c875100aeff,
+        type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21b3808a63cbfb442b811c875100aeff, type: 3}
 --- !u!1 &20788666
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129793342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505, y: 347, z: 500}
+  m_LocalPosition: {x: 0, y: 0, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2132803766}
@@ -1991,7 +2060,7 @@ GameObject:
   - component: {fileID: 297530047}
   - component: {fileID: 297530048}
   - component: {fileID: 297530049}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2561,6 +2630,125 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &446896166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647374, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
 --- !u!1 &454595823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,7 +2842,7 @@ GameObject:
   - component: {fileID: 460660732}
   - component: {fileID: 460660733}
   - component: {fileID: 460660734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3009,7 +3197,7 @@ GameObject:
   - component: {fileID: 488372423}
   - component: {fileID: 488372424}
   - component: {fileID: 488372425}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5429,7 +5617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744387671}
   - component: {fileID: 744387672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_237
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5865,7 +6053,7 @@ GameObject:
   - component: {fileID: 766813253}
   - component: {fileID: 766813254}
   - component: {fileID: 766813255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6055,7 +6243,7 @@ GameObject:
   - component: {fileID: 783377380}
   - component: {fileID: 783377381}
   - component: {fileID: 783377382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_438 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6328,7 +6516,7 @@ GameObject:
   - component: {fileID: 828491215}
   - component: {fileID: 828491216}
   - component: {fileID: 828491217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_28 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6791,7 +6979,7 @@ GameObject:
   - component: {fileID: 859777381}
   - component: {fileID: 859777382}
   - component: {fileID: 859777383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: village-sprite-sheet_28 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6996,8 +7184,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876216980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3619.46, y: -363.8, z: 0}
-  m_LocalScale: {x: 21.743504, y: 2.1669729, z: 1}
+  m_LocalPosition: {x: 3489.3, y: -367.2, z: 0}
+  m_LocalScale: {x: 25.87955, y: 2.272176, z: 1}
   m_Children: []
   m_Father: {fileID: 686767902}
   m_RootOrder: 18
@@ -7718,7 +7906,7 @@ GameObject:
   - component: {fileID: 945696964}
   - component: {fileID: 945696965}
   - component: {fileID: 945696966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7826,6 +8014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950869219}
   - component: {fileID: 950869220}
+  - component: {fileID: 950869221}
   m_Layer: 8
   m_Name: village-sprite-sheet_28
   m_TagString: Untagged
@@ -7898,6 +8087,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &950869221
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950869218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -3.5}
+  m_Size: {x: 587.2, y: 16.45}
+  m_Direction: 1
 --- !u!1 &1000759968
 GameObject:
   m_ObjectHideFlags: 0
@@ -8182,7 +8387,7 @@ GameObject:
   - component: {fileID: 1036855384}
   - component: {fileID: 1036855385}
   - component: {fileID: 1036855386}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8291,7 +8496,7 @@ GameObject:
   - component: {fileID: 1051119661}
   - component: {fileID: 1051119662}
   - component: {fileID: 1051119663}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9329,7 +9534,7 @@ GameObject:
   - component: {fileID: 1229062741}
   - component: {fileID: 1229062742}
   - component: {fileID: 1229062743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10137,7 +10342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301022665}
   - component: {fileID: 1301022666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_438 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11763,7 +11968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487230321}
   - component: {fileID: 1487230322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12256,7 +12461,7 @@ GameObject:
   - component: {fileID: 1563702479}
   - component: {fileID: 1563702480}
   - component: {fileID: 1563702481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_224 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12775,7 +12980,7 @@ GameObject:
   - component: {fileID: 1651933066}
   - component: {fileID: 1651933067}
   - component: {fileID: 1651933068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13283,105 +13488,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1730100973
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 825
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 341
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: far clip plane
-      value: 481
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: near clip plane
-      value: 481
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: field of view
-      value: 34.640213
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: far clip plane
-      value: 481
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: field of view
-      value: 34.640213
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646276666973949323, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: near clip plane
-      value: 481
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &1730944309
 GameObject:
   m_ObjectHideFlags: 0
@@ -13556,7 +13662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1745527837}
   - component: {fileID: 1745527838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: archcathedral-spritesheet_25 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13720,7 +13826,7 @@ GameObject:
   - component: {fileID: 1776851671}
   - component: {fileID: 1776851672}
   - component: {fileID: 1776851673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stiltVillage_438 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14321,7 +14427,7 @@ GameObject:
   - component: {fileID: 1804411663}
   - component: {fileID: 1804411664}
   - component: {fileID: 1804411665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15101,6 +15207,105 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30, y: 100}
   m_EdgeRadius: 0
+--- !u!1001 &1920404871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665884221051, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665946507133, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666558162323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666973949323, guid: e2734f02aba98b84caa9859b5c3c7132,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &1931725583
 GameObject:
   m_ObjectHideFlags: 0
@@ -16246,7 +16451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095312684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 275.6, y: -236, z: 0}
+  m_LocalPosition: {x: 269.7, y: -315.6, z: 0}
   m_LocalScale: {x: 5.3633223, y: 1.2607912, z: 1}
   m_Children: []
   m_Father: {fileID: 686767902}
@@ -16296,7 +16501,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 365.2565, y: 64}
+  m_Size: {x: 380.65604, y: 190.26144}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -16503,7 +16708,7 @@ GameObject:
   - component: {fileID: 2124095368}
   - component: {fileID: 2124095369}
   - component: {fileID: 2124095370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stiltVillage_476 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16789,8 +16994,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132803765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.942993, y: 8.43898, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 18, y: 9.7, z: 0}
+  m_LocalScale: {x: 1, y: 1.1526293, z: 1}
   m_Children: []
   m_Father: {fileID: 129793343}
   m_RootOrder: 0

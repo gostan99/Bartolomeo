@@ -15,21 +15,23 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !pause)
         {
-            pause = !pause;
-
+            pause =true;
         }
+        else if (Input.GetKeyDown(KeyCode.Escape) && pause)
+        {
+            pause = false;
+        }
+
 
         if (pause)
         {
             pauseUI.SetActive(true);
             Time.timeScale = 0;
         }
-
         if (pause == false)
         {
             pauseUI.SetActive(false);
@@ -44,12 +46,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().path);
     }
-
-    //public void QuitGame()
-    //{
-    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
-    //}
+    
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 }
