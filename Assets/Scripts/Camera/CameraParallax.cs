@@ -89,7 +89,6 @@ public class CameraParallax : MonoBehaviour
         backGroundCamera.orthographicSize = a;
     }
 
-
     //update vị trí của static background theo vị trí của maincamera
     public void UpdateStaticBGs()
     {

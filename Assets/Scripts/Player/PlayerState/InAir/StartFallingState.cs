@@ -45,18 +45,24 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.WallContactState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0 && pData.canDash)
+            else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
-                pData.canDash = false;
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                {
+                    newState = pController.DashingState;
+                    pData.canDash = false;
+                }
             }
-            else if (timer >= animationLength && pInput.AttackInput)
+            else if (pInput.AttackInput)
             {
-                newState = pController.InAirPrimaryAttackState;
-            }
-            else if (timer >= animationLength && pInput.AttackInput)
-            {
-                newState = pController.InAirPrimaryAttackState;
+                if (pInput.yInput < 0)
+                {
+                    newState = pController.InAirUpwardAttackState;
+                }
+                else
+                {
+                    newState = pController.InAirPrimaryAttackState;
+                }
             }
         }
 

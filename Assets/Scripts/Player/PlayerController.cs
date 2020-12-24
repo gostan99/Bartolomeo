@@ -1,6 +1,8 @@
 ﻿using Assets.Scripts.Player;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public partial class PlayerController : MonoBehaviour
@@ -29,6 +31,7 @@ public partial class PlayerController : MonoBehaviour
     public GroundedDownwardAttackState GroundedDownwardAttackState { get; private set; }
     public InAirPrimaryAttackState InAirPrimaryAttackState { get; private set; }    
     public InAirSecondaryAttackState InAirSecondaryAttackState { get; private set; }
+    public InAirUpwardAttackState InAirUpwardAttackState { get; private set; }
     #endregion
 
     public PlayerState currentState { get; private set; }
@@ -59,6 +62,7 @@ public partial class PlayerController : MonoBehaviour
         GroundedDownwardAttackState = new GroundedDownwardAttackState(this, pInput, pData, "Downward"); ;
         InAirPrimaryAttackState = new InAirPrimaryAttackState(this, pInput, pData, "Right_swing_jump");
         InAirSecondaryAttackState = new InAirSecondaryAttackState(this, pInput, pData, "Left_swing_jump");
+        InAirUpwardAttackState = new InAirUpwardAttackState(this, pInput, pData, "Upward_jump");
 
         currentState = IdleState;
         #endregion
@@ -86,4 +90,11 @@ public partial class PlayerController : MonoBehaviour
         currentState.PhysicUpdate();
     }
 
+
+    public void CheckAttackHitbox()
+    {
+        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.HitboxPos.position, pData.HitboxSize, pData.CapsuleHitboxDirection, 0, pData.EntityMask).ToList();
+
+        pData.CollidedObjects = hit;
+    }
 }

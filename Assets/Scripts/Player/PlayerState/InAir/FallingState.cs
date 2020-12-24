@@ -31,13 +31,16 @@ namespace Assets.Scripts.Player
                 pData.DashCooldownTimer -= Time.deltaTime;
             }
 
-            if (IsGrounded() && pInput.xInput == 0)
+            if (IsGrounded())
             {
-                newState = pController.IdleState;
-            }
-            else if (IsGrounded() && pInput.xInput != 0)
-            {
-                newState = pController.RunningState;
+                if (pInput.xInput == 0)
+                {
+                    newState = pController.IdleState;
+                }
+                else
+                {
+                    newState = pController.RunningState;
+                }
             }
             else if (pInput.JumpInput)
             {
@@ -51,20 +54,25 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.LandingState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0 && pData.canDash)
+            else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
-                pData.canDash = false;
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                {
+                    newState = pController.DashingState;
+                    pData.canDash = false;
+                }
             }
             else if (pInput.AttackInput)
             {
-                newState = pController.InAirPrimaryAttackState;
+                if (pInput.yInput < 0)
+                {
+                    newState = pController.InAirUpwardAttackState;
+                }
+                else
+                {
+                    newState = pController.InAirPrimaryAttackState;
+                }
             }
-            else if (pInput.AttackInput)
-            {
-                newState = pController.InAirPrimaryAttackState;
-            }
-
         }
 
         public override void PhysicUpdate()

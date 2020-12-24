@@ -22,7 +22,6 @@ namespace Assets.Scripts.Player
         float jumpInputHoldTime;
         public int JumpInputCounter = 0;
         
-        const int MAX_JUMP_COUNTER = 2;
         const float MAX_JUMP_HOLD_TIME = 0.25f;
 
         public PlayerInput()
@@ -33,7 +32,7 @@ namespace Assets.Scripts.Player
 
         private void OnJumpInput()
         {
-            if (Input.GetButtonDown("Jump") && JumpInputCounter < MAX_JUMP_COUNTER )
+            if (Input.GetButtonDown("Jump") && JumpInputCounter < PlayerData.MaxJumpCounter )
             {
                 JumpInput = true;
                 jumpInputHoldTime = 0;

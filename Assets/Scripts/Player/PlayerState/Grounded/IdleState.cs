@@ -34,26 +34,31 @@ namespace Assets.Scripts.Player
                 ++pInput.JumpInputCounter;
                 newState = pController.StartFallingState;
             }
-            else if (pInput.DashInput && pData.DashCooldownTimer <= 0)
+            else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
-
+                if (pData.DashCooldownTimer <= 0 && pData.HasDash)
+                {
+                    newState = pController.DashingState;
+                }
             }
-            else if(pInput.AttackInput && pInput.yInput == 0)
+            else if (pInput.AttackInput)
             {
-                newState = pController.PrimaryAttackState;
-            }
-            else if (pInput.yInput<0 && pInput.AttackInput)
-            {
-                newState = pController.GroundedUpwardAttackState;
-            }
-            else if (pInput.yInput>0 && pInput.AttackInput)
-            {
-                newState = pController.GroundedDownwardAttackState;
+                if (pInput.yInput == 0)
+                {
+                    newState = pController.PrimaryAttackState;
+                }
+                else if (pInput.yInput > 0)
+                {
+                    newState = pController.GroundedDownwardAttackState;
+                }
+                else if (pInput.yInput < 0)
+                {
+                    newState = pController.GroundedUpwardAttackState;
+                }
             }
 
             //Debug.Log(pInput.JumpInput && pInput.AttackInput);
-            
+
         }
 
         public override void PhysicUpdate()
