@@ -9346,7 +9346,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 686477848}
-  - component: {fileID: 686477849}
   m_Layer: 0
   m_Name: Chum gai nho (3)
   m_TagString: Untagged
@@ -9388,22 +9387,6 @@ Transform:
   m_Father: {fileID: 1196545592}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &686477849
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686477847}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -15.49}
-  m_Size: {x: 120, y: 1}
-  m_Direction: 0
 --- !u!1 &698236450
 GameObject:
   m_ObjectHideFlags: 0
@@ -14089,7 +14072,7 @@ PlatformEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RotationalOffset: 0
-  m_UseOneWay: 0
+  m_UseOneWay: 1
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 180
   m_UseSideFriction: 0
@@ -30059,7 +30042,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061986432}
-  - component: {fileID: 2061986433}
   m_Layer: 0
   m_Name: Chum gai nho (5)
   m_TagString: Untagged
@@ -30101,22 +30083,6 @@ Transform:
   m_Father: {fileID: 1196545592}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &2061986433
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061986431}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -16.47}
-  m_Size: {x: 120, y: 1}
-  m_Direction: 0
 --- !u!1 &2066504265
 GameObject:
   m_ObjectHideFlags: 0

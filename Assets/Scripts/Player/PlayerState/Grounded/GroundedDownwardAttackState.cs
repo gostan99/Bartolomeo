@@ -37,7 +37,6 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.IdleState;
             }
-
         }
 
         public override void PhysicUpdate()

@@ -54,6 +54,9 @@ namespace Assets.Scripts.Player
 
         public Dictionary<string, float> AnimationLength { get; private set; }
 
+        public int OurHealth;
+        public int MaxHealth = 10;
+
         private void Awake()
         {
             Rb = GetComponent<Rigidbody2D>();
@@ -69,6 +72,8 @@ namespace Assets.Scripts.Player
             HitboxPos = transform.Find("Hitbox");
 
             WallJumpDirection = new Vector2(1, 5);
+
+            OurHealth = MaxHealth;
 
             AnimationLength = new Dictionary<string, float>()
             {

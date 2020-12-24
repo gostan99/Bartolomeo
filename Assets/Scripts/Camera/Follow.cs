@@ -9,7 +9,6 @@ public class Follow : MonoBehaviour
     public float MaxX;
     public float MinY;
     public float MaxY;
-
     // Start is called before the first frame update
     void Start()
     {
