@@ -2417,6 +2417,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &355182293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
+    type: 3}
+  m_PrefabInstance: {fileID: 728363123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &355182294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355182293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b912c3d7613b954d90ff770db350c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 826991749}
+  MinX: -999999
+  MaxX: 1e+10
+  MinY: -999999
+  MaxY: 1e+10
 --- !u!1 &367606785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,22 +4457,22 @@ PrefabInstance:
     - target: {fileID: 20289061363692668, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MinX
-      value: -600
+      value: -1e+13
       objectReference: {fileID: 0}
     - target: {fileID: 20289061363692668, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MaxX
-      value: 1454
+      value: 1e+12
       objectReference: {fileID: 0}
     - target: {fileID: 20289061363692668, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MaxY
-      value: 248
+      value: 1e+16
       objectReference: {fileID: 0}
     - target: {fileID: 20289061363692668, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MinY
-      value: -9999999
+      value: -1e+13
       objectReference: {fileID: 0}
     - target: {fileID: 2976589663951676147, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
@@ -4551,7 +4574,8 @@ PrefabInstance:
       propertyPath: field of view
       value: 34.640213
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 20289061363692668, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
 --- !u!1 &733727538
 GameObject:
