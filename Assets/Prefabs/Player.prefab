@@ -171,6 +171,8 @@ MonoBehaviour:
   WallDetectorLength: 13
   WallDetectorDir: {x: 1, y: 0}
   FacingDirection: 1
+  OurHealth: 0
+  MaxHealth: 10
 --- !u!70 &4246417194954873795
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
