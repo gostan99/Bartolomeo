@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/UI/UIMenu.unity
+    guid: 992e339143e8ce044afc5504f826ca36
+  - enabled: 1
+    path: Assets/Scenes/Map1/VachNui.unity
+    guid: d7ce6188e2f23274ebcc426d5eee3da1
   m_configObjects: {}

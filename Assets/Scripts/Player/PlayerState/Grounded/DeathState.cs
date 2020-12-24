@@ -4,47 +4,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Player
 {
-    public class GroundedDownwardAttackState : PlayerState
+    public class DeathState : PlayerState
     {
-
         float animationLength;
-        public GroundedDownwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
+        public DeathState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
-            timer = 0f;
+            timer = 0F;
             newState = this;
-            //pInput.DownwardAttackInput = false;
-
+            pInput.AttackInput = false;
         }
 
         public override void Exit()
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            FacingDirectionUpdate();
-            if (timer >= animationLength && pInput.xInput == 0)
+            if (pData.OurHealth>0)
             {
-                newState = pController.IdleState;
+                
+                    newState = pController.IdleState;
+                
+            }
+            else if (pData.OurHealth<0)
+            {
+                SceneManager.LoadScene(0);
             }
         }
 
         public override void PhysicUpdate()
         {
-            pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
+            throw new NotImplementedException();
         }
-
-
-
     }
 }
