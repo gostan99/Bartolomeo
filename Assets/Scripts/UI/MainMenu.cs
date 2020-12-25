@@ -12,9 +12,9 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        PlayerDTO playerDTO = new PlayerDTO();
+        playerDTO = new PlayerDTO();
 
-        string path = @"C:\Dev\Long's Project\Bartolomeo\Assets\Data\Save\playerdata.json";
+        string path = @"Assets\Data\Save\playerdata.json";
         string jsonData = File.ReadAllText(path);
         playerDTO = JsonUtility.FromJson<PlayerDTO>(jsonData);
 
