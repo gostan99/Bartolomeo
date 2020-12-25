@@ -7,7 +7,7 @@ public class BasicEnemy : MonoBehaviour
 {
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
-    public int KnockBackForce = 150;          //hướng di chuyển
+    public int KnockBackForce = 150;          //lực bị đẩy lùi
     private Rigidbody2D rb;
     private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast
     private int groundMask;               //Ground layer
@@ -32,15 +32,20 @@ public class BasicEnemy : MonoBehaviour
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame
     void Update()
     {
-        Patrol();
-        Attack();
+        //cập nhật hướng di chuyển
         MoveDirectionUpdate();
+        //cập nhật hướng nhìn theo hướng di chuyển
         FacingDirectionUpdate();
+    }
+    private void FixedUpdate()
+    {
+        Patrol();
     }
 
     void MoveDirectionUpdate()
@@ -50,6 +55,7 @@ public class BasicEnemy : MonoBehaviour
         //Vector2.down là hướng bắn của tia
         //50.0f là độ dài của tia
         var collided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, 46.0f, groundMask);
+        // chuyển hươngs nếu không thấy mặt đất và không đang ở trên không trung
         if (!collided && !IsInAir())
         {
             moveDirection *= -1;
@@ -69,6 +75,8 @@ public class BasicEnemy : MonoBehaviour
         {
             rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
         }
+        // nếu di chuyển chạm phải player thì sẽ làm player mất máu
+        Attack();
     }
 
     bool IsInAir()
@@ -78,8 +86,10 @@ public class BasicEnemy : MonoBehaviour
 
     public void GetHit(object[] package)
     {
+        // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
-        ApplyKnockback(Convert.ToInt32(package[1]));
+        // bị đẩy lùi
+        Knockback(Convert.ToInt32(package[1]));
         if (CurrentHealth <= 0)
         {
             Die();
@@ -91,7 +101,7 @@ public class BasicEnemy : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void ApplyKnockback(int hitDirection)
+    void Knockback(int hitDirection)
     {
         rb.velocity= new Vector2(KnockBackForce * hitDirection, KnockBackForce);
     }

@@ -50,6 +50,30 @@ TextureImporter:
   - first:
       213: -60144338974578827
     second: pinkbat_15
+  - first:
+      213: -8417930573771038843
+    second: pinkbat_16
+  - first:
+      213: -8159929874060380141
+    second: pinkbat_17
+  - first:
+      213: -3521398881714169761
+    second: pinkbat_18
+  - first:
+      213: -1346485394921640244
+    second: pinkbat_19
+  - first:
+      213: -7636272376645491360
+    second: pinkbat_20
+  - first:
+      213: -8590670905760401347
+    second: pinkbat_21
+  - first:
+      213: -2787310638091187634
+    second: pinkbat_22
+  - first:
+      213: -6741703964268175510
+    second: pinkbat_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,18 +155,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -151,9 +163,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 161
-        width: 31
-        height: 25
+        y: 147
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,9 +184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 163
-        width: 31
-        height: 20
+        y: 147
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +204,10 @@ TextureImporter:
       name: pinkbat_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 160
-        width: 25
-        height: 25
+        x: 64
+        y: 147
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,9 +226,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 162
-        width: 31
-        height: 20
+        y: 147
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +246,10 @@ TextureImporter:
       name: pinkbat_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 115
-        width: 26
-        height: 23
+        x: 0
+        y: 102
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +267,10 @@ TextureImporter:
       name: pinkbat_5
       rect:
         serializedVersion: 2
-        x: 35
-        y: 113
-        width: 26
-        height: 20
+        x: 32
+        y: 102
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +288,10 @@ TextureImporter:
       name: pinkbat_6
       rect:
         serializedVersion: 2
-        x: 67
-        y: 106
-        width: 18
-        height: 28
+        x: 64
+        y: 102
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +309,10 @@ TextureImporter:
       name: pinkbat_7
       rect:
         serializedVersion: 2
-        x: 99
-        y: 113
-        width: 26
-        height: 20
+        x: 96
+        y: 102
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +330,10 @@ TextureImporter:
       name: pinkbat_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 67
-        width: 26
-        height: 23
+        x: 0
+        y: 57
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +351,10 @@ TextureImporter:
       name: pinkbat_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 65
-        width: 26
-        height: 20
+        x: 32
+        y: 57
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +372,10 @@ TextureImporter:
       name: pinkbat_10
       rect:
         serializedVersion: 2
-        x: 75
-        y: 58
-        width: 18
-        height: 28
+        x: 64
+        y: 57
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +393,10 @@ TextureImporter:
       name: pinkbat_11
       rect:
         serializedVersion: 2
-        x: 99
-        y: 65
-        width: 26
-        height: 20
+        x: 96
+        y: 57
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,9 +415,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 31
-        height: 26
+        y: 12
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,9 +436,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 15
-        width: 31
-        height: 24
+        y: 12
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +456,10 @@ TextureImporter:
       name: pinkbat_14
       rect:
         serializedVersion: 2
-        x: 68
-        y: 13
-        width: 23
-        height: 27
+        x: 64
+        y: 12
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,9 +478,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 18
-        width: 31
-        height: 21
+        y: 12
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

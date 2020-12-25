@@ -22,7 +22,7 @@ namespace Assets.Scripts.Player
 
         //--HITBOX-----------------------------------------------------
         public Transform HitboxPos;
-        public Vector2 HitboxSize = new Vector2(90,40);
+        public Vector2 HitboxSize = new Vector2(103,37);
         public CapsuleDirection2D CapsuleHitboxDirection = CapsuleDirection2D.Horizontal;
         public float AttackDamage = 20f; 
         public List<Collider2D> CollidedObjects = new List<Collider2D>();
