@@ -87,7 +87,7 @@ public class Bat : MonoBehaviour
             return;
         }
 
-        //thay đổi hướng di chuyển nếu con giơi đi quá xa
+        //thay đổi hướng di chuyển nếu con dơi đi quá xa
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) > PatrolDistance)
         {
             //Vector AB = B - A
