@@ -34,12 +34,15 @@ namespace Assets.Scripts.Player
         public float DashVelocityX = 320f;
         public float DashDuration = 0.625f/4f;// = 0.15625f
         public bool canDash = true;
-        public bool HasDash = true;
         public float JumpVelocityY = 347.0f;
         public float WallSlideVelocityY = 20.0f;
         public Vector2 WallJumpDirection;
         public float WallJumpVelocity = 347.0f;
+
+        //--SERIALIZE DATA---------------------------------------------
         public static int MaxJumpCounter = 2;
+        public static bool HasDash = true;
+
 
         //--GROUND DETECTOR--------------------------------------------
         public Transform GroundDetector { get; private set; }

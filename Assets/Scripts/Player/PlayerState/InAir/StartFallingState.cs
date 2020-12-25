@@ -47,7 +47,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;

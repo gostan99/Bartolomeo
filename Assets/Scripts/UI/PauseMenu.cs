@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Player;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -48,9 +50,21 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().path);
     }
-    
+
     public void BackToMainMenu()
     {
+        PlayerDTO saveData = new PlayerDTO();
+        saveData.Level = SceneManager.GetActiveScene().path;
+        saveData.HasDash = PlayerData.HasDash;
+        saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
+
+        var jsonData = JsonUtility.ToJson(saveData);
+        string path = @"C:\Dev\Long's Project\Bartolomeo\Assets\Data\Save\playerdata.json";
+        using (StreamWriter writer = new StreamWriter(path))
+        {
+            writer.WriteAsync(jsonData);
+        }
+
         SceneManager.LoadScene(0);
     }
 
