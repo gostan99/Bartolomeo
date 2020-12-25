@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
 
         var jsonData = JsonUtility.ToJson(saveData);
-        string path = @"C:\Dev\Long's Project\Bartolomeo\Assets\Data\Save\playerdata.json";
+        string path = @"Assets\Data\Save\playerdata.json";
         using (StreamWriter writer = new StreamWriter(path))
         {
             writer.WriteAsync(jsonData);
