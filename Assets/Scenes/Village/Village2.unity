@@ -2473,11 +2473,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2976589663951676147, guid: 29ba99ac574f61d4ca15256251b6c515,
+    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
-      propertyPath: staticBackgrounds
+      propertyPath: Target
       value: 
-      objectReference: {fileID: 129793342}
+      objectReference: {fileID: 1307668800}
+    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: MinX
+      value: -430
+      objectReference: {fileID: 0}
+    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: MaxX
+      value: 4040
+      objectReference: {fileID: 0}
+    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: MinY
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: MaxY
+      value: 320
+      objectReference: {fileID: 0}
     - target: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: m_Name
@@ -2540,29 +2560,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
---- !u!1 &369023688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
-    type: 3}
-  m_PrefabInstance: {fileID: 369023687}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &369023689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369023688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b912c3d7613b954d90ff770db350c58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 1307668800}
-  MinX: -430
-  MaxX: 4040
-  MinY: -190
-  MaxY: 320
 --- !u!1 &415341513
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,11 +3820,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2976589662524139635, guid: e2734f02aba98b84caa9859b5c3c7132,
-        type: 3}
-      propertyPath: staticBackgrounds
-      value: 
-      objectReference: {fileID: 129793342}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
 --- !u!1 &550445419
@@ -6949,6 +6941,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &843143180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 734325270, guid: e2734f02aba98b84caa9859b5c3c7132,
+    type: 3}
+  m_PrefabInstance: {fileID: 546955706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &843143181
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843143180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 90, y: 40}
+  m_Direction: 1
 --- !u!1 &844287162
 GameObject:
   m_ObjectHideFlags: 0
@@ -10585,29 +10599,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1307668793 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1622696680063187029, guid: e2734f02aba98b84caa9859b5c3c7132,
-    type: 3}
-  m_PrefabInstance: {fileID: 546955706}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1307668794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307668793}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b912c3d7613b954d90ff770db350c58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 1307668800}
-  MinX: -430
-  MaxX: 4040
-  MinY: -280
-  MaxY: 320
 --- !u!4 &1307668800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,

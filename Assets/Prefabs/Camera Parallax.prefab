@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 3646276667044435195}
   - component: {fileID: 3646276667044435192}
   - component: {fileID: 2976589663951676147}
-  - component: {fileID: 20289061363692668}
+  - component: {fileID: 746123851727922705}
   m_Layer: 0
   m_Name: Camera Parallax
   m_TagString: MainCamera
@@ -265,7 +265,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1335
+    m_Bits: 7479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   backGroundCamera: {fileID: 3646276665953126155}
   furthestClipPlane: 2000
   staticBackgrounds: {fileID: 2824566310681553881}
---- !u!114 &20289061363692668
+--- !u!114 &746123851727922705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3646276667044435193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b83de50cae3def94698b3028f909bae0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b912c3d7613b954d90ff770db350c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
