@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 2.5
   KnockBackSpeed: 8
-  KnockBackDistance: 100
+  KnockBackDistance: 80
   MaxHealth: 100
   CurrentHealth: 0
   AttackDamage: 10

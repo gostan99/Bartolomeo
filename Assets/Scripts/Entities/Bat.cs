@@ -124,7 +124,7 @@ public class Bat : MonoBehaviour
     {
         var velocity = new Vector3(KnockBackSpeed * KnockbackDirection, 0, 0);
         transform.position += velocity;
-        KnockbackDistanceRemain -= velocity.x;
+        KnockbackDistanceRemain -= Mathf.Abs(velocity.x);
 
         if (KnockbackDistanceRemain <= 0)
         {
