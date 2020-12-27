@@ -16,12 +16,12 @@ public class Bat : MonoBehaviour
     public float CurrentHealth;
     public float AttackDamage = 10;
 
-    Collider2D playerIsDetected = null;
+    Collider2D playerDetector = null;
+    public float PlayerDetectRadius = 50f;
 
-    public GameObject PatrolPoint;      // vị trí để giơi đi tuần tra
-    public float PatrolDistance = 50f;      // khoảng cách giới hạn để giơi đi tuần tra
+    public GameObject PatrolPoint;      // vị trí để đi tuần tra
+    public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
-    public float PlayerDetectorRadius = 50f;
 
     private BoxCollider2D Hitbox;
     private LayerMask PlayerMask;
@@ -54,7 +54,7 @@ public class Bat : MonoBehaviour
         switch (state)
         {
             case State.Patrol:
-                Patrol();
+                Move();
                 break;
             case State.Chase:
                 Chase();
@@ -78,16 +78,15 @@ public class Bat : MonoBehaviour
         }
     }
 
-    //Đi tuần tra
-    void Patrol()
+    void Move()
     {
-        if (playerIsDetected)
+        if (playerDetector)
         {
             state = State.Chase;
             return;
         }
 
-        //thay đổi hướng di chuyển nếu con dơi đi quá xa
+        //thay đổi hướng di chuyển nếu con đi quá xa khỏi điểm tuần tra
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) > PatrolDistance)
         {
             //Vector AB = B - A
@@ -135,34 +134,34 @@ public class Bat : MonoBehaviour
     void Chase()
     {
         //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
-        if (playerIsDetected == null)
+        if (playerDetector == null)
         {
             state = State.Patrol;
             return;
         }
 
         //cập nhật hướng di chuyển tới nhân vật
-        moveDirection = (playerIsDetected.transform.position - transform.position).normalized;
+        moveDirection = (playerDetector.transform.position - transform.position).normalized;
 
         transform.position += new Vector3(moveDirection.x, moveDirection.y, transform.position.z) * (Speed + 2);
         //Attack nếu chạm được vào người của player
-        Attack();
+        DealDamage();
     }
 
     void LookingForPlayer()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectorRadius, PlayerMask);
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
         if (collider)
         {
-            playerIsDetected = collider;
+            playerDetector = collider;
         }
         else
         {
-            playerIsDetected = null;
+            playerDetector = null;
         }
     }
 
-    void Attack()
+    void DealDamage()
     {
         Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
         if (hit)

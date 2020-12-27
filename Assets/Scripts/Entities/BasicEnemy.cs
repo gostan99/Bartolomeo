@@ -45,7 +45,7 @@ public class BasicEnemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Patrol();
+        Move();
     }
 
     void MoveDirectionUpdate()
@@ -55,7 +55,7 @@ public class BasicEnemy : MonoBehaviour
         //Vector2.down là hướng bắn của tia
         //50.0f là độ dài của tia
         var collided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, 46.0f, groundMask);
-        // chuyển hươngs nếu không thấy mặt đất và không đang ở trên không trung
+        // chuyển hướng nếu không thấy mặt đất và không đang ở trên không trung
         if (!collided && !IsInAir())
         {
             moveDirection *= -1;
@@ -68,15 +68,14 @@ public class BasicEnemy : MonoBehaviour
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * moveDirection, transform.localScale.y, transform.localScale.z);
     }
 
-    //di chuyển
-    void Patrol()
+    void Move()
     {
         if (!IsInAir())
         {
             rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
         }
-        // nếu di chuyển chạm phải player thì sẽ làm player mất máu
-        Attack();
+        // nếu chạm phải player thì sẽ làm player mất máu
+        DealDamage();
     }
 
     bool IsInAir()
@@ -106,7 +105,7 @@ public class BasicEnemy : MonoBehaviour
         rb.velocity= new Vector2(KnockBackForce * hitDirection, KnockBackForce);
     }
 
-    void Attack()
+    void DealDamage()
     {
         Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
         if (hit)

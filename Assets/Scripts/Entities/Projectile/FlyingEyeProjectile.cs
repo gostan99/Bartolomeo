@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class FlyingEyeProjectile : MonoBehaviour
 {
     public float Speed = 5f;
     public float Size = 8.5f;
     private Vector3 StartPos;
-    public float KhoangCachBayToiDa = 300f;
+    public float KhoangCachBayToiDa = 500f;
     public Vector3 Direction = Vector3.right;
+    public float AttackDamage = 10;
 
     private LayerMask playerMask;
     private Animator animator;
@@ -61,9 +62,17 @@ public class Projectile : MonoBehaviour
         Direction = dir;
     }
 
+    //Được gọi vào cuối animation của Explosive animation
     void Destroy()
     {
         Destroy(this.gameObject);
+    }
+
+
+    //Được gọi vào đầu animation của Explosive animation
+    void DealDamage()
+    {
+        Debug.Log("Á hự");
     }
 
     bool IsCollidedWithPlayer()
