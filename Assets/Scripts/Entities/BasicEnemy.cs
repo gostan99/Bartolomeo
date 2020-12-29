@@ -83,7 +83,9 @@ public class BasicEnemy : MonoBehaviour
         return rb.velocity.y != 0f;
     }
 
-    public void GetHit(object[] package)
+    //Được gọi bởi Player
+    //Packege[0] là lượng dame, Package[1] là hướng bị đánh
+    public void TakeDamage(object[] package)
     {
         // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);

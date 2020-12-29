@@ -3,48 +3,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlyingEye : MonoBehaviour
+public class Undead : MonoBehaviour
 {
-    public float Speed = 0.8f;
+    public float Speed = 2.5f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
-
-    public float FallingSpeed = 3f;
-
-    private int KnockbackDirection = 1;
-    public float KnockBackSpeed = 8;          //tốc độ bị đẩy lùi
-    public float KnockBackDistance = 50;          //khoảng cách bị đẩy lùi
-    private float KnockbackDistanceRemain;          //khoảng cách còn lại để bị đẩy lùi
+    private int KnockbackDirection = 1;                     //hướng bị bị đẩy lùi
+    public float KnockBackSpeed = 8;                        //tốc độ bị đẩy lùi
+    public float KnockBackDistance = 80;                    //khoảng cách bị đẩy lùi
+    private float KnockbackDistanceRemain;                  //khoảng cách còn lại để bị đẩy lùi
 
     public float MaxHealth = 100;
     public float CurrentHealth;
+    public float AttackDamage = 15;
 
     Collider2D playerDetector = null;
-    public float PlayerDetectRadius = 50f;
+    public float PlayerDetectRadius = 160f;                 // bán kính phát hiện player
 
-    public GameObject PatrolPoint;      // vị trí để đi tuần tra
-    public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
+    public Vector3 AttackOffSet = new Vector3(15, 6, 0);    // vị trí đánh
+    public float AttackRadius = 31f;                        // tầm đánh
 
+    public GameObject PatrolPoint;                          // vị trí để đi tuần tra
+    public float PatrolDistance = 100f;                     // khoảng cách giới hạn để đi tuần tra
 
-    public GameObject Projectile;
+    private LayerMask PlayerMask;
 
-    private BoxCollider2D hitbox;
-    private LayerMask playerMask;
-    private Animator animator;
-    private string currentAnimation = "Flying";
+    enum State { Patrol, Chase, Knockback, Dead, Attack }
+    State state = State.Patrol;
 
-    enum State { Move, Knockback, Falling, Dead,
-        Attack
-    }
-    State state = State.Move;
-    private LayerMask groundMask;
+    Animator animator;
+    string currentAnimation = "Idle";
 
     // Start is called before the first frame update
     void Start()
     {
         CurrentHealth = MaxHealth;
-        playerMask = LayerMask.GetMask("Player");
-        groundMask = LayerMask.GetMask("Ground");
-        hitbox = GetComponent<BoxCollider2D>();
+        PlayerMask = LayerMask.GetMask("Player");
         animator = GetComponent<Animator>();
 
         //cho phép player và entity đi xuyên qua nhau
@@ -58,32 +51,32 @@ public class FlyingEye : MonoBehaviour
         LookingForPlayer();
         // cập nhật hướng quay mặt
         FacingDirectionUpdate();
-        PlayAnimation();
+        // chạy hoạt ảnh
+        animator.Play(currentAnimation);
     }
 
     private void FixedUpdate()
     {
         switch (state)
         {
-            case State.Move:
-                currentAnimation = "Flying";
+            case State.Patrol:
+                currentAnimation = "Idle";
                 Move();
                 break;
-            case State.Knockback:
-                currentAnimation = "TakeHit";
-                Knockback();
-                break;
-            case State.Falling:
-                currentAnimation = "Falling";
-                Falling();
-                break;
-            case State.Dead:
-                currentAnimation = "Dead";
-                Dead();
+            case State.Chase:
+                currentAnimation = "Idle";
+                Chase();
                 break;
             case State.Attack:
                 currentAnimation = "Attack";
                 break;
+            case State.Knockback:
+                currentAnimation = "Idle";
+                Knockback();
+                break;
+            case State.Dead:
+                currentAnimation = "Dead";
+                break;        
         }
     }
 
@@ -104,7 +97,7 @@ public class FlyingEye : MonoBehaviour
     {
         if (playerDetector)
         {
-            state = State.Attack;
+            state = State.Chase;
             return;
         }
 
@@ -132,7 +125,7 @@ public class FlyingEye : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
-            state = State.Falling;
+            state = State.Dead;
         }
     }
 
@@ -144,13 +137,61 @@ public class FlyingEye : MonoBehaviour
 
         if (KnockbackDistanceRemain <= 0)
         {
-            state = State.Move;
+            state = State.Chase;
         }
+    }
+
+    void Chase()
+    {
+        //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
+        if (playerDetector == null)
+        {
+            state = State.Patrol;
+            return;
+        }
+
+        //cập nhật hướng di chuyển tới nhân vật
+        moveDirection = (playerDetector.transform.position - transform.position).normalized;
+
+        transform.position += new Vector3(moveDirection.x, moveDirection.y, transform.position.z) * (Speed + 3);
+
+        if (CanAttack())
+        {
+            state = State.Attack;
+        }
+    }
+
+    bool CanAttack()
+    {
+        Collider2D collider = Physics2D.OverlapCircle(transform.position + AttackOffSet, AttackRadius, PlayerMask);
+        return collider;
+    }
+
+    //Được gọi trong animation Attack
+    void Attack()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position + AttackOffSet, AttackRadius, PlayerMask);
+        if (hit)
+        {
+            Debug.Log("Á hự");
+        }
+    }
+
+    //Được gọi cuối animation Attack
+    void BackToChase()
+    {
+        state = State.Chase;
+    }
+
+    //Được gọi trong animation Dead
+    void Die()
+    {
+        Destroy(this.gameObject);
     }
 
     void LookingForPlayer()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, playerMask);
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
         if (collider)
         {
             playerDetector = collider;
@@ -160,55 +201,4 @@ public class FlyingEye : MonoBehaviour
             playerDetector = null;
         }
     }
-
-    //Được gọi trong animation Attack
-    void Attack()
-    {
-        //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
-        if (playerDetector == null)
-        {
-            state = State.Move;
-            return;
-        }
-        //cập nhật hướng di chuyển tới nhân vật
-        moveDirection = (playerDetector.transform.position - transform.position).normalized;
-
-        GameObject p = Instantiate(Projectile) as GameObject;
-        p.transform.position = transform.position;
-        p.SendMessage("SetDirection", moveDirection);
-    }
-
-    void Falling()
-    {
-        if (IsHitGround())
-        {
-            state = State.Dead;
-            return;
-        }
-
-        transform.position += Vector3.down * FallingSpeed;
-    }
-
-    void Dead()
-    {
-        var b = gameObject.GetComponent<BoxCollider2D>();
-        b.enabled = false;
-    }
-
-    // được gọi vào cuối animation Falling
-    bool IsHitGround()
-    {
-        var collider = Physics2D.Raycast(transform.position, Vector2.down, 25f, groundMask);
-        return collider;
-    }
-
-    void PlayAnimation()
-    {
-        animator.Play(currentAnimation);
-    }
-
-    //private void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y - 25));
-    //}
 }

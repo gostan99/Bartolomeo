@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Minotaur : MonoBehaviour
 {
-    private enum State { Idle, Walk, Attack, Dead }
-    State state = State.Walk;
+    private enum State { Idle, Patrol, Attack, Dead,
+        TakeHit
+    }
+    State state = State.Patrol;
 
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
@@ -23,13 +25,13 @@ public class Minotaur : MonoBehaviour
     public Vector2 AttackRange = new Vector2(44, 56); // tầm đánh
 
     Animator animator;
-    string currentAnimation = "Walk";
+    string currentAnimation = "Patrol";
 
     Rigidbody2D rb;
 
     LayerMask playerMask;
 
-    float idleTime = 2f; // thời gian ở trạng thái idle là 2s
+    public float idleTime = 2f; // thời gian ở trạng thái idle là 2s
     float idleTimer; // đếm thời gian ở trạng thái idle còn lại
 
     // Start is called before the first frame update
@@ -66,12 +68,15 @@ public class Minotaur : MonoBehaviour
                 currentAnimation = "Idle";
                 Idle();
                 break;
-            case State.Walk:
+            case State.Patrol:
                 currentAnimation = "Walk";
-                Walk();
+                Patrol();
                 break;
             case State.Attack:
                 currentAnimation = "Attack";
+                break;
+            case State.TakeHit:
+                currentAnimation = "TakeHit";
                 break;
             case State.Dead:
                 currentAnimation = "Dead";
@@ -84,7 +89,7 @@ public class Minotaur : MonoBehaviour
         // nếu hết thời gian ở trạng thái idle thì chuyển sang trạng thái walk
         if (idleTimer <= 0)
         {
-            state = State.Walk;
+            state = State.Patrol;
             moveDirection = -moveDirection;
         }
 
@@ -95,7 +100,7 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    void Walk()
+    void Patrol()
     {
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) >= PatrolDistance)
         {
@@ -130,10 +135,10 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    // được gọi bởi Attack animation sau khi nó kết thúc hoạt ảnh attack
-    void BackToWalk()
+    // được gọi bởi Attack animation và TakeHit animaiton sau khi nó kết thúc hoạt ảnh
+    void BackToPatrol()
     {
-        state = State.Walk;
+        state = State.Patrol;
     }
 
     bool PlayerIsDetected()
@@ -147,13 +152,16 @@ public class Minotaur : MonoBehaviour
         return rb.velocity.y != 0f;
     }
 
-    // Được gọi bơi player
-    public void GetHit(object[] package)
+    //Được gọi bởi Player
+    //Packege[0] là lượng dame, Package[1] là hướng bị đánh
+    public void TakeDamage(object[] package)
     {
         if (state == State.Dead)
         {
             return;
         }
+
+        state = State.TakeHit;
 
         // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
