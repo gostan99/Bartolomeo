@@ -97,4 +97,17 @@ public partial class PlayerController : MonoBehaviour
 
         pData.CollidedObjects = hit;
     }
+
+    public void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("stiltVillage_28"))
+            transform.parent = col.transform;
+    }
+
+    public void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("stiltVillage_28"))
+            transform.parent = null;
+    }
+
 }
