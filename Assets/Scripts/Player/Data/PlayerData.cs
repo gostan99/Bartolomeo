@@ -19,6 +19,7 @@ namespace Assets.Scripts.Player
         public LayerMask GroundMask{ get; private set; }
         public LayerMask WallMask{ get; private set; }
         public LayerMask EntityMask{ get; private set; }
+        public LayerMask NextLevelMask { get; private set; }
 
         //--HITBOX-----------------------------------------------------
         public Transform HitboxPos;
@@ -42,6 +43,10 @@ namespace Assets.Scripts.Player
         //--SERIALIZE DATA---------------------------------------------
         public static int MaxJumpCounter = 2;
         public static bool HasDash = true;
+
+        //--HEALTHBAR--------------------------------------------------
+        public int maxHealth = 100;
+        public int currentHealth;
 
 
         //--GROUND DETECTOR--------------------------------------------
@@ -69,6 +74,7 @@ namespace Assets.Scripts.Player
             GroundMask = LayerMask.GetMask("Ground");
             WallMask = LayerMask.GetMask("Wall");
             EntityMask = LayerMask.GetMask("Entity");
+            NextLevelMask = LayerMask.GetMask("NextLevel");
 
             GroundDetector = transform.Find("GroundDetector");
             WallDetector = transform.Find("WallDetector");

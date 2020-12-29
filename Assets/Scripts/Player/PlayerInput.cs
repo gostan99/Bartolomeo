@@ -72,7 +72,7 @@ namespace Assets.Scripts.Player
         {
             if (Input.GetKeyDown(KeyCode.Mouse0) )
             {
-                AttackInput = true;             
+                AttackInput = true;
             }
             else 
             {
@@ -85,6 +85,7 @@ namespace Assets.Scripts.Player
             yInput = Input.GetAxis("Vertical");
         }
         
+
         public void InputUpdate()
         {
             OnJumpInput();

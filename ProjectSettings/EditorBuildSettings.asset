@@ -9,9 +9,39 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/UIMenu.unity
     guid: 992e339143e8ce044afc5504f826ca36
   - enabled: 1
+    path: Assets/Scenes/Map1/VachNui2.unity
+    guid: 561766067a564b54ea0d98a947f138b3
+  - enabled: 1
+    path: Assets/Scenes/Map1/Nui_Tile1.unity
+    guid: 4089d0058be01404abcae2c50a17793e
+  - enabled: 1
     path: Assets/Scenes/Map1/VachNui.unity
     guid: d7ce6188e2f23274ebcc426d5eee3da1
   - enabled: 1
+    path: Assets/Scenes/Map2/Hang1.unity
+    guid: 1729c631ac231cc4cacb9debd07d1424
+  - enabled: 1
+    path: Assets/Scenes/Map2/Hang2.unity
+    guid: 2eddb41e7592ff04f8de7696325074ac
+  - enabled: 1
+    path: Assets/Scenes/Map2/Boss.unity
+    guid: dc11e7916c933be4193d83b52dba4205
+  - enabled: 1
+    path: Assets/Scenes/Village/Village1.unity
+    guid: 9c62b08f5492aa245b86957444621b89
+  - enabled: 1
     path: Assets/Scenes/Village/Village2.unity
     guid: 67575198504e4694ba828dc70d7a186f
+  - enabled: 1
+    path: Assets/Scenes/Village/Boss.unity
+    guid: 7e7aaa98cfef26f4296dbcff85e11a04
+  - enabled: 1
+    path: Assets/Scenes/Forest/level 1/Forest lv1.unity
+    guid: 246504a8dda3b7d4e9ebb0d54baf4c37
+  - enabled: 1
+    path: Assets/Scenes/Forest/Forest lv2.unity
+    guid: 04cac6aec15637d4087f0f3efe1545ba
+  - enabled: 1
+    path: Assets/Scenes/Forest/Forest lv3.unity
+    guid: 4b9f9bb80824ca640b4c4127373f9f38
   m_configObjects: {}

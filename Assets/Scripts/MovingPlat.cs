@@ -4,26 +4,30 @@ using UnityEngine;
 
 public class MovingPlat : MonoBehaviour
 {
-
-    public float speed = 20.0f, direction = 1;
-    //Vector3 Move;
-    public Rigidbody2D Move;
+    public Vector2 size = new Vector2(40f, 122f);
+    public float speed = 3f;
+    public int direction = 1;
+    private LayerMask Plat;
     // Start is called before the first frame update
     void Start()
     {
-        Move = gameObject.GetComponent<Rigidbody2D>();
+        Plat = LayerMask.GetMask("MovingPlatformClamp");
     }
     // Update is called once per frame
     void FixedUpdate()
     {
-
-
-        if (Move.velocity.x == 0)
+        Collider2D collided = Physics2D.OverlapBox(transform.position, size, 0, Plat);
+        if (collided)
         {
             direction = -direction;
         }
-        Move.velocity = new Vector3(speed * direction, Move.velocity.y);
-
+        transform.position += new Vector3(speed * direction, 0);
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawCube(transform.position, size);
+    }
+
 
 }
