@@ -17,6 +17,12 @@ public class Minotaur : MonoBehaviour
     public float CurrentHealth;
     public float AttackDamage = 10;
 
+    private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
+    public float groundDetectorLength = 22f;   //Độ dài tia Raycast
+    private int groundMask;               //Ground layer
+    private int wallMask;               //Wall layer
+    public float wallDetectorLength = 16f;   //Độ dài tia Raycast
+
     public GameObject PatrolPoint;      // vị trí để đi tuần tra
     public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
@@ -42,6 +48,9 @@ public class Minotaur : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerMask = LayerMask.GetMask("Player");
+        groundDetector = transform.Find("GroundDetector");
+        groundMask = LayerMask.GetMask("Ground");
+        wallMask = LayerMask.GetMask("Wall");
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
@@ -110,6 +119,13 @@ public class Minotaur : MonoBehaviour
                 state = State.Idle;
                 return;
             }
+        }
+
+        if (IsDeadEnd())
+        {
+            idleTimer = idleTime;
+            state = State.Idle;
+            return;
         }
 
         if (PlayerIsDetected())
@@ -208,5 +224,22 @@ public class Minotaur : MonoBehaviour
                 return true;
             }
         }
+    }
+
+    // kiểm  tra có tới đường cụt?
+    // đường cụt là khi phía trước gặp vực hoặc tường
+    bool IsDeadEnd()
+    {
+        //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
+        //groundDetector.transform.position là gốc của tia Raycast
+        //Vector2.down là hướng bắn của tia
+        //groundDetectorLength, wallDetectorLength là độ dài của tia
+        var groundCollided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, groundDetectorLength, groundMask);
+        var wallCollided = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, wallDetectorLength, wallMask);
+        if (!groundCollided || wallCollided)
+        {
+            return true;
+        }
+        return false;
     }
 }

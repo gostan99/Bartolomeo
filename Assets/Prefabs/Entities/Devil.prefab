@@ -188,8 +188,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 150
   KnockBackForce: 150
+  groundDetectorLength: 24
+  wallDetectorLength: 16
   MaxHealth: 100
   CurrentHealth: 0
+  AttackDamage: 10
 --- !u!61 &8865619409516395895
 BoxCollider2D:
   m_ObjectHideFlags: 0
