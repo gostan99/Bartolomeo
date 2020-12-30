@@ -7,11 +7,11 @@ namespace Assets.Scripts.Entities
     class Skeleton : MonoBehaviour
     {
         public float Speed = 4;
-        private int facingDirection = 1;          //hướng quay mặt
+        private int facingDirection = 1;        //hướng quay mặt
         public float MaxHealth = 100;
         public float CurrentHealth;
 
-        public GameObject PatrolPoint;      // vị trí để đi tuần tra
+        public GameObject PatrolPoint;          // vị trí để đi tuần tra
         public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
         Animator animator;
@@ -65,7 +65,7 @@ namespace Assets.Scripts.Entities
         {
             //cập nhật biến playerDetector
             LookingForPlayer();
-
+            Debug.Log(state);
             switch (state)
             {
                 case State.Idle:
@@ -179,7 +179,14 @@ namespace Assets.Scripts.Entities
         // được gọi bởi Attack animation và TakeHit animaiton sau khi nó kết thúc hoạt ảnh
         void BackToChase()
         {
-            state = State.Chase;
+            if (PlayerIsInAttackRange())
+            {
+                state = State.Attack;
+            }
+            else
+            {
+                state = State.Chase;
+            }
         }
 
         //Được gọi bởi Player
