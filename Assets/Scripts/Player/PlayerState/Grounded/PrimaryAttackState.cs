@@ -48,7 +48,7 @@ namespace Assets.Scripts.Player
                     object[] package = new object[2];
                     package[0] = pData.AttackDamage;
                     package[1] = pData.FacingDirection;
-                    collider.SendMessage("GetHit", package);
+                    collider.SendMessage("TakeDamage", package);
                 }
                 pData.CollidedObjects.Clear();
             }

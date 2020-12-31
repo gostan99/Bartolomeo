@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     public Vector3 Direction = Vector3.right;
     public float AttackDamage = 10;
 
-    private LayerMask playerMask;
+    private LayerMask hitMask;
     private Animator animator;
     private string currentAnimation = "Move";
 
@@ -24,7 +25,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     {
         StartPos = transform.position;
 
-        playerMask = LayerMask.GetMask("Player");
+        hitMask = LayerMask.GetMask("Player");
         animator = GetComponent<Animator>();
     }
 
@@ -51,7 +52,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     void Move()
     {
         transform.position += Direction * Speed;
-        if (Vector3.Distance(transform.position, StartPos) >= KhoangCachBayToiDa || IsCollidedWithPlayer())
+        if (Vector3.Distance(transform.position, StartPos) >= KhoangCachBayToiDa || IsCollided())
         {
             state = State.Explosive;
         }
@@ -65,7 +66,10 @@ public class FlyingEyeProjectile : MonoBehaviour
     //Được gọi vào cuối animation của Explosive animation
     void Destroy()
     {
-        Destroy(this.gameObject);
+        var r = GetComponent<SpriteRenderer>();
+        r.enabled = false;
+        // Delay 2s
+        Destroy(this.gameObject, 2f);
     }
 
 
@@ -75,9 +79,16 @@ public class FlyingEyeProjectile : MonoBehaviour
         Debug.Log("Á hự");
     }
 
-    bool IsCollidedWithPlayer()
+    //Được gọi bởi Player
+    //Packege[0] là lượng dame, Package[1] là hướng bị đánh
+    public void TakeDamage(object[] package)
     {
-        var collider = Physics2D.OverlapCircle(transform.position, Size, playerMask);
-        return collider;
+        state = State.Explosive;
+    }
+
+    bool IsCollided()
+    {
+        var _collider = Physics2D.OverlapCircle(transform.position, Size, hitMask);
+        return _collider;
     }
 }

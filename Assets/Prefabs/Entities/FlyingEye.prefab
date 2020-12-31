@@ -143,13 +143,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1
-  KhoangCachVoiPlayer: 100
-  KnockBackSpeed: 8
-  KnockBackDistance: 50
+  FallingSpeed: 3
   MaxHealth: 100
   CurrentHealth: 0
+  PlayerDetectRadius: 125
   PatrolPoint: {fileID: 0}
   PatrolDistance: 100
-  PlayerDetectorRadius: 195
   Projectile: {fileID: 9063501781249717781, guid: 83613e5c5a8e0ed4384a4c2e27cf57df,
     type: 3}

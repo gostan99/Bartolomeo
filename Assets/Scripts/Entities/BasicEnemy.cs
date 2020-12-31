@@ -6,11 +6,14 @@ using UnityEngine;
 public class BasicEnemy : MonoBehaviour
 {
     public float Speed = 150f;
-    private int moveDirection = 1;          //hướng di chuyển
-    public int KnockBackForce = 150;          //lực bị đẩy lùi
+    private int moveDirection = 1;        //hướng di chuyển
+    public int KnockBackForce = 150;      //lực bị đẩy lùi
     private Rigidbody2D rb;
     private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast
+    public float groundDetectorLength = 48;   //Độ dài tia Raycast
     private int groundMask;               //Ground layer
+    public float wallDetectorLength = 16f;   //Độ dài tia Raycast
+    private int wallMask;                 //Wall layer
     public float MaxHealth = 100;
     public float CurrentHealth;
     public float AttackDamage = 10;
@@ -25,6 +28,7 @@ public class BasicEnemy : MonoBehaviour
 
         groundDetector = transform.Find("GroundDetector");
         groundMask = LayerMask.GetMask("Ground");
+        wallMask = LayerMask.GetMask("Wall");
         PlayerMask = LayerMask.GetMask("Player");
 
         rb = GetComponent<Rigidbody2D>();
@@ -50,13 +54,8 @@ public class BasicEnemy : MonoBehaviour
 
     void MoveDirectionUpdate()
     {
-        //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
-        //groundDetector.transform.position là gốc của tia Raycast
-        //Vector2.down là hướng bắn của tia
-        //50.0f là độ dài của tia
-        var collided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, 46.0f, groundMask);
-        // chuyển hướng nếu không thấy mặt đất và không đang ở trên không trung
-        if (!collided && !IsInAir())
+        // chuyển hướng nếu thấy đường cụt và không đang ở trên không trung
+        if (IsDeadEnd() && !IsInAir())
         {
             moveDirection *= -1;
         }
@@ -83,7 +82,9 @@ public class BasicEnemy : MonoBehaviour
         return rb.velocity.y != 0f;
     }
 
-    public void GetHit(object[] package)
+    //Được gọi bởi Player
+    //Packege[0] là lượng dame, Package[1] là hướng bị đánh
+    public void TakeDamage(object[] package)
     {
         // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
@@ -112,5 +113,22 @@ public class BasicEnemy : MonoBehaviour
         {
             Debug.Log("Á hự");
         }
+    }
+
+    // kiểm  tra có tới đường cụt?
+    // đường cụt là khi phía trước gặp vực hoặc tường
+    bool IsDeadEnd()
+    {
+        //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
+        //groundDetector.transform.position là gốc của tia Raycast
+        //Vector2.down là hướng bắn của tia
+        //groundDetectorLength, wallDetectorLength là độ dài của tia
+        var groundCollided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, groundDetectorLength, groundMask);
+        var wallCollided = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, wallDetectorLength, wallMask);
+        if (!groundCollided || wallCollided)
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Minotaur : MonoBehaviour
 {
-    private enum State { Idle, Walk, Attack, Dead }
-    State state = State.Walk;
+    private enum State { Idle, Patrol, Attack, Dead,
+        TakeHit
+    }
+    State state = State.Patrol;
 
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
@@ -14,6 +16,12 @@ public class Minotaur : MonoBehaviour
     public float MaxHealth = 100;
     public float CurrentHealth;
     public float AttackDamage = 10;
+
+    private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
+    public float groundDetectorLength = 22f;   //Độ dài tia Raycast
+    private int groundMask;               //Ground layer
+    private int wallMask;               //Wall layer
+    public float wallDetectorLength = 16f;   //Độ dài tia Raycast
 
     public GameObject PatrolPoint;      // vị trí để đi tuần tra
     public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
@@ -23,13 +31,13 @@ public class Minotaur : MonoBehaviour
     public Vector2 AttackRange = new Vector2(44, 56); // tầm đánh
 
     Animator animator;
-    string currentAnimation = "Walk";
+    string currentAnimation = "Patrol";
 
     Rigidbody2D rb;
 
     LayerMask playerMask;
 
-    float idleTime = 2f; // thời gian ở trạng thái idle là 2s
+    public float idleTime = 2f; // thời gian ở trạng thái idle là 2s
     float idleTimer; // đếm thời gian ở trạng thái idle còn lại
 
     // Start is called before the first frame update
@@ -40,6 +48,9 @@ public class Minotaur : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerMask = LayerMask.GetMask("Player");
+        groundDetector = transform.Find("GroundDetector");
+        groundMask = LayerMask.GetMask("Ground");
+        wallMask = LayerMask.GetMask("Wall");
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
@@ -66,12 +77,15 @@ public class Minotaur : MonoBehaviour
                 currentAnimation = "Idle";
                 Idle();
                 break;
-            case State.Walk:
+            case State.Patrol:
                 currentAnimation = "Walk";
-                Walk();
+                Patrol();
                 break;
             case State.Attack:
                 currentAnimation = "Attack";
+                break;
+            case State.TakeHit:
+                currentAnimation = "TakeHit";
                 break;
             case State.Dead:
                 currentAnimation = "Dead";
@@ -84,7 +98,7 @@ public class Minotaur : MonoBehaviour
         // nếu hết thời gian ở trạng thái idle thì chuyển sang trạng thái walk
         if (idleTimer <= 0)
         {
-            state = State.Walk;
+            state = State.Patrol;
             moveDirection = -moveDirection;
         }
 
@@ -95,7 +109,7 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    void Walk()
+    void Patrol()
     {
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) >= PatrolDistance)
         {
@@ -105,6 +119,13 @@ public class Minotaur : MonoBehaviour
                 state = State.Idle;
                 return;
             }
+        }
+
+        if (IsDeadEnd())
+        {
+            idleTimer = idleTime;
+            state = State.Idle;
+            return;
         }
 
         if (PlayerIsDetected())
@@ -130,10 +151,10 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    // được gọi bởi Attack animation sau khi nó kết thúc hoạt ảnh attack
-    void BackToWalk()
+    // được gọi bởi Attack animation và TakeHit animaiton sau khi nó kết thúc hoạt ảnh
+    void BackToPatrol()
     {
-        state = State.Walk;
+        state = State.Patrol;
     }
 
     bool PlayerIsDetected()
@@ -147,13 +168,16 @@ public class Minotaur : MonoBehaviour
         return rb.velocity.y != 0f;
     }
 
-    // Được gọi bơi player
-    public void GetHit(object[] package)
+    //Được gọi bởi Player
+    //Packege[0] là lượng dame, Package[1] là hướng bị đánh
+    public void TakeDamage(object[] package)
     {
         if (state == State.Dead)
         {
             return;
         }
+
+        state = State.TakeHit;
 
         // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
@@ -200,5 +224,22 @@ public class Minotaur : MonoBehaviour
                 return true;
             }
         }
+    }
+
+    // kiểm  tra có tới đường cụt?
+    // đường cụt là khi phía trước gặp vực hoặc tường
+    bool IsDeadEnd()
+    {
+        //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
+        //groundDetector.transform.position là gốc của tia Raycast
+        //Vector2.down là hướng bắn của tia
+        //groundDetectorLength, wallDetectorLength là độ dài của tia
+        var groundCollided = Physics2D.Raycast(groundDetector.transform.position, Vector2.down, groundDetectorLength, groundMask);
+        var wallCollided = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, wallDetectorLength, wallMask);
+        if (!groundCollided || wallCollided)
+        {
+            return true;
+        }
+        return false;
     }
 }

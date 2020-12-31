@@ -96,8 +96,9 @@ public class Bat : MonoBehaviour
         transform.position += moveDirection * Speed;
     }
 
+    //Được gọi bởi Player
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
-    public void GetHit(object[] package)
+    public void TakeDamage(object[] package)
     {
         //trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);

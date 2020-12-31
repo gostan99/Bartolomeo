@@ -10,11 +10,6 @@ public class FlyingEye : MonoBehaviour
 
     public float FallingSpeed = 3f;
 
-    private int KnockbackDirection = 1;
-    public float KnockBackSpeed = 8;          //tốc độ bị đẩy lùi
-    public float KnockBackDistance = 50;          //khoảng cách bị đẩy lùi
-    private float KnockbackDistanceRemain;          //khoảng cách còn lại để bị đẩy lùi
-
     public float MaxHealth = 100;
     public float CurrentHealth;
 
@@ -32,7 +27,7 @@ public class FlyingEye : MonoBehaviour
     private Animator animator;
     private string currentAnimation = "Flying";
 
-    enum State { Move, Knockback, Falling, Dead,
+    enum State { Move, TakeHit, Falling, Dead,
         Attack
     }
     State state = State.Move;
@@ -69,9 +64,8 @@ public class FlyingEye : MonoBehaviour
                 currentAnimation = "Flying";
                 Move();
                 break;
-            case State.Knockback:
-                currentAnimation = "GetHit";
-                Knockback();
+            case State.TakeHit:
+                currentAnimation = "TakeHit";
                 break;
             case State.Falling:
                 currentAnimation = "Falling";
@@ -111,40 +105,25 @@ public class FlyingEye : MonoBehaviour
         //thay đổi hướng di chuyển nếu đi quá xa khỏi điểm tuần tra
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) > PatrolDistance)
         {
-            //Vector AB = B - A
             moveDirection = (PatrolPoint.transform.position - transform.position).normalized;
         }
 
         transform.position += moveDirection * Speed;
     }
 
+    //Được gọi bởi Player
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
-    public void GetHit(object[] package)
+    public void TakeDamage(object[] package)
     {
         //trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
 
-        //chuyển sang trạng thái bị đẩy lùi
-        state = State.Knockback;
-        KnockbackDistanceRemain = KnockBackDistance;
-        //Gán hướng bị đẩy lùi
-        KnockbackDirection = Convert.ToInt32(package[1]);
+        //chuyển sang trạng thái bị đánh
+        state = State.TakeHit;
 
         if (CurrentHealth <= 0)
         {
             state = State.Falling;
-        }
-    }
-
-    void Knockback()
-    {
-        var velocity = new Vector3(KnockBackSpeed * KnockbackDirection, 0, 0);
-        transform.position += velocity;
-        KnockbackDistanceRemain -= Mathf.Abs(velocity.x);
-
-        if (KnockbackDistanceRemain <= 0)
-        {
-            state = State.Move;
         }
     }
 
@@ -176,6 +155,12 @@ public class FlyingEye : MonoBehaviour
         GameObject p = Instantiate(Projectile) as GameObject;
         p.transform.position = transform.position;
         p.SendMessage("SetDirection", moveDirection);
+    }
+
+    // được gọi bởi TakeHit animaiton sau khi nó kết thúc hoạt ảnh
+    void BackToMove()
+    {
+        state = State.Move;
     }
 
     void Falling()

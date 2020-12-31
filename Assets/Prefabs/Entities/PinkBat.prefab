@@ -148,6 +148,6 @@ MonoBehaviour:
   MaxHealth: 100
   CurrentHealth: 0
   AttackDamage: 10
+  PlayerDetectRadius: 125
   PatrolPoint: {fileID: 0}
   PatrolDistance: 100
-  PlayerDetectorRadius: 150
