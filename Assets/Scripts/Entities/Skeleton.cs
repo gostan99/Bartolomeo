@@ -57,6 +57,7 @@ namespace Assets.Scripts.Entities
 
             //cho phép player và entity đi xuyên qua nhau
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+            //cho phép entity đi xuyên qua nhau
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
         }
 
@@ -65,7 +66,7 @@ namespace Assets.Scripts.Entities
         {
             //cập nhật biến playerDetector
             LookingForPlayer();
-            Debug.Log(state);
+
             switch (state)
             {
                 case State.Idle:
@@ -135,6 +136,14 @@ namespace Assets.Scripts.Entities
                     state = State.Idle;
                     return;
                 }
+            }
+
+            //nếu gặp đường cụt
+            if (IsDeadEnd())
+            {
+                idleTimer = idleTime;
+                state = State.Idle;
+                return;
             }
 
             //nếu phát hiện player 

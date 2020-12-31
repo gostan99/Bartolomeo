@@ -6,18 +6,18 @@ using UnityEngine;
 public class FlyingEyeProjectile : MonoBehaviour
 {
     public float Speed = 5f;
-    public float Size = 8.5f;
-    private Vector3 StartPos;
+    public float ColliderSize = 8.5f;
+    private Vector3 StartPos;                     //vị trí xuất hiện
     public float KhoangCachBayToiDa = 500f;
-    public Vector3 Direction = Vector3.right;
+    private Vector3 Direction = Vector3.right;     //hướng bay
     public float AttackDamage = 10;
 
-    private LayerMask hitMask;
+    private LayerMask playerMask;
     private Animator animator;
     private string currentAnimation = "Move";
 
-    private enum State { Moving, Explosive }
-    State state = State.Moving;
+    private enum State { Move, Explosive }
+    State state = State.Move;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     {
         StartPos = transform.position;
 
-        hitMask = LayerMask.GetMask("Player");
+        playerMask = LayerMask.GetMask("Player");
         animator = GetComponent<Animator>();
     }
 
@@ -39,7 +39,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     {
         switch (state)
         {
-            case State.Moving:
+            case State.Move:
                 currentAnimation = "Move";
                 Move();
                 break;
@@ -52,6 +52,7 @@ public class FlyingEyeProjectile : MonoBehaviour
     void Move()
     {
         transform.position += Direction * Speed;
+        // bay quá giới hạn hoặc va chạm trúng player thì sẽ chuyển sang state phát nổ
         if (Vector3.Distance(transform.position, StartPos) >= KhoangCachBayToiDa || IsCollided())
         {
             state = State.Explosive;
@@ -66,9 +67,10 @@ public class FlyingEyeProjectile : MonoBehaviour
     //Được gọi vào cuối animation của Explosive animation
     void Destroy()
     {
+        // tắt renderer
         var r = GetComponent<SpriteRenderer>();
         r.enabled = false;
-        // Delay 2s
+        // hủy gameObject sau 2s để tránh lỗi null refference
         Destroy(this.gameObject, 2f);
     }
 
@@ -86,9 +88,10 @@ public class FlyingEyeProjectile : MonoBehaviour
         state = State.Explosive;
     }
 
+    //kiểm tra va chạm với player
     bool IsCollided()
     {
-        var _collider = Physics2D.OverlapCircle(transform.position, Size, hitMask);
+        var _collider = Physics2D.OverlapCircle(transform.position, ColliderSize, playerMask);
         return _collider;
     }
 }

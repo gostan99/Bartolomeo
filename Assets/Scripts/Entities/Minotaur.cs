@@ -12,23 +12,23 @@ public class Minotaur : MonoBehaviour
 
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
-    public int KnockBackForce = 150;          //lực bị đẩy lùi
+    public int KnockBackForce = 150;        //lực bị đẩy lùi
     public float MaxHealth = 100;
     public float CurrentHealth;
     public float AttackDamage = 10;
 
-    private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
-    public float groundDetectorLength = 22f;   //Độ dài tia Raycast
-    private int groundMask;               //Ground layer
-    private int wallMask;               //Wall layer
-    public float wallDetectorLength = 16f;   //Độ dài tia Raycast
+    private Transform groundDetector;           //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
+    public float groundDetectorLength = 22f;    //Độ dài tia Raycast
+    private int groundMask;                     //Ground layer
+    private int wallMask;                       //Wall layer
+    public float wallDetectorLength = 16f;      //Độ dài tia Raycast
 
-    public GameObject PatrolPoint;      // vị trí để đi tuần tra
-    public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
+    public GameObject PatrolPoint;              // vị trí để đi tuần tra
+    public float PatrolDistance = 50f;          // khoảng cách giới hạn để đi tuần tra
 
-    public float PlayerDetectRange = 26f; // tầm phát hiện player
+    public float PlayerDetectRange = 26f;       // tầm phát hiện player
     public Vector3 AttackOffSet = new Vector3(16, 12, 0); // vị trí đánh
-    public Vector2 AttackRange = new Vector2(44, 56); // tầm đánh
+    public Vector2 AttackRange = new Vector2(44, 56);     // tầm đánh
 
     Animator animator;
     string currentAnimation = "Patrol";
@@ -38,7 +38,7 @@ public class Minotaur : MonoBehaviour
     LayerMask playerMask;
 
     public float idleTime = 2f; // thời gian ở trạng thái idle là 2s
-    float idleTimer; // đếm thời gian ở trạng thái idle còn lại
+    float idleTimer;            // đếm thời gian ở trạng thái idle còn lại
 
     // Start is called before the first frame update
     void Start()
@@ -54,22 +54,12 @@ public class Minotaur : MonoBehaviour
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        //cho phép entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if (idleTimer > 0)
-        {
-            // giảm thời gian ở trạng thái idle còn lại
-            idleTimer -= Time.deltaTime;
-        }
-        FacingDirectionUpdate();
-        animator.Play(currentAnimation);
-    }
-
-    private void FixedUpdate()
     {
         switch (state)
         {
@@ -91,10 +81,24 @@ public class Minotaur : MonoBehaviour
                 currentAnimation = "Dead";
                 break;
         }
+
+        FacingDirectionUpdate();
+        animator.Play(currentAnimation);
+    }
+
+    private void FixedUpdate()
+    {
+        if (state == State.Patrol && !IsInAir())
+        {
+            ApplyMovement();
+        }
     }
 
     void Idle()
     {
+        // giảm thời gian ở trạng thái idle còn lại
+        idleTimer -= Time.deltaTime;
+
         // nếu hết thời gian ở trạng thái idle thì chuyển sang trạng thái walk
         if (idleTimer <= 0)
         {
@@ -102,7 +106,7 @@ public class Minotaur : MonoBehaviour
             moveDirection = -moveDirection;
         }
 
-        if (PlayerIsDetected())
+        if (PlayerIsInAttackRange())
         {
             state = State.Attack;
             return;
@@ -121,6 +125,7 @@ public class Minotaur : MonoBehaviour
             }
         }
 
+        //nếu gặp đường cụt
         if (IsDeadEnd())
         {
             idleTimer = idleTime;
@@ -128,16 +133,10 @@ public class Minotaur : MonoBehaviour
             return;
         }
 
-        if (PlayerIsDetected())
+        if (PlayerIsInAttackRange())
         {
             state = State.Attack;
             return;
-        }
-
-        //Movement
-        if (!IsInAir())
-        {
-            rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
         }
     }
 
@@ -157,7 +156,7 @@ public class Minotaur : MonoBehaviour
         state = State.Patrol;
     }
 
-    bool PlayerIsDetected()
+    bool PlayerIsInAttackRange()
     {
         var hit = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, PlayerDetectRange, playerMask);
         return hit;
@@ -182,14 +181,19 @@ public class Minotaur : MonoBehaviour
         // trừ máu
         CurrentHealth -= Convert.ToSingle(package[0]);
         // bị đẩy lùi
-        Knockback(Convert.ToInt32(package[1]));
+        ApplyKnockback(Convert.ToInt32(package[1]));
         if (CurrentHealth <= 0)
         {
             state = State.Dead;
         }
     }
 
-    void Knockback(int hitDirection)
+    void ApplyMovement()
+    {
+        rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
+    }
+
+    void ApplyKnockback(int hitDirection)
     {
         rb.velocity = new Vector2(KnockBackForce * hitDirection, KnockBackForce);
     }
@@ -200,6 +204,7 @@ public class Minotaur : MonoBehaviour
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * moveDirection, transform.localScale.y, transform.localScale.z);
     }
 
+    //moveDiection có đang hướng về PatrolPoint?
     bool IsDirectToPatrolPoint()
     {
         if (transform.position.x < PatrolPoint.transform.position.x)
