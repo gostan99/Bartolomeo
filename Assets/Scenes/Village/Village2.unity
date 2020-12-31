@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 91765416}
   - component: {fileID: 91765417}
   - component: {fileID: 91765418}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: stiltVillage_438
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2934,6 +2934,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647374, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
 --- !u!1 &446896167 stripped
@@ -4115,7 +4120,7 @@ GameObject:
   - component: {fileID: 588729256}
   - component: {fileID: 588729257}
   - component: {fileID: 588729258}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: stiltVillage_438 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9318,7 +9323,7 @@ GameObject:
   - component: {fileID: 1092219565}
   - component: {fileID: 1092219566}
   - component: {fileID: 1092219567}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: stiltVillage_187
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9414,7 +9419,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 204.79, y: 30}
+  m_Size: {x: 200.6, y: 30}
   m_EdgeRadius: 0
 --- !u!251 &1092219567
 PlatformEffector2D:
@@ -9428,7 +9433,7 @@ PlatformEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RotationalOffset: 0
+  m_RotationalOffset: 90
   m_UseOneWay: 0
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 180
@@ -12377,12 +12382,12 @@ PrefabInstance:
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -648.8
+      value: -665
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.8
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
@@ -15914,7 +15919,7 @@ GameObject:
   - component: {fileID: 1914872296}
   - component: {fileID: 1914872297}
   - component: {fileID: 1914872298}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: stiltVillage_438 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18090,6 +18095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuong-chuyen-map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252297548926719894, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdbd5b021fa6bab4b8dbcd478a8cb415, type: 3}
