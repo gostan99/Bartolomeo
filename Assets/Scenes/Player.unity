@@ -305,6 +305,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &895330888
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895330886}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 95, y: 70}
+  m_Size: {x: 200, y: 54}
+  m_Direction: 1
 --- !u!114 &895330891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,13 +334,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 80
-  ToPLayerDirection: {fileID: 835620506}
+  Player: {fileID: 835620506}
   MaxHealth: 100
   CurrentHealth: 0
   AttackDamage: 10
+  SlashOffSet: {x: 95, y: 70}
+  SlashSize: {x: 200, y: 54}
+  SlashAngle: -40
   PatrolPoint: {fileID: 367949273}
   PatrolDistance: 400
-  PlayerDetectRange: 1000
 --- !u!1 &1171272031
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,12 +585,12 @@ PrefabInstance:
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 311
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -149
+      value: -81
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
@@ -730,12 +748,12 @@ PrefabInstance:
     - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 397
+      value: -239
       objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -176
+      value: -151
       objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
@@ -782,6 +800,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7179453816454028885, guid: 17249157eb2fc9342a26d2d51409b826,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028886, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -801,6 +824,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UsedByEffector
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179453816454028888, guid: 17249157eb2fc9342a26d2d51409b826,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179453816454028888, guid: 17249157eb2fc9342a26d2d51409b826,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 259
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179453816454028888, guid: 17249157eb2fc9342a26d2d51409b826,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 183
       objectReference: {fileID: 0}
     - target: {fileID: 7179453816454028889, guid: 17249157eb2fc9342a26d2d51409b826,
         type: 3}

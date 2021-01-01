@@ -5,23 +5,26 @@ using UnityEngine;
 
 public class BossGoat : MonoBehaviour
 {
-    private enum State { Idle, Walk, Turnaround, Attack1, Attack2, Attack3, SmashToIdle, Dead }
-    State state = State.Idle;
+    private enum State { Idle, Walk, Turnaround, Slash, Smash, Stomp, SmashToIdle, Dead }
+    State state = State.Walk;
 
     public float Speed = 80f;
     private float moveDirection = 1;        //hướng di chuyển
-    public Transform ToPLayerDirection;
+    public Transform Player;
 
     public float MaxHealth = 100;
     public float CurrentHealth;
     public float AttackDamage = 10;
-    
+
+    public Vector2 SlashOffSet = new Vector2(95, 70);
+    public Vector2 SlashSize = new Vector2(200, 54);
+    public float SlashAngle = -40;
+
     Collider2D playerDetector =null;
 
     public GameObject PatrolPoint;      // vị trí để đi tuần tra
     public float PatrolDistance = 400f;      // khoảng cách giới hạn để đi tuần tra
 
-    public float PlayerDetectRange = 1000f; // tầm phát hiện player
 
     Animator animator;
     string currentAnimation = "Idle_Animation";
@@ -49,16 +52,6 @@ public class BossGoat : MonoBehaviour
 
     void Update()
     {
-        if (idleTimer > 0)
-        {
-            idleTimer -= Time.deltaTime;
-        }
-        FacingDirectionUpdate();
-        animator.Play(currentAnimation);
-    }
-
-    private void FixedUpdate()
-    {
         switch (state)
         {
             case State.Idle:
@@ -67,47 +60,69 @@ public class BossGoat : MonoBehaviour
                 break;
             case State.Turnaround:
                 currentAnimation = "Tunrnaround_Animation";
-                Turnaround();
+                //Turnaround(); 
                 break;
             case State.Walk:
                 currentAnimation = "Walk_Animation";
                 Walk();
                 break;
-            case State.Dead:
-                currentAnimation = "Dead_Animation";
+            case State.Slash:
+                currentAnimation = "Slash_Animation";
                 break;
+            //case State.Dead:
+            //    currentAnimation = "Dead_Animation";
+            //    break;
+        }
+        FacingDirectionUpdate();
+        animator.Play(currentAnimation);
+    }
+
+    private void FixedUpdate()
+    {
+        if (state == State.Walk)
+        {
+            ApplyMovement();
         }
     }
 
     void Idle()
     {
-        moveDirection = -moveDirection;
-        if (!IsDirectToPatrolPoint())
+        idleTimer -= Time.deltaTime;
+        if (idleTimer<=0)
         {
-            idleTimer = idleTime;
-            state = State.Turnaround;
-            return;
-        }
+            if (IsDirectToPlayer())
+            {
+                state = State.Walk;
+            }
+            else
+            {
+                state = State.Turnaround;
 
+            }
+        }
+    }
+
+    void ChangeToWalk()
+    {
+            state = State.Walk;
+    }
+
+    void ChangeToIdle()
+    {
+        idleTimer = idleTime;
+        state = State.Idle;
     }
 
     void Walk()
     {
-
-        //thay đổi hướng di chuyển nếu đi quá xa khỏi điểm tuần tra
-        if (Vector2.Distance(transform.position, PatrolPoint.transform.position) >= PatrolDistance)
+        if(!IsDirectToPlayer())
         {
-
-            if (!IsDirectToPatrolPoint())
-            {
-                idleTimer = idleTime;
-                state = State.Idle;
-                return;
-            }
+            state = State.Turnaround;
+            return;
         }
-        if (!IsInAir())
+        if (PlayerIsInAttackRange())
         {
-            rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
+            state = State.Slash;
         }
     }
 
@@ -120,16 +135,9 @@ public class BossGoat : MonoBehaviour
         }
     }
 
-
-    bool IsInAir()
+    void ApplyMovement()
     {
-        return rb.velocity.y != 0f;
-    }
-
-    bool PlayerIsDetected()
-    {
-        var hit = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, PlayerDetectRange, playerMask);
-        return hit;
+        rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
     }
 
     //cập nhật hướng quay mặt
@@ -145,29 +153,30 @@ public class BossGoat : MonoBehaviour
         }
     }
 
-    bool IsDirectToPatrolPoint()
+
+    bool IsDirectToPlayer()
     {
-        if (transform.position.x < PatrolPoint.transform.position.x)
+        if(transform.position.x > Player.position.x)
         {
             if (moveDirection < 0)
-            {
-                return false;
-            }
-            else
-            {
                 return true;
-            }
+            else
+                return false;
         }
         else
         {
             if (moveDirection > 0)
-            {
-                return false;
-            }
-            else
-            {
                 return true;
-            }
+            else
+                return false;
         }
+    } 
+
+    bool PlayerIsInAttackRange()
+    {
+        Vector3 AttackPos = new Vector3((transform.position.x + SlashOffSet.x) * moveDirection, transform.position.y + SlashOffSet.y,transform.position.z);
+        Collider2D hit = Physics2D.OverlapCapsule(AttackPos, SlashSize, CapsuleDirection2D.Horizontal, SlashAngle, playerMask);
+        return hit;
     }
 }
+
