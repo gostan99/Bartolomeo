@@ -6,20 +6,20 @@ using UnityEngine;
 public class BasicEnemy : MonoBehaviour
 {
     public float Speed = 150f;
-    private int moveDirection = 1;        //hướng di chuyển
-    public int KnockBackForce = 150;      //lực bị đẩy lùi
+    private int moveDirection = 1;            //hướng di chuyển
+    public int KnockBackForce = 150;          //lực bị đẩy lùi
     private Rigidbody2D rb;
-    private Transform groundDetector;     //Dùng để làm vị trí gốc cho Raycast
-    public float groundDetectorLength = 48;   //Độ dài tia Raycast
-    private int groundMask;               //Ground layer
-    public float wallDetectorLength = 16f;   //Độ dài tia Raycast
-    private int wallMask;                 //Wall layer
+    private Transform groundDetector;         //Dùng để làm vị trí gốc cho Raycast
+    public float groundDetectorLength = 48;   //Độ dài tia Raycast để check phía trước có mặt đất hay k
+    private int groundMask;                   //Ground layer
+    public float wallDetectorLength = 16f;    //Độ dài tia Raycast để check phía trước có tường hay k
+    private int wallMask;                     //Wall layer
     public float MaxHealth = 100;
     public float CurrentHealth;
     public float AttackDamage = 10;
 
-    private BoxCollider2D Hitbox;
-    private LayerMask PlayerMask;
+    private BoxCollider2D Hitbox;             
+    private LayerMask PlayerMask;             //Player player
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,7 @@ public class BasicEnemy : MonoBehaviour
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        //cho phép entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
@@ -119,7 +120,6 @@ public class BasicEnemy : MonoBehaviour
     // đường cụt là khi phía trước gặp vực hoặc tường
     bool IsDeadEnd()
     {
-        //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
         //groundDetector.transform.position là gốc của tia Raycast
         //Vector2.down là hướng bắn của tia
         //groundDetectorLength, wallDetectorLength là độ dài của tia

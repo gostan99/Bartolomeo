@@ -260,7 +260,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 3.951613
-    functionName: ChangeToWalk
+    functionName: SlashFinished
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

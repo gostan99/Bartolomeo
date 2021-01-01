@@ -8,7 +8,7 @@ public class FlyingEye : MonoBehaviour
     public float Speed = 0.8f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
 
-    public float FallingSpeed = 3f;
+    public float FallingSpeed = 4f;
 
     public float MaxHealth = 100;
     public float CurrentHealth;
@@ -16,13 +16,12 @@ public class FlyingEye : MonoBehaviour
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 50f;
 
-    public GameObject PatrolPoint;      // vị trí để đi tuần tra
+    public GameObject PatrolPoint;          // vị trí để đi tuần tra
     public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
 
     public GameObject Projectile;
 
-    private BoxCollider2D hitbox;
     private LayerMask playerMask;
     private Animator animator;
     private string currentAnimation = "Flying";
@@ -39,11 +38,12 @@ public class FlyingEye : MonoBehaviour
         CurrentHealth = MaxHealth;
         playerMask = LayerMask.GetMask("Player");
         groundMask = LayerMask.GetMask("Ground");
-        hitbox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        //cho phép entity đi xuyên qua nhau
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame
@@ -53,7 +53,7 @@ public class FlyingEye : MonoBehaviour
         LookingForPlayer();
         // cập nhật hướng quay mặt
         FacingDirectionUpdate();
-        PlayAnimation();
+        animator.Play(currentAnimation);
     }
 
     private void FixedUpdate()
@@ -152,9 +152,10 @@ public class FlyingEye : MonoBehaviour
         //cập nhật hướng di chuyển tới nhân vật
         moveDirection = (playerDetector.transform.position - transform.position).normalized;
 
-        GameObject p = Instantiate(Projectile) as GameObject;
-        p.transform.position = transform.position;
-        p.SendMessage("SetDirection", moveDirection);
+        // bắn quả cầu---------------------
+        GameObject p = Instantiate(Projectile) as GameObject;   //khởi tạo 
+        p.transform.position = transform.position;              //đặt vị trí của quả cầu
+        p.SendMessage("SetDirection", moveDirection);           //đặt hướng di chuyển của quả cầu
     }
 
     // được gọi bởi TakeHit animaiton sau khi nó kết thúc hoạt ảnh
@@ -186,14 +187,4 @@ public class FlyingEye : MonoBehaviour
         var collider = Physics2D.Raycast(transform.position, Vector2.down, 25f, groundMask);
         return collider;
     }
-
-    void PlayAnimation()
-    {
-        animator.Play(currentAnimation);
-    }
-
-    //private void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y - 25));
-    //}
 }

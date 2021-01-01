@@ -42,6 +42,8 @@ public class Undead : MonoBehaviour
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        //cho phép entity đi xuyên qua nhau
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame

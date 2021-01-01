@@ -6,10 +6,10 @@ using UnityEngine;
 public class Bat : MonoBehaviour
 {
     public float Speed = 4;
-    private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
-    private int KnockbackDirection = 1;
-    public float KnockBackSpeed = 7;          //tốc độ bị đẩy lùi
-    public float KnockBackDistance = 50;          //khoảng cách bị đẩy lùi
+    private Vector3 moveDirection = Vector2.right;  //hướng di chuyển
+    private int KnockbackDirection = 1;             //hướng bị đẩy lùi
+    public float KnockBackSpeed = 7;                //tốc độ bị đẩy lùi
+    public float KnockBackDistance = 50;            //khoảng cách bị đẩy lùi
     private float KnockbackDistanceRemain;          //khoảng cách còn lại để bị đẩy lùi
 
     public float MaxHealth = 100;
@@ -19,7 +19,7 @@ public class Bat : MonoBehaviour
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 50f;
 
-    public GameObject PatrolPoint;      // vị trí để đi tuần tra
+    public GameObject PatrolPoint;          // vị trí để đi tuần tra
     public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
 
@@ -38,6 +38,8 @@ public class Bat : MonoBehaviour
 
         //cho phép player và entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+        //cho phép entity đi xuyên qua nhau
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
     }
 
     // Update is called once per frame
@@ -149,17 +151,10 @@ public class Bat : MonoBehaviour
         DealDamage();
     }
 
+    //cập nhật giá trị cho playerDetector
     void LookingForPlayer()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
-        if (collider)
-        {
-            playerDetector = collider;
-        }
-        else
-        {
-            playerDetector = null;
-        }
+        playerDetector = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
     }
 
     void DealDamage()
