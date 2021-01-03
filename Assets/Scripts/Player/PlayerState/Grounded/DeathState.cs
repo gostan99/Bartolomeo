@@ -30,18 +30,6 @@ namespace Assets.Scripts.Player
 
         public override void LogicUpdate()
         {
-            pInput.InputUpdate();
-            timer += Time.deltaTime;
-            if (pData.OurHealth>0)
-            {
-                
-                    newState = pController.IdleState;
-                
-            }
-            else if (pData.OurHealth<0)
-            {
-                SceneManager.LoadScene(0);
-            }
         }
 
         public override void PhysicUpdate()

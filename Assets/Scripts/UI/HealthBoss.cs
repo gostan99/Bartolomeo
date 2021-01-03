@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Assets.Scripts.Player;
 using UnityEngine.UI;
+using Assets.Scripts.Entities;
 
-public class HealthBar : MonoBehaviour
+public class HealthBoss : MonoBehaviour
 {
-    public GameObject Player;
-    private PlayerData playerData;
+    public bool healthBossUI;
+    public GameObject BossGoat;
+    private BossGoat bossGoat;
     public Slider slider { get; private set; }
 
     //   public Gradient gradient;
@@ -15,18 +16,19 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = Player.GetComponent<PlayerData>();
-        slider=gameObject.GetComponent<Slider>();
+        bossGoat = BossGoat.GetComponent<BossGoat>();
+        slider = gameObject.GetComponent<Slider>();
 
-        slider.maxValue = playerData.maxHealth;
+        slider.maxValue = bossGoat.MaxHealth;
         slider.minValue = 0;
-        slider.value = playerData.currentHealth;
+        slider.value = bossGoat.CurrentHealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        slider.value = playerData.currentHealth;
+        slider.value = bossGoat.CurrentHealth;
     }
 
     public void SetMaxHealth(float health)
