@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public bool pause = false;
-    public GameObject pauseUI;
+    public GameObject pauseUI;  
 
     // Use this for initialization
     void Start()
@@ -21,13 +21,12 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !pause)
         {
-            pause =true;
+            pause = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && pause)
         {
             pause = false;
         }
-
 
         if (pause)
         {

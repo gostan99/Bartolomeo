@@ -45,8 +45,11 @@ namespace Assets.Scripts.Player
         public static bool HasDash = true;
 
         //--HEALTHBAR--------------------------------------------------
-        public int maxHealth = 100;
-        public int currentHealth;
+        public float maxHealth = 100;
+        public float currentHealth = 100;
+        public float DamageSlash = 5f;
+        public float DamageStomp = 7f;
+        public float DamageSmash = 10f;
 
 
         //--GROUND DETECTOR--------------------------------------------
@@ -62,11 +65,10 @@ namespace Assets.Scripts.Player
 
         public Dictionary<string, float> AnimationLength { get; private set; }
 
-        public int OurHealth;
-        public int MaxHealth = 10;
-
+        
         private void Awake()
         {
+            currentHealth = 100;
             Rb = GetComponent<Rigidbody2D>();
             Animator = GetComponent<Animator>();
             CapsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -81,8 +83,6 @@ namespace Assets.Scripts.Player
             HitboxPos = transform.Find("Hitbox");
 
             WallJumpDirection = new Vector2(1, 5);
-
-            OurHealth = MaxHealth;
 
             AnimationLength = new Dictionary<string, float>()
             {

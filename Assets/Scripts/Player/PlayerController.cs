@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Player;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +11,7 @@ public partial class PlayerController : MonoBehaviour
 
     PlayerData pData;
     PlayerInput pInput;
-
+    HealthBar healthBar;
     #region States
     public IdleState IdleState { get; private set; }
     public StartRunState StartRunState { get; private set; }
@@ -98,6 +99,17 @@ public partial class PlayerController : MonoBehaviour
         pData.CollidedObjects = hit;
     }
 
+    public void TakeDamage(object[] package)
+    {
+        // trừ máu
+        pData.currentHealth -= Convert.ToSingle(package[0]);
+        if (pData.currentHealth <= 0)
+        {
+            Debug.Log("Dead");
+        }
+
+
+    }
     public void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("stiltVillage_28"))
