@@ -555,17 +555,19 @@ MonoBehaviour:
   DashVelocityX: 937
   DashDuration: 0.15
   canDash: 1
-  HasDash: 1
   JumpVelocityY: 347
   WallSlideVelocityY: 20
   WallJumpDirection: {x: 0, y: 0}
   WallJumpVelocity: 110
+  maxHealth: 100
+  currentHealth: 100
+  DamageSlash: 5
+  DamageStomp: 7
+  DamageSmash: 10
   GroundDetectorSize: {x: 20, y: 11}
   WallDetectorLength: 13
   WallDetectorDir: {x: 1, y: 0}
   FacingDirection: 1
-  OurHealth: 0
-  MaxHealth: 10
 --- !u!70 &4246417194954873795
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

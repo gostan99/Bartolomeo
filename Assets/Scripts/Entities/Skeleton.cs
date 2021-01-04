@@ -1,4 +1,5 @@
 ﻿
+using Assets.Scripts.Player;
 using System;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Assets.Scripts.Entities
 {
     class Skeleton : MonoBehaviour
     {
+        private PlayerData pData;
+
         public float Speed = 4;
         private int facingDirection = 1;        //hướng quay mặt
         public float MaxHealth = 100;
@@ -181,7 +184,10 @@ namespace Assets.Scripts.Entities
             Collider2D hit = Physics2D.OverlapCapsule(attackPos.transform.position, new Vector2(AttackRange.x * facingDirection, AttackRange.y), CapsuleDirection2D.Horizontal, 0, playerMask);
             if (hit)
             {
-                Debug.Log("Á hự");
+                object[] package = new object[2];
+                package[0] = AttackDamage;
+                package[1] = facingDirection;
+                hit.SendMessage("TakeDamage", package);
             }
         }
 

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BasicEnemy : MonoBehaviour
 {
+    
+
     public float Speed = 150f;
     private int moveDirection = 1;            //hướng di chuyển
     public int KnockBackForce = 150;          //lực bị đẩy lùi
@@ -16,7 +18,7 @@ public class BasicEnemy : MonoBehaviour
     private int wallMask;                     //Wall layer
     public float MaxHealth = 100;
     public float CurrentHealth;
-    public float AttackDamage = 10;
+    public float AttackDamage = 3;
 
     private BoxCollider2D Hitbox;             
     private LayerMask PlayerMask;             //Player player
@@ -112,7 +114,9 @@ public class BasicEnemy : MonoBehaviour
         Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
         if (hit)
         {
-            Debug.Log("Á hự");
+            object[] package = new object[1];
+            package[0] = AttackDamage;
+            hit.SendMessage("TakeDamage", package);
         }
     }
 

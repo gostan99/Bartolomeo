@@ -5,13 +5,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public partial class PlayerController : MonoBehaviour
 {
 
     PlayerData pData;
     PlayerInput pInput;
-    HealthBar healthBar;
+
+    SpriteRenderer spriteRenderer;
+
     #region States
     public IdleState IdleState { get; private set; }
     public StartRunState StartRunState { get; private set; }
@@ -42,6 +45,7 @@ public partial class PlayerController : MonoBehaviour
     {
         pData = GetComponent<PlayerData>();
         pInput = new PlayerInput();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         #region Initialize States 
         IdleState = new IdleState( this,  pInput,  pData, "Idle_Animation");
@@ -79,6 +83,8 @@ public partial class PlayerController : MonoBehaviour
             currentState.Enter();
         }
         currentState.PlayAnimation();
+
+        InvulnerableEffect();
     }
 
     //private void OnDrawGizmos()
@@ -99,27 +105,68 @@ public partial class PlayerController : MonoBehaviour
         pData.CollidedObjects = hit;
     }
 
-    public void TakeDamage(object[] package)
+    private void InvulnerableEffect()
     {
+
+        if (pData.invulnerableTimer >= 0)
+        {
+            pData.invulnerableTimer -= Time.deltaTime;
+        }
+
+        var tempColor = spriteRenderer.color;
+        
+        if (pData.invulnerableTimer <= 0)
+        {
+            tempColor.a = 255;
+            spriteRenderer.color = tempColor;
+            return;
+        }
+        if (tempColor.a==255)
+        {
+            tempColor.a = 0;
+            spriteRenderer.color = tempColor;
+        }
+        else
+        {
+            tempColor.a = 255;
+            spriteRenderer.color = tempColor;
+        
+        }
+    }
+
+    public void TakeDamage(object[] package) {
+        if (pData.invulnerableTimer >= 0)
+        {
+            return;
+        }
+        pData.invulnerableTimer = pData.invulnerableTime;
         // trừ máu
         pData.currentHealth -= Convert.ToSingle(package[0]);
         if (pData.currentHealth <= 0)
         {
-            Debug.Log("Dead");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-
+        
     }
+
     public void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("stiltVillage_28"))
             transform.parent = col.transform;
+        if (col.gameObject.name.Equals("Trap"))
+        {
+            object[] package = new object[1];
+            package[0] = 100f;
+            TakeDamage(package);
+        }
+            
     }
 
     public void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("stiltVillage_28"))
             transform.parent = null;
+
     }
 
 }
