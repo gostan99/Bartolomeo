@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Entity
   - Grounded
+  - Trap
   layers:
   - Default
   - TransparentFX

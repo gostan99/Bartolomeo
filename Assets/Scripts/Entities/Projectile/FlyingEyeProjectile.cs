@@ -78,7 +78,13 @@ public class FlyingEyeProjectile : MonoBehaviour
     //Được gọi vào đầu animation của Explosive animation
     void DealDamage()
     {
-        Debug.Log("Á hự");
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, ColliderSize, playerMask);
+        if (hit)
+        {
+            object[] package = new object[1];
+            package[0] = AttackDamage;
+            hit.SendMessage("TakeDamage", package);
+        }
     }
 
     //Được gọi bởi Player

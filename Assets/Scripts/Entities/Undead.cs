@@ -14,7 +14,7 @@ public class Undead : MonoBehaviour
 
     public float MaxHealth = 100;
     public float CurrentHealth;
-    public float AttackDamage = 15;
+    public float AttackDamage = 5;
 
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 160f;                 // bán kính phát hiện player
@@ -175,7 +175,9 @@ public class Undead : MonoBehaviour
         Collider2D hit = Physics2D.OverlapCircle(transform.position + AttackOffSet, AttackRadius, PlayerMask);
         if (hit)
         {
-            Debug.Log("Á hự");
+            object[] package = new object[1];
+            package[0] = AttackDamage;
+            hit.SendMessage("TakeDamage", package);
         }
     }
 
