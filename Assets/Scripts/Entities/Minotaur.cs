@@ -15,7 +15,7 @@ public class Minotaur : MonoBehaviour
     public int KnockBackForce = 150;        //lực bị đẩy lùi
     public float MaxHealth = 100;
     public float CurrentHealth;
-    public float AttackDamage = 10;
+    public float AttackDamage = 3;
 
     private Transform groundDetector;           //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
     public float groundDetectorLength = 22f;    //Độ dài tia Raycast
@@ -146,7 +146,9 @@ public class Minotaur : MonoBehaviour
         Collider2D hit = Physics2D.OverlapCapsule(transform.position + AttackOffSet, AttackRange, CapsuleDirection2D.Vertical, 0, playerMask);
         if (hit)
         {
-            Debug.Log("Á hự");
+            object[] package = new object[1];
+            package[0] = AttackDamage;
+            hit.SendMessage("TakeDamage", package);
         }
     }
 

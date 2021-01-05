@@ -51,6 +51,10 @@ namespace Assets.Scripts.Player
         public float DamageStomp = 7f;
         public float DamageSmash = 10f;
 
+        //--TAKEHIT----------------------------------------------------
+        public float invulnerableTimer=0f;
+        public float invulnerableTime = 2f;
+
 
         //--GROUND DETECTOR--------------------------------------------
         public Transform GroundDetector { get; private set; }

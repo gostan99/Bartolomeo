@@ -14,7 +14,7 @@ public class Bat : MonoBehaviour
 
     public float MaxHealth = 100;
     public float CurrentHealth;
-    public float AttackDamage = 10;
+    public float AttackDamage = 3;
 
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 50f;
@@ -162,7 +162,9 @@ public class Bat : MonoBehaviour
         Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
         if (hit)
         {
-            Debug.Log("Á hự");
+            object[] package = new object[1];
+            package[0] = AttackDamage;
+            hit.SendMessage("TakeDamage", package);
         }
     }
 }
