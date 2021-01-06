@@ -4818,7 +4818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1494003472, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
       propertyPath: invulnerableTime
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1494003472, guid: e2734f02aba98b84caa9859b5c3c7132, type: 3}
       propertyPath: maxHealth
@@ -12103,11 +12103,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SilverBat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372586683973588396, guid: 181abf7050ab2784fbd9f909aeafef32,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181abf7050ab2784fbd9f909aeafef32, type: 3}
