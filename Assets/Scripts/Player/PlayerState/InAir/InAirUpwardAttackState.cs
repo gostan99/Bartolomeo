@@ -31,6 +31,19 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
+
+            if (pData.CollidedObjects.Count != 0)
+            {
+                foreach (var collider in pData.CollidedObjects)
+                {
+                    object[] package = new object[2];
+                    package[0] = pData.AttackDamage;
+                    package[1] = pData.FacingDirection;
+                    collider.SendMessage("TakeDamage", package);
+                }
+                pData.CollidedObjects.Clear();
+            }
+
             if (timer >= animationLength)
             {
                 if (!IsGrounded())

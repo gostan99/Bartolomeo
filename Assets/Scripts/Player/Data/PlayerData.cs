@@ -22,11 +22,25 @@ namespace Assets.Scripts.Player
         public LayerMask NextLevelMask { get; private set; }
 
         //--HITBOX-----------------------------------------------------
-        public Transform HitboxPos;
-        public Vector2 HitboxSize = new Vector2(103,37);
-        public CapsuleDirection2D CapsuleHitboxDirection = CapsuleDirection2D.Horizontal;
         public float AttackDamage = 20f; 
         public List<Collider2D> CollidedObjects = new List<Collider2D>();
+        //Primaray Attack
+        public Transform PrimaryHitboxPos;
+        public Vector2 PrimaryHitboxSize = new Vector2(103,37);
+        public CapsuleDirection2D PrimaryHitboxDirection = CapsuleDirection2D.Horizontal;
+        //In Air Primaray Attack
+        public Transform InAirPrimaryHitboxPos;
+        public Vector2 InAirPrimaryHitboxSize = new Vector2(92,38);
+        public CapsuleDirection2D InAirPrimaryHitboxDirection = CapsuleDirection2D.Horizontal;
+        //Grounded UpWard Attack
+        public Transform GroundedUpwardHitboxPos;
+        public Vector2 GroundedUpwardHitboxSize = new Vector2(79,103);
+        public CapsuleDirection2D GroundedUpwardHitboxDirection = CapsuleDirection2D.Vertical;
+        //In Air UpWard Attack
+        public Transform InAirUpwardHitboxPos;
+        public Vector2 InAirUpwardHitboxSize = new Vector2(79,102);
+        public CapsuleDirection2D InAirUpwardHitboxDirection = CapsuleDirection2D.Vertical;
+        //--------------------------------------------------------------
 
         //--PARAMETER--------------------------------------------------
         public float Speed = 20.0f;
@@ -84,7 +98,11 @@ namespace Assets.Scripts.Player
 
             GroundDetector = transform.Find("GroundDetector");
             WallDetector = transform.Find("WallDetector");
-            HitboxPos = transform.Find("Hitbox");
+
+            PrimaryHitboxPos = transform.Find("PrimaryHitbox");
+            InAirPrimaryHitboxPos = transform.Find("InAirPrimaryHitbox");
+            GroundedUpwardHitboxPos = transform.Find("GroundedUpwardHitbox");
+            InAirUpwardHitboxPos = transform.Find("InAirUpwardHitbox");
 
             WallJumpDirection = new Vector2(1, 5);
 
