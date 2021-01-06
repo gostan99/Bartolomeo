@@ -555,7 +555,7 @@ MonoBehaviour:
   DashVelocityX: 937
   DashDuration: 0.15
   canDash: 1
-  JumpVelocityY: 347
+  JumpVelocityY: 243
   WallSlideVelocityY: 20
   WallJumpDirection: {x: 0, y: 0}
   WallJumpVelocity: 110
@@ -564,6 +564,8 @@ MonoBehaviour:
   DamageSlash: 5
   DamageStomp: 7
   DamageSmash: 10
+  invulnerableTimer: 0
+  invulnerableTime: 2
   GroundDetectorSize: {x: 20, y: 11}
   WallDetectorLength: 13
   WallDetectorDir: {x: 1, y: 0}
