@@ -189,7 +189,7 @@ MonoBehaviour:
   Speed: 150
   KnockBackForce: 150
   groundDetectorLength: 24
-  wallDetectorLength: 16
+  wallDetectorLength: 11
   MaxHealth: 100
   CurrentHealth: 0
   AttackDamage: 10

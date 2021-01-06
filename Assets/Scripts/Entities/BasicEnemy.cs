@@ -14,7 +14,7 @@ public class BasicEnemy : MonoBehaviour
     private Transform groundDetector;         //Dùng để làm vị trí gốc cho Raycast
     public float groundDetectorLength = 48;   //Độ dài tia Raycast để check phía trước có mặt đất hay k
     private int groundMask;                   //Ground layer
-    public float wallDetectorLength = 16f;    //Độ dài tia Raycast để check phía trước có tường hay k
+    public float wallDetectorLength = 40f;    //Độ dài tia Raycast để check phía trước có tường hay k
     private int wallMask;                     //Wall layer
     public float MaxHealth = 100;
     public float CurrentHealth;

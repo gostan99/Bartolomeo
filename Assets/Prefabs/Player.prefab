@@ -555,7 +555,7 @@ MonoBehaviour:
   DashVelocityX: 937
   DashDuration: 0.15
   canDash: 1
-  JumpVelocityY: 347
+  JumpVelocityY: 243
   WallSlideVelocityY: 20
   WallJumpDirection: {x: 0, y: 0}
   WallJumpVelocity: 110
