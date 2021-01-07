@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class CameraParallax : MonoBehaviour
 {
     public Camera mainCamera;
+    public Camera nearOthorgraphicCamera;
     public Camera farCamera;
     public Camera nearCamera;
     public Camera backGroundCamera;
@@ -53,6 +54,16 @@ public class CameraParallax : MonoBehaviour
             mainCamera.depth = -1;
         }
 
+        if (nearOthorgraphicCamera != null)
+        {
+            nearOthorgraphicCamera.transform.localPosition = Vector3.zero;
+            nearOthorgraphicCamera.transform.rotation = Quaternion.identity;
+            nearOthorgraphicCamera.transform.localScale = Vector3.one;
+            mainCamera.orthographic = true;
+            mainCamera.clearFlags = CameraClearFlags.Nothing;
+            mainCamera.depth = -1;
+        }
+
         if (nearCamera != null)
         {
             nearCamera.transform.localPosition = Vector3.zero;
@@ -67,7 +78,7 @@ public class CameraParallax : MonoBehaviour
 
     public void UpdateCameras()
     {
-        if (mainCamera == null || farCamera == null || nearCamera == null || backGroundCamera == null) return;
+        if (mainCamera == null || farCamera == null || nearCamera == null || nearOthorgraphicCamera == null || backGroundCamera == null) return;
 
         // orthoSize
         float a = mainCamera.orthographicSize;
@@ -76,6 +87,7 @@ public class CameraParallax : MonoBehaviour
 
         //change clipping planes based on main camera z-position
         mainCamera.farClipPlane = b;
+        nearOthorgraphicCamera.farClipPlane = b;
         backGroundCamera.nearClipPlane = b;
         backGroundCamera.farClipPlane = furthestClipPlane;
         farCamera.nearClipPlane = b;
@@ -87,6 +99,7 @@ public class CameraParallax : MonoBehaviour
         float fieldOfView = Mathf.Atan(a / b) * Mathf.Rad2Deg * 2f;
         nearCamera.fieldOfView = farCamera.fieldOfView = fieldOfView;
         backGroundCamera.orthographicSize = a;
+        nearOthorgraphicCamera.orthographicSize = a;
     }
 
     //update vị trí của static background theo vị trí của maincamera
