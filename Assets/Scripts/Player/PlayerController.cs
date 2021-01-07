@@ -98,9 +98,29 @@ public partial class PlayerController : MonoBehaviour
     }
 
 
-    public void CheckAttackHitbox()
+    public void CheckPrimaryAttackHit()
     {
-        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.HitboxPos.position, pData.HitboxSize, pData.CapsuleHitboxDirection, 0, pData.EntityMask).ToList();
+        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.PrimaryHitboxPos.position, pData.PrimaryHitboxSize, pData.PrimaryHitboxDirection, 0, pData.EntityMask).ToList();
+
+        pData.CollidedObjects = hit;
+    }
+    public void CheckInAirPrimaryAttackHit()
+    {
+        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.InAirPrimaryHitboxPos.position, pData.InAirPrimaryHitboxSize, pData.InAirPrimaryHitboxDirection, 0, pData.EntityMask).ToList();
+
+        pData.CollidedObjects = hit;
+    }
+
+    public void CheckGroundedUpwardAttackHit()
+    {
+        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.GroundedUpwardHitboxPos.position, pData.GroundedUpwardHitboxSize, pData.GroundedUpwardHitboxDirection, 0, pData.EntityMask).ToList();
+
+        pData.CollidedObjects = hit;
+    }
+
+    public void CheckInAirUpwardAttackHit()
+    {
+        List<Collider2D> hit = Physics2D.OverlapCapsuleAll(pData.InAirUpwardHitboxPos.position, pData.InAirUpwardHitboxSize, pData.InAirUpwardHitboxDirection, 0, pData.EntityMask).ToList();
 
         pData.CollidedObjects = hit;
     }
