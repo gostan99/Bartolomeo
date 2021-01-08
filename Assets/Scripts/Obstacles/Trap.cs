@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Trap : MonoBehaviour
 {
@@ -10,9 +11,7 @@ public class Trap : MonoBehaviour
     {
         if (col.gameObject.layer.Equals(12))
         {
-            object[] package = new object[2];
-            package[0] = AttackDamage;
-            col.collider.SendMessage("TakeDamage", package);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
