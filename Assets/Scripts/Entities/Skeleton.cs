@@ -231,12 +231,18 @@ namespace Assets.Scripts.Entities
 
         void LookingForPlayer()
         {
-            playerDetector = Physics2D.Raycast(transform.position, Vector2.right, PlayerDetectRange, playerMask);
+            var tempPos = new Vector3(transform.position.x, transform.position.y - 30, transform.position.z);
+            playerDetector = Physics2D.Raycast(tempPos, Vector2.right, PlayerDetectRange, playerMask);
             
             if (!playerDetector)
             {
-                playerDetector = Physics2D.Raycast(transform.position, Vector2.right * -1, PlayerDetectRange, playerMask);
+                playerDetector = Physics2D.Raycast(tempPos, Vector2.right * -1, PlayerDetectRange, playerMask);
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.DrawLine(transform.position, transform.position + Vector3.right * PlayerDetectRange);
         }
 
         //cập nhật hướng quay mặt
@@ -292,7 +298,7 @@ namespace Assets.Scripts.Entities
         //Player có nằm trong tầm đánh?
         bool PlayerIsInAttackRange()
         {
-            Collider2D _collider = Physics2D.OverlapCapsule(attackPos.transform.position, new Vector2(AttackRange.x * facingDirection, AttackRange.y), CapsuleDirection2D.Horizontal, 0, playerMask);
+            Collider2D _collider = Physics2D.OverlapCapsule(attackPos.transform.position, AttackRange, CapsuleDirection2D.Horizontal, 0, playerMask);
             return _collider;
         }
     }
