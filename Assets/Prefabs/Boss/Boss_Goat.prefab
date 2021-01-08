@@ -195,9 +195,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 115
-  MaxHealth: 500
+  MaxHealth: 3000
   CurrentHealth: 0
   slashRange: {x: 200, y: 54}
   slashAngle: -40
   slashDamage: 10
+  smashOffSet: {x: 0, y: 68, z: 0}
+  smashSize: {x: 235, y: 145, z: 0}
+  stompOffSet: {x: 0, y: 68, z: 0}
+  stompSize: {x: 235, y: 145, z: 0}
   Player: {fileID: 0}
