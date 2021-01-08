@@ -55,6 +55,10 @@ namespace Assets.Scripts.Player
                     newState = pController.IdleState;
                 }
             }
+            else if (pInput.DashInput)
+            {
+                newState = pController.DashingState;
+            }
             //Debug.Log(pInput.AttackInput);
         }
 

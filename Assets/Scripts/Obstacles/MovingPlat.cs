@@ -30,4 +30,18 @@ public class MovingPlat : MonoBehaviour
     }
 
 
+
+    public void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.layer.Equals(12))
+            col.transform.parent = transform;
+
+    }
+
+    public void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.layer.Equals(12))
+            col.transform.parent = null;
+
+    }
 }

@@ -65,6 +65,10 @@ namespace Assets.Scripts.Player
                     newState = pController.IdleState;
                 }
             }
+            else if (pInput.DashInput)
+            {
+                newState = pController.DashingState;
+            }
         }
 
         public override void PhysicUpdate()

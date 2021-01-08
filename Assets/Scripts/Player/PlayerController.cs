@@ -168,25 +168,4 @@ public partial class PlayerController : MonoBehaviour
         }
         
     }
-
-    public void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.name.Equals("stiltVillage_28"))
-            transform.parent = col.transform;
-        if (col.gameObject.name.Equals("Trap"))
-        {
-            object[] package = new object[1];
-            package[0] = 100f;
-            TakeDamage(package);
-        }
-            
-    }
-
-    public void OnCollisionExit2D(Collision2D col)
-    {
-        if (col.gameObject.name.Equals("stiltVillage_28"))
-            transform.parent = null;
-
-    }
-
 }

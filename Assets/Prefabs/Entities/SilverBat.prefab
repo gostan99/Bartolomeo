@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06faa77566b23da4d82324a903c4e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 1.5
   KnockBackSpeed: 8
   KnockBackDistance: 80
   MaxHealth: 100

@@ -32,13 +32,13 @@ namespace Assets.Scripts.Player
 
         private void OnJumpInput()
         {
-            if (Input.GetButtonDown("Jump") && JumpInputCounter < PlayerData.MaxJumpCounter )
+            if (Input.GetKeyDown(KeyCode.Space) && JumpInputCounter < PlayerData.MaxJumpCounter )
             {
                 JumpInput = true;
                 jumpInputHoldTime = 0;
                 ++JumpInputCounter;
             }
-            if (Input.GetButton("Jump") && JumpInput)
+            if (Input.GetKey(KeyCode.Space) && JumpInput)
             {
                 jumpInputHoldTime += Time.deltaTime;
                 if (jumpInputHoldTime >= MAX_JUMP_HOLD_TIME)
@@ -46,7 +46,7 @@ namespace Assets.Scripts.Player
                     JumpInput = false;
                 }
             }
-            else if (Input.GetButtonUp("Jump"))
+            else if (Input.GetKeyUp(KeyCode.Space))
             {
                 JumpInput = false;
             }
@@ -59,11 +59,11 @@ namespace Assets.Scripts.Player
 
         private void OnDashInput()
         {
-            if (Input.GetButtonDown("Dash"))
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             {
                 DashInput = true;
             }
-            else if (Input.GetButton("Dash"))
+            else if (Input.GetKey(KeyCode.LeftShift))
             {
                 DashInput = false;
             }

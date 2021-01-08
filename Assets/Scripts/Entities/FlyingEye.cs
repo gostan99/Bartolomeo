@@ -108,7 +108,7 @@ public class FlyingEye : MonoBehaviour
             moveDirection = (PatrolPoint.transform.position - transform.position).normalized;
         }
 
-        transform.position += moveDirection * Speed;
+        transform.position += new Vector3(moveDirection.x, moveDirection.y, 0) * Speed;
     }
 
     //Được gọi bởi Player

@@ -27,7 +27,6 @@ public class BossGate : MonoBehaviour
         {
             bossGoat.SetActive(true);
             TuongChan.SetActive(true);
-            Debug.Log(collision.gameObject.layer);
         }
     }
 

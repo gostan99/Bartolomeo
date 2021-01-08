@@ -22,7 +22,6 @@ namespace Assets.Scripts.Player
         public LayerMask NextLevelMask { get; private set; }
 
         //--HITBOX-----------------------------------------------------
-        public float AttackDamage = 20f; 
         public List<Collider2D> CollidedObjects = new List<Collider2D>();
         //Primaray Attack
         public Transform PrimaryHitboxPos;
@@ -40,7 +39,12 @@ namespace Assets.Scripts.Player
         public Transform InAirUpwardHitboxPos;
         public Vector2 InAirUpwardHitboxSize = new Vector2(79,102);
         public CapsuleDirection2D InAirUpwardHitboxDirection = CapsuleDirection2D.Vertical;
+        public float AttackDamage = 20f; 
         //--------------------------------------------------------------
+
+        //--HEALTHBAR--------------------------------------------------
+        public float maxHealth = 100;
+        public float currentHealth = 100;
 
         //--PARAMETER--------------------------------------------------
         public float Speed = 20.0f;
@@ -57,13 +61,6 @@ namespace Assets.Scripts.Player
         //--SERIALIZE DATA---------------------------------------------
         public static int MaxJumpCounter = 2;
         public static bool HasDash = true;
-
-        //--HEALTHBAR--------------------------------------------------
-        public float maxHealth = 100;
-        public float currentHealth = 100;
-        public float DamageSlash = 5f;
-        public float DamageStomp = 7f;
-        public float DamageSmash = 10f;
 
         //--TAKEHIT----------------------------------------------------
         public float invulnerableTimer=0f;
@@ -110,18 +107,18 @@ namespace Assets.Scripts.Player
             {
                 { "Start_Run_Animation", 0.4f },
                 { "Start_Falling_Animation", 0.183f },
-                { "Wall_contact", 0.647f },
-                { "Wallclimb_unhanged", 0.632f },
-                { "Wallclimbing_jump", 0.544f },
-                { "Tiep_dat_Animation", 0.571f },
+                { "Wall_contact", 0.44f },
+                { "Wallclimb_unhanged", 0.6f },
+                { "Wallclimbing_jump", 0.517f },
+                { "Tiep_dat_Animation", 0.4f},
                 { "Stop_Run_Animation", 0.175f },
-                { "Left_swing_attack", 0.5f },
-                {"Right_swing_attack",0.389f },
-                {"Upward_clamped",0.6f },
                 {"Downward",0.444f },
-                {"Right_swing_jump",0.385f },
-                {"Left_swing_jump",0.417f },
-                {"Upward_jump",0.526f }
+                { "Left_swing_attack", 0.3f },
+                {"Right_swing_attack",0.233f },
+                {"Right_swing_jump",0.263f },
+                {"Left_swing_jump",0.294f },
+                {"Upward_clamped",0.267f },
+                {"Upward_jump",0.222f }
             };
         }
     }

@@ -19,14 +19,30 @@ namespace Assets.Scripts.Entities
         string currentAnimation;
 
         Rigidbody2D rb;
+        public float DamageSlash = 10f;
+        public float DamageStomp = 20f;
+        public float DamageSmash = 30f;
+        public float slashAngle = -20;
+        public float stompAngle = -74;
         private Transform slashPos;                     // vị trí đánh
-        public Vector2 slashRange = new Vector2(200, 54 );     // tầm đánh: dài = x, rộng = y
-        public float slashAngle = -40;
-        public float slashDamage = 10;
-        public Vector3 smashOffSet = new Vector3(-5, 45,0);
-        public Vector3 smashSize = new Vector3(5, 80,0);
-        public Vector3 stompOffSet = new Vector3(-5, 45,0);
-        public Vector3 stompSize = new Vector3(175, 80,0);
+        private Transform smashPos;                     // vị trí đánh
+        private Transform stompPos;                     // vị trí đánh
+        private Transform smashDetectorPos;                            // vị trí kiểm tra tầm đánh
+        private Transform slashOrStompDetectorPos;                     // vị trí kiểm tra tầm đánh
+        private Vector3 attackDetectorRange = new Vector3(90,109,0);  // tầm để kiểm tra tầm đánh
+        public Vector2 slashRange = new Vector2(200, 54);     // tầm đánh: dài = x, rộng = y
+        public Vector3 smashRange = new Vector3(200, 174,0);
+        public Vector3 stompRange = new Vector3(149, 94,0);
+        private void OnDrawGizmos()
+        {
+            if (smashPos == null)
+            {
+                return;
+            }
+            Gizmos.DrawCube(smashPos.position, smashRange);
+            //Gizmos.DrawCube(smashDetectorPos.position, attackDetectorRange);
+            //Gizmos.DrawCube(slashOrStompDetectorPos.position, attackDetectorRange);
+        }
 
         int SlashOrStomp = 0;
 
@@ -53,6 +69,10 @@ namespace Assets.Scripts.Entities
             animator = GetComponent<Animator>();
             playerMask = LayerMask.GetMask("Player");
             slashPos = transform.Find("SlashPos");
+            smashPos = transform.Find("SmashPos");
+            stompPos = transform.Find("StompPos");
+            smashDetectorPos = transform.Find("SmashDetectorPos");
+            slashOrStompDetectorPos = transform.Find("SlashOrStompDetectorPos");
 
 
             ////cho phép player và entity đi xuyên qua nhau
@@ -114,17 +134,17 @@ namespace Assets.Scripts.Entities
             if (IdleTimer <= 0)
             {
                 //Nếu player nằm trong khoảng đánh được
-                if (PlayerIsInSlashRange())
+                if (PlayerIsInSmashRange())
                 {
-                    state = State.Slash;
+                    state = State.Smash;
                     return;
                 }
 
-                if (PlayerIsInStompRange())
+                if (PlayerIsInSlashOrStompRange())
                 {
                     if (SlashOrStomp == 0)
                     {
-                        state = State.Smash;
+                        state = State.Slash;
                         SlashOrStomp = 1;
                     }
 
@@ -133,11 +153,6 @@ namespace Assets.Scripts.Entities
                         state = State.Stomp;
                         SlashOrStomp = 0;
                     }
-                    //return;
-                }
-                else if (PlayerIsInSmashRange())
-                {
-                    state = State.Smash;
                     return;
                 }
                 state = State.Chase;
@@ -155,17 +170,17 @@ namespace Assets.Scripts.Entities
             }
 
             //Nếu player nằm trong khoảng đánh được
-            if (PlayerIsInSlashRange())
+            if (PlayerIsInSmashRange())
             {
-                state = State.Slash;
+                state = State.Smash;
                 return;
             }
 
-            if (PlayerIsInStompRange())
+            if (PlayerIsInSlashOrStompRange())
             {
                 if (SlashOrStomp == 0)
                 {
-                    state = State.Smash;
+                    state = State.Slash;
                     SlashOrStomp = 1;
                 }
 
@@ -176,13 +191,6 @@ namespace Assets.Scripts.Entities
                 }
                 return;
             }
-            
-            if (PlayerIsInSmashRange())
-            {
-                state = State.Smash;
-                return;
-            }
-
 
             //cập nhật hướng di chuyển tới nhân vật
             _ = (Player.position.x - transform.position.x) > 0 ? moveDirection = 1 : moveDirection = -1;
@@ -198,6 +206,20 @@ namespace Assets.Scripts.Entities
         //được gọi sau khi hoạt Attack kết thúc
         void SlashFinished()
         {
+            if (PlayerIsInSlashOrStompRange())
+            {
+                if (SlashOrStomp == 0)
+                {
+                    state = State.Slash;
+                    SlashOrStomp = 1;
+                }
+                else if (SlashOrStomp == 1)
+                {
+                    state = State.Stomp;
+                    SlashOrStomp = 0;
+                }
+                return;
+            }
             state = State.Chase;
         }
 
@@ -208,14 +230,32 @@ namespace Assets.Scripts.Entities
 
         void SmashToIdleFinished()
         {
-            IdleTimer = 1;
-            state = State.Idle;
+            if (PlayerIsInSmashRange())
+            {
+                state = State.Smash;
+                return;
+            }
+            state = State.Chase;
         }
 
         void StompFinished()
         {
-            IdleTimer = 1;
-            state = State.Idle;
+            if (PlayerIsInSlashOrStompRange())
+            {
+                if (SlashOrStomp == 0)
+                {
+                    state = State.Slash;
+                    SlashOrStomp = 1;
+                }
+
+                else if (SlashOrStomp == 1)
+                {
+                    state = State.Stomp;
+                    SlashOrStomp = 0;
+                }
+                return;
+            }
+            state = State.Chase;
         }
 
         public void TakeDamage(object[] package)
@@ -245,38 +285,33 @@ namespace Assets.Scripts.Entities
             Collider2D hit = Physics2D.OverlapCapsule(slashPos.position, slashRange, CapsuleDirection2D.Horizontal, slashAngle, playerMask);
             if (hit)
             {
-                object[] package = new object[2];
-                package[0] = pData.DamageSlash;
-                package[1] = pData.FacingDirection;
+                object[] package = new object[1];
+                package[0] = DamageSlash;
                 hit.SendMessage("TakeDamage", package);
             }
         }
 
         void AttackStomp()
         {
-            Collider2D hit = Physics2D.OverlapBox(stompOffSet + transform.position, stompSize, 0, playerMask);
+            Collider2D hit = Physics2D.OverlapBox(stompPos.position, stompRange, stompAngle, playerMask);
             if (hit)
             {
-                object[] package = new object[2];
-                package[0] = pData.DamageStomp;
-                package[1] = pData.FacingDirection;
+                object[] package = new object[1];
+                package[0] = DamageStomp;
                 hit.SendMessage("TakeDamage", package);
             }
         }
 
         void AttackSmash()
         {
-            Collider2D hit = Physics2D.OverlapBox(smashOffSet + transform.position, smashSize, 0, playerMask);
+            Collider2D hit = Physics2D.OverlapBox(smashPos.position, smashRange, 0, playerMask);
             if (hit)
             {
-                object[] package = new object[2];
-                package[0] = pData.DamageSmash;
-                package[1] = pData.FacingDirection;
+                object[] package = new object[1];
+                package[0] = DamageSmash;
                 hit.SendMessage("TakeDamage", package);
             }
         }
-
-
 
         void Die()
         {
@@ -284,22 +319,18 @@ namespace Assets.Scripts.Entities
         }
 
         //Player có nằm trong tầm đánh?
-        bool PlayerIsInSlashRange()
+        bool PlayerIsInSlashOrStompRange()
         {
-            Collider2D _collider = Physics2D.OverlapCapsule(slashPos.position, slashRange, CapsuleDirection2D.Horizontal, slashAngle, playerMask);
+            var _collider = Physics2D.OverlapBox(slashOrStompDetectorPos.position, attackDetectorRange, 0, playerMask);
             return _collider;
         }
 
         bool PlayerIsInSmashRange()
         {
-            Collider2D _collider = Physics2D.OverlapBox(smashOffSet + transform.position, smashSize, 0,playerMask);
+            var _collider = Physics2D.OverlapBox(smashDetectorPos.position, attackDetectorRange, 0, playerMask);
             return _collider;
         }  
-        bool PlayerIsInStompRange()
-        {
-            Collider2D _collider = Physics2D.OverlapBox(stompOffSet + transform.position, stompSize, 0,playerMask);
-            return _collider;
-        }
+
         //faceDiection có đang hướng về Player?
         bool IsDirectToPlayer()
         {
