@@ -14,6 +14,7 @@ public partial class PlayerController : MonoBehaviour
     PlayerInput pInput;
 
     SpriteRenderer spriteRenderer;
+    float timer = 0.2f;
 
     #region States
     public IdleState IdleState { get; private set; }
@@ -141,17 +142,37 @@ public partial class PlayerController : MonoBehaviour
             spriteRenderer.color = tempColor;
             return;
         }
-        if (tempColor.a==255)
+
+        timer -= Time.deltaTime;
+        if (timer >= 0.15f)
         {
-            tempColor.a = 0;
+            //var tempColor1 = spriteRenderer.color;
+            tempColor.a = 255;
             spriteRenderer.color = tempColor;
+            return;
         }
         else
         {
-            tempColor.a = 255;
+            //var tempColor1 = spriteRenderer.color;
+            tempColor.a = 0;
             spriteRenderer.color = tempColor;
-        
+            if (timer<=0f)
+            {
+                timer = 0.3f;
+            }
+            return;
         }
+        //if (tempColor.a==255)
+        //{
+        //    tempColor.a = 0;
+        //    spriteRenderer.color = tempColor;
+        //}
+        //else
+        //{
+        //    tempColor.a = 255;
+        //    spriteRenderer.color = tempColor;
+        //
+        //}
     }
 
     public void TakeDamage(object[] package) {
@@ -160,6 +181,7 @@ public partial class PlayerController : MonoBehaviour
             return;
         }
         pData.invulnerableTimer = pData.invulnerableTime;
+        timer = 0f;
         // trừ máu
         pData.currentHealth -= Convert.ToSingle(package[0]);
         if (pData.currentHealth <= 0)
