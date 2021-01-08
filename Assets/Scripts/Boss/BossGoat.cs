@@ -12,7 +12,7 @@ namespace Assets.Scripts.Entities
 
         public float Speed = 115;
         private int moveDirection = 1;        //hướng di chuyển
-        public float MaxHealth = 1000;
+        public float MaxHealth = 3000;
         public float CurrentHealth;
 
         Animator animator;
@@ -55,10 +55,10 @@ namespace Assets.Scripts.Entities
             slashPos = transform.Find("SlashPos");
 
 
-            //cho phép player và entity đi xuyên qua nhau
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
-            //cho phép entity đi xuyên qua nhau
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
+            ////cho phép player và entity đi xuyên qua nhau
+            //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
+            ////cho phép entity đi xuyên qua nhau
+            //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
         }
 
         // Update is called once per frame
