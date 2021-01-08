@@ -479,13 +479,33 @@ PrefabInstance:
     - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MaxX
-      value: 2015.659
+      value: 2015
       objectReference: {fileID: 0}
     - target: {fileID: 2976589663951676147, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: staticBackgrounds
       value: 
       objectReference: {fileID: 342620480}
+    - target: {fileID: 3646276665953126155, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: orthographic size
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276665953126155, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666971393533, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276666971393533, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: near clip plane
+      value: 481
+      objectReference: {fileID: 0}
     - target: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: m_Name
@@ -550,6 +570,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276667044435195, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276667444768531, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: field of view
+      value: 34.640213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276667444768531, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: far clip plane
+      value: 481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
@@ -9143,7 +9178,7 @@ PrefabInstance:
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
@@ -13510,7 +13545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1431675545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17912,7 +17947,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 481
   field of view: 60
   orthographic: 1
   orthographic size: 150
@@ -17939,7 +17974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003535534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1177, y: 27, z: -481}
+  m_LocalPosition: {x: 1177, y: 27, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
