@@ -109,7 +109,7 @@ public class Undead : MonoBehaviour
             moveDirection = (PatrolPoint.transform.position - transform.position).normalized;
         }
 
-        transform.position += moveDirection * Speed;
+        transform.position += new Vector3(moveDirection.x, moveDirection.y, 0);
     }
 
     //Được gọi bởi Player
@@ -155,7 +155,7 @@ public class Undead : MonoBehaviour
         //cập nhật hướng di chuyển tới nhân vật
         moveDirection = (playerDetector.transform.position - transform.position).normalized;
 
-        transform.position += new Vector3(moveDirection.x, moveDirection.y, transform.position.z) * (Speed + 3);
+        transform.position += new Vector3(moveDirection.x, moveDirection.y, 0) * (Speed + 3);
 
         if (CanAttack())
         {
