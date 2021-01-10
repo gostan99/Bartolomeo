@@ -34,6 +34,7 @@ public class CameraParallax : MonoBehaviour
             backGroundCamera.transform.localScale = Vector3.one;
             backGroundCamera.orthographic = true;
             backGroundCamera.depth = -3;
+            backGroundCamera.clearFlags = CameraClearFlags.Skybox;
         }
 
         if (farCamera != null)
@@ -49,7 +50,7 @@ public class CameraParallax : MonoBehaviour
         if (mainCamera != null)
         {
             mainCamera.orthographic = true;
-            mainCamera.clearFlags = CameraClearFlags.Nothing;
+            mainCamera.clearFlags = CameraClearFlags.Depth;
             mainCamera.depth = -1;
         }
 
@@ -59,7 +60,7 @@ public class CameraParallax : MonoBehaviour
             nearOthorgraphicCamera.transform.rotation = Quaternion.identity;
             nearOthorgraphicCamera.transform.localScale = Vector3.one;
             mainCamera.orthographic = true;
-            mainCamera.clearFlags = CameraClearFlags.Nothing;
+            mainCamera.clearFlags = CameraClearFlags.Depth;
             mainCamera.depth = -1;
         }
 

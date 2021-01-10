@@ -34,6 +34,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
+                FacingDirectionUpdate();
                 newState = pController.DashingState;
             }
         }

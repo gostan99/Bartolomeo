@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8029,7 +8029,7 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 21
+    m_Bits: 0
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
@@ -8079,7 +8079,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 32535
+    m_Bits: 98071
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 568484140fee91e4db58c9712da30898, type: 2}
   m_TargetDisplay: 0
@@ -84397,26 +84397,6 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 273924099}
-    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: MinX
-      value: -1550
-      objectReference: {fileID: 0}
-    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: MinY
-      value: -250
-      objectReference: {fileID: 0}
-    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: MaxY
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
-        type: 3}
-      propertyPath: MaxX
-      value: 5300
-      objectReference: {fileID: 0}
     - target: {fileID: 3646276667044435193, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: m_Name
@@ -84476,6 +84456,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276667044435195, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646276667044435195, guid: 29ba99ac574f61d4ca15256251b6c515,
+        type: 3}
+      propertyPath: m_Depth
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ba99ac574f61d4ca15256251b6c515, type: 3}
