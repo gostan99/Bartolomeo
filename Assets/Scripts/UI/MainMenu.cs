@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -17,13 +18,16 @@ public class MainMenu : MonoBehaviour
         string jsonData = File.ReadAllText(path);
         playerDTO = JsonUtility.FromJson<PlayerDTO>(jsonData);
 
-        if (playerDTO.Level != "Assets/Scenes/Map1/VachNui.unity")
+        var continueBtn = transform.Find("ContinueButton");
+        if (playerDTO.Level != "Assets/Scenes/Map1/VachNui2.unity")
         {
-            transform.Find("ContinueButton").gameObject.SetActive(true);
+            continueBtn.GetComponent<Image>().enabled = true;
+            continueBtn.GetComponent<Button>().enabled = true;
         }
         else
         {
-            transform.Find("ContinueButton").gameObject.SetActive(false);
+            continueBtn.GetComponent<Image>().enabled = false;
+            continueBtn.GetComponent<Button>().enabled = false;
         }
     }
 

@@ -11,7 +11,10 @@ public class Trap : MonoBehaviour
     {
         if (col.gameObject.layer.Equals(12))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            object[] package = new object[2];
+            package[0] = 99999f;
+            package[1] = null;
+            col.gameObject.SendMessage("TakeDamage", package);
         }
 
     }

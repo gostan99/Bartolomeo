@@ -184,10 +184,10 @@ public partial class PlayerController : MonoBehaviour
         timer = 0f;
         // trừ máu
         pData.currentHealth -= Convert.ToSingle(package[0]);
-        if (pData.currentHealth <= 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        //if (pData.currentHealth <= 0)
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //}
         
     }
 }

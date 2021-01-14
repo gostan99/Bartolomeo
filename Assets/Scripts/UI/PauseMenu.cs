@@ -4,22 +4,33 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public bool pause = false;
     public GameObject pauseUI;
+    private GameObject player;
+    private PlayerData playerData;
 
     // Use this for initialization
     void Start()
     {
         pauseUI.SetActive(false);
+        //tìm kiếm Player trong scene
+        player = GameObject.Find("Player");
+        //lấy PlayerData component
+        playerData = player.GetComponent<PlayerData>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !pause )
+        if (playerData.currentHealth <= 0 && !pause) //check máu player
+        {
+            pause = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && !pause )
         {
             pause = true;
         }
@@ -32,6 +43,14 @@ public class PauseMenu : MonoBehaviour
         {
             pauseUI.SetActive(true);
             Time.timeScale = 0;
+
+            //nếu player hết máu thì tắt Image và Button component
+            if (playerData.currentHealth <= 0)
+            {
+                var resumeBtn = pauseUI.transform.Find("ResumeButton");
+                resumeBtn.GetComponent<Image>().enabled = false;
+                resumeBtn.GetComponent<Button>().enabled = false;
+            }
         }
         if (pause == false)
         {
