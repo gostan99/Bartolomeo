@@ -63,7 +63,7 @@ namespace Assets.Scripts.Player
             {
                 DashInput = true;
             }
-            else if (Input.GetKey(KeyCode.LeftShift))
+            else if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
             {
                 DashInput = false;
             }
