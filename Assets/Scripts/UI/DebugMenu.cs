@@ -38,11 +38,6 @@ public class DebugMenu : MonoBehaviour
             enable = false;
             DebugUI.SetActive(false);
         }
-
-        if (enable)
-        {
-
-        }
     }
 
     public void TpToNextLevelPoint()

@@ -7,11 +7,13 @@ public class BossGate : MonoBehaviour
 {
     public GameObject bossGoat;
     public GameObject TuongChan;
+    public Canvas BossHealthBar;
     // Start is called before the first frame update
     void Start()
     {
         bossGoat.SetActive(false);
         TuongChan.SetActive(false);
+        BossHealthBar.gameObject.SetActive(false);
 
     }
 
@@ -27,6 +29,7 @@ public class BossGate : MonoBehaviour
         {
             bossGoat.SetActive(true);
             TuongChan.SetActive(true);
+            BossHealthBar.gameObject.SetActive(true);
         }
     }
 
@@ -36,6 +39,7 @@ public class BossGate : MonoBehaviour
         if (!bossGoat.gameObject.activeSelf)
         {
             TuongChan.SetActive(false);
+            BossHealthBar.gameObject.SetActive(false);
         }
     }
 }

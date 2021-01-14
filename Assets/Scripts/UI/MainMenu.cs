@@ -13,21 +13,41 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         playerDTO = new PlayerDTO();
-
-        string path = @"Assets\Data\Save\playerdata.json";
-        string jsonData = File.ReadAllText(path);
-        playerDTO = JsonUtility.FromJson<PlayerDTO>(jsonData);
-
         var continueBtn = transform.Find("ContinueButton");
-        if (playerDTO.Level != "Assets/Scenes/Map1/VachNui2.unity")
+        string path = @"Assets\Data\Save\playerdata.json";
+        string jsonData;
+
+        if (!File.Exists(path))
         {
-            continueBtn.GetComponent<Image>().enabled = true;
-            continueBtn.GetComponent<Button>().enabled = true;
+            PlayerDTO saveData = new PlayerDTO();
+            saveData.Level = "Assets/Scenes/Map1/VachNui2.unity";
+            saveData.HasDash = PlayerData.HasDash;
+            saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
+
+            jsonData = JsonUtility.ToJson(saveData);
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteAsync(jsonData);
+            }
+
+            continueBtn.GetComponent<Image>().enabled = false;
+            continueBtn.GetComponent<Button>().enabled = false;
         }
         else
         {
-            continueBtn.GetComponent<Image>().enabled = false;
-            continueBtn.GetComponent<Button>().enabled = false;
+            jsonData = File.ReadAllText(path);
+            playerDTO = JsonUtility.FromJson<PlayerDTO>(jsonData);
+
+            if (playerDTO.Level == "Assets/Scenes/Map1/VachNui2.unity")
+            {
+                continueBtn.GetComponent<Image>().enabled = false;
+                continueBtn.GetComponent<Button>().enabled = false;
+            }
+            else
+            {
+                continueBtn.GetComponent<Image>().enabled = true;
+                continueBtn.GetComponent<Button>().enabled = true;
+            }
         }
     }
 
