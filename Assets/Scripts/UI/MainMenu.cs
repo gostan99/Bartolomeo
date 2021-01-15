@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     {
         playerDTO = new PlayerDTO();
         var continueBtn = transform.Find("ContinueButton");
+        var continueText = continueBtn.Find("ContinueText");
         string path = @"Assets\Data\Save\playerdata.json";
         string jsonData;
 
@@ -32,6 +33,7 @@ public class MainMenu : MonoBehaviour
 
             continueBtn.GetComponent<Image>().enabled = false;
             continueBtn.GetComponent<Button>().enabled = false;
+            continueText.GetComponent<Text>().enabled = false;
         }
         else
         {
@@ -42,11 +44,13 @@ public class MainMenu : MonoBehaviour
             {
                 continueBtn.GetComponent<Image>().enabled = false;
                 continueBtn.GetComponent<Button>().enabled = false;
+                continueText.GetComponent<Text>().enabled = false;
             }
             else
             {
                 continueBtn.GetComponent<Image>().enabled = true;
                 continueBtn.GetComponent<Button>().enabled = true;
+                continueText.GetComponent<Text>().enabled = true;
             }
         }
     }

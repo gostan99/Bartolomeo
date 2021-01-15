@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+
     public Vector2 size =new Vector2(45.21f, 85.87f);
     private LayerMask PlayerLayer;
 
