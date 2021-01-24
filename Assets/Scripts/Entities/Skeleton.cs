@@ -7,12 +7,12 @@ namespace Assets.Scripts.Entities
 {
     class Skeleton : MonoBehaviour
     {
-        private PlayerData pData;
+        EnemyData eData;
 
         public float Speed = 4;
         private int facingDirection = 1;        //hướng quay mặt
-        public float MaxHealth = 100;
-        public float CurrentHealth;
+        //public float MaxHealth = 100;
+        //public float CurrentHealth;
 
         public GameObject PatrolPoint;          // vị trí để đi tuần tra
         public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
@@ -38,6 +38,8 @@ namespace Assets.Scripts.Entities
         public float idleTime = 2f;              // thời gian ở trạng thái idle là 2s
         float idleTimer;                         // đếm thời gian ở trạng thái idle còn lại
 
+        private Canvas healthCanvas;
+
         private enum State
         {
             Idle, Patrol, Attack, Dead,
@@ -48,7 +50,8 @@ namespace Assets.Scripts.Entities
 
         private void Start()
         {
-            CurrentHealth = MaxHealth;
+            eData = GetComponent<EnemyData>();
+            //CurrentHealth = MaxHealth;
 
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
@@ -62,6 +65,9 @@ namespace Assets.Scripts.Entities
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
             //cho phép entity đi xuyên qua nhau
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
+
+            healthCanvas = transform.GetComponentInChildren<Canvas>();
+            healthCanvas.enabled = false;
         }
 
         // Update is called once per frame
@@ -97,6 +103,11 @@ namespace Assets.Scripts.Entities
 
             FacingDirectionUpdate();
             animator.Play(currentAnimation);
+
+            if (eData.CurrentHealth <= 0)
+            {
+                healthCanvas.enabled = false;
+            }
         }
 
         private void FixedUpdate()
@@ -208,6 +219,12 @@ namespace Assets.Scripts.Entities
         //Packege[0] là lượng dame, Package[1] là hướng bị đánh
         public void TakeDamage(object[] package)
         {
+
+            if (!healthCanvas.isActiveAndEnabled)
+            {
+                healthCanvas.enabled = true;
+            }
+
             if (state == State.Dead)
             {
                 return;
@@ -216,11 +233,12 @@ namespace Assets.Scripts.Entities
             state = State.TakeHit;
 
             // trừ máu
-            CurrentHealth -= Convert.ToSingle(package[0]);
-            if (CurrentHealth <= 0)
+            eData.CurrentHealth -= Convert.ToSingle(package[0]);
+            if (eData.CurrentHealth <= 0)
             {
                 state = State.Dead;
             }
+            
         }
 
         void ApplyMovement()
@@ -249,6 +267,7 @@ namespace Assets.Scripts.Entities
         void FacingDirectionUpdate()
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * facingDirection, transform.localScale.y, transform.localScale.z);
+
         }
 
         //moveDiection có đang hướng về PatrolPoint?

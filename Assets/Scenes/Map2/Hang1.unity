@@ -2935,9 +2935,10 @@ GameObject:
   - component: {fileID: 665417114}
   - component: {fileID: 665417116}
   - component: {fileID: 665417117}
+  - component: {fileID: 665417118}
   m_Layer: 0
   m_Name: churches-field-spritesheet-improved_66
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3051,6 +3052,19 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &665417118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665417113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e8957bfd244794fbd1505397af28ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackDamage: 100000000
 --- !u!1001 &671853108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5910,80 +5924,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1359878264
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -697
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 267
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719893, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -7.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252297548926719894, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
-        type: 3}
-      propertyPath: m_Name
-      value: Tuong-chuyen-map (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cdbd5b021fa6bab4b8dbcd478a8cb415, type: 3}
 --- !u!1 &1362957600
 GameObject:
   m_ObjectHideFlags: 0

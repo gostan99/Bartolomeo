@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Assets.Scripts.Entities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Minotaur : MonoBehaviour
 {
+    EnemyData eData;
+
     private enum State { Idle, Patrol, Attack, Dead,
         TakeHit
     }
@@ -13,8 +16,6 @@ public class Minotaur : MonoBehaviour
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
     public int KnockBackForce = 150;        //lực bị đẩy lùi
-    public float MaxHealth = 100;
-    public float CurrentHealth;
     public float AttackDamage = 3;
 
     private Transform groundDetector;           //Dùng để làm vị trí gốc cho Raycast kiểm tra va chạm với mặt đất
@@ -40,10 +41,12 @@ public class Minotaur : MonoBehaviour
     public float idleTime = 2f; // thời gian ở trạng thái idle là 2s
     float idleTimer;            // đếm thời gian ở trạng thái idle còn lại
 
+    private Canvas healthCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        CurrentHealth = MaxHealth;
+        eData = GetComponent<EnemyData>();
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -56,6 +59,9 @@ public class Minotaur : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
         //cho phép entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
+
+        healthCanvas = transform.GetComponentInChildren<Canvas>();
+        healthCanvas.enabled = false;
     }
 
     // Update is called once per frame
@@ -84,6 +90,11 @@ public class Minotaur : MonoBehaviour
 
         FacingDirectionUpdate();
         animator.Play(currentAnimation);
+
+        if (eData.CurrentHealth <= 0)
+        {
+            healthCanvas.enabled = false;
+        }
     }
 
     private void FixedUpdate()
@@ -173,6 +184,10 @@ public class Minotaur : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (!healthCanvas.isActiveAndEnabled)
+        {
+            healthCanvas.enabled = true;
+        }
         if (state == State.Dead)
         {
             return;
@@ -181,10 +196,10 @@ public class Minotaur : MonoBehaviour
         state = State.TakeHit;
 
         // trừ máu
-        CurrentHealth -= Convert.ToSingle(package[0]);
+        eData.CurrentHealth -= Convert.ToSingle(package[0]);
         // bị đẩy lùi
         ApplyKnockback(Convert.ToInt32(package[1]));
-        if (CurrentHealth <= 0)
+        if (eData.CurrentHealth <= 0)
         {
             state = State.Dead;
         }

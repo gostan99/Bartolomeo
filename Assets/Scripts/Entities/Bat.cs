@@ -2,9 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Entities;
 
 public class Bat : MonoBehaviour
 {
+    EnemyData eData;
+     
     public float Speed = 4;
     private Vector3 moveDirection = Vector2.right;  //hướng di chuyển
     private int KnockbackDirection = 1;             //hướng bị đẩy lùi
@@ -12,8 +15,6 @@ public class Bat : MonoBehaviour
     public float KnockBackDistance = 50;            //khoảng cách bị đẩy lùi
     private float KnockbackDistanceRemain;          //khoảng cách còn lại để bị đẩy lùi
 
-    public float MaxHealth = 100;
-    public float CurrentHealth;
     public float AttackDamage = 3;
 
     Collider2D playerDetector = null;
@@ -29,10 +30,13 @@ public class Bat : MonoBehaviour
     enum State { Patrol,Chase, Knockback}
     State state = State.Patrol;
 
+    private Canvas healthCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        CurrentHealth = MaxHealth;
+        eData = GetComponent<EnemyData>();
+
         PlayerMask = LayerMask.GetMask("Player");
         Hitbox = GetComponent<BoxCollider2D>();
 
@@ -40,6 +44,9 @@ public class Bat : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
         //cho phép entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
+
+        healthCanvas = transform.GetComponentInChildren<Canvas>();
+        healthCanvas.enabled = false;
     }
 
     // Update is called once per frame
@@ -49,6 +56,11 @@ public class Bat : MonoBehaviour
         LookingForPlayer();
         // cập nhật hướng quay mặt
         FacingDirectionUpdate();
+
+        if (eData.CurrentHealth <= 0)
+        {
+            healthCanvas.enabled = false;
+        }
     }
 
     private void FixedUpdate()
@@ -102,8 +114,12 @@ public class Bat : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (!healthCanvas.isActiveAndEnabled)
+        {
+            healthCanvas.enabled = true;
+        }
         //trừ máu
-        CurrentHealth -= Convert.ToSingle(package[0]);
+        eData.CurrentHealth -= Convert.ToSingle(package[0]);
 
         //chuyển sang trạng thái bị đẩy lùi
         state = State.Knockback;
@@ -111,7 +127,7 @@ public class Bat : MonoBehaviour
         //Gán hướng bị đẩy lùi
         KnockbackDirection = Convert.ToInt32(package[1]);
 
-        if (CurrentHealth <= 0)
+        if (eData.CurrentHealth <= 0)
         {
             Die();
         }

@@ -1,17 +1,17 @@
-﻿using System;
+﻿using Assets.Scripts.Entities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlyingEye : MonoBehaviour
 {
+    EnemyData eData;
     public float Speed = 0.8f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
 
     public float FallingSpeed = 4f;
 
-    public float MaxHealth = 100;
-    public float CurrentHealth;
 
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 50f;
@@ -32,10 +32,12 @@ public class FlyingEye : MonoBehaviour
     State state = State.Move;
     private LayerMask groundMask;
 
+    private Canvas healthCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        CurrentHealth = MaxHealth;
+        eData = GetComponent<EnemyData>();
         playerMask = LayerMask.GetMask("Player");
         groundMask = LayerMask.GetMask("Ground");
         animator = GetComponent<Animator>();
@@ -44,6 +46,9 @@ public class FlyingEye : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Entity"));
         //cho phép entity đi xuyên qua nhau
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Entity"), LayerMask.NameToLayer("Entity"));
+
+        healthCanvas = transform.GetComponentInChildren<Canvas>();
+        healthCanvas.enabled = false;
     }
 
     // Update is called once per frame
@@ -54,6 +59,11 @@ public class FlyingEye : MonoBehaviour
         // cập nhật hướng quay mặt
         FacingDirectionUpdate();
         animator.Play(currentAnimation);
+
+        if (eData.CurrentHealth <= 0)
+        {
+            healthCanvas.enabled = false;
+        }
     }
 
     private void FixedUpdate()
@@ -115,13 +125,17 @@ public class FlyingEye : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (!healthCanvas.isActiveAndEnabled)
+        {
+            healthCanvas.enabled = true;
+        }
         //trừ máu
-        CurrentHealth -= Convert.ToSingle(package[0]);
+        eData.CurrentHealth -= Convert.ToSingle(package[0]);
 
         //chuyển sang trạng thái bị đánh
         state = State.TakeHit;
 
-        if (CurrentHealth <= 0)
+        if (eData.CurrentHealth <= 0)
         {
             state = State.Falling;
         }
