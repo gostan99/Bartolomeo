@@ -25,27 +25,32 @@ namespace Assets.Scripts.Player
         {
             timer += Time.deltaTime;
             pInput.InputUpdate();
-            if (timer >= pData.DashDuration)
+            if (pData.currentMana==50 )
             {
-                if (IsGrounded())
+                if (timer >= pData.DashDuration)
                 {
-                    if (pInput.xInput == 0)
+                    if (IsGrounded())
                     {
-                        pData.DashCooldownTimer = pData.DashCooldown;
-                        newState = pController.StopDashingState;
+                        if (pInput.xInput == 0)
+                        {
+                            pData.DashCooldownTimer = pData.DashCooldown;
+                            newState = pController.StopDashingState;
+                        }
+                        else
+                        {
+                            pData.DashCooldownTimer = pData.DashCooldown;
+                            newState = pController.RunningState;
+                        }
                     }
                     else
                     {
                         pData.DashCooldownTimer = pData.DashCooldown;
-                        newState = pController.RunningState;
+                        newState = pController.StartFallingState;
                     }
-                }
-                else
-                {
-                    pData.DashCooldownTimer = pData.DashCooldown;
-                    newState = pController.StartFallingState;
+                    pData.currentMana = 0;
                 }
             }
+
         }
 
         public override void PhysicUpdate()

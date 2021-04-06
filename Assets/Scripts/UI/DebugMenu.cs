@@ -51,4 +51,16 @@ public class DebugMenu : MonoBehaviour
     {
         playerData.currentHealth = playerData.maxHealth;
     }
+    
+    public void FullMana()
+    {
+        if (playerData.currentMana == playerData.maxMana)
+        {
+            playerData.currentMana += 0;
+        }
+        else
+        {
+            playerData.currentMana += 10;
+        }
+    }
 }

@@ -37,9 +37,10 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash && pData.canDash)
                 {
                     newState = pController.DashingState;
+                    pData.canDash = false;
                 }
             }
             else if (pInput.AttackInput)

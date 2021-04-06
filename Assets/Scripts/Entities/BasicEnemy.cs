@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Entities;
+using Assets.Scripts.Player;
 
 public class BasicEnemy : MonoBehaviour
 {
     EnemyData eData;
+    PlayerData pData;
 
     public float Speed = 150f;
     private int moveDirection = 1;            //hướng di chuyển
@@ -28,6 +30,7 @@ public class BasicEnemy : MonoBehaviour
     void Start()
     {
         eData = GetComponent<EnemyData>();
+        pData = GetComponent<PlayerData>();
 
         groundDetector = transform.Find("GroundDetector");
         groundMask = LayerMask.GetMask("Ground");
@@ -108,13 +111,24 @@ public class BasicEnemy : MonoBehaviour
         Knockback(Convert.ToInt32(package[1]));
         if (eData.CurrentHealth <= 0)
         {
+            PlayerData playerData = (PlayerData)package[2];
+            if (playerData.currentMana == playerData.maxMana)
+            {
+                playerData.currentMana += 0;
+            }
+            else
+            {
+                playerData.currentMana += 10;
+            }
             Die();
+            var bc = GetComponent<BoxCollider2D>();
+            bc.enabled = false;
         }
     }
 
     void Die()
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(false);  
     }
 
     void Knockback(int hitDirection)

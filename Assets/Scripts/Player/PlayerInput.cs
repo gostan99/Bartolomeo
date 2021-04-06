@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Player
 {
+    
     public class PlayerInput
     {
         public float xInput { get; private set; }
@@ -40,6 +41,7 @@ namespace Assets.Scripts.Player
             }
             if (Input.GetKey(KeyCode.Space) && JumpInput)
             {
+                
                 jumpInputHoldTime += Time.deltaTime;
                 if (jumpInputHoldTime >= MAX_JUMP_HOLD_TIME)
                 {
@@ -48,6 +50,7 @@ namespace Assets.Scripts.Player
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
+             
                 JumpInput = false;
             }
         }

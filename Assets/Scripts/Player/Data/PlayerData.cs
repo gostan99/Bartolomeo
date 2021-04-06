@@ -45,6 +45,10 @@ namespace Assets.Scripts.Player
         //--HEALTHBAR--------------------------------------------------
         public float maxHealth = 100;
         public float currentHealth = 100;
+        
+        //--MANA--------------------------------------------------
+        public float maxMana = 50;
+        public float currentMana = 0;
 
         //--PARAMETER--------------------------------------------------
         public float Speed = 20.0f;
@@ -84,6 +88,7 @@ namespace Assets.Scripts.Player
         private void Awake()
         {
             currentHealth = 100;
+            
             Rb = GetComponent<Rigidbody2D>();
             Animator = GetComponent<Animator>();
             CapsuleCollider = GetComponent<CapsuleCollider2D>();

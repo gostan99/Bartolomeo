@@ -9,6 +9,7 @@ public class HealthEnemy : MonoBehaviour
 {
     public GameObject Enemy;
     public EnemyData eData;
+    public PlayerData pData;
     public Slider slider { get; private set; }
 
 
@@ -16,6 +17,7 @@ public class HealthEnemy : MonoBehaviour
     void Start()
     {
         eData = Enemy.GetComponent<EnemyData>();
+        pData = GetComponent<PlayerData>();
         slider = gameObject.GetComponent<Slider>();
 
         slider.maxValue = eData.MaxHealth;

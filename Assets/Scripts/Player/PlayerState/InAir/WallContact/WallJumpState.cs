@@ -38,7 +38,11 @@ namespace Assets.Scripts.Player
             else if (pInput.DashInput)
             {
                 FacingDirectionUpdate();
-                newState = pController.DashingState;
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                {
+                    newState = pController.DashingState;
+                    pData.canDash = false;
+                }
             }
         }
 

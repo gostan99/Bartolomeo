@@ -236,7 +236,18 @@ namespace Assets.Scripts.Entities
             eData.CurrentHealth -= Convert.ToSingle(package[0]);
             if (eData.CurrentHealth <= 0)
             {
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
                 state = State.Dead;
+                var bc = GetComponent<BoxCollider2D>();
+                bc.enabled = false;
             }
             
         }

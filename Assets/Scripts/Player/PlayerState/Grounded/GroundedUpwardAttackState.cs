@@ -38,9 +38,10 @@ namespace Assets.Scripts.Player
             {
                 foreach (var collider in pData.CollidedObjects)
                 {
-                    object[] package = new object[2];
+                    object[] package = new object[3];
                     package[0] = pData.AttackDamage;
                     package[1] = pData.FacingDirection;
+                    package[2] = pData;
                     collider.SendMessage("TakeDamage", package);
                 }
                 pData.CollidedObjects.Clear();
@@ -59,7 +60,11 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                newState = pController.DashingState;
+                if (pData.canDash)
+                {
+                    newState = pController.DashingState;
+                    pData.canDash = false;
+                }
             }
         }
 

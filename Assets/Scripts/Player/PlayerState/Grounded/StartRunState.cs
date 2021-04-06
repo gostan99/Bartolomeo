@@ -29,6 +29,7 @@ namespace Assets.Scripts.Player
             timer += Time.deltaTime;
             pInput.InputUpdate();
             FacingDirectionUpdate();
+
             if (pData.DashCooldownTimer > 0)
             {
                 pData.DashCooldownTimer -= Time.deltaTime;
@@ -36,6 +37,7 @@ namespace Assets.Scripts.Player
 
             if (timer >= animationLength)
             {
+          
                 newState = pController.RunningState;
             }
             else if (pInput.xInput == 0)
@@ -53,9 +55,10 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash && pData.canDash)
                 {
                     newState = pController.DashingState;
+                    pData.canDash = false;
                 }
             }
             else if (pInput.AttackInput)

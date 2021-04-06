@@ -149,6 +149,7 @@ MonoBehaviour:
   KnockBackSpeed: 8
   KnockBackDistance: 80
   AttackDamage: 15
+  HoiMana: 10
   PlayerDetectRadius: 200
   AttackOffSet: {x: 16, y: 12, z: 0}
   AttackRadius: 31

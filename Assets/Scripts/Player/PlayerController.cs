@@ -86,6 +86,7 @@ public partial class PlayerController : MonoBehaviour
         currentState.PlayAnimation();
 
         InvulnerableEffect();
+        CanDash();
     }
 
     //private void OnDrawGizmos()
@@ -162,17 +163,7 @@ public partial class PlayerController : MonoBehaviour
             }
             return;
         }
-        //if (tempColor.a==255)
-        //{
-        //    tempColor.a = 0;
-        //    spriteRenderer.color = tempColor;
-        //}
-        //else
-        //{
-        //    tempColor.a = 255;
-        //    spriteRenderer.color = tempColor;
-        //
-        //}
+
     }
 
     public void TakeDamage(object[] package) {
@@ -189,5 +180,13 @@ public partial class PlayerController : MonoBehaviour
         //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //}
         
+    }
+
+    public void CanDash()
+    {
+        if (pData.currentMana < pData.maxMana)
+        {
+            pData.canDash = false;
+        }
     }
 }

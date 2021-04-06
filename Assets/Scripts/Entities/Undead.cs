@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Entities;
+using Assets.Scripts.Player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using UnityEngine;
 public class Undead : MonoBehaviour
 {
     EnemyData eData;
+    PlayerData pData;
 
     public float Speed = 2.5f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
@@ -16,6 +18,8 @@ public class Undead : MonoBehaviour
     private float KnockbackDistanceRemain;                  //khoảng cách còn lại để bị đẩy lùi
 
     public float AttackDamage = 5;
+
+    public float HoiMana=10f;
 
     Collider2D playerDetector = null;
     public float PlayerDetectRadius = 160f;                 // bán kính phát hiện player
@@ -40,6 +44,8 @@ public class Undead : MonoBehaviour
     void Start()
     {
         eData = GetComponent<EnemyData>();
+        pData = GetComponent<PlayerData>();
+
         PlayerMask = LayerMask.GetMask("Player");
         animator = GetComponent<Animator>();
 
@@ -142,8 +148,22 @@ public class Undead : MonoBehaviour
 
         if (eData.CurrentHealth <= 0)
         {
+            PlayerData playerData = (PlayerData)package[2];
+            if (playerData.currentMana == playerData.maxMana)
+            {
+                playerData.currentMana += 0;
+            }
+            else
+            {
+                playerData.currentMana += 10;
+            }
             state = State.Dead;
-        }
+            var bc = GetComponent<BoxCollider2D>();
+            bc.enabled = false;
+        }  
+
+        
+
     }
 
     void Knockback()
@@ -205,6 +225,8 @@ public class Undead : MonoBehaviour
     //Được gọi trong animation Dead
     void Die()
     {
+        //var sp = GetComponent<SpriteRenderer>();
+        //sp.enabled = false;
         Destroy(this.gameObject);
     }
 

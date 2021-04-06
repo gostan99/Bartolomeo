@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Entities;
+using Assets.Scripts.Player;
 
 public class Bat : MonoBehaviour
 {
@@ -129,7 +130,18 @@ public class Bat : MonoBehaviour
 
         if (eData.CurrentHealth <= 0)
         {
+            PlayerData playerData = (PlayerData)package[2];
+            if (playerData.currentMana == playerData.maxMana)
+            {
+                playerData.currentMana += 0;
+            }
+            else
+            {
+                playerData.currentMana += 10;
+            }
             Die();
+            var bc = GetComponent<BoxCollider2D>();
+            bc.enabled = false;
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Entities;
+using Assets.Scripts.Player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -137,7 +138,18 @@ public class FlyingEye : MonoBehaviour
 
         if (eData.CurrentHealth <= 0)
         {
+            PlayerData playerData = (PlayerData)package[2];
+            if(playerData.currentMana == playerData.maxMana)
+            {
+                playerData.currentMana += 0;
+            }
+            else
+            {
+                playerData.currentMana += 10;
+            }
             state = State.Falling;
+            var bc = GetComponent<BoxCollider2D>();
+            bc.enabled = false;
         }
     }
 

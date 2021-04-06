@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Entities;
+using Assets.Scripts.Player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -201,7 +202,18 @@ public class Minotaur : MonoBehaviour
         ApplyKnockback(Convert.ToInt32(package[1]));
         if (eData.CurrentHealth <= 0)
         {
+            PlayerData playerData = (PlayerData)package[2];
+            if (playerData.currentMana == playerData.maxMana)
+            {
+                playerData.currentMana += 0;
+            }
+            else
+            {
+                playerData.currentMana += 10;
+            }
             state = State.Dead;
+            var bc = GetComponent<BoxCollider2D>();
+            bc.enabled = false;
         }
     }
 
