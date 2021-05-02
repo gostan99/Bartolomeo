@@ -8,6 +8,7 @@ TagManager:
   - Grounded
   - Trap
   - MatDatBoss
+  - InventorySlot
   layers:
   - Default
   - TransparentFX
