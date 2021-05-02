@@ -12,50 +12,62 @@ namespace Assets.Scripts.Player
     {
         //-- COMPONENT-------------------------------------------------
         public Rigidbody2D Rb { get; private set; }
+
         public Animator Animator { get; private set; }
-        public CapsuleCollider2D CapsuleCollider{ get; private set; }
+        public CapsuleCollider2D CapsuleCollider { get; private set; }
 
         //--LAYER------------------------------------------------------
-        public LayerMask GroundMask{ get; private set; }
-        public LayerMask WallMask{ get; private set; }
-        public LayerMask EntityMask{ get; private set; }
+        public LayerMask GroundMask { get; private set; }
+
+        public LayerMask WallMask { get; private set; }
+        public LayerMask EntityMask { get; private set; }
         public LayerMask NextLevelMask { get; private set; }
 
         //--HITBOX-----------------------------------------------------
         public List<Collider2D> CollidedObjects = new List<Collider2D>();
+
         //Primaray Attack
         public Transform PrimaryHitboxPos;
-        public Vector2 PrimaryHitboxSize = new Vector2(103,37);
+
+        public Vector2 PrimaryHitboxSize = new Vector2(103, 37);
         public CapsuleDirection2D PrimaryHitboxDirection = CapsuleDirection2D.Horizontal;
+
         //In Air Primaray Attack
         public Transform InAirPrimaryHitboxPos;
-        public Vector2 InAirPrimaryHitboxSize = new Vector2(92,38);
+
+        public Vector2 InAirPrimaryHitboxSize = new Vector2(92, 38);
         public CapsuleDirection2D InAirPrimaryHitboxDirection = CapsuleDirection2D.Horizontal;
+
         //Grounded UpWard Attack
         public Transform GroundedUpwardHitboxPos;
-        public Vector2 GroundedUpwardHitboxSize = new Vector2(79,103);
+
+        public Vector2 GroundedUpwardHitboxSize = new Vector2(79, 103);
         public CapsuleDirection2D GroundedUpwardHitboxDirection = CapsuleDirection2D.Vertical;
+
         //In Air UpWard Attack
         public Transform InAirUpwardHitboxPos;
-        public Vector2 InAirUpwardHitboxSize = new Vector2(79,102);
+
+        public Vector2 InAirUpwardHitboxSize = new Vector2(79, 102);
         public CapsuleDirection2D InAirUpwardHitboxDirection = CapsuleDirection2D.Vertical;
-        public float AttackDamage = 20f; 
+        public float AttackDamage = 20f;
         //--------------------------------------------------------------
 
-        //--HEALTHBAR--------------------------------------------------
-        public float maxHealth = 100;
-        public float currentHealth = 100;
-        
-        //--MANA--------------------------------------------------
+        //--PARAMETER--------------------------------------------------
+
         public float maxMana = 50;
+
         public float currentMana = 0;
 
-        //--PARAMETER--------------------------------------------------
+        public ref float currentHealth { get { return ref DontDestroyOnLoadStats.currentHealth; } }
+
+        public ref float maxHealth { get { return ref DontDestroyOnLoadStats.maxHealth; } }
+
         public float Speed = 20.0f;
+
         public float DashCooldownTimer = 0.0f;
         public float DashCooldown = 0.3f;
         public float DashVelocityX = 320f;
-        public float DashDuration = 0.625f/4f;// = 0.15625f
+        public float DashDuration = 0.625f / 4f;// = 0.15625f
         public bool canDash = true;
         public float JumpVelocityY = 243.0f;
         public float WallSlideVelocityY = 20.0f;
@@ -64,19 +76,22 @@ namespace Assets.Scripts.Player
 
         //--SERIALIZE DATA---------------------------------------------
         public static int MaxJumpCounter = 2;
+
         public static bool HasDash = true;
 
         //--TAKEHIT----------------------------------------------------
-        public float invulnerableTimer=0f;
-        public float invulnerableTime = 2f;
+        public float invulnerableTimer = 0f;
 
+        public float invulnerableTime = 2f;
 
         //--GROUND DETECTOR--------------------------------------------
         public Transform GroundDetector { get; private set; }
+
         public Vector2 GroundDetectorSize = new Vector2(20, 11);
 
         //--WALL DETECTOR----------------------------------------------
         public Transform WallDetector { get; private set; }
+
         public float WallDetectorLength = 13f;
         public Vector2 WallDetectorDir = Vector2.right;
 
@@ -84,11 +99,8 @@ namespace Assets.Scripts.Player
 
         public Dictionary<string, float> AnimationLength { get; private set; }
 
-        
         private void Awake()
         {
-            currentHealth = 100;
-            
             Rb = GetComponent<Rigidbody2D>();
             Animator = GetComponent<Animator>();
             CapsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -125,6 +137,17 @@ namespace Assets.Scripts.Player
                 {"Upward_clamped",0.267f },
                 {"Upward_jump",0.222f }
             };
+        }
+
+        private class DontDestroyOnLoadStats : MonoBehaviour
+        {
+            public static float currentHealth = 100;
+            public static float maxHealth = 100;
+
+            private void Awake()
+            {
+                DontDestroyOnLoad(this.gameObject);
+            }
         }
     }
 }

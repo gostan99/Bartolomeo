@@ -13,10 +13,10 @@ public class HealthBar : MonoBehaviour
     //   public Gradient gradient;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         playerData = Player.GetComponent<PlayerData>();
-        slider=gameObject.GetComponent<Slider>();
+        slider = gameObject.GetComponent<Slider>();
 
         slider.maxValue = playerData.maxHealth;
         slider.minValue = 0;
@@ -24,7 +24,7 @@ public class HealthBar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         slider.value = playerData.currentHealth;
     }

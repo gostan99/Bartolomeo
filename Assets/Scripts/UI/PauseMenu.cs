@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     private PlayerData playerData;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         pauseUI.SetActive(false);
         //tìm kiếm Player trong scene
@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
                 resumeBtn.GetComponent<Button>().enabled = false;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && !pause )
+        else if (Input.GetKeyDown(KeyCode.Escape) && !pause)
         {
             pause = true;
             pauseUI.SetActive(true);
@@ -83,17 +83,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-
         Time.timeScale = 1;
         pause = false;
         pauseUI.SetActive(false);
-
     }
 
     public void Restart()
     {
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().path);
+        //playerData.currentHealth = playerData.maxHealth;
     }
 
     public void BackToMainMenu()
@@ -112,5 +111,4 @@ public class PauseMenu : MonoBehaviour
 
         SceneManager.LoadScene(0);
     }
-
 }
