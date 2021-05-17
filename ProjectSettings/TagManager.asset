@@ -8,7 +8,8 @@ TagManager:
   - Grounded
   - Trap
   - MatDatBoss
-  - InventorySlot
+  - Item
+  - Canvas
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - BossGate
   - SnowGenerator
   - WinGame
-  - 
+  - Item
   - 
   - 
   - 

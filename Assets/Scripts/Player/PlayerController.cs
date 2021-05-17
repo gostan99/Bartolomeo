@@ -78,7 +78,10 @@ public partial class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        currentState.LogicUpdate();
+        if (Time.timeScale == 1)
+        {
+            currentState.LogicUpdate();
+        }
         if (currentState != currentState.GetChangedState())
         {
             currentState = currentState.GetChangedState();
@@ -97,8 +100,8 @@ public partial class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(pData.currentHealth);
         currentState.PhysicUpdate();
+        Debug.Log(pData.currentHealth);
     }
 
     public void CheckPrimaryAttackHit()

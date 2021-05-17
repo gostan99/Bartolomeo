@@ -7,8 +7,8 @@ using Assets.Scripts.Player;
 
 public class BasicEnemy : MonoBehaviour
 {
-    EnemyData eData;
-    PlayerData pData;
+    private EnemyData eData;
+    private PlayerData pData;
 
     public float Speed = 150f;
     private int moveDirection = 1;            //hướng di chuyển
@@ -21,13 +21,13 @@ public class BasicEnemy : MonoBehaviour
     private int wallMask;                     //Wall layer
     public float AttackDamage = 3;
 
-    private BoxCollider2D Hitbox;             
+    private BoxCollider2D Hitbox;
     private LayerMask PlayerMask;             //Player player
 
     private Canvas healthCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         eData = GetComponent<EnemyData>();
         pData = GetComponent<PlayerData>();
@@ -50,7 +50,7 @@ public class BasicEnemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //cập nhật hướng di chuyển
         MoveDirectionUpdate();
@@ -62,12 +62,13 @@ public class BasicEnemy : MonoBehaviour
             healthCanvas.enabled = false;
         }
     }
+
     private void FixedUpdate()
     {
         Move();
     }
 
-    void MoveDirectionUpdate()
+    private void MoveDirectionUpdate()
     {
         // chuyển hướng nếu thấy đường cụt và không đang ở trên không trung
         if (IsDeadEnd() && !IsInAir())
@@ -77,12 +78,12 @@ public class BasicEnemy : MonoBehaviour
     }
 
     //cập nhật hướng quay mặt
-    void FacingDirectionUpdate()
+    private void FacingDirectionUpdate()
     {
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * moveDirection, transform.localScale.y, transform.localScale.z);
     }
 
-    void Move()
+    private void Move()
     {
         if (!IsInAir())
         {
@@ -92,7 +93,7 @@ public class BasicEnemy : MonoBehaviour
         DealDamage();
     }
 
-    bool IsInAir()
+    private bool IsInAir()
     {
         return rb.velocity.y != 0f;
     }
@@ -126,19 +127,19 @@ public class BasicEnemy : MonoBehaviour
         }
     }
 
-    void Die()
+    private void Die()
     {
-        gameObject.SetActive(false);  
+        gameObject.SetActive(false);
     }
 
-    void Knockback(int hitDirection)
+    private void Knockback(int hitDirection)
     {
-        rb.velocity= new Vector2(KnockBackForce * hitDirection, KnockBackForce);
+        rb.velocity = new Vector2(KnockBackForce * hitDirection, KnockBackForce);
     }
 
-    void DealDamage()
+    private void DealDamage()
     {
-        Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
+        Collider2D hit = Physics2D.OverlapBox(transform.position, Hitbox.size, 0, PlayerMask);
         if (hit)
         {
             object[] package = new object[1];
@@ -149,7 +150,7 @@ public class BasicEnemy : MonoBehaviour
 
     // kiểm  tra có tới đường cụt?
     // đường cụt là khi phía trước gặp vực hoặc tường
-    bool IsDeadEnd()
+    private bool IsDeadEnd()
     {
         //groundDetector.transform.position là gốc của tia Raycast
         //Vector2.down là hướng bắn của tia

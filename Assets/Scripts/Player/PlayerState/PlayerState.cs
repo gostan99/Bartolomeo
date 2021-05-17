@@ -17,18 +17,16 @@ namespace Assets.Scripts.Player
         protected PlayerState newState;
         protected float timer;
 
-
         private PlayerState()
         {
-
         }
 
-        public PlayerState( PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation )
+        public PlayerState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation)
         {
             pController = playerController;
             pInput = playerInput;
             pData = playerData;
-            
+
             this.animation = animation;
 
             timer = 0f;
@@ -38,6 +36,11 @@ namespace Assets.Scripts.Player
         public PlayerState GetChangedState()
         {
             return newState;
+        }
+
+        public void SetNewState(PlayerState state)
+        {
+            newState = state;
         }
 
         public abstract void LogicUpdate();
@@ -92,7 +95,7 @@ namespace Assets.Scripts.Player
 
         protected void WallJumpDirectionUpdate()
         {
-            if (pData.FacingDirection < 0 )
+            if (pData.FacingDirection < 0)
             {
                 pData.WallJumpDirection = new Vector2(Mathf.Abs(pData.WallJumpDirection.x), pData.WallJumpDirection.y);
             }

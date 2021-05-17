@@ -5,18 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-
-    public Vector2 size =new Vector2(45.21f, 85.87f);
+    public Vector2 size = new Vector2(45.21f, 85.87f);
     private LayerMask PlayerLayer;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         PlayerLayer = LayerMask.GetMask("Player");
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Collider2D collided = Physics2D.OverlapBox(transform.position, size, 0, PlayerLayer);
         if (collided)

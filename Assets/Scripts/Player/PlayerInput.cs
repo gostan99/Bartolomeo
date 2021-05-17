@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Player
 {
-    
     public class PlayerInput
     {
         public float xInput { get; private set; }
         public float yInput { get; private set; }
-        
 
         public bool DashInput { get; private set; }
 
@@ -20,10 +13,10 @@ namespace Assets.Scripts.Player
         public bool AttackInput { get; set; }
         public bool UpwardAttackInput { get; set; }
         public bool DownwardAttackInput { get; set; }
-        float jumpInputHoldTime;
+        private float jumpInputHoldTime;
         public int JumpInputCounter = 0;
-        
-        const float MAX_JUMP_HOLD_TIME = 0.25f;
+
+        private const float MAX_JUMP_HOLD_TIME = 0.25f;
 
         public PlayerInput()
         {
@@ -33,7 +26,7 @@ namespace Assets.Scripts.Player
 
         private void OnJumpInput()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && JumpInputCounter < PlayerData.MaxJumpCounter )
+            if (Input.GetKeyDown(KeyCode.Space) && JumpInputCounter < PlayerData.MaxJumpCounter)
             {
                 JumpInput = true;
                 jumpInputHoldTime = 0;
@@ -41,7 +34,6 @@ namespace Assets.Scripts.Player
             }
             if (Input.GetKey(KeyCode.Space) && JumpInput)
             {
-                
                 jumpInputHoldTime += Time.deltaTime;
                 if (jumpInputHoldTime >= MAX_JUMP_HOLD_TIME)
                 {
@@ -50,7 +42,6 @@ namespace Assets.Scripts.Player
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
-             
                 JumpInput = false;
             }
         }
@@ -71,30 +62,30 @@ namespace Assets.Scripts.Player
                 DashInput = false;
             }
         }
+
         private void OnAttackInput()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0) )
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 AttackInput = true;
             }
-            else 
+            else
             {
                 AttackInput = false;
-            } 
+            }
         }
 
         private void OnVerticalInput()
         {
             yInput = Input.GetAxis("Vertical");
         }
-        
 
         public void InputUpdate()
         {
             OnJumpInput();
             OnRunInput();
             OnDashInput();
-            OnAttackInput();          
+            OnAttackInput();
             OnVerticalInput();
         }
     }

@@ -15,7 +15,7 @@ public class DebugMenu : MonoBehaviour
     private PlayerData playerData;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         DebugUI.SetActive(false);
         //tìm kiếm Player trong scene
@@ -28,7 +28,7 @@ public class DebugMenu : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Delete) && !enable )
+        if (Input.GetKeyDown(KeyCode.Delete) && !enable)
         {
             enable = true;
             DebugUI.SetActive(true);
@@ -42,6 +42,10 @@ public class DebugMenu : MonoBehaviour
 
     public void TpToNextLevelPoint()
     {
+        if (nextLevelPoint == null)
+        {
+            return;
+        }
         var newPos = new Vector3(nextLevelPoint.transform.position.x - 50,
             nextLevelPoint.transform.position.y, player.transform.position.z);
         player.transform.position = newPos;
@@ -51,7 +55,7 @@ public class DebugMenu : MonoBehaviour
     {
         playerData.currentHealth = playerData.maxHealth;
     }
-    
+
     public void FullMana()
     {
         if (playerData.currentMana == playerData.maxMana)
