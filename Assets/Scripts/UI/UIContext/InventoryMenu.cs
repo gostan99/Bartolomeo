@@ -139,7 +139,7 @@ namespace Assets.Scripts.UI.UIContext
                     if (slotDatum[i].Contain(item))
                     {
                         slotDatum[i].Amount += amount;
-                        UpdateItemAmountDisplay();
+                        UpdateItemAmount(i);
                         return true;
                     }
                 }
@@ -148,9 +148,8 @@ namespace Assets.Scripts.UI.UIContext
 
                 AddItemImgToBtn(slotDatum.Count - 1, item.sprite);
                 EnableItemImgDisplay(slotDatum.Count - 1, true);
-                selectedIndex = slotDatum.Count - 1;
-                UpdateItemAmountDisplay();
-                selectedIndex = -1;
+                EnableItemAmountDisplay(slotDatum.Count - 1, true);
+                UpdateItemAmount(slotDatum.Count - 1);
 
                 return true;
             }
@@ -172,27 +171,6 @@ namespace Assets.Scripts.UI.UIContext
         }
 
         //Được gọi qua Hàm Onclick của Button
-        public void DropSelectedItem()
-        {
-            if (slotDatum[selectedIndex].Amount > 1)
-            {
-                slotDatum[selectedIndex].Amount--;
-                UpdateItemAmountDisplay();
-                return;
-            }
-            slotDatum.RemoveAt(selectedIndex);
-            EnableItemImgDisplay(selectedIndex, false);
-            selectedIndex = -1;         //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để tắt nút Equip, Use và Drop và update các phần hiển thị
-
-            UpdateEquipBtn();
-            UpdateUseBtn();
-            UpdateDropBtn();
-
-            UpdateItemAmountDisplay();
-            UpdateItemDescriptionTextDisplay();
-        }
-
-        //Được gọi qua Hàm Onclick của Button
         public void UseSelectedItem()
         {
             slotDatum[selectedIndex].Item.Use();
@@ -203,6 +181,27 @@ namespace Assets.Scripts.UI.UIContext
         public void EquipSelectedItem()
         {
             //TO DO: implement this method
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void DropSelectedItem()
+        {
+            if (slotDatum[selectedIndex].Amount > 1)
+            {
+                slotDatum[selectedIndex].Amount--;
+                UpdateItemAmount(selectedIndex);
+                return;
+            }
+            slotDatum.RemoveAt(selectedIndex);
+            EnableItemImgDisplay(selectedIndex, false);
+            EnableItemAmountDisplay(selectedIndex, false);
+            selectedIndex = -1;         //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để tắt nút Equip, Use và Drop và update các phần hiển thị
+
+            UpdateEquipBtn();
+            UpdateUseBtn();
+            UpdateDropBtn();
+
+            UpdateItemDescriptionTextDisplay();
         }
 
         //Được gọi qua Hàm Onclick của Button
@@ -222,20 +221,21 @@ namespace Assets.Scripts.UI.UIContext
             imgComp.enabled = enable;
         }
 
-        private void UpdateItemAmountDisplay()
+        private void EnableItemAmountDisplay(int index, bool enable)
         {
-            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            GameObject itemAmount = slotBtns[index].transform.Find("Amount").gameObject;
+            var textComp = itemAmount.GetComponent<Text>();
+            textComp.enabled = enable;
+        }
+
+        private void UpdateItemAmount(int index)
+        {
+            if (index < slotDatum.Count && index >= 0)
             {
-                GameObject itemAmount = slotBtns[selectedIndex].transform.Find("Amount").gameObject;
+                GameObject itemAmount = slotBtns[index].transform.Find("Amount").gameObject;
                 var textComp = itemAmount.GetComponent<Text>();
                 textComp.enabled = true;
-                textComp.text = slotDatum[selectedIndex].Amount.ToString();
-            }
-            else
-            {
-                GameObject itemAmount = slotBtns[selectedIndex].transform.Find("Amount").gameObject;
-                var textComp = itemAmount.GetComponent<Text>();
-                textComp.enabled = false;
+                textComp.text = slotDatum[index].Amount.ToString();
             }
         }
 

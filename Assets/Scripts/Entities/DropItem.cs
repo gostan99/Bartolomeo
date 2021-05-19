@@ -6,26 +6,50 @@ namespace Assets.Scripts.Entities
 {
     public class DropItem : MonoBehaviour
     {
-        private readonly Dictionary<Item, int> _itemsAndOdd;
+        public GameObject Item;
+        public int Odd;
+        public GameObject Host;
 
-        public DropItem(Dictionary<Item, int> itemsAndOdd)
+        private Canvas healthCanvas;
+        private bool healthCanvasHasEnable = false;
+        private bool willDrop = false;
+        private bool hasDrop = false;
+
+        private void Start()
         {
-            _itemsAndOdd = itemsAndOdd;
+            healthCanvas = Host.GetComponentInChildren<Canvas>();
+            int val = Random.Range(1, 101);// random số từ 1 đến 100
+            if (val <= Odd)
+            {
+                willDrop = true;
+            }
+            else
+            {
+                willDrop = false;
+            }
         }
 
-        public Item Drop()
+        private void Update()
         {
-            List<Item> items = new List<Item>();
-            foreach (var key in _itemsAndOdd.Keys)
+            if (!healthCanvasHasEnable)
             {
-                _itemsAndOdd.TryGetValue(key, out int odd);
-                for (int i = 0; i < odd; i++)
+                if (healthCanvas.enabled)
                 {
-                    items.Add(key);
+                    healthCanvasHasEnable = true;
                 }
             }
-            int index = UnityEngine.Random.Range(0, items.Count);
-            return items[index];
+            else
+            {
+                if (!healthCanvas.enabled)
+                {
+                    if (willDrop)
+                    {
+                        Vector2 pos = new Vector2(Host.transform.position.x, Host.transform.position.y + 5);
+                        Instantiate(Item, pos, Quaternion.identity);
+                        Destroy(this);
+                    }
+                }
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 318585593737893512}
   - component: {fileID: 6365800055663159856}
   - component: {fileID: 7969551339990736666}
-  m_Layer: 19
+  m_Layer: 0
   m_Name: SmallHealthPotionInWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1744509693
   m_SortingLayer: 1
-  m_SortingOrder: -10
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2936139870473903071, guid: de395b9c0a0d9804d934c232f555d959,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

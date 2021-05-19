@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4179720511071338440}
   - component: {fileID: 4179720511071338441}
   - component: {fileID: 2335971037103212851}
+  - component: {fileID: 4798532758155697369}
   m_Layer: 11
   m_Name: FlyingEye
   m_TagString: Untagged
@@ -165,6 +166,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   CurrentHealth: 0
+--- !u!114 &4798532758155697369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4179720511071338438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
+  Odd: 100
+  Host: {fileID: 4179720511071338438}
 --- !u!1001 &440316404751569616
 PrefabInstance:
   m_ObjectHideFlags: 0
