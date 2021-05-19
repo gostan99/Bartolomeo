@@ -20,7 +20,7 @@ namespace Assets.Scripts.Items
             //lấy PlayerController component
             pController = player.GetComponent<PlayerController>();
             IsUseable = true;
-            Description = "Heal 25 Health";
+            Description = "Heal " + HealValue.ToString() + " Health";
             ImageWidth = 62;
             ImageHeight = 72;
             sprite = Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Mini_Health_Postion")[0];
@@ -28,10 +28,6 @@ namespace Assets.Scripts.Items
 
         public override void Use()
         {
-            if (!IsUseable)
-            {
-                throw new Exception();
-            }
             if (pData.currentHealth + HealValue > pData.maxHealth)
             {
                 pData.currentHealth = pData.maxHealth;
@@ -42,6 +38,11 @@ namespace Assets.Scripts.Items
             }
             //Đưa player vào state hồi máu
             //pController.currentState.SetNewState(pController.HeallingState);
+        }
+
+        public override void Equip()
+        {
+            throw new NotImplementedException();
         }
     }
 }

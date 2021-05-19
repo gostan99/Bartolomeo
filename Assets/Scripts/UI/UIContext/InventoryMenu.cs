@@ -6,6 +6,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -33,6 +34,7 @@ namespace Assets.Scripts.UI.UIContext
             }
         }
 
+        public GameObject EquipItemBtn;
         public GameObject UseItemBtn;
         public GameObject DropItemBtn;
         public GameObject InventoryUI;
@@ -50,6 +52,7 @@ namespace Assets.Scripts.UI.UIContext
 
         private void Start()
         {
+            UseItemBtn = transform.Find("InventoryUI").Find("EquipBtn").gameObject;
             UseItemBtn = transform.Find("InventoryUI").Find("UseBtn").gameObject;
             DropItemBtn = transform.Find("InventoryUI").Find("DropBtn").gameObject;
             InventoryUI = transform.Find("InventoryUI").gameObject;
@@ -67,6 +70,9 @@ namespace Assets.Scripts.UI.UIContext
 
             #region Tắt nút dùng và nút vứt item
 
+            EquipItemBtn.gameObject.GetComponent<Image>().enabled = false;
+            EquipItemBtn.gameObject.GetComponent<Button>().enabled = false;
+
             UseItemBtn.gameObject.GetComponent<Image>().enabled = false;
             UseItemBtn.gameObject.GetComponent<Button>().enabled = false;
 
@@ -80,10 +86,6 @@ namespace Assets.Scripts.UI.UIContext
 
             SceneManager.sceneUnloaded += SaveInventory;
             LoadInventory();
-            for (int i = 0; i < slotDatum.Count; i++)
-            {
-                UpdateItemAmountDisplay(i);
-            }
         }
 
         public void SaveInventory(Scene current)
@@ -137,30 +139,18 @@ namespace Assets.Scripts.UI.UIContext
                     if (slotDatum[i].Contain(item))
                     {
                         slotDatum[i].Amount += amount;
-                        UpdateItemAmountDisplay(i);
+                        UpdateItemAmountDisplay();
                         return true;
                     }
                 }
                 //thêm item vào slot
                 slotDatum.Add(new SlotData { Item = item, Type = type, Amount = amount });
 
-                #region tạo phần hiển thị hình ảnh item
-
-                GameObject itemImageObj = slotBtns[slotDatum.Count - 1].transform.Find("ItemImg").gameObject;
-
-                var imgComp = itemImageObj.GetComponent<Image>();
-                Sprite sprite = slotDatum[slotDatum.Count - 1].Item.sprite;
-                imgComp.sprite = sprite;
-
-                var width = slotDatum[slotDatum.Count - 1].Item.ImageWidth;
-                var height = slotDatum[slotDatum.Count - 1].Item.ImageHeight;
-                var rectTransformComp = itemImageObj.GetComponent<RectTransform>();
-                rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
-                rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-
-                UpdateItemImgDisplay(slotDatum.Count - 1);
-
-                #endregion tạo phần hiển thị hình ảnh item
+                AddItemImgToBtn(slotDatum.Count - 1, item.sprite);
+                EnableItemImgDisplay(slotDatum.Count - 1, true);
+                selectedIndex = slotDatum.Count - 1;
+                UpdateItemAmountDisplay();
+                selectedIndex = -1;
 
                 return true;
             }
@@ -168,19 +158,84 @@ namespace Assets.Scripts.UI.UIContext
             return false;
         }
 
-        private void UpdateItemAmountDisplay(int slotIndex)
+        private void AddItemImgToBtn(int btnIdex, Sprite img)
         {
-            GameObject itemAmount = slotBtns[slotIndex].transform.Find("Amount").gameObject;
+            GameObject itemImageObj = slotBtns[btnIdex].transform.Find("ItemImg").gameObject;
+            var imgComp = itemImageObj.GetComponent<Image>();
+            imgComp.sprite = img;
 
-            var textComp = itemAmount.GetComponent<Text>();
-            if (slotDatum[slotIndex].Amount == 0)
+            var width = slotDatum[btnIdex].Item.ImageWidth;
+            var height = slotDatum[btnIdex].Item.ImageHeight;
+            var rectTransformComp = itemImageObj.GetComponent<RectTransform>();
+            rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+            rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void DropSelectedItem()
+        {
+            if (slotDatum[selectedIndex].Amount > 1)
             {
-                textComp.enabled = false;
+                slotDatum[selectedIndex].Amount--;
+                UpdateItemAmountDisplay();
+                return;
+            }
+            slotDatum.RemoveAt(selectedIndex);
+            EnableItemImgDisplay(selectedIndex, false);
+            selectedIndex = -1;         //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để tắt nút Equip, Use và Drop và update các phần hiển thị
+
+            UpdateEquipBtn();
+            UpdateUseBtn();
+            UpdateDropBtn();
+
+            UpdateItemAmountDisplay();
+            UpdateItemDescriptionTextDisplay();
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void UseSelectedItem()
+        {
+            slotDatum[selectedIndex].Item.Use();
+            DropSelectedItem();
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void EquipSelectedItem()
+        {
+            //TO DO: implement this method
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void SelectedItem(int index)
+        {
+            selectedIndex = index;
+            UpdateEquipBtn();
+            UpdateUseBtn();
+            UpdateDropBtn();
+            UpdateItemDescriptionTextDisplay();
+        }
+
+        private void EnableItemImgDisplay(int index, bool enable)
+        {
+            GameObject itemImage = slotBtns[index].transform.Find("ItemImg").gameObject;
+            var imgComp = itemImage.GetComponent<Image>();
+            imgComp.enabled = enable;
+        }
+
+        private void UpdateItemAmountDisplay()
+        {
+            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            {
+                GameObject itemAmount = slotBtns[selectedIndex].transform.Find("Amount").gameObject;
+                var textComp = itemAmount.GetComponent<Text>();
+                textComp.enabled = true;
+                textComp.text = slotDatum[selectedIndex].Amount.ToString();
             }
             else
             {
-                textComp.enabled = true;
-                textComp.text = slotDatum[slotIndex].Amount.ToString();
+                GameObject itemAmount = slotBtns[selectedIndex].transform.Find("Amount").gameObject;
+                var textComp = itemAmount.GetComponent<Text>();
+                textComp.enabled = false;
             }
         }
 
@@ -197,22 +252,29 @@ namespace Assets.Scripts.UI.UIContext
             }
         }
 
-        private void UpdateItemImgDisplay(int slotIndex)
+        private void UpdateEquipBtn()
         {
-            GameObject itemImage = slotBtns[slotIndex].transform.Find("ItemImg").gameObject;
-
-            var imgComp = itemImage.GetComponent<Image>();
-            if (slotDatum[slotIndex].Amount == 0)
+            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
             {
-                imgComp.enabled = false;
+                if (slotDatum[selectedIndex].Item.IsEquipable)
+                {
+                    EquipItemBtn.gameObject.GetComponent<Image>().enabled = true;
+                    EquipItemBtn.gameObject.GetComponent<Button>().enabled = true;
+                }
+                else
+                {
+                    EquipItemBtn.gameObject.GetComponent<Image>().enabled = false;
+                    EquipItemBtn.gameObject.GetComponent<Button>().enabled = false;
+                }
             }
             else
             {
-                imgComp.enabled = true;
+                EquipItemBtn.gameObject.GetComponent<Image>().enabled = false;
+                EquipItemBtn.gameObject.GetComponent<Button>().enabled = false;
             }
         }
 
-        private void UpdateUseAndDropBtn()
+        private void UpdateUseBtn()
         {
             if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
             {
@@ -226,50 +288,26 @@ namespace Assets.Scripts.UI.UIContext
                     UseItemBtn.gameObject.GetComponent<Image>().enabled = false;
                     UseItemBtn.gameObject.GetComponent<Button>().enabled = false;
                 }
-                DropItemBtn.gameObject.GetComponent<Image>().enabled = true;
-                DropItemBtn.gameObject.GetComponent<Button>().enabled = true;
             }
             else
             {
                 UseItemBtn.gameObject.GetComponent<Image>().enabled = false;
                 UseItemBtn.gameObject.GetComponent<Button>().enabled = false;
+            }
+        }
 
+        private void UpdateDropBtn()
+        {
+            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            {
+                DropItemBtn.gameObject.GetComponent<Image>().enabled = true;
+                DropItemBtn.gameObject.GetComponent<Button>().enabled = true;
+            }
+            else
+            {
                 DropItemBtn.gameObject.GetComponent<Image>().enabled = false;
                 DropItemBtn.gameObject.GetComponent<Button>().enabled = false;
             }
-        }
-
-        //Được gọi qua Hàm Onclick của Button
-        public void DropSelectedItem()
-        {
-            if (slotDatum[selectedIndex].Amount > 1)
-            {
-                slotDatum[selectedIndex].Amount--;
-                UpdateItemAmountDisplay(selectedIndex);
-                return;
-            }
-            slotDatum[selectedIndex].Amount--;
-            UpdateItemAmountDisplay(selectedIndex);
-            UpdateItemImgDisplay(selectedIndex);
-            slotDatum.RemoveAt(selectedIndex);
-            //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để hàm UpdateUseAndDropBtn tắt nút Use và Drop
-            selectedIndex = -1;
-            UpdateUseAndDropBtn();
-        }
-
-        //Được gọi qua Hàm Onclick của Button
-        public void UseSelectedItem()
-        {
-            slotDatum[selectedIndex].Item.Use();
-            DropSelectedItem();
-        }
-
-        //Được gọi qua Hàm Onclick của Button
-        public void SelectedItem(int index)
-        {
-            selectedIndex = index;
-            UpdateUseAndDropBtn();
-            UpdateItemDescriptionTextDisplay();
         }
 
         #region Điều khiển UI

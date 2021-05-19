@@ -469,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
       propertyPath: MinX
-      value: 359
+      value: 364.06
       objectReference: {fileID: 0}
     - target: {fileID: 746123851727922705, guid: 29ba99ac574f61d4ca15256251b6c515,
         type: 3}
@@ -9130,7 +9130,7 @@ PrefabInstance:
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 115
+      value: 135.65
       objectReference: {fileID: 0}
     - target: {fileID: 1622696680063187026, guid: e2734f02aba98b84caa9859b5c3c7132,
         type: 3}
@@ -11960,11 +11960,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 811803216, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 811803216, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328167257, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328167257, guid: c8cfe31970f3629478addb9fc7b6bbd0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2400029757860647362, guid: c8cfe31970f3629478addb9fc7b6bbd0,
         type: 3}
@@ -12075,6 +12083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400029757860647374, guid: c8cfe31970f3629478addb9fc7b6bbd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9199627627348522712, guid: c8cfe31970f3629478addb9fc7b6bbd0,
         type: 3}
@@ -13796,6 +13809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1042961718}
+  OffSetX: 4.77
+  OffSetY: 0
   MinX: 359
   MaxX: 2015
   MinY: -154.35
@@ -16389,7 +16404,7 @@ PrefabInstance:
     - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 109
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 3252297548926719891, guid: cdbd5b021fa6bab4b8dbcd478a8cb415,
         type: 3}
@@ -18579,6 +18594,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1042961718}
+  OffSetX: 0
+  OffSetY: 0
   MinX: 359
   MaxX: 2015
   MinY: -31
