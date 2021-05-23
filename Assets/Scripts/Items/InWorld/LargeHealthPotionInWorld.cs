@@ -2,14 +2,14 @@
 
 namespace Assets.Scripts.Items.InWorld
 {
-    public class SmallHealthPotionInWorld : ItemInWorld
+    public class LargeHealthPotionInWorld : ItemInWorld
     {
         private void Update()
         {
             if (isCollided)
             {
-                var item = ScriptableObject.CreateInstance<SmallHealthPotion>();
-                if (inventory.AddItem(item, ItemType.SmallHealthPotion, 1))
+                var item = ScriptableObject.CreateInstance<LargeHealthPotion>();
+                if (inventory.AddItem(item, ItemType.LargeHealthPotion, 1))
                 {
                     Destroy(this.gameObject);
                 }

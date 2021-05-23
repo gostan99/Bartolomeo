@@ -54,12 +54,12 @@ namespace Assets.Scripts.Player
 
         //--PARAMETER--------------------------------------------------
 
-        public float maxMana = 50;
-
-        public float currentMana = 0;
+        public float maxMana = 100;
+        public float currentMana = 100;
+        public float manaCost = 50;
+        public float manaGenerationTimer = 0.25f;
 
         public ref float currentHealth { get { return ref DontDestroyOnLoadStats.currentHealth; } }
-
         public ref float maxHealth { get { return ref DontDestroyOnLoadStats.maxHealth; } }
 
         public float Speed = 20.0f;

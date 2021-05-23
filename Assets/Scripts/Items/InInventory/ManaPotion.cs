@@ -4,12 +4,11 @@ using UnityEngine;
 
 namespace Assets.Scripts.Items
 {
-    public class SmallHealthPotion : Item
+    public class ManaPotion : Item
     {
         private GameObject player;
         private PlayerData pData;
         private PlayerController pController;
-        public int HealValue { get; } = 25;
 
         private void Awake()
         {
@@ -21,24 +20,15 @@ namespace Assets.Scripts.Items
             pController = player.GetComponent<PlayerController>();
             IsUseable = true;
             IsEquipable = false;
-            Description = "Heal " + HealValue.ToString() + " Health";
+            Description = "Fill Up Full Mana Bar";
             ImageWidth = 62;
             ImageHeight = 72;
-            sprite = Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Mini_Health_Postion")[0];
+            sprite = Resources.LoadAll<Sprite>("Images/Items/ManaPotion/Mana_Potion")[0];
         }
 
         public override void Use()
         {
-            if (pData.currentHealth + HealValue > pData.maxHealth)
-            {
-                pData.currentHealth = pData.maxHealth;
-            }
-            else
-            {
-                pData.currentHealth += HealValue;
-            }
-            //Đưa player vào state hồi máu
-            //pController.currentState.SetNewState(pController.HeallingState);
+            pData.currentMana = pData.maxMana;
         }
 
         public override void Equip()

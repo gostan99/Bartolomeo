@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 66ab13b333d35254b89c3f55663437c9
+guid: 7f703a26b510d9f42af118836286290f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3585155157907602289
-    second: items-icons-spritesheet 1_0
-  - first:
-      213: -7229120453970840597
-    second: items-icons-spritesheet 1_1
+      213: 584058301034178738
+    second: pontiff_giantSword_swordSprite_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -37,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -51,8 +48,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 1, y: 2, z: 0, w: 2}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -70,7 +67,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +91,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,34 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: items-icons-spritesheet 1_0
+      name: pontiff_giantSword_swordSprite_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 426
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f84024cf068fe3ec0800000000000000
-      internalID: -3585155157907602289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: items-icons-spritesheet 1_1
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 185
-        width: 14
-        height: 19
+        x: 1
+        y: 2
+        width: 63
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be3be86af310dab90800000000000000
-      internalID: -7229120453970840597
+      spriteID: 2b8a2492eedfa1800800000000000000
+      internalID: 584058301034178738
       vertices: []
       indices: 
       edges: []

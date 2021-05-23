@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace Assets.Scripts.Items
 {
-    public class SmallHealthPotion : Item
+    public class LargeHealthPotion : Item
     {
         private GameObject player;
         private PlayerData pData;
         private PlayerController pController;
-        public int HealValue { get; } = 25;
+        public int HealValue { get; } = 50;
 
         private void Awake()
         {
@@ -24,7 +24,7 @@ namespace Assets.Scripts.Items
             Description = "Heal " + HealValue.ToString() + " Health";
             ImageWidth = 62;
             ImageHeight = 72;
-            sprite = Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Mini_Health_Postion")[0];
+            sprite = Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Large_Health_Postion")[0];
         }
 
         public override void Use()

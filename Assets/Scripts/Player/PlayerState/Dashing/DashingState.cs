@@ -14,6 +14,7 @@ namespace Assets.Scripts.Player
             timer = 0f;
             newState = this;
             pInput.JumpInputCounter = PlayerData.MaxJumpCounter - 1;
+            pData.currentMana -= pData.manaCost;
         }
 
         public override void Exit()
@@ -25,38 +26,32 @@ namespace Assets.Scripts.Player
         {
             timer += Time.deltaTime;
             pInput.InputUpdate();
-            if (pData.currentMana==50 )
+            if (timer >= pData.DashDuration)
             {
-                if (timer >= pData.DashDuration)
+                if (IsGrounded())
                 {
-                    if (IsGrounded())
+                    if (pInput.xInput == 0)
                     {
-                        if (pInput.xInput == 0)
-                        {
-                            pData.DashCooldownTimer = pData.DashCooldown;
-                            newState = pController.StopDashingState;
-                        }
-                        else
-                        {
-                            pData.DashCooldownTimer = pData.DashCooldown;
-                            newState = pController.RunningState;
-                        }
+                        pData.DashCooldownTimer = pData.DashCooldown;
+                        newState = pController.StopDashingState;
                     }
                     else
                     {
                         pData.DashCooldownTimer = pData.DashCooldown;
-                        newState = pController.StartFallingState;
+                        newState = pController.RunningState;
                     }
-                    pData.currentMana = 0;
+                }
+                else
+                {
+                    pData.DashCooldownTimer = pData.DashCooldown;
+                    newState = pController.StartFallingState;
                 }
             }
-
         }
 
         public override void PhysicUpdate()
         {
             pData.Rb.velocity = Vector2.right * pData.FacingDirection * pData.DashVelocityX;
         }
-
     }
 }

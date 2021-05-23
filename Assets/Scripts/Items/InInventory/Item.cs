@@ -20,6 +20,8 @@ namespace Assets.Scripts.Items
     public enum ItemType
     {
         SmallHealthPotion,
-        BigHealthPotion
+        LargeHealthPotion,
+        ManaPotion,
+        GiantSword
     }
 }

@@ -78,15 +78,16 @@ public partial class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
+        if (Time.timeScale == 0)
         {
-            currentState.LogicUpdate();
+            return;
         }
         if (currentState != currentState.GetChangedState())
         {
             currentState = currentState.GetChangedState();
             currentState.Enter();
         }
+        currentState.LogicUpdate();
         currentState.PlayAnimation();
 
         InvulnerableEffect();
@@ -189,7 +190,20 @@ public partial class PlayerController : MonoBehaviour
     {
         if (pData.currentMana < pData.maxMana)
         {
+            pData.manaGenerationTimer -= Time.deltaTime;
+            if (pData.manaGenerationTimer <= 0)
+            {
+                pData.currentMana += 2;
+                pData.manaGenerationTimer = 0.25f;
+            }
+        }
+        if (pData.currentMana - pData.manaCost <= 0)
+        {
             pData.canDash = false;
+        }
+        else
+        {
+            pData.canDash = true;
         }
     }
 }

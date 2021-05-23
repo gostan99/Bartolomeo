@@ -1756,8 +1756,10 @@ MonoBehaviour:
   InAirUpwardHitboxSize: {x: 79, y: 102}
   InAirUpwardHitboxDirection: 0
   AttackDamage: 20
-  maxHealth: 100
-  currentHealth: 100
+  maxMana: 100
+  currentMana: 100
+  manaCost: 50
+  manaGenerationTimer: 0.25
   Speed: 178
   DashCooldownTimer: 0
   DashCooldown: 0.4

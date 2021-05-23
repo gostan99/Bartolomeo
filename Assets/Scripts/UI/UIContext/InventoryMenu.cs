@@ -35,40 +35,47 @@ namespace Assets.Scripts.UI.UIContext
         }
 
         public GameObject EquipItemBtn;
+        public GameObject UnequipItemBtn;
         public GameObject UseItemBtn;
         public GameObject DropItemBtn;
         public GameObject InventoryUI;
         public GameObject ItemDescriptionText;
-        public GameObject SlotBtnParent;//game object mà chứa các nút item
+        public GameObject ItemSlotBtnParent;//game object mà chứa các nút item
+        public GameObject EquipmentSlotBtnParent;//game object mà chứa các nút Epuipment
 
         private UIController uController;
 
-        private GameObject[] slotBtns = new GameObject[45];//các nút item(có tất cả 45 nút)
+        private const int maxItemSlot = 45;//các nút item(có tất cả 45 nút)
+        private const int maxEpuipmentSlot = 3;//các nút trang bị(có tất cả 3 nút)
 
-        private const int maxSlot = 45;
+        private GameObject[] itemSlotBtns = new GameObject[maxItemSlot];
+        private GameObject[] equipmentSlotBtns = new GameObject[maxEpuipmentSlot];
 
-        private List<SlotData> slotDatum = new List<SlotData>();//Datum là số nhiều của Data :v
-        private int selectedIndex = -1;
+        private List<SlotData> itemSlotDatum = new List<SlotData>();//Datum là số nhiều của Data :v
+        private List<SlotData> equipmentSlotDatum = new List<SlotData>();//Datum là số nhiều của Data :v
+        private int selectedItemIndex = -1;
+        private int selectedEquipmentIndex = -1;
 
         private void Start()
         {
-            UseItemBtn = transform.Find("InventoryUI").Find("EquipBtn").gameObject;
-            UseItemBtn = transform.Find("InventoryUI").Find("UseBtn").gameObject;
-            DropItemBtn = transform.Find("InventoryUI").Find("DropBtn").gameObject;
-            InventoryUI = transform.Find("InventoryUI").gameObject;
-            ItemDescriptionText = transform.Find("InventoryUI").Find("ItemDescription").Find("Text").gameObject;
-            SlotBtnParent = transform.Find("InventoryUI").Find("Items").Find("SlotBtnParent").gameObject;
-
             #region Lấy tất cả các nút slot
 
-            for (int i = 0; i < SlotBtnParent.transform.childCount; i++)
+            for (int i = 0; i < ItemSlotBtnParent.transform.childCount; i++)
             {
-                slotBtns[i] = SlotBtnParent.transform.GetChild(i).gameObject;
+                itemSlotBtns[i] = ItemSlotBtnParent.transform.GetChild(i).gameObject;
+            }
+
+            for (int i = 0; i < EquipmentSlotBtnParent.transform.childCount; i++)
+            {
+                equipmentSlotBtns[i] = EquipmentSlotBtnParent.transform.GetChild(i).gameObject;
             }
 
             #endregion Lấy tất cả các nút slot
 
             #region Tắt nút dùng và nút vứt item
+
+            UnequipItemBtn.gameObject.GetComponent<Image>().enabled = false;
+            UnequipItemBtn.gameObject.GetComponent<Button>().enabled = false;
 
             EquipItemBtn.gameObject.GetComponent<Image>().enabled = false;
             EquipItemBtn.gameObject.GetComponent<Button>().enabled = false;
@@ -90,35 +97,68 @@ namespace Assets.Scripts.UI.UIContext
 
         public void SaveInventory(Scene current)
         {
-            string path = @"Assets\Data\Save\inventorydata.json";
-            string saveData = JsonConvert.SerializeObject(slotDatum, Formatting.Indented);
+            string inventoryItemDataPath = @"Assets\Data\Save\inventoryItemData.json";
+            string inventoryEpuipmentDataPath = @"Assets\Data\Save\inventoryEpuipmentData.json";
+            string inventoryItemData = JsonConvert.SerializeObject(itemSlotDatum, Formatting.Indented);
+            string inventoryEpuipmentData = JsonConvert.SerializeObject(equipmentSlotDatum, Formatting.Indented);
 
-            using (StreamWriter writer = new StreamWriter(path))
+            using (StreamWriter writer = new StreamWriter(inventoryItemDataPath))
             {
-                writer.Write(saveData);
+                writer.Write(inventoryItemData);
+            }
+            using (StreamWriter writer = new StreamWriter(inventoryEpuipmentDataPath))
+            {
+                writer.Write(inventoryEpuipmentData);
             }
         }
 
         private void LoadInventory()
         {
-            string path = @"Assets\Data\Save\inventorydata.json";
-            if (!File.Exists(path))
+            string inventoryItemDataPath = @"Assets\Data\Save\inventoryItemData.json";
+            string inventoryEpuipmentDataPath = @"Assets\Data\Save\inventoryEpuipmentData.json";
+            if (!File.Exists(inventoryItemDataPath) || !File.Exists(inventoryEpuipmentDataPath))
             {
                 return;
             }
-            string saveData = File.ReadAllText(path);
+            string inventoryItemData = File.ReadAllText(inventoryItemDataPath);
+            string inventoryEpuipmentData = File.ReadAllText(inventoryEpuipmentDataPath);
 
-            var tempSlot = JsonConvert.DeserializeObject<List<SlotData>>(saveData);
-            foreach (var slot in tempSlot)
+            var itemSlots = JsonConvert.DeserializeObject<List<SlotData>>(inventoryItemData);
+            var epuipmentSlots = JsonConvert.DeserializeObject<List<SlotData>>(inventoryEpuipmentData);
+            foreach (var slot in itemSlots)
             {
                 switch (slot.Type)
                 {
                     case ItemType.SmallHealthPotion:
-                        var item = ScriptableObject.CreateInstance<SmallHealthPotion>();
-                        AddItem(item, slot.Type, slot.Amount);
+                        {
+                            var item = ScriptableObject.CreateInstance<SmallHealthPotion>();
+                            AddItem(item, slot.Type, slot.Amount);
+                        }
                         break;
 
-                    case ItemType.BigHealthPotion:
+                    case ItemType.LargeHealthPotion:
+                        break;
+
+                    case ItemType.ManaPotion:
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            foreach (var slot in epuipmentSlots)
+            {
+                switch (slot.Type)
+                {
+                    case ItemType.GiantSword:
+                        {
+                            var item = ScriptableObject.CreateInstance<GiantSword>();
+                            var slotData = new SlotData { Item = item, Type = slot.Type, Amount = 1 };
+                            equipmentSlotDatum.Add(slotData);
+                            var img = equipmentSlotBtns[equipmentSlotDatum.Count].transform.Find("ItemImg").gameObject;
+                            var imgComp = img.GetComponent<Image>();
+                            imgComp.sprite = item.sprite;
+                        }
                         break;
 
                     default:
@@ -131,25 +171,25 @@ namespace Assets.Scripts.UI.UIContext
         public bool AddItem(Item item, ItemType type, int amount)
         {
             //nên check lại điều kiện < có thể bị sai
-            if (slotDatum.Count < maxSlot)
+            if (itemSlotDatum.Count < maxItemSlot)
             {
                 //check từng slot data xem có tồn tại item được truyền vào hay chưa. nếu rồi thì tăng amount của slot data
-                for (int i = 0; i < slotDatum.Count; i++)
+                for (int i = 0; i < itemSlotDatum.Count; i++)
                 {
-                    if (slotDatum[i].Contain(item))
+                    if (itemSlotDatum[i].Contain(item))
                     {
-                        slotDatum[i].Amount += amount;
+                        itemSlotDatum[i].Amount += amount;
                         UpdateItemAmount(i);
                         return true;
                     }
                 }
                 //thêm item vào slot
-                slotDatum.Add(new SlotData { Item = item, Type = type, Amount = amount });
+                itemSlotDatum.Add(new SlotData { Item = item, Type = type, Amount = amount });
 
-                AddItemImgToBtn(slotDatum.Count - 1, item.sprite);
-                EnableItemImgDisplay(slotDatum.Count - 1, true);
-                EnableItemAmountDisplay(slotDatum.Count - 1, true);
-                UpdateItemAmount(slotDatum.Count - 1);
+                AddItemImgToBtn(itemSlotDatum.Count - 1, item.sprite);
+                EnableItemImgDisplay(itemSlotDatum.Count - 1, true);
+                EnableItemAmountDisplay(itemSlotDatum.Count - 1, true);
+                UpdateItemAmount(itemSlotDatum.Count - 1);
 
                 return true;
             }
@@ -159,43 +199,77 @@ namespace Assets.Scripts.UI.UIContext
 
         private void AddItemImgToBtn(int btnIdex, Sprite img)
         {
-            GameObject itemImageObj = slotBtns[btnIdex].transform.Find("ItemImg").gameObject;
+            GameObject itemImageObj = itemSlotBtns[btnIdex].transform.Find("ItemImg").gameObject;
             var imgComp = itemImageObj.GetComponent<Image>();
             imgComp.sprite = img;
 
-            var width = slotDatum[btnIdex].Item.ImageWidth;
-            var height = slotDatum[btnIdex].Item.ImageHeight;
+            var width = itemSlotDatum[btnIdex].Item.ImageWidth;
+            var height = itemSlotDatum[btnIdex].Item.ImageHeight;
             var rectTransformComp = itemImageObj.GetComponent<RectTransform>();
             rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
             rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
         }
 
         //Được gọi qua Hàm Onclick của Button
-        public void UseSelectedItem()
+        public void EquipSelectedItem()
         {
-            slotDatum[selectedIndex].Item.Use();
-            DropSelectedItem();
+            itemSlotDatum[selectedItemIndex].Item.Equip();
+            for (int i = 0; i < equipmentSlotBtns.Length; i++)
+            {
+                var img = equipmentSlotBtns[i].transform.Find("ItemImg").gameObject;
+                var imgComp = img.GetComponent<Image>();
+                if (!imgComp.enabled)
+                {
+                    imgComp.enabled = true;
+                    imgComp.sprite = itemSlotDatum[selectedItemIndex].Item.sprite;
+                    equipmentSlotDatum.Add(itemSlotDatum[selectedItemIndex]);
+                    var item = equipmentSlotDatum[i].Item;
+
+                    var width = item.ImageWidth;
+                    var height = item.ImageHeight;
+                    var rectTransformComp = img.GetComponent<RectTransform>();
+                    rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+                    rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+
+                    DropSelectedItem();
+                    return;
+                }
+            }
         }
 
         //Được gọi qua Hàm Onclick của Button
-        public void EquipSelectedItem()
+        public void UnequipSelectedItem()
         {
-            //TO DO: implement this method
+            var img = equipmentSlotBtns[selectedEquipmentIndex].transform.Find("ItemImg").gameObject;
+            var imgComp = img.GetComponent<Image>();
+            imgComp.enabled = false;
+            var item = equipmentSlotDatum[selectedEquipmentIndex].Item;
+            var type = equipmentSlotDatum[selectedEquipmentIndex].Type;
+            AddItem(item, type, 1);
+            selectedEquipmentIndex = -1;
+            UpdateUnequipBtn();
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void UseSelectedItem()
+        {
+            itemSlotDatum[selectedItemIndex].Item.Use();
+            DropSelectedItem();
         }
 
         //Được gọi qua Hàm Onclick của Button
         public void DropSelectedItem()
         {
-            if (slotDatum[selectedIndex].Amount > 1)
+            if (itemSlotDatum[selectedItemIndex].Amount > 1)
             {
-                slotDatum[selectedIndex].Amount--;
-                UpdateItemAmount(selectedIndex);
+                itemSlotDatum[selectedItemIndex].Amount--;
+                UpdateItemAmount(selectedItemIndex);
                 return;
             }
-            slotDatum.RemoveAt(selectedIndex);
-            EnableItemImgDisplay(selectedIndex, false);
-            EnableItemAmountDisplay(selectedIndex, false);
-            selectedIndex = -1;         //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để tắt nút Equip, Use và Drop và update các phần hiển thị
+            itemSlotDatum.RemoveAt(selectedItemIndex);
+            EnableItemImgDisplay(selectedItemIndex, false);
+            EnableItemAmountDisplay(selectedItemIndex, false);
+            selectedItemIndex = -1;         //sau khi Remove 1 itemBucket cần gán giá trị -1 cho selectedIndex để tắt nút Equip, Use và Drop và update các phần hiển thị
 
             UpdateEquipBtn();
             UpdateUseBtn();
@@ -207,8 +281,20 @@ namespace Assets.Scripts.UI.UIContext
         //Được gọi qua Hàm Onclick của Button
         public void SelectedItem(int index)
         {
-            selectedIndex = index;
+            selectedItemIndex = index;
             UpdateEquipBtn();
+            UpdateUseBtn();
+            UpdateDropBtn();
+            UpdateItemDescriptionTextDisplay();
+        }
+
+        //Được gọi qua Hàm Onclick của Button
+        public void SelectedEquipment(int index)
+        {
+            selectedItemIndex = -1;
+            selectedEquipmentIndex = index;
+            UpdateEquipBtn();
+            UpdateUnequipBtn();
             UpdateUseBtn();
             UpdateDropBtn();
             UpdateItemDescriptionTextDisplay();
@@ -216,35 +302,35 @@ namespace Assets.Scripts.UI.UIContext
 
         private void EnableItemImgDisplay(int index, bool enable)
         {
-            GameObject itemImage = slotBtns[index].transform.Find("ItemImg").gameObject;
+            GameObject itemImage = itemSlotBtns[index].transform.Find("ItemImg").gameObject;
             var imgComp = itemImage.GetComponent<Image>();
             imgComp.enabled = enable;
         }
 
         private void EnableItemAmountDisplay(int index, bool enable)
         {
-            GameObject itemAmount = slotBtns[index].transform.Find("Amount").gameObject;
+            GameObject itemAmount = itemSlotBtns[index].transform.Find("Amount").gameObject;
             var textComp = itemAmount.GetComponent<Text>();
             textComp.enabled = enable;
         }
 
         private void UpdateItemAmount(int index)
         {
-            if (index < slotDatum.Count && index >= 0)
+            if (index < itemSlotDatum.Count && index >= 0)
             {
-                GameObject itemAmount = slotBtns[index].transform.Find("Amount").gameObject;
+                GameObject itemAmount = itemSlotBtns[index].transform.Find("Amount").gameObject;
                 var textComp = itemAmount.GetComponent<Text>();
                 textComp.enabled = true;
-                textComp.text = slotDatum[index].Amount.ToString();
+                textComp.text = itemSlotDatum[index].Amount.ToString();
             }
         }
 
         private void UpdateItemDescriptionTextDisplay()
         {
             var textComp = ItemDescriptionText.GetComponent<Text>();
-            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            if (selectedItemIndex < itemSlotDatum.Count && selectedItemIndex >= 0)
             {
-                textComp.text = slotDatum[selectedIndex].Item.Description;
+                textComp.text = itemSlotDatum[selectedItemIndex].Item.Description;
             }
             else
             {
@@ -254,9 +340,9 @@ namespace Assets.Scripts.UI.UIContext
 
         private void UpdateEquipBtn()
         {
-            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            if (selectedItemIndex < itemSlotDatum.Count && selectedItemIndex >= 0 && equipmentSlotDatum.Count < maxEpuipmentSlot)
             {
-                if (slotDatum[selectedIndex].Item.IsEquipable)
+                if (itemSlotDatum[selectedItemIndex].Item.IsEquipable)
                 {
                     EquipItemBtn.gameObject.GetComponent<Image>().enabled = true;
                     EquipItemBtn.gameObject.GetComponent<Button>().enabled = true;
@@ -274,11 +360,25 @@ namespace Assets.Scripts.UI.UIContext
             }
         }
 
+        private void UpdateUnequipBtn()
+        {
+            if (selectedEquipmentIndex < equipmentSlotDatum.Count && selectedEquipmentIndex >= 0)
+            {
+                UnequipItemBtn.gameObject.GetComponent<Image>().enabled = true;
+                UnequipItemBtn.gameObject.GetComponent<Button>().enabled = true;
+            }
+            else
+            {
+                UnequipItemBtn.gameObject.GetComponent<Image>().enabled = false;
+                UnequipItemBtn.gameObject.GetComponent<Button>().enabled = false;
+            }
+        }
+
         private void UpdateUseBtn()
         {
-            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            if (selectedItemIndex < itemSlotDatum.Count && selectedItemIndex >= 0)
             {
-                if (slotDatum[selectedIndex].Item.IsUseable)
+                if (itemSlotDatum[selectedItemIndex].Item.IsUseable)
                 {
                     UseItemBtn.gameObject.GetComponent<Image>().enabled = true;
                     UseItemBtn.gameObject.GetComponent<Button>().enabled = true;
@@ -298,7 +398,7 @@ namespace Assets.Scripts.UI.UIContext
 
         private void UpdateDropBtn()
         {
-            if (selectedIndex < slotDatum.Count && selectedIndex >= 0)
+            if (selectedItemIndex < itemSlotDatum.Count && selectedItemIndex >= 0)
             {
                 DropItemBtn.gameObject.GetComponent<Image>().enabled = true;
                 DropItemBtn.gameObject.GetComponent<Button>().enabled = true;
