@@ -3,25 +3,17 @@ using UnityEngine;
 
 namespace Assets.Scripts.Items
 {
-    public abstract class Item : ScriptableObject
+    public abstract class Item : MonoBehaviour
     {
-        public bool IsEquipable { get; protected set; } = false;
-        public bool IsUseable { get; protected set; } = false;
-        public string Description;
-        public Sprite sprite { get; set; }
-        public float ImageWidth { get; set; }
-        public float ImageHeight { get; set; }
+        public abstract bool IsEquipable { get; }
+        public abstract bool IsUseable { get; }
+        public abstract string Description { get; }
+        public abstract Sprite Sprite { get; }
+        public abstract float ImageWidth { get; }
+        public abstract float ImageHeight { get; }
 
-        public abstract void Use();
+        public abstract void UseItem();
 
-        public abstract void Equip();
-    }
-
-    public enum ItemType
-    {
-        SmallHealthPotion,
-        LargeHealthPotion,
-        ManaPotion,
-        GiantSword
+        public abstract void EquipItem();
     }
 }

@@ -1,24 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Items.InWorld
 {
-    public class SmallHealthPotionInWorld : ItemInWorld
+    public class SmallHealthPotionInWorld : ItemInWorld<SmallHealthPotion>
     {
-        private void Update()
-        {
-            if (isCollided)
-            {
-                var item = ScriptableObject.CreateInstance<SmallHealthPotion>();
-                if (inventory.AddItem(item, ItemType.SmallHealthPotion, 1))
-                {
-                    Destroy(this.gameObject);
-                }
-                else
-                {
-                    //TO DO: hiện thông báo túi đồ đã đầy
-                    Debug.LogWarning("Inventory is full!");
-                }
-            }
-        }
     }
 }

@@ -1,24 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Items.InWorld
 {
-    public class ManaPotionInWorld : ItemInWorld
+    public class ManaPotionInWorld : ItemInWorld<ManaPotion>
     {
-        private void Update()
-        {
-            if (isCollided)
-            {
-                var item = ScriptableObject.CreateInstance<ManaPotion>();
-                if (inventory.AddItem(item, ItemType.ManaPotion, 1))
-                {
-                    Destroy(this.gameObject);
-                }
-                else
-                {
-                    //TO DO: hiện thông báo túi đồ đã đầy
-                    Debug.LogWarning("Inventory is full!");
-                }
-            }
-        }
     }
 }

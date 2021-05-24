@@ -8,8 +8,17 @@ namespace Assets.Scripts.Items
     {
         private GameObject player;
         private PlayerData pData;
-        private PlayerController pController;
-        public int value { get; } = 5;
+        public int Value => 5;
+
+        public override bool IsEquipable => true;
+
+        public override bool IsUseable => false;
+
+        public override string Description => "Increase max attack by " + Value.ToString();
+        public override Sprite Sprite => Resources.LoadAll<Sprite>("Images/Items/Sword/pontiff_giantSword_swordSprite")[0];
+
+        public override float ImageWidth => 37;
+        public override float ImageHeight => 72;
 
         private void Awake()
         {
@@ -18,23 +27,16 @@ namespace Assets.Scripts.Items
             //lấy PlayerData component
             pData = player.GetComponent<PlayerData>();
             //lấy PlayerController component
-            pController = player.GetComponent<PlayerController>();
-            IsUseable = false;
-            IsEquipable = true;
-            Description = "Increase max attack by " + value.ToString();
-            ImageWidth = 37;
-            ImageHeight = 72;
-            sprite = Resources.LoadAll<Sprite>("Images/Items/Sword/pontiff_giantSword_swordSprite")[0];
         }
 
-        public override void Use()
+        public override void EquipItem()
+        {
+            pData.AttackDamage += Value;
+        }
+
+        public override void UseItem()
         {
             throw new NotImplementedException();
-        }
-
-        public override void Equip()
-        {
-            pData.AttackDamage += value;
         }
     }
 }

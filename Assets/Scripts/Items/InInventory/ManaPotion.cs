@@ -10,6 +10,13 @@ namespace Assets.Scripts.Items
         private PlayerData pData;
         private PlayerController pController;
 
+        public override bool IsEquipable => false;
+        public override bool IsUseable => true;
+        public override string Description => "Fill Up Full Mana Bar";
+        public override Sprite Sprite => Resources.LoadAll<Sprite>("Images/Items/ManaPotion/Mana_Potion")[0];
+        public override float ImageWidth => 62;
+        public override float ImageHeight => 72;
+
         private void Awake()
         {
             //tìm kiếm Player trong scene
@@ -18,20 +25,14 @@ namespace Assets.Scripts.Items
             pData = player.GetComponent<PlayerData>();
             //lấy PlayerController component
             pController = player.GetComponent<PlayerController>();
-            IsUseable = true;
-            IsEquipable = false;
-            Description = "Fill Up Full Mana Bar";
-            ImageWidth = 62;
-            ImageHeight = 72;
-            sprite = Resources.LoadAll<Sprite>("Images/Items/ManaPotion/Mana_Potion")[0];
         }
 
-        public override void Use()
+        public override void UseItem()
         {
             pData.currentMana = pData.maxMana;
         }
 
-        public override void Equip()
+        public override void EquipItem()
         {
             throw new NotImplementedException();
         }

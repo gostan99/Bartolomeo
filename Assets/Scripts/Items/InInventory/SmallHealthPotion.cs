@@ -9,7 +9,19 @@ namespace Assets.Scripts.Items
         private GameObject player;
         private PlayerData pData;
         private PlayerController pController;
-        public int HealValue { get; } = 25;
+        public int HealValue => 25;
+
+        public override bool IsEquipable => false;
+
+        public override bool IsUseable => true;
+
+        public override string Description => "Heal " + HealValue.ToString() + " Health";
+
+        public override Sprite Sprite => Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Mini_Health_Postion")[0];
+
+        public override float ImageWidth => 62;
+
+        public override float ImageHeight => 72;
 
         private void Awake()
         {
@@ -19,15 +31,9 @@ namespace Assets.Scripts.Items
             pData = player.GetComponent<PlayerData>();
             //lấy PlayerController component
             pController = player.GetComponent<PlayerController>();
-            IsUseable = true;
-            IsEquipable = false;
-            Description = "Heal " + HealValue.ToString() + " Health";
-            ImageWidth = 62;
-            ImageHeight = 72;
-            sprite = Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Mini_Health_Postion")[0];
         }
 
-        public override void Use()
+        public override void UseItem()
         {
             if (pData.currentHealth + HealValue > pData.maxHealth)
             {
@@ -37,11 +43,11 @@ namespace Assets.Scripts.Items
             {
                 pData.currentHealth += HealValue;
             }
-            //Đưa player vào state hồi máu
+            //TO DO: Đưa player vào state hồi máu
             //pController.currentState.SetNewState(pController.HeallingState);
         }
 
-        public override void Equip()
+        public override void EquipItem()
         {
             throw new NotImplementedException();
         }

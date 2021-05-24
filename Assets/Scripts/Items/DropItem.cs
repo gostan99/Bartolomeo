@@ -2,7 +2,7 @@
 using UnityEngine;
 using Assets.Scripts.Items;
 
-namespace Assets.Scripts.Entities
+namespace Assets.Scripts.Items
 {
     public class DropItem : MonoBehaviour
     {
@@ -13,7 +13,6 @@ namespace Assets.Scripts.Entities
         private Canvas healthCanvas;
         private bool healthCanvasHasEnable = false;
         private bool willDrop = false;
-        private bool hasDrop = false;
 
         private void Start()
         {
