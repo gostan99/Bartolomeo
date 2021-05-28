@@ -8,8 +8,9 @@ TagManager:
   - Grounded
   - Trap
   - MatDatBoss
-  - Item
   - Canvas
+  - InventorySlot
+  - EquipmentSlot
   layers:
   - Default
   - TransparentFX

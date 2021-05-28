@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
-  Odd: 100
+  Odd: 10
   Host: {fileID: 4179720511071338438}
 --- !u!1001 &440316404751569616
 PrefabInstance:

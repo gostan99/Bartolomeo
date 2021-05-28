@@ -22,6 +22,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         private bool isLoadingData = false;
 
         protected GameObject[] ItemSlots;
+        private int lastSlotHasAnItem = -1;
 
         private void Start()
         {
@@ -64,53 +65,56 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         public void AddItemToInventorySlot(Type itemType, int amount)
         {
             Component item;
-            bool hasAnItem;
+            bool hasAnSpecificItem;
+            bool hasAnyItem;
             //Duyệt hết các slot, nếu đã tồn tại 1 item thuộc kiểu của class này tăng số lương lên thôi
             for (int i = 0; i < ItemSlots.Length; i++)
             {
-                hasAnItem = ItemSlots[i].transform.Find("Item").TryGetComponent(itemType, out item);
-                if (hasAnItem)
+                hasAnyItem = ItemSlots[i].transform.Find("Item").TryGetComponent(typeof(Item), out item);
+                if (hasAnyItem)
                 {
-                    int currentAmount = Convert.ToInt32(ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text);
-                    currentAmount += amount;
-                    ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text = currentAmount.ToString();
-
-                    int index = SlotDataList.FindIndex(x => x.ItemType == itemType);
-                    SlotDataList[index] = new SlotData { ItemType = itemType, Amount = currentAmount };
-                    return;
-                }
-            }
-            //Nếu chưa tồn tại thì kiếm slot nào trống để thêm item vào
-            for (int i = 0; i < ItemSlots.Length; i++)
-            {
-                hasAnItem = ItemSlots[i].transform.Find("Item").TryGetComponent(typeof(Item), out item);
-                if (!hasAnItem)
-                {
-                    item = ItemSlots[i].transform.Find("Item").gameObject.AddComponent(itemType);
-                    //Thêm hình
-                    var itemImg = ItemSlots[i].transform.Find("ItemImg").GetComponent<Image>();
-                    itemImg.sprite = ((Item)item).Sprite;
-                    itemImg.enabled = true;
-                    //Sửa kích thước hình
-                    var width = ((Item)item).ImageWidth;
-                    var height = ((Item)item).ImageHeight;
-                    var rectTransformComp = ItemSlots[i].transform.Find("ItemImg").GetComponent<RectTransform>();
-                    rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
-                    rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-                    //Thêm số lượng
-                    ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text = amount.ToString();
-
-                    //thêm giữ liệu vào serializeDat
-                    if (isLoadingData)
+                    hasAnSpecificItem = ItemSlots[i].transform.Find("Item").TryGetComponent(itemType, out item);
+                    if (hasAnSpecificItem)
                     {
+                        int currentAmount = Convert.ToInt32(ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text);
+                        currentAmount += amount;
+                        ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text = currentAmount.ToString();
+
+                        int index = SlotDataList.FindIndex(x => x.ItemType == itemType);
+                        SlotDataList[index] = new SlotData { ItemType = itemType, Amount = currentAmount };
                         return;
                     }
-                    var slotData = new SlotData { ItemType = itemType, Amount = amount };
-                    SlotDataList.Add(slotData);
-
-                    return;
+                }
+                else
+                {
+                    lastSlotHasAnItem = i - 1;
+                    break;
                 }
             }
+            //Nếu chưa tồn tại thì thêm item vào trước slot cuối cùng có item
+
+            //Thêm item
+            item = ItemSlots[lastSlotHasAnItem + 1].transform.Find("Item").gameObject.AddComponent(itemType);
+            //Thêm hình
+            var itemImg = ItemSlots[lastSlotHasAnItem + 1].transform.Find("ItemImg").GetComponent<Image>();
+            itemImg.sprite = ((Item)item).Sprite;
+            itemImg.enabled = true;
+            //Sửa kích thước hình
+            var width = ((Item)item).ImageWidth;
+            var height = ((Item)item).ImageHeight;
+            var rectTransformComp = ItemSlots[lastSlotHasAnItem + 1].transform.Find("ItemImg").GetComponent<RectTransform>();
+            rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+            rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+            //Thêm số lượng
+            ItemSlots[lastSlotHasAnItem + 1].transform.Find("Amount").GetComponent<Text>().text = amount.ToString();
+
+            //thêm giữ liệu vào serializeDat
+            if (isLoadingData)
+            {
+                return;
+            }
+            SlotData slotData = new SlotData { ItemType = itemType, Amount = amount };
+            SlotDataList.Add(slotData);
         }
 
         public void RemoveItemFromInventorySlot(GameObject SelectedItemSlot, int amount)
@@ -131,10 +135,10 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             }
             else
             {
+                SelectedItemSlot.transform.Find("Amount").GetComponent<Text>().text = currentAmount.ToString();
+
                 int index = SlotDataList.FindIndex(x => x.ItemType == item.GetType());
                 SlotDataList[index] = new SlotData { ItemType = item.GetType(), Amount = currentAmount };
-
-                SelectedItemSlot.transform.Find("Amount").GetComponent<Text>().text = currentAmount.ToString();
             }
         }
     }

@@ -15,5 +15,7 @@ namespace Assets.Scripts.Items
         public abstract void UseItem();
 
         public abstract void EquipItem();
+
+        public abstract void UnequipItem();
     }
 }

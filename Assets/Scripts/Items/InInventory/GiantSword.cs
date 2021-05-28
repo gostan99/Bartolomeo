@@ -38,5 +38,10 @@ namespace Assets.Scripts.Items
         {
             throw new NotImplementedException();
         }
+
+        public override void UnequipItem()
+        {
+            pData.AttackDamage -= Value;
+        }
     }
 }

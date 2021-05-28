@@ -10,13 +10,12 @@ namespace Assets.Scripts.Items
         public int Odd;
         public GameObject Host;
 
-        private Canvas healthCanvas;
-        private bool healthCanvasHasEnable = false;
+        private BoxCollider2D boxCollider2D;
         private bool willDrop = false;
 
         private void Start()
         {
-            healthCanvas = Host.GetComponentInChildren<Canvas>();
+            boxCollider2D = Host.GetComponentInChildren<BoxCollider2D>();
             int val = Random.Range(1, 101);// random số từ 1 đến 100
             if (val <= Odd)
             {
@@ -30,23 +29,13 @@ namespace Assets.Scripts.Items
 
         private void Update()
         {
-            if (!healthCanvasHasEnable)
+            if (!boxCollider2D.enabled)
             {
-                if (healthCanvas.enabled)
+                if (willDrop)
                 {
-                    healthCanvasHasEnable = true;
-                }
-            }
-            else
-            {
-                if (!healthCanvas.enabled)
-                {
-                    if (willDrop)
-                    {
-                        Vector2 pos = new Vector2(Host.transform.position.x, Host.transform.position.y + 5);
-                        Instantiate(Item, pos, Quaternion.identity);
-                        Destroy(this);
-                    }
+                    Vector2 pos = new Vector2(Host.transform.position.x, Host.transform.position.y + 5);
+                    Instantiate(Item, pos, Quaternion.identity);
+                    Destroy(this);
                 }
             }
         }

@@ -83,8 +83,9 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
 
         private void TryEnableUnequipBtn()
         {
-            var itemImg = SelectedEquipmentSlot.transform.Find("ItemImg").GetComponent<Image>();
-            if (itemImg.enabled)
+            Item item;
+            bool hasAnItem = SelectedEquipmentSlot.transform.Find("Item").TryGetComponent<Item>(out item);
+            if (hasAnItem)
             {
                 UnequipBtn.GetComponent<Button>().enabled = true;
                 UnequipBtn.GetComponent<Image>().enabled = true;
@@ -176,8 +177,9 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             // Thêm item vào inventory
             var item = SelectedEquipmentSlot.transform.Find("Item").GetComponent<Item>();
             itemSlotManager.AddItemToInventorySlot(item.GetType(), 1);
-
+            // Xóa item trong equipment
             equipmentSlotManager.RemoveItemFromEquipmentSlot(SelectedEquipmentSlot);
+            item.UnequipItem();
 
             DisableUnequipBtn();
         }

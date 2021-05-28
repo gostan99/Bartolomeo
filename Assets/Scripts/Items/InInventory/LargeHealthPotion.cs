@@ -46,5 +46,10 @@ namespace Assets.Scripts.Items
         {
             throw new NotImplementedException();
         }
+
+        public override void UnequipItem()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

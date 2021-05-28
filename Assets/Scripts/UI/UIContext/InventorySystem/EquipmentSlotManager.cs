@@ -65,23 +65,23 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         public void AddItemToEquipmentSlot(Type itemType)
         {
             //Duyệt hết tất cả các slot, thấy slot nào trống thì gán item vào slot đó
-            Image itemImg;
+            Item item;
             for (int i = 0; i < EquipmentSlots.Length; i++)
             {
-                itemImg = EquipmentSlots[i].transform.Find("ItemImg").GetComponent<Image>();
-                if (!itemImg.enabled)
+                bool hasAnyItem = EquipmentSlots[i].transform.Find("Item").TryGetComponent<Item>(out item);
+                if (!hasAnyItem)
                 {
                     //Thêm Item vào trang bị slot
-                    var item = EquipmentSlots[i].transform.Find("Item").gameObject.AddComponent(itemType);
+                    item = (Item)EquipmentSlots[i].transform.Find("Item").gameObject.AddComponent(itemType);
 
                     //Thêm hình
-                    itemImg.sprite = ((Item)item).Sprite;
-                    itemImg.enabled = true;
+                    EquipmentSlots[i].transform.Find("ItemImg").gameObject.GetComponent<Image>().sprite = item.Sprite;
+                    EquipmentSlots[i].transform.Find("ItemImg").gameObject.GetComponent<Image>().enabled = true;
 
                     //Sửa kích thước hình
-                    var width = ((Item)item).ImageWidth;
-                    var height = ((Item)item).ImageHeight;
-                    var rectTransformComp = itemImg.GetComponent<RectTransform>();
+                    var width = item.ImageWidth;
+                    var height = item.ImageHeight;
+                    var rectTransformComp = EquipmentSlots[i].transform.Find("ItemImg").GetComponent<RectTransform>();
                     rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
                     rectTransformComp.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
 
@@ -90,7 +90,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
                     {
                         return;
                     }
-                    var slotData = new SlotData { ItemType = itemType, Amount = 1 };
+                    SlotData slotData = new SlotData { ItemType = itemType, Amount = 1 };
                     SlotDataList.Add(slotData);
                     return;
                 }
@@ -102,6 +102,9 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             var itemImg = selectedEquipmentSlot.transform.Find("ItemImg").GetComponent<Image>();
             itemImg.enabled = false;
             var item = selectedEquipmentSlot.transform.Find("Item").GetComponent<Item>();
+            Destroy(item);
+
+            //x => x.ItemType == item.GetType() cái này là lambda expression
             var slotData = SlotDataList.Find(x => x.ItemType == item.GetType());
             SlotDataList.Remove(slotData);
         }
