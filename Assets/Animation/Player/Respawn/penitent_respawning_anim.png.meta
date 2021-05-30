@@ -1,0 +1,1634 @@
+fileFormatVersion: 2
+guid: 47d03cfc9ae40154c99d5c8abd814aed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5944142578220023268
+    second: penitent_respawning_anim_0
+  - first:
+      213: -3807919900488485357
+    second: penitent_respawning_anim_1
+  - first:
+      213: -6448763095130486960
+    second: penitent_respawning_anim_2
+  - first:
+      213: -661591575469018311
+    second: penitent_respawning_anim_3
+  - first:
+      213: 1964621392163486720
+    second: penitent_respawning_anim_4
+  - first:
+      213: 8297454114041911604
+    second: penitent_respawning_anim_5
+  - first:
+      213: 5026773198261894704
+    second: penitent_respawning_anim_6
+  - first:
+      213: -9141399604445625754
+    second: penitent_respawning_anim_7
+  - first:
+      213: -8035341287466484457
+    second: penitent_respawning_anim_8
+  - first:
+      213: -2596901664168084483
+    second: penitent_respawning_anim_9
+  - first:
+      213: -1715279503410815965
+    second: penitent_respawning_anim_10
+  - first:
+      213: 8404472364148243850
+    second: penitent_respawning_anim_11
+  - first:
+      213: -2970797681836519573
+    second: penitent_respawning_anim_12
+  - first:
+      213: -7083434998744287582
+    second: penitent_respawning_anim_13
+  - first:
+      213: 6697078053714735943
+    second: penitent_respawning_anim_14
+  - first:
+      213: -3661786634421441954
+    second: penitent_respawning_anim_15
+  - first:
+      213: -5830865705416588546
+    second: penitent_respawning_anim_16
+  - first:
+      213: 5791737788701560985
+    second: penitent_respawning_anim_17
+  - first:
+      213: 6059046028038091716
+    second: penitent_respawning_anim_18
+  - first:
+      213: 2011516786185782192
+    second: penitent_respawning_anim_19
+  - first:
+      213: -5901538602687835320
+    second: penitent_respawning_anim_20
+  - first:
+      213: 717210586463986349
+    second: penitent_respawning_anim_21
+  - first:
+      213: -1359868111591809945
+    second: penitent_respawning_anim_22
+  - first:
+      213: 4904055723090674917
+    second: penitent_respawning_anim_23
+  - first:
+      213: 4430883457201190274
+    second: penitent_respawning_anim_24
+  - first:
+      213: 2761458701921618378
+    second: penitent_respawning_anim_25
+  - first:
+      213: -2450158852141254518
+    second: penitent_respawning_anim_26
+  - first:
+      213: 2504764542253954836
+    second: penitent_respawning_anim_27
+  - first:
+      213: 5555821854530719284
+    second: penitent_respawning_anim_28
+  - first:
+      213: -7538168217693642593
+    second: penitent_respawning_anim_29
+  - first:
+      213: -3206210059549598142
+    second: penitent_respawning_anim_30
+  - first:
+      213: -8718224000299106254
+    second: penitent_respawning_anim_31
+  - first:
+      213: 7168378262328528710
+    second: penitent_respawning_anim_32
+  - first:
+      213: 4541837193479645300
+    second: penitent_respawning_anim_33
+  - first:
+      213: 7141513458119985338
+    second: penitent_respawning_anim_34
+  - first:
+      213: 2927162920093911941
+    second: penitent_respawning_anim_35
+  - first:
+      213: -3862562853634938721
+    second: penitent_respawning_anim_36
+  - first:
+      213: -2527622001685111309
+    second: penitent_respawning_anim_37
+  - first:
+      213: 8621426252707189551
+    second: penitent_respawning_anim_38
+  - first:
+      213: 1560025579234860234
+    second: penitent_respawning_anim_39
+  - first:
+      213: 6148774047041847728
+    second: penitent_respawning_anim_40
+  - first:
+      213: -5732358129530265145
+    second: penitent_respawning_anim_41
+  - first:
+      213: 5069156466969759701
+    second: penitent_respawning_anim_42
+  - first:
+      213: 1226865665737074866
+    second: penitent_respawning_anim_43
+  - first:
+      213: -8443924989405333122
+    second: penitent_respawning_anim_44
+  - first:
+      213: 8200737850373724848
+    second: penitent_respawning_anim_45
+  - first:
+      213: 7677155207479906732
+    second: penitent_respawning_anim_46
+  - first:
+      213: -1600627195614993097
+    second: penitent_respawning_anim_47
+  - first:
+      213: -3968970807855071095
+    second: penitent_respawning_anim_48
+  - first:
+      213: -4573542976780409888
+    second: penitent_respawning_anim_49
+  - first:
+      213: -2580071429359461636
+    second: penitent_respawning_anim_50
+  - first:
+      213: -7309105222795977981
+    second: penitent_respawning_anim_51
+  - first:
+      213: 355839223969525225
+    second: penitent_respawning_anim_52
+  - first:
+      213: -620357528910234156
+    second: penitent_respawning_anim_53
+  - first:
+      213: -1449420006779489866
+    second: penitent_respawning_anim_54
+  - first:
+      213: -3261647861513724795
+    second: penitent_respawning_anim_55
+  - first:
+      213: 1873250090605913112
+    second: penitent_respawning_anim_56
+  - first:
+      213: -3456992069299229467
+    second: penitent_respawning_anim_57
+  - first:
+      213: -8533694671191027343
+    second: penitent_respawning_anim_58
+  - first:
+      213: 4648189052284534795
+    second: penitent_respawning_anim_59
+  - first:
+      213: 5774806891290641918
+    second: penitent_respawning_anim_60
+  - first:
+      213: 1107043326699763143
+    second: penitent_respawning_anim_61
+  - first:
+      213: -2608154845000034035
+    second: penitent_respawning_anim_62
+  - first:
+      213: -6718480571450967680
+    second: penitent_respawning_anim_63
+  - first:
+      213: 1203543678091955154
+    second: penitent_respawning_anim_64
+  - first:
+      213: -2100961162753085246
+    second: penitent_respawning_anim_65
+  - first:
+      213: 771927954411783601
+    second: penitent_respawning_anim_66
+  - first:
+      213: 791907264523570420
+    second: penitent_respawning_anim_67
+  - first:
+      213: -2107150385709875722
+    second: penitent_respawning_anim_68
+  - first:
+      213: 1750111666095640086
+    second: penitent_respawning_anim_69
+  - first:
+      213: 7986802394107283503
+    second: penitent_respawning_anim_70
+  - first:
+      213: -8866890383151951790
+    second: penitent_respawning_anim_71
+  - first:
+      213: -415928999629517314
+    second: penitent_respawning_anim_72
+  - first:
+      213: -6885779435923843885
+    second: penitent_respawning_anim_73
+  - first:
+      213: 8852774359063249591
+    second: penitent_respawning_anim_74
+  - first:
+      213: -5887808776323361041
+    second: penitent_respawning_anim_75
+  - first:
+      213: 674428129280855261
+    second: penitent_respawning_anim_76
+  - first:
+      213: 840522677625390379
+    second: penitent_respawning_anim_77
+  - first:
+      213: -8272954544869217883
+    second: penitent_respawning_anim_78
+  - first:
+      213: 368787382169077231
+    second: penitent_respawning_anim_79
+  - first:
+      213: -7319172066293076433
+    second: penitent_respawning_anim_80
+  - first:
+      213: 2496979054657484522
+    second: penitent_respawning_anim_81
+  - first:
+      213: 574825105061431152
+    second: penitent_respawning_anim_82
+  - first:
+      213: -3882640094509027000
+    second: penitent_respawning_anim_83
+  - first:
+      213: -6687064820754207236
+    second: penitent_respawning_anim_84
+  - first:
+      213: -8850670410727969575
+    second: penitent_respawning_anim_85
+  - first:
+      213: -3052341274943540653
+    second: penitent_respawning_anim_86
+  - first:
+      213: -3590483564930567930
+    second: penitent_respawning_anim_87
+  - first:
+      213: -1350834198818784222
+    second: penitent_respawning_anim_88
+  - first:
+      213: -3832628032445181747
+    second: penitent_respawning_anim_89
+  - first:
+      213: 8872547375149159355
+    second: penitent_respawning_anim_90
+  - first:
+      213: -1589064498726876658
+    second: penitent_respawning_anim_1
+  - first:
+      213: -8329938824738025293
+    second: penitent_respawning_anim_4
+  - first:
+      213: -1987179457344291779
+    second: penitent_respawning_anim_7
+  - first:
+      213: -2393981363537679089
+    second: penitent_respawning_anim_32
+  - first:
+      213: -1230548266352150347
+    second: penitent_respawning_anim_34
+  - first:
+      213: -6026654989156631574
+    second: penitent_respawning_anim_36
+  - first:
+      213: -4316270769940811979
+    second: penitent_respawning_anim_38
+  - first:
+      213: 2324790199166246384
+    second: penitent_respawning_anim_40
+  - first:
+      213: -8268315609532621829
+    second: penitent_respawning_anim_41
+  - first:
+      213: 8887244222363117409
+    second: penitent_respawning_anim_42
+  - first:
+      213: 5081593434009827777
+    second: penitent_respawning_anim_43
+  - first:
+      213: -7865019960891619424
+    second: penitent_respawning_anim_44
+  - first:
+      213: -7564266015250919562
+    second: penitent_respawning_anim_45
+  - first:
+      213: 4172370932442859169
+    second: penitent_respawning_anim_59
+  - first:
+      213: 5818687930053260585
+    second: penitent_respawning_anim_60
+  - first:
+      213: 1287838345229732483
+    second: penitent_respawning_anim_61
+  - first:
+      213: 4214190545486495499
+    second: penitent_respawning_anim_62
+  - first:
+      213: 5097104795876972158
+    second: penitent_respawning_anim_63
+  - first:
+      213: 9100627796367128064
+    second: penitent_respawning_anim_64
+  - first:
+      213: 1938357265019786375
+    second: penitent_respawning_anim_65
+  - first:
+      213: -8348719416681752437
+    second: penitent_respawning_anim_66
+  - first:
+      213: 7825306654950489806
+    second: penitent_respawning_anim_67
+  - first:
+      213: -1925608799872597757
+    second: penitent_respawning_anim_68
+  - first:
+      213: 1953759865899143051
+    second: penitent_respawning_anim_69
+  - first:
+      213: -3510625048971713671
+    second: penitent_respawning_anim_71
+  - first:
+      213: -2627773275974633623
+    second: penitent_respawning_anim_75
+  - first:
+      213: 2268185449286172603
+    second: penitent_respawning_anim_76
+  - first:
+      213: -6791004028432187998
+    second: penitent_respawning_anim_77
+  - first:
+      213: -7624326517859701031
+    second: penitent_respawning_anim_78
+  - first:
+      213: 5621758243246895026
+    second: penitent_respawning_anim_79
+  - first:
+      213: -8427069514001483533
+    second: penitent_respawning_anim_81
+  - first:
+      213: -7079344108261199096
+    second: penitent_respawning_anim_82
+  - first:
+      213: 6092524856927339616
+    second: penitent_respawning_anim_83
+  - first:
+      213: -3151651751813956157
+    second: penitent_respawning_anim_84
+  - first:
+      213: -6933327502893781927
+    second: penitent_respawning_anim_85
+  - first:
+      213: 7598891854275864073
+    second: penitent_respawning_anim_87
+  - first:
+      213: -4121647533671011683
+    second: penitent_respawning_anim_88
+  - first:
+      213: -4454847223509440289
+    second: penitent_respawning_anim_89
+  - first:
+      213: 3790142042928583773
+    second: penitent_respawning_anim_91
+  - first:
+      213: -8015861289940878526
+    second: penitent_respawning_anim_92
+  - first:
+      213: 8936833000090920286
+    second: penitent_respawning_anim_93
+  - first:
+      213: -5167398906065338352
+    second: penitent_respawning_anim_94
+  - first:
+      213: -5425864761428331237
+    second: penitent_respawning_anim_95
+  - first:
+      213: -9076034354372648285
+    second: penitent_respawning_anim_96
+  - first:
+      213: -24652952889848186
+    second: penitent_respawning_anim_97
+  - first:
+      213: 7170075743802452364
+    second: penitent_respawning_anim_98
+  - first:
+      213: 6830577411328374407
+    second: penitent_respawning_anim_99
+  - first:
+      213: 2987515403957699741
+    second: penitent_respawning_anim_100
+  - first:
+      213: 1405785213483595802
+    second: penitent_respawning_anim_101
+  - first:
+      213: 5367334602951995552
+    second: penitent_respawning_anim_102
+  - first:
+      213: -3922808516248427733
+    second: penitent_respawning_anim_103
+  - first:
+      213: 8831335777738243508
+    second: penitent_respawning_anim_104
+  - first:
+      213: 2158771212425319336
+    second: penitent_respawning_anim_105
+  - first:
+      213: -207302736773286121
+    second: penitent_respawning_anim_106
+  - first:
+      213: 6240409201429912425
+    second: penitent_respawning_anim_107
+  - first:
+      213: -7601808407602396456
+    second: penitent_respawning_anim_108
+  - first:
+      213: 8048722376768466462
+    second: penitent_respawning_anim_109
+  - first:
+      213: -7491207861989978586
+    second: penitent_respawning_anim_110
+  - first:
+      213: 4457895373900705230
+    second: penitent_respawning_anim_111
+  - first:
+      213: -6887060780961498715
+    second: penitent_respawning_anim_112
+  - first:
+      213: -5061504847979281483
+    second: penitent_respawning_anim_113
+  - first:
+      213: -8472576503055064540
+    second: penitent_respawning_anim_114
+  - first:
+      213: 1167750379924872021
+    second: penitent_respawning_anim_115
+  - first:
+      213: -8792750145927263173
+    second: penitent_respawning_anim_116
+  - first:
+      213: 3929132611493980862
+    second: penitent_respawning_anim_117
+  - first:
+      213: 128130454434536343
+    second: penitent_respawning_anim_118
+  - first:
+      213: -2005466168089897178
+    second: penitent_respawning_anim_119
+  - first:
+      213: -8419411383575117280
+    second: penitent_respawning_anim_120
+  - first:
+      213: -705598451850291108
+    second: penitent_respawning_anim_121
+  - first:
+      213: 8496668334269379265
+    second: penitent_respawning_anim_122
+  - first:
+      213: -93769025632051014
+    second: penitent_respawning_anim_123
+  - first:
+      213: 1575869569332853877
+    second: penitent_respawning_anim_124
+  - first:
+      213: 8196822294906823337
+    second: penitent_respawning_anim_125
+  - first:
+      213: 6832257002212232142
+    second: penitent_respawning_anim_126
+  - first:
+      213: -7232904221440093883
+    second: penitent_respawning_anim_127
+  - first:
+      213: 5056543325699655397
+    second: penitent_respawning_anim_128
+  - first:
+      213: -7236752634035591917
+    second: penitent_respawning_anim_129
+  - first:
+      213: -3593612490695507745
+    second: penitent_respawning_anim_130
+  - first:
+      213: 8559035772732620505
+    second: penitent_respawning_anim_131
+  - first:
+      213: -2689576691864971878
+    second: penitent_respawning_anim_132
+  - first:
+      213: -5232066074807009870
+    second: penitent_respawning_anim_133
+  - first:
+      213: -5814198433594840444
+    second: penitent_respawning_anim_134
+  - first:
+      213: 1066178356805170372
+    second: penitent_respawning_anim_135
+  - first:
+      213: -450301764022429989
+    second: penitent_respawning_anim_136
+  - first:
+      213: -7601851690740753105
+    second: penitent_respawning_anim_137
+  - first:
+      213: 6328898700620903747
+    second: penitent_respawning_anim_138
+  - first:
+      213: -8699401149465519003
+    second: penitent_respawning_anim_139
+  - first:
+      213: -9191496643215409243
+    second: penitent_respawning_anim_140
+  - first:
+      213: -4742679426576281090
+    second: penitent_respawning_anim_141
+  - first:
+      213: 1316163189918442437
+    second: penitent_respawning_anim_142
+  - first:
+      213: -5475842331184522890
+    second: penitent_respawning_anim_143
+  - first:
+      213: -3312891813529790334
+    second: penitent_respawning_anim_144
+  - first:
+      213: 5002428920670989849
+    second: penitent_respawning_anim_145
+  - first:
+      213: -5772632100194988833
+    second: penitent_respawning_anim_146
+  - first:
+      213: 8428954534232452420
+    second: penitent_respawning_anim_147
+  - first:
+      213: 1839469216349858302
+    second: penitent_respawning_anim_148
+  - first:
+      213: 1127020084672664959
+    second: penitent_respawning_anim_149
+  - first:
+      213: -3778732864988056732
+    second: penitent_respawning_anim_150
+  - first:
+      213: -8614526680673783446
+    second: penitent_respawning_anim_151
+  - first:
+      213: -4906273380161166819
+    second: penitent_respawning_anim_152
+  - first:
+      213: -4258921453859737610
+    second: penitent_respawning_anim_153
+  - first:
+      213: 3288362308955570590
+    second: penitent_respawning_anim_154
+  - first:
+      213: -3695434772530262882
+    second: penitent_respawning_anim_155
+  - first:
+      213: -3139568609968907107
+    second: penitent_respawning_anim_156
+  - first:
+      213: -5297240945443546502
+    second: penitent_respawning_anim_157
+  - first:
+      213: -2829156327995236039
+    second: penitent_respawning_anim_158
+  - first:
+      213: 850593488376216098
+    second: penitent_respawning_anim_159
+  - first:
+      213: 7969608369981332886
+    second: penitent_respawning_anim_160
+  - first:
+      213: -8404960634445915871
+    second: penitent_respawning_anim_161
+  - first:
+      213: -4356463942858908256
+    second: penitent_respawning_anim_162
+  - first:
+      213: -2567478757897112780
+    second: penitent_respawning_anim_163
+  - first:
+      213: -4533676478650627299
+    second: penitent_respawning_anim_164
+  - first:
+      213: 7231023524756331489
+    second: penitent_respawning_anim_165
+  - first:
+      213: -6185489605336385103
+    second: penitent_respawning_anim_166
+  - first:
+      213: 9182992499571684477
+    second: penitent_respawning_anim_167
+  - first:
+      213: -7309975051807073642
+    second: penitent_respawning_anim_168
+  - first:
+      213: 1643184684743251819
+    second: penitent_respawning_anim_169
+  - first:
+      213: 2964623200425194413
+    second: penitent_respawning_anim_170
+  - first:
+      213: 2335304274728477535
+    second: penitent_respawning_anim_171
+  - first:
+      213: -854416726393579270
+    second: penitent_respawning_anim_172
+  - first:
+      213: -486607573961779600
+    second: penitent_respawning_anim_173
+  - first:
+      213: 53532246724195068
+    second: penitent_respawning_anim_174
+  - first:
+      213: 612775235344851252
+    second: penitent_respawning_anim_175
+  - first:
+      213: -6484108927906100119
+    second: penitent_respawning_anim_176
+  - first:
+      213: -1786322787041085995
+    second: penitent_respawning_anim_177
+  - first:
+      213: 2315746547783701629
+    second: penitent_respawning_anim_178
+  - first:
+      213: 8581337702443307100
+    second: penitent_respawning_anim_179
+  - first:
+      213: 8649410150118881565
+    second: penitent_respawning_anim_180
+  - first:
+      213: 4861557442709934228
+    second: penitent_respawning_anim_181
+  - first:
+      213: -510218273915458782
+    second: penitent_respawning_anim_182
+  - first:
+      213: 4024220380630524302
+    second: penitent_respawning_anim_183
+  - first:
+      213: -903647169138299202
+    second: penitent_respawning_anim_184
+  - first:
+      213: 6601394540462210366
+    second: penitent_respawning_anim_0
+  - first:
+      213: -4309357619272212786
+    second: penitent_respawning_anim_2
+  - first:
+      213: -1405009425507697880
+    second: penitent_respawning_anim_3
+  - first:
+      213: -1564111752337308807
+    second: penitent_respawning_anim_5
+  - first:
+      213: 6015101063855490275
+    second: penitent_respawning_anim_6
+  - first:
+      213: -6104476487589743360
+    second: penitent_respawning_anim_8
+  - first:
+      213: 5143750650547795755
+    second: penitent_respawning_anim_9
+  - first:
+      213: -1779067447636246665
+    second: penitent_respawning_anim_10
+  - first:
+      213: 7653063041131489300
+    second: penitent_respawning_anim_11
+  - first:
+      213: -6200966703879540910
+    second: penitent_respawning_anim_12
+  - first:
+      213: -5253412848156520732
+    second: penitent_respawning_anim_13
+  - first:
+      213: -5869106881807945316
+    second: penitent_respawning_anim_14
+  - first:
+      213: 2610852801784751891
+    second: penitent_respawning_anim_15
+  - first:
+      213: -304087350910731034
+    second: penitent_respawning_anim_16
+  - first:
+      213: 4429829571365701480
+    second: penitent_respawning_anim_17
+  - first:
+      213: 5241167147199588797
+    second: penitent_respawning_anim_18
+  - first:
+      213: -1094727718769177014
+    second: penitent_respawning_anim_19
+  - first:
+      213: -5019394284629848821
+    second: penitent_respawning_anim_20
+  - first:
+      213: -8186462051846916829
+    second: penitent_respawning_anim_21
+  - first:
+      213: -6970589492038998786
+    second: penitent_respawning_anim_22
+  - first:
+      213: -6570267716659060196
+    second: penitent_respawning_anim_23
+  - first:
+      213: -1648910408697378336
+    second: penitent_respawning_anim_24
+  - first:
+      213: -5691924356410957831
+    second: penitent_respawning_anim_25
+  - first:
+      213: 9159934429950517974
+    second: penitent_respawning_anim_26
+  - first:
+      213: 6950738368827754752
+    second: penitent_respawning_anim_27
+  - first:
+      213: 7260209550218206695
+    second: penitent_respawning_anim_28
+  - first:
+      213: 6118234291774822575
+    second: penitent_respawning_anim_29
+  - first:
+      213: -8682166979299974995
+    second: penitent_respawning_anim_30
+  - first:
+      213: -5736142685906654030
+    second: penitent_respawning_anim_31
+  - first:
+      213: -8280110769064373933
+    second: penitent_respawning_anim_33
+  - first:
+      213: 1859158338019229492
+    second: penitent_respawning_anim_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_respawning_anim_0
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1024
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed34157e26dd7250800000000000000
+      internalID: 5944142578220023268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3163e36960d872bc0800000000000000
+      internalID: -3807919900488485357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1024
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057491ac1246186a0800000000000000
+      internalID: -6448763095130486960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93337c5a7fd81d6f0800000000000000
+      internalID: -661591575469018311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cb9064fbcb34b10800000000000000
+      internalID: 1964621392163486720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439529f0e8a762370800000000000000
+      internalID: 8297454114041911604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ebad0479fa2c540800000000000000
+      internalID: 5026773198261894704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6624f133e79332180800000000000000
+      internalID: -9141399604445625754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71db78f0cabbc7090800000000000000
+      internalID: -8035341287466484457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbf3a602b3f5fbd0800000000000000
+      internalID: -2596901664168084483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_10
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c90bc216a1238e0800000000000000
+      internalID: -1715279503410815965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8db4ad161fa2a470800000000000000
+      internalID: 8404472364148243850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f84929f3b95c6d0800000000000000
+      internalID: -2970797681836519573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f646f56592bd90800000000000000
+      internalID: -7083434998744287582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7433bb8d10dc0fc50800000000000000
+      internalID: 6697078053714735943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a690cf478be2dc0800000000000000
+      internalID: -3661786634421441954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef203afb88a941fa0800000000000000
+      internalID: -5830865705416588546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99053c735d2606050800000000000000
+      internalID: 5791737788701560985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3b3f2a24e061450800000000000000
+      internalID: 6059046028038091716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3c65c0cd75aeb10800000000000000
+      internalID: 2011516786185782192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_20
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843598698e5891ea0800000000000000
+      internalID: -5901538602687835320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_21
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e55b7a3b04f900800000000000000
+      internalID: 717210586463986349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_22
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c503b4827c02de0800000000000000
+      internalID: -1359868111591809945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e48a8582b4be0440800000000000000
+      internalID: 4904055723090674917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285b1ab4709ad7d30800000000000000
+      internalID: 4430883457201190274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac903fdfe0ca25620800000000000000
+      internalID: 2761458701921618378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8877d661894ffdd0800000000000000
+      internalID: -2450158852141254518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4177a039416b2c220800000000000000
+      internalID: 2504764542253954836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_28
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ec7aa6a8e3a1d40800000000000000
+      internalID: 5555821854530719284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f902b37e1fb036790800000000000000
+      internalID: -7538168217693642593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e134520f04183d0800000000000000
+      internalID: -3206210059549598142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_31
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23003ed7675a20780800000000000000
+      internalID: -8718224000299106254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_32
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f49b5cc023b7360800000000000000
+      internalID: 7168378262328528710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478e2012dd8d70f30800000000000000
+      internalID: 4541837193479645300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8c9ed17a0cb1360800000000000000
+      internalID: 7141513458119985338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_respawning_anim_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b84e3ca2f5f9820800000000000000
+      internalID: 2927162920093911941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

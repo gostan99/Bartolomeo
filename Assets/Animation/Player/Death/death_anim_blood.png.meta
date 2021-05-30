@@ -1,0 +1,725 @@
+fileFormatVersion: 2
+guid: cafab642ef55a2748a6b13de9605c842
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4284831175720514786
+    second: death_anim_blood_0
+  - first:
+      213: 7684457901864312921
+    second: death_anim_blood_1
+  - first:
+      213: -7305915925140880254
+    second: death_anim_blood_2
+  - first:
+      213: 7237906593663433667
+    second: death_anim_blood_3
+  - first:
+      213: -7126851096320591543
+    second: death_anim_blood_4
+  - first:
+      213: -965537472178216247
+    second: death_anim_blood_5
+  - first:
+      213: 8950600376832551412
+    second: death_anim_blood_6
+  - first:
+      213: 7451691814890164498
+    second: death_anim_blood_7
+  - first:
+      213: 1316774704565363522
+    second: death_anim_blood_8
+  - first:
+      213: 3449924972523524768
+    second: death_anim_blood_9
+  - first:
+      213: -7811043872370347644
+    second: death_anim_blood_10
+  - first:
+      213: 7414313718676456569
+    second: death_anim_blood_11
+  - first:
+      213: -8077530029552711847
+    second: death_anim_blood_12
+  - first:
+      213: 7543333598088895435
+    second: death_anim_blood_13
+  - first:
+      213: -433966705554365660
+    second: death_anim_blood_14
+  - first:
+      213: 5775481508225396595
+    second: death_anim_blood_15
+  - first:
+      213: -7340491344611240675
+    second: death_anim_blood_16
+  - first:
+      213: -4683259992980675435
+    second: death_anim_blood_17
+  - first:
+      213: 7133261619010255432
+    second: death_anim_blood_18
+  - first:
+      213: -3467177675057920488
+    second: death_anim_blood_19
+  - first:
+      213: 970593160947630591
+    second: death_anim_blood_20
+  - first:
+      213: -7962434222632760506
+    second: death_anim_blood_21
+  - first:
+      213: -505762763173865255
+    second: death_anim_blood_22
+  - first:
+      213: -3816954843306894077
+    second: death_anim_blood_23
+  - first:
+      213: 5325921510851337775
+    second: death_anim_blood_24
+  - first:
+      213: 7414919781722385388
+    second: death_anim_blood_25
+  - first:
+      213: 9159329534998520705
+    second: death_anim_blood_26
+  - first:
+      213: 4793966623522289793
+    second: death_anim_blood_27
+  - first:
+      213: -7165191722007681192
+    second: death_anim_blood_28
+  - first:
+      213: 2304089500561866626
+    second: death_anim_blood_29
+  - first:
+      213: 6948102100365657081
+    second: death_anim_blood_30
+  - first:
+      213: -8576473557369221863
+    second: death_anim_blood_31
+  - first:
+      213: 3378801757955130876
+    second: death_anim_blood_32
+  - first:
+      213: -1250026784420559563
+    second: death_anim_blood_33
+  - first:
+      213: 4194032569055854624
+    second: death_anim_blood_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: death_anim_blood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 237
+        width: 83
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4751303, y: 1.135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bc8a86fb83984c0800000000000000
+      internalID: -4284831175720514786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 237
+        width: 82
+        height: 17
+      alignment: 9
+      pivot: {x: 0.40434265, y: 1.135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950e01c6fbda4aa60800000000000000
+      internalID: 7684457901864312921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 237
+        width: 82
+        height: 15
+      alignment: 9
+      pivot: {x: 0.38, y: 1.815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284cb1bac2c2c9a90800000000000000
+      internalID: -7305915925140880254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 196
+        width: 67
+        height: 60
+      alignment: 9
+      pivot: {x: 0.685, y: 0.503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb34c8e2b5327460800000000000000
+      internalID: 7237906593663433667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 80
+        height: 79
+      alignment: 9
+      pivot: {x: 0.52985, y: 0.3472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94935b400b6581d90800000000000000
+      internalID: -7126851096320591543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 158
+        width: 74
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5187, y: 0.3434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c22d71e8c8b992f0800000000000000
+      internalID: -965537472178216247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_8
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 208
+        width: 82
+        height: 24
+      alignment: 9
+      pivot: {x: 0.38, y: 1.135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243a6d20e9f164210800000000000000
+      internalID: 1316774704565363522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 139
+        width: 84
+        height: 69
+      alignment: 9
+      pivot: {x: 0.576, y: 0.3642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a29309eb7890ef20800000000000000
+      internalID: 3449924972523524768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_12
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 68
+        height: 64
+      alignment: 9
+      pivot: {x: 0.601, y: 0.3935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957c5f51c39d6ef80800000000000000
+      internalID: -8077530029552711847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 121
+        width: 51
+        height: 74
+      alignment: 9
+      pivot: {x: 0.74, y: 0.407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb9b50f0fd4fa860800000000000000
+      internalID: 7543333598088895435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_14
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 121
+        width: 42
+        height: 78
+      alignment: 9
+      pivot: {x: 0.8188, y: 0.3862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423e51f949d3af9f0800000000000000
+      internalID: -433966705554365660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_15
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 121
+        width: 41
+        height: 76
+      alignment: 9
+      pivot: {x: 0.7413, y: 0.3699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fac98f4d1a62050800000000000000
+      internalID: 5775481508225396595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 91
+        height: 78
+      alignment: 9
+      pivot: {x: 0.58675, y: 0.3737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594a69f69d7b10fb0800000000000000
+      internalID: -4683259992980675435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 76
+        width: 67
+        height: 82
+      alignment: 9
+      pivot: {x: 0.4535, y: 0.3552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ab80b16af6ef260800000000000000
+      internalID: 7133261619010255432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_20
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 68
+        width: 89
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5998, y: 0.4102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff105b3665d387d00800000000000000
+      internalID: 970593160947630591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_22
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 69
+        width: 70
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6555, y: 0.3998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8d660527b2bf8f0800000000000000
+      internalID: -505762763173865255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 69
+        width: 78
+        height: 52
+      alignment: 9
+      pivot: {x: 0.473, y: 0.484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ed7eb656979e940800000000000000
+      internalID: 5325921510851337775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 86
+        height: 78
+      alignment: 9
+      pivot: {x: 0.6092, y: 0.3738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb649b614617e660800000000000000
+      internalID: 7414919781722385388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_26
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 84
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6118, y: 0.3835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183a4521fa97c1f70800000000000000
+      internalID: 9159329534998520705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 92
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5585, y: 0.4283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188ff1c9e37978240800000000000000
+      internalID: 4793966623522289793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_29
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 69
+        width: 83
+        height: 20
+      alignment: 9
+      pivot: {x: 0.35, y: 1.305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f72b37135c9ff10800000000000000
+      internalID: 2304089500561866626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 78
+        height: 69
+      alignment: 9
+      pivot: {x: 0.71, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d0a7b5dbe3af880800000000000000
+      internalID: -8576473557369221863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_32
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 77
+        height: 68
+      alignment: 9
+      pivot: {x: 0.70625, y: 0.3551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf581651c4ae3ee20800000000000000
+      internalID: 3378801757955130876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_anim_blood_33
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 76
+        height: 59
+      alignment: 9
+      pivot: {x: 0.538, y: 0.4267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53583e2334307aee0800000000000000
+      internalID: -1250026784420559563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

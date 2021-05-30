@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: 8b26fd82bfa2c8d47ab70c42c3e81f9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5895857024374417501
+    second: penitent_priedieu_stand_up_anim_0
+  - first:
+      213: 4572822771960058777
+    second: penitent_priedieu_stand_up_anim_1
+  - first:
+      213: 6968727740045825106
+    second: penitent_priedieu_stand_up_anim_2
+  - first:
+      213: 8102240898373521603
+    second: penitent_priedieu_stand_up_anim_3
+  - first:
+      213: -8483392736525770703
+    second: penitent_priedieu_stand_up_anim_4
+  - first:
+      213: 8314073234529621857
+    second: penitent_priedieu_stand_up_anim_5
+  - first:
+      213: -2082700295763382417
+    second: penitent_priedieu_stand_up_anim_6
+  - first:
+      213: 6954408209517326905
+    second: penitent_priedieu_stand_up_anim_7
+  - first:
+      213: 1577074197133015315
+    second: penitent_priedieu_stand_up_anim_8
+  - first:
+      213: -4480793742972982076
+    second: penitent_priedieu_stand_up_anim_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 63
+        height: 67
+      alignment: 9
+      pivot: {x: 0.212, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d582450e9ba42d150800000000000000
+      internalID: 5895857024374417501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 130
+        width: 53
+        height: 57
+      alignment: 9
+      pivot: {x: 0.307, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9931f7f451ee57f30800000000000000
+      internalID: 4572822771960058777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 59
+        height: 72
+      alignment: 9
+      pivot: {x: 0.225, y: 0.345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25497d925f4e5b060800000000000000
+      internalID: 6968727740045825106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 71
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.275, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c012386b21f07070800000000000000
+      internalID: 8102240898373521603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 71
+        width: 52
+        height: 59
+      alignment: 9
+      pivot: {x: 0.295, y: 0.522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130a049c04fe44a80800000000000000
+      internalID: -8483392736525770703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 71
+        width: 54
+        height: 56
+      alignment: 9
+      pivot: {x: 0.32, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16798b49e85816370800000000000000
+      internalID: 8314073234529621857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 68
+        height: 71
+      alignment: 9
+      pivot: {x: 0.695, y: 0.349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f2c699d13c813e0800000000000000
+      internalID: -2082700295763382417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 47
+        height: 71
+      alignment: 9
+      pivot: {x: 0.453, y: 0.349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9323757ab65038060800000000000000
+      internalID: 6954408209517326905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_8
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 51
+        height: 61
+      alignment: 9
+      pivot: {x: 0.2795, y: 0.505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3193c8860a4e2e510800000000000000
+      internalID: 1577074197133015315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_priedieu_stand_up_anim_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 50
+        height: 62
+      alignment: 9
+      pivot: {x: 0.265, y: 0.4805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc6d4eb4d501d1c0800000000000000
+      internalID: -4480793742972982076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
