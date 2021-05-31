@@ -4,8 +4,8 @@ namespace Assets.Scripts.Player
 {
     public class WallJumpState : PlayerState
     {
-        float animtionLength;
-        bool hasAddForce = false;
+        private float animtionLength;
+        private bool hasAddForce = false;
 
         public WallJumpState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
@@ -38,7 +38,7 @@ namespace Assets.Scripts.Player
             else if (pInput.DashInput)
             {
                 FacingDirectionUpdate();
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;

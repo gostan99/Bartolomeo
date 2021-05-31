@@ -4,12 +4,9 @@ namespace Assets.Scripts.Player
 {
     public class WallSlideState : PlayerState
     {
-
-
         public WallSlideState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
         }
-
 
         public override void Enter()
         {
@@ -29,7 +26,7 @@ namespace Assets.Scripts.Player
 
             if (!IsWallContacted() || IsGrounded() || pInput.xInput == 0)
             {
-                newState = pController.UnhangedState; 
+                newState = pController.UnhangedState;
             }
             else if (pInput.JumpInput && IsWallContacted())
             {
@@ -37,7 +34,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;

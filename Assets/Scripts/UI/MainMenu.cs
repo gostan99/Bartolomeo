@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    PlayerDTO playerDTO;
+    private PlayerDTO playerDTO;
 
     private void Start()
     {
@@ -20,17 +20,6 @@ public class MainMenu : MonoBehaviour
 
         if (!File.Exists(path))
         {
-            PlayerDTO saveData = new PlayerDTO();
-            saveData.Level = "Assets/Scenes/Map1/VachNui2.unity";
-            saveData.HasDash = PlayerData.HasDash;
-            saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
-
-            jsonData = JsonUtility.ToJson(saveData);
-            using (StreamWriter writer = new StreamWriter(path))
-            {
-                writer.WriteAsync(jsonData);
-            }
-
             continueBtn.GetComponent<Image>().enabled = false;
             continueBtn.GetComponent<Button>().enabled = false;
             continueText.GetComponent<Text>().enabled = false;
@@ -63,16 +52,14 @@ public class MainMenu : MonoBehaviour
     public void Continue()
     {
         SceneManager.LoadScene(playerDTO.Level);
-        PlayerData.HasDash = playerDTO.HasDash;
-        PlayerData.MaxJumpCounter = playerDTO.MaxJumpCounter;
     }
 
     public void QuitGame()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#else
         Application.Quit();
-        #endif
+#endif
     }
 }

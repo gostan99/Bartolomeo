@@ -1,18 +1,1 @@
-[
-  {
-    "ItemType": "Assets.Scripts.Items.SmallHealthPotion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 16
-  },
-  {
-    "ItemType": "Assets.Scripts.Items.GiantSword, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 6
-  },
-  {
-    "ItemType": "Assets.Scripts.Items.LargeHealthPotion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 5
-  },
-  {
-    "ItemType": "Assets.Scripts.Items.ManaPotion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 5
-  }
-]
+[]

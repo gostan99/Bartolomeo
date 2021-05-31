@@ -45,7 +45,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash && pData.canDash)
+                if (pData.DashCooldownTimer <= 0 && pData.HasDash && pData.canDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
@@ -71,7 +71,6 @@ namespace Assets.Scripts.Player
         public override void PhysicUpdate()
         {
             pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
-
         }
     }
 }

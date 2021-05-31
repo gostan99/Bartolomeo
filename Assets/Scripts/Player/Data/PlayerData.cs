@@ -49,35 +49,42 @@ namespace Assets.Scripts.Player
 
         public Vector2 InAirUpwardHitboxSize = new Vector2(79, 102);
         public CapsuleDirection2D InAirUpwardHitboxDirection = CapsuleDirection2D.Vertical;
-        public float AttackDamage = 20f;
         //--------------------------------------------------------------
 
         //--PARAMETER--------------------------------------------------
+        public PlayerSerializeData serializeData = new PlayerSerializeData();
 
-        public float maxMana = 100;
-        public float currentMana = 100;
-        public float manaCost = 50;
-        public float manaGenerationTimer = 0.25f;
+        public ref float AttackDamage { get { return ref serializeData.AttackDamage; } }
+        public ref float maxMana { get { return ref serializeData.maxMana; } }
+        public ref float currentMana { get { return ref serializeData.currentMana; } }
+        public ref float manaCost { get { return ref serializeData.manaCost; } }
 
-        public ref float currentHealth { get { return ref DontDestroyOnLoadStats.currentHealth; } }
-        public ref float maxHealth { get { return ref DontDestroyOnLoadStats.maxHealth; } }
+        public ref float manaGenerationTimer { get { return ref serializeData.manaGenerationTimer; } }
 
-        public float Speed = 20.0f;
+        public ref float currentHealth { get { return ref serializeData.currentHealth; } }
+        public ref float maxHealth { get { return ref serializeData.maxHealth; } }
 
-        public float DashCooldownTimer = 0.0f;
-        public float DashCooldown = 0.3f;
-        public float DashVelocityX = 320f;
-        public float DashDuration = 0.625f / 4f;// = 0.15625f
-        public bool canDash = true;
-        public float JumpVelocityY = 243.0f;
-        public float WallSlideVelocityY = 20.0f;
+        public ref float Speed { get { return ref serializeData.Speed; } }
+
+        public ref float DashCooldownTimer { get { return ref serializeData.DashCooldownTimer; } }
+
+        public ref float DashCooldown { get { return ref serializeData.DashCooldown; } }
+
+        public ref float DashVelocityX { get { return ref serializeData.DashVelocityX; } }
+
+        public ref float DashDuration { get { return ref serializeData.DashDuration; } }
+
+        public ref bool canDash { get { return ref serializeData.canDash; } }
+
+        public ref float JumpVelocityY { get { return ref serializeData.JumpVelocityY; } }
+
+        public ref float WallSlideVelocityY { get { return ref serializeData.WallSlideVelocityY; } }
+        public ref float WallJumpVelocity { get { return ref serializeData.WallJumpVelocity; } }
+
         public Vector2 WallJumpDirection;
-        public float WallJumpVelocity = 243.0f;
 
-        //--SERIALIZE DATA---------------------------------------------
-        public static int MaxJumpCounter = 2;
-
-        public static bool HasDash = true;
+        public ref int MaxJumpCounter { get { return ref serializeData.MaxJumpCounter; } }
+        public ref bool HasDash { get { return ref serializeData.HasDash; } }
 
         //--TAKEHIT----------------------------------------------------
         public float invulnerableTimer = 0f;
@@ -139,15 +146,26 @@ namespace Assets.Scripts.Player
             };
         }
 
-        private class DontDestroyOnLoadStats : MonoBehaviour
+        public class PlayerSerializeData
         {
-            public static float currentHealth = 100;
-            public static float maxHealth = 100;
-
-            private void Awake()
-            {
-                DontDestroyOnLoad(this.gameObject);
-            }
+            public float AttackDamage = 20f;
+            public float maxMana = 100;
+            public float currentMana = 100;
+            public float manaCost = 50;
+            public float manaGenerationTimer = 0.25f;
+            public float currentHealth = 100;
+            public float maxHealth = 100;
+            public float Speed = 178f;
+            public float DashCooldownTimer = 0.0f;
+            public float DashCooldown = 0.4f;
+            public float DashVelocityX = 973;
+            public float DashDuration = 0.625f / 4f;// = 0.15625f
+            public bool canDash = true;
+            public float JumpVelocityY = 243.0f;
+            public float WallSlideVelocityY = 20.0f;
+            public float WallJumpVelocity = 110;
+            public int MaxJumpCounter = 2;
+            public bool HasDash = true;
         }
     }
 }

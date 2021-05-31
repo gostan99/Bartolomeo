@@ -10,14 +10,15 @@ namespace Assets.Scripts.Player
 {
     public class InAirPrimaryAttackState : PlayerState
     {
-        float animationLength;
-        bool hasAttackTwice = false;
+        private float animationLength;
+        private bool hasAttackTwice = false;
         private bool hasAttackUp = false;
 
         public InAirPrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
+
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
@@ -33,6 +34,7 @@ namespace Assets.Scripts.Player
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
@@ -68,7 +70,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
@@ -79,10 +81,9 @@ namespace Assets.Scripts.Player
         public override void PhysicUpdate()
         {
             pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
-
         }
 
-        IEnumerator WaitAfter(float seconds)
+        private IEnumerator WaitAfter(float seconds)
         {
             yield return new WaitForSeconds(seconds);
             if (hasAttackTwice)
@@ -91,9 +92,8 @@ namespace Assets.Scripts.Player
             }
             else if (hasAttackUp)
             {
-               newState = pController.InAirUpwardAttackState;
+                newState = pController.InAirUpwardAttackState;
             }
         }
     }
 }
-

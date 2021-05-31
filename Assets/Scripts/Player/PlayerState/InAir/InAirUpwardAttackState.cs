@@ -10,11 +10,13 @@ namespace Assets.Scripts.Player
 {
     public class InAirUpwardAttackState : PlayerState
     {
-        float animationLength;
+        private float animationLength;
+
         public InAirUpwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
+
         public override void Enter()
         {
             timer = 0F;
@@ -27,6 +29,7 @@ namespace Assets.Scripts.Player
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
@@ -58,7 +61,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;

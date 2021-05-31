@@ -20,8 +20,7 @@ namespace Assets.Scripts.Player
             if (pData.DashCooldownTimer > 0)
             {
                 pData.DashCooldownTimer -= Time.deltaTime;
-            }       
-            
+            }
 
             if (pData.Rb.velocity.y < 0f)
             {
@@ -29,7 +28,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
@@ -46,7 +45,6 @@ namespace Assets.Scripts.Player
                     newState = pController.InAirPrimaryAttackState;
                 }
             }
-
         }
 
         public override void PhysicUpdate()
@@ -57,15 +55,13 @@ namespace Assets.Scripts.Player
             //Jumping
             if (pInput.JumpInput)
             {
-                pData.Rb.velocity = new Vector2(pData.Rb.velocity.x , pData.JumpVelocityY);
+                pData.Rb.velocity = new Vector2(pData.Rb.velocity.x, pData.JumpVelocityY);
             }
-
         }
 
         public override void Enter()
         {
             newState = this;
-
         }
 
         public override void Exit()

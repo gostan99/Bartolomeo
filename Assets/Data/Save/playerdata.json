@@ -1,1 +1,23 @@
-{"HasDash":true,"MaxJumpCounter":2,"Level":"Assets/Scenes/Map1/VachNui2.unity"}
+{
+  "playerSerializeData": {
+    "AttackDamage": 20.0,
+    "maxMana": 100.0,
+    "currentMana": 74.0,
+    "manaCost": 50.0,
+    "manaGenerationTimer": 0.2199273,
+    "currentHealth": 35.0,
+    "maxHealth": 100.0,
+    "Speed": 178.0,
+    "DashCooldownTimer": -0.009432315,
+    "DashCooldown": 0.4,
+    "DashVelocityX": 973.0,
+    "DashDuration": 0.15625,
+    "canDash": true,
+    "JumpVelocityY": 243.0,
+    "WallSlideVelocityY": 20.0,
+    "WallJumpVelocity": 110.0,
+    "MaxJumpCounter": 2,
+    "HasDash": true
+  },
+  "Level": "Assets/Scenes/Map2/Boss.unity"
+}

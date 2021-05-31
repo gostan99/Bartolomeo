@@ -4,13 +4,12 @@ namespace Assets.Scripts.Player
 {
     public class StartRunState : PlayerState
     {
-        float animationLength;
+        private float animationLength;
 
         public StartRunState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
         }
-
 
         public override void Enter()
         {
@@ -37,7 +36,6 @@ namespace Assets.Scripts.Player
 
             if (timer >= animationLength)
             {
-          
                 newState = pController.RunningState;
             }
             else if (pInput.xInput == 0)
@@ -55,7 +53,7 @@ namespace Assets.Scripts.Player
             }
             else if (pInput.DashInput)
             {
-                if (pData.DashCooldownTimer <= 0 && PlayerData.HasDash && pData.canDash)
+                if (pData.DashCooldownTimer <= 0 && pData.HasDash && pData.canDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
@@ -81,7 +79,6 @@ namespace Assets.Scripts.Player
         public override void PhysicUpdate()
         {
             pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
-            
         }
     }
 }

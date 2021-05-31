@@ -9,6 +9,8 @@ namespace Assets.Scripts.Player
 
         public bool DashInput { get; private set; }
 
+        private PlayerData pData;
+
         public bool JumpInput { get; private set; }
         public bool AttackInput { get; set; }
         public bool UpwardAttackInput { get; set; }
@@ -18,15 +20,16 @@ namespace Assets.Scripts.Player
 
         private const float MAX_JUMP_HOLD_TIME = 0.25f;
 
-        public PlayerInput()
+        public PlayerInput(PlayerData playerData)
         {
+            pData = playerData;
             JumpInput = false;
             xInput = Input.GetAxis("Horizontal");
         }
 
         private void OnJumpInput()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && JumpInputCounter < PlayerData.MaxJumpCounter)
+            if (Input.GetKeyDown(KeyCode.Space) && JumpInputCounter < pData.MaxJumpCounter)
             {
                 JumpInput = true;
                 jumpInputHoldTime = 0;

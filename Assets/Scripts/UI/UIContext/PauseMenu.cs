@@ -49,18 +49,6 @@ namespace Assets.Scripts.UI.UIContext
 
         public void BackToMainMenu()
         {
-            PlayerDTO saveData = new PlayerDTO();
-            saveData.Level = SceneManager.GetActiveScene().path;
-            saveData.HasDash = PlayerData.HasDash;
-            saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
-
-            var jsonData = JsonUtility.ToJson(saveData);
-            string path = @"Assets\Data\Save\playerdata.json";
-            using (StreamWriter writer = new StreamWriter(path))
-            {
-                writer.WriteAsync(jsonData);
-            }
-
             SceneManager.LoadScene(0);
         }
 

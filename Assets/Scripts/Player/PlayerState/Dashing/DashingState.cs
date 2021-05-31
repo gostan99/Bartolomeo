@@ -13,7 +13,7 @@ namespace Assets.Scripts.Player
         {
             timer = 0f;
             newState = this;
-            pInput.JumpInputCounter = PlayerData.MaxJumpCounter - 1;
+            pInput.JumpInputCounter = pData.MaxJumpCounter - 1;
             pData.currentMana -= pData.manaCost;
         }
 

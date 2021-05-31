@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Player;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Assets.Scripts.Player.PlayerData;
 
 public partial class PlayerController : MonoBehaviour
 {
@@ -41,11 +43,18 @@ public partial class PlayerController : MonoBehaviour
     #endregion States
 
     public PlayerState currentState { get; private set; }
+    private string saveDataPath = @"Assets\Data\Save\playerdata.json";
 
     private void Start()
     {
         pData = GetComponent<PlayerData>();
-        pInput = new PlayerInput();
+        if (File.Exists(saveDataPath))
+        {
+            string json = File.ReadAllText(saveDataPath);
+            pData.serializeData = JsonConvert.DeserializeObject<PlayerDTO>(json).playerSerializeData;
+        }
+
+        pInput = new PlayerInput(pData);
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         #region Initialize States
@@ -74,6 +83,24 @@ public partial class PlayerController : MonoBehaviour
         currentState = IdleState;
 
         #endregion Initialize States
+    }
+
+    private void OnDestroy()
+    {
+        if (SceneManager.GetActiveScene().path == @"Assets/Scenes/UI/UIMenu.unity")
+        {
+            return;
+        }
+        PlayerDTO playerDTO = new PlayerDTO();
+        playerDTO.playerSerializeData = pData.serializeData;
+        playerDTO.Level = SceneManager.GetActiveScene().path;
+
+        string json = JsonConvert.SerializeObject(playerDTO, Formatting.Indented);
+
+        using (StreamWriter writer = new StreamWriter(saveDataPath))
+        {
+            writer.Write(json);
+        }
     }
 
     private void Update()

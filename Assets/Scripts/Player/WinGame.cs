@@ -8,16 +8,18 @@ using UnityEngine.UI;
 
 public class WinGame : MonoBehaviour
 {
-    PlayerDTO playerDTO;
+    private PlayerDTO playerDTO;
+    private PlayerData playerData;
 
     public Vector2 size = new Vector2(45.21f, 85.87f);
     private LayerMask PlayerLayer;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         PlayerLayer = LayerMask.GetMask("Player");
-       
+        playerData = GameObject.Find("Player").GetComponent<PlayerData>();
+
         playerDTO = new PlayerDTO();
         string path = @"Assets\Data\Save\playerdata.json";
         string jsonData;
@@ -26,8 +28,7 @@ public class WinGame : MonoBehaviour
         {
             PlayerDTO saveData = new PlayerDTO();
             saveData.Level = "Assets/Scenes/Map1/VachNui2.unity";
-            saveData.HasDash = PlayerData.HasDash;
-            saveData.MaxJumpCounter = PlayerData.MaxJumpCounter;
+            saveData.playerSerializeData = playerData.serializeData;
 
             jsonData = JsonUtility.ToJson(saveData);
             using (StreamWriter writer = new StreamWriter(path))
@@ -38,7 +39,7 @@ public class WinGame : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Collider2D collided = Physics2D.OverlapBox(transform.position, size, 0, PlayerLayer);
         if (collided)

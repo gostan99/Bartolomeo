@@ -4,8 +4,7 @@ namespace Assets.Scripts.Player
 {
     public class UnhangedState : PlayerState
     {
-        float animationLength;
-
+        private float animationLength;
 
         public UnhangedState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
@@ -16,7 +15,6 @@ namespace Assets.Scripts.Player
         {
             timer = 0;
             newState = this;
-
         }
 
         public override void Exit()
@@ -27,7 +25,7 @@ namespace Assets.Scripts.Player
         public override void LogicUpdate()
         {
             timer += Time.deltaTime;
-            
+
             if (timer >= animationLength)
             {
                 newState = pController.FallingState;
@@ -35,7 +33,7 @@ namespace Assets.Scripts.Player
             else if (pInput.DashInput)
             {
                 FacingDirectionUpdate();
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && PlayerData.HasDash)
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
