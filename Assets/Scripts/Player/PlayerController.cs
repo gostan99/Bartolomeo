@@ -52,6 +52,11 @@ public partial class PlayerController : MonoBehaviour
         {
             string json = File.ReadAllText(saveDataPath);
             pData.serializeData = JsonConvert.DeserializeObject<PlayerDTO>(json).playerSerializeData;
+
+            if (pData.HasCheckPoint)
+            {
+                transform.position = new Vector2(pData.PosX, pData.PosY);
+            }
         }
 
         pInput = new PlayerInput(pData);

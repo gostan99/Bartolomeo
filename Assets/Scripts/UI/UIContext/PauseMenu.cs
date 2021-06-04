@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Player;
 using Assets.Scripts.UI;
+using Assets.Scripts.UI.UIContext.InventorySystem;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,8 @@ namespace Assets.Scripts.UI.UIContext
         private UIController uController;
         private GameObject player;
         private PlayerData playerData;
+        private ItemSlotManager itemSlotManager;
+        private EquipmentSlotManager equipmentSlotManager;
 
         // Use this for initialization
         private void Start()
@@ -24,6 +27,9 @@ namespace Assets.Scripts.UI.UIContext
             player = GameObject.Find("Player");
             //lấy PlayerData component
             playerData = player.GetComponent<PlayerData>();
+
+            itemSlotManager = transform.Find("InventoryUI").Find("Items").GetComponent<ItemSlotManager>();
+            equipmentSlotManager = transform.Find("InventoryUI").Find("Equipments").GetComponent<EquipmentSlotManager>();
         }
 
         // Update is called once per frame
@@ -44,7 +50,6 @@ namespace Assets.Scripts.UI.UIContext
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().path);
-            playerData.currentHealth = playerData.maxHealth;
         }
 
         public void BackToMainMenu()
@@ -63,6 +68,10 @@ namespace Assets.Scripts.UI.UIContext
                 var resumeBtn = pauseUI.transform.Find("ResumeButton");
                 resumeBtn.GetComponent<Image>().enabled = false;
                 resumeBtn.GetComponent<Button>().enabled = false;
+
+                itemSlotManager.EraseSavedSlotData();
+                equipmentSlotManager.EraseSavedSlotData();
+                playerData.currentHealth = playerData.maxHealth;
             }
             else
             {

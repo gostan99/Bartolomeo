@@ -36,6 +36,11 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             LoadSavedSlotData();
         }
 
+        public void EraseSavedSlotData()
+        {
+            SlotDataList = new List<SlotData>();
+        }
+
         public void SaveSlotData()
         {
             string jsonData = JsonConvert.SerializeObject(SlotDataList, Formatting.Indented);

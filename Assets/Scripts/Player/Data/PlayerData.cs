@@ -54,6 +54,9 @@ namespace Assets.Scripts.Player
         //--PARAMETER--------------------------------------------------
         public PlayerSerializeData serializeData = new PlayerSerializeData();
 
+        public ref bool HasCheckPoint { get { return ref serializeData.HasCheckPoint; } }
+        public ref float PosX { get { return ref serializeData.PosX; } }
+        public ref float PosY { get { return ref serializeData.PosY; } }
         public ref float AttackDamage { get { return ref serializeData.AttackDamage; } }
         public ref float maxMana { get { return ref serializeData.maxMana; } }
         public ref float currentMana { get { return ref serializeData.currentMana; } }
@@ -148,6 +151,9 @@ namespace Assets.Scripts.Player
 
         public class PlayerSerializeData
         {
+            public bool HasCheckPoint = false;
+            public float PosX;
+            public float PosY;
             public float AttackDamage = 20f;
             public float maxMana = 100;
             public float currentMana = 100;
@@ -161,7 +167,7 @@ namespace Assets.Scripts.Player
             public float DashVelocityX = 973;
             public float DashDuration = 0.625f / 4f;// = 0.15625f
             public bool canDash = true;
-            public float JumpVelocityY = 243.0f;
+            public float JumpVelocityY = 260.0f;
             public float WallSlideVelocityY = 20.0f;
             public float WallJumpVelocity = 110;
             public int MaxJumpCounter = 2;
