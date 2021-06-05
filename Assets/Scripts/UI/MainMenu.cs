@@ -1,6 +1,4 @@
 ﻿using Assets.Scripts.Player;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -51,7 +49,8 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        SceneManager.LoadScene(playerDTO.Level);
+        //Bật continue menu
+        transform.parent.Find("ContinueMenu").gameObject.SetActive(true);
     }
 
     public void QuitGame()
