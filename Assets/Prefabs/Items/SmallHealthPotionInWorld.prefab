@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 318585593737893512}
   - component: {fileID: 6365800055663159856}
   - component: {fileID: 7969551339990736666}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: SmallHealthPotionInWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}

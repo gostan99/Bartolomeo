@@ -7,8 +7,8 @@ using Assets.Scripts.Player;
 
 public class Bat : MonoBehaviour
 {
-    EnemyData eData;
-     
+    public EnemyData eData;
+
     public float Speed = 4;
     private Vector3 moveDirection = Vector2.right;  //hướng di chuyển
     private int KnockbackDirection = 1;             //hướng bị đẩy lùi
@@ -18,23 +18,24 @@ public class Bat : MonoBehaviour
 
     public float AttackDamage = 3;
 
-    Collider2D playerDetector = null;
+    private Collider2D playerDetector = null;
     public float PlayerDetectRadius = 50f;
 
     public GameObject PatrolPoint;          // vị trí để đi tuần tra
     public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
-
     private BoxCollider2D Hitbox;
     private LayerMask PlayerMask;
 
-    enum State { Patrol,Chase, Knockback}
-    State state = State.Patrol;
+    private enum State
+    { Patrol, Chase, Knockback }
+
+    private State state = State.Patrol;
 
     private Canvas healthCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         eData = GetComponent<EnemyData>();
 
@@ -51,7 +52,7 @@ public class Bat : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // dò tìm Player
         LookingForPlayer();
@@ -71,9 +72,11 @@ public class Bat : MonoBehaviour
             case State.Patrol:
                 Move();
                 break;
+
             case State.Chase:
                 Chase();
                 break;
+
             case State.Knockback:
                 Knockback();
                 break;
@@ -81,7 +84,7 @@ public class Bat : MonoBehaviour
     }
 
     //cập nhật hướng quay mặt
-    void FacingDirectionUpdate()
+    private void FacingDirectionUpdate()
     {
         if (moveDirection.x > 0)
         {
@@ -93,7 +96,7 @@ public class Bat : MonoBehaviour
         }
     }
 
-    void Move()
+    private void Move()
     {
         if (playerDetector)
         {
@@ -108,49 +111,56 @@ public class Bat : MonoBehaviour
             moveDirection = (PatrolPoint.transform.position - transform.position).normalized;
         }
 
-        transform.position += new Vector3(moveDirection.x, moveDirection.y, 0)*Speed;
+        transform.position += new Vector3(moveDirection.x, moveDirection.y, 0) * Speed;
     }
 
     //Được gọi bởi Player
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
+        //trừ máu
+        eData.CurrentHealth -= Convert.ToSingle(package[0]);
+
+        if (eData.CurrentHealth <= 0)
+        {
+            if (package.Length == 3)
+            {
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
+            }
+            Die();
+        }
+
         if (!healthCanvas.isActiveAndEnabled)
         {
             healthCanvas.enabled = true;
         }
-        //trừ máu
-        eData.CurrentHealth -= Convert.ToSingle(package[0]);
 
         //chuyển sang trạng thái bị đẩy lùi
         state = State.Knockback;
         KnockbackDistanceRemain = KnockBackDistance;
         //Gán hướng bị đẩy lùi
         KnockbackDirection = Convert.ToInt32(package[1]);
-
-        if (eData.CurrentHealth <= 0)
-        {
-            PlayerData playerData = (PlayerData)package[2];
-            if (playerData.currentMana == playerData.maxMana)
-            {
-                playerData.currentMana += 0;
-            }
-            else
-            {
-                playerData.currentMana += 10;
-            }
-            Die();
-            var bc = GetComponent<BoxCollider2D>();
-            bc.enabled = false;
-        }
     }
 
-    void Die()
+    private void Die()
     {
-        gameObject.SetActive(false);
+        GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(this.gameObject, 5);
     }
 
-    void Knockback()
+    private void Knockback()
     {
         var velocity = new Vector3(KnockBackSpeed * KnockbackDirection, 0, 0);
         transform.position += velocity;
@@ -162,7 +172,7 @@ public class Bat : MonoBehaviour
         }
     }
 
-    void Chase()
+    private void Chase()
     {
         //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
         if (playerDetector == null)
@@ -180,14 +190,18 @@ public class Bat : MonoBehaviour
     }
 
     //cập nhật giá trị cho playerDetector
-    void LookingForPlayer()
+    private void LookingForPlayer()
     {
         playerDetector = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
     }
 
-    void DealDamage()
+    private void DealDamage()
     {
-        Collider2D hit = Physics2D.OverlapBox(transform.position,Hitbox.size,0,PlayerMask);
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
+        Collider2D hit = Physics2D.OverlapBox(transform.position, Hitbox.size, 0, PlayerMask);
         if (hit)
         {
             object[] package = new object[1];

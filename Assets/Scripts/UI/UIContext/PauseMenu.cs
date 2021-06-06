@@ -69,8 +69,6 @@ namespace Assets.Scripts.UI.UIContext
                 resumeBtn.GetComponent<Image>().enabled = false;
                 resumeBtn.GetComponent<Button>().enabled = false;
 
-                itemSlotManager.EraseSavedSlotData();
-                equipmentSlotManager.EraseSavedSlotData();
                 playerData.currentHealth = playerData.maxHealth;
             }
             else

@@ -1,13 +1,12 @@
-﻿
-using Assets.Scripts.Player;
+﻿using Assets.Scripts.Player;
 using System;
 using UnityEngine;
 
 namespace Assets.Scripts.Entities
 {
-    class Skeleton : MonoBehaviour
+    internal class Skeleton : MonoBehaviour
     {
-        EnemyData eData;
+        public EnemyData eData;
 
         public float Speed = 4;
         private int facingDirection = 1;        //hướng quay mặt
@@ -17,12 +16,12 @@ namespace Assets.Scripts.Entities
         public GameObject PatrolPoint;          // vị trí để đi tuần tra
         public float PatrolDistance = 50f;      // khoảng cách giới hạn để đi tuần tra
 
-        Animator animator;
-        string currentAnimation = "Patrol";
+        private Animator animator;
+        private string currentAnimation = "Patrol";
 
-        Rigidbody2D rb;
+        private Rigidbody2D rb;
 
-        RaycastHit2D playerDetector;                          
+        private RaycastHit2D playerDetector;
         public float PlayerDetectRange = 125f;                // tầm phát hiện player
         private Transform attackPos;                          // vị trí đánh
         public Vector2 AttackRange = new Vector2(75, 19);     // tầm đánh: dài = x, rộng = y
@@ -36,7 +35,7 @@ namespace Assets.Scripts.Entities
         public float wallDetectorLength = 16f;   //Độ dài tia Raycast
 
         public float idleTime = 2f;              // thời gian ở trạng thái idle là 2s
-        float idleTimer;                         // đếm thời gian ở trạng thái idle còn lại
+        private float idleTimer;                         // đếm thời gian ở trạng thái idle còn lại
 
         private Canvas healthCanvas;
 
@@ -45,8 +44,8 @@ namespace Assets.Scripts.Entities
             Idle, Patrol, Attack, Dead,
             TakeHit, Chase
         }
-        State state = State.Patrol;
 
+        private State state = State.Patrol;
 
         private void Start()
         {
@@ -71,7 +70,7 @@ namespace Assets.Scripts.Entities
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             //cập nhật biến playerDetector
             LookingForPlayer();
@@ -82,20 +81,25 @@ namespace Assets.Scripts.Entities
                     currentAnimation = "Idle";
                     Idle();
                     break;
+
                 case State.Patrol:
                     currentAnimation = "Walk";
                     Patrol();
                     break;
+
                 case State.Chase:
                     currentAnimation = "Walk";
                     Chase();
                     break;
+
                 case State.TakeHit:
                     currentAnimation = "TakeHit";
                     break;
+
                 case State.Attack:
                     currentAnimation = "Attack";
                     break;
+
                 case State.Dead:
                     currentAnimation = "Dead";
                     break;
@@ -119,7 +123,7 @@ namespace Assets.Scripts.Entities
             }
         }
 
-        void Idle()
+        private void Idle()
         {
             // giảm thời gian ở trạng thái idle còn lại
             idleTimer -= Time.deltaTime;
@@ -131,7 +135,7 @@ namespace Assets.Scripts.Entities
                 facingDirection = -facingDirection;
             }
 
-            //nếu phát hiện player 
+            //nếu phát hiện player
             if (playerDetector && !IsDeadEnd())
             {
                 state = State.Chase;
@@ -139,9 +143,9 @@ namespace Assets.Scripts.Entities
             }
         }
 
-        void Patrol()
+        private void Patrol()
         {
-            //nếu đi quá xa 
+            //nếu đi quá xa
             if (Vector2.Distance(transform.position, PatrolPoint.transform.position) >= PatrolDistance || IsDeadEnd())
             {
                 if (!IsDirectToPatrolPoint())
@@ -160,7 +164,7 @@ namespace Assets.Scripts.Entities
                 return;
             }
 
-            //nếu phát hiện player 
+            //nếu phát hiện player
             if (playerDetector)
             {
                 state = State.Chase;
@@ -168,7 +172,7 @@ namespace Assets.Scripts.Entities
             }
         }
 
-        void Chase()
+        private void Chase()
         {
             //nếu không phát hiện player nữa hoặc cụt đường thì chuyển sang trạng thái Idle
             if (!playerDetector || IsDeadEnd())
@@ -190,8 +194,12 @@ namespace Assets.Scripts.Entities
         }
 
         // được gọi bơi Attack animation
-        void Attack()
+        private void Attack()
         {
+            if (eData.CurrentHealth <= 0)
+            {
+                return;
+            }
             Collider2D hit = Physics2D.OverlapCapsule(attackPos.transform.position, new Vector2(AttackRange.x * facingDirection, AttackRange.y), CapsuleDirection2D.Horizontal, 0, playerMask);
             if (hit)
             {
@@ -203,7 +211,7 @@ namespace Assets.Scripts.Entities
         }
 
         // được gọi bởi Attack animation và TakeHit animaiton sau khi nó kết thúc hoạt ảnh
-        void BackToChase()
+        private void BackToChase()
         {
             if (PlayerIsInAttackRange())
             {
@@ -219,7 +227,10 @@ namespace Assets.Scripts.Entities
         //Packege[0] là lượng dame, Package[1] là hướng bị đánh
         public void TakeDamage(object[] package)
         {
-
+            if (eData.CurrentHealth <= 0)
+            {
+                return;
+            }
             if (!healthCanvas.isActiveAndEnabled)
             {
                 healthCanvas.enabled = true;
@@ -236,33 +247,34 @@ namespace Assets.Scripts.Entities
             eData.CurrentHealth -= Convert.ToSingle(package[0]);
             if (eData.CurrentHealth <= 0)
             {
-                PlayerData playerData = (PlayerData)package[2];
-                if (playerData.currentMana == playerData.maxMana)
+                if (package.Length == 3)
                 {
-                    playerData.currentMana += 0;
-                }
-                else
-                {
-                    playerData.currentMana += 10;
+                    PlayerData playerData = (PlayerData)package[2];
+                    if (playerData.currentMana == playerData.maxMana)
+                    {
+                        playerData.currentMana += 0;
+                    }
+                    else
+                    {
+                        playerData.currentMana += 10;
+                    }
                 }
                 state = State.Dead;
-                var bc = GetComponent<BoxCollider2D>();
-                bc.enabled = false;
+                Destroy(this.gameObject, 5);
             }
-            
         }
 
-        void ApplyMovement()
+        private void ApplyMovement()
         {
             //Movement
             rb.velocity = new Vector2(Speed * facingDirection, rb.velocity.y);
         }
 
-        void LookingForPlayer()
+        private void LookingForPlayer()
         {
             var tempPos = new Vector3(transform.position.x, transform.position.y - 30, transform.position.z);
             playerDetector = Physics2D.Raycast(tempPos, Vector2.right, PlayerDetectRange, playerMask);
-            
+
             if (!playerDetector)
             {
                 playerDetector = Physics2D.Raycast(tempPos, Vector2.right * -1, PlayerDetectRange, playerMask);
@@ -275,14 +287,13 @@ namespace Assets.Scripts.Entities
         }
 
         //cập nhật hướng quay mặt
-        void FacingDirectionUpdate()
+        private void FacingDirectionUpdate()
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * facingDirection, transform.localScale.y, transform.localScale.z);
-
         }
 
         //moveDiection có đang hướng về PatrolPoint?
-        bool IsDirectToPatrolPoint()
+        private bool IsDirectToPatrolPoint()
         {
             if (transform.position.x < PatrolPoint.transform.position.x)
             {
@@ -310,7 +321,7 @@ namespace Assets.Scripts.Entities
 
         // kiểm  tra có tới đường cụt?
         // đường cụt là khi phía trước gặp vực hoặc tường
-        bool IsDeadEnd()
+        private bool IsDeadEnd()
         {
             //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
             //groundDetector.transform.position là gốc của tia Raycast
@@ -326,7 +337,7 @@ namespace Assets.Scripts.Entities
         }
 
         //Player có nằm trong tầm đánh?
-        bool PlayerIsInAttackRange()
+        private bool PlayerIsInAttackRange()
         {
             Collider2D _collider = Physics2D.OverlapCapsule(attackPos.transform.position, AttackRange, CapsuleDirection2D.Horizontal, 0, playerMask);
             return _collider;

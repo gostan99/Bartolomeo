@@ -8,27 +8,26 @@ public class HealthBoss : MonoBehaviour
 {
     public bool healthBossUI;
     public GameObject BossGoat;
-    private BossGoat bossGoat;
+    private EnemyData bossData;
     public Slider slider { get; private set; }
 
     //   public Gradient gradient;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        bossGoat = BossGoat.GetComponent<BossGoat>();
+        bossData = BossGoat.GetComponent<EnemyData>();
         slider = gameObject.GetComponent<Slider>();
 
-        slider.maxValue = bossGoat.MaxHealth;
+        slider.maxValue = bossData.MaxHealth;
         slider.minValue = 0;
-        slider.value = bossGoat.CurrentHealth;
-
+        slider.value = bossData.CurrentHealth;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        slider.value = bossGoat.CurrentHealth;
+        slider.value = bossData.CurrentHealth;
     }
 
     public void SetMaxHealth(float health)

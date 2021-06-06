@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1728917518893333094}
   - component: {fileID: 238922323057613874}
   - component: {fileID: 3883285857483685307}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: GiantSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}

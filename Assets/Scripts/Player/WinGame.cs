@@ -27,7 +27,7 @@ public class WinGame : MonoBehaviour
         if (File.Exists(path))
         {
             PlayerDTO saveData = new PlayerDTO();
-            saveData.Level = "Assets/Scenes/Map1/VachNui2.unity";
+            saveData.SceneIndex = 1;
             saveData.playerSerializeData = playerData.serializeData;
 
             jsonData = JsonUtility.ToJson(saveData);

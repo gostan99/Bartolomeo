@@ -19,7 +19,9 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         }
 
         private List<SlotData> SlotDataList;
-        private const string savePath = @"Assets\Data\Save\inventoryEpuipmentData.json";
+        private string selectedProfile;
+        private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
+        private string savePath = @"Assets\Data\Save\inventoryEpuipmentData";
         private bool isLoadingData = false;
 
         protected GameObject[] EquipmentSlots;
@@ -33,6 +35,11 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             }
 
             SlotDataList = new List<SlotData>();
+            if (File.Exists(selectedProfilePath))
+            {
+                selectedProfile = File.ReadAllText(selectedProfilePath);
+                savePath += selectedProfile + ".json";
+            }
             LoadSavedSlotData();
         }
 

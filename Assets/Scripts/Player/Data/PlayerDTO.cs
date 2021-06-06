@@ -11,6 +11,7 @@ namespace Assets.Scripts.Player
     public class PlayerDTO
     {
         public PlayerSerializeData playerSerializeData;
-        public string Level;
+        public int SceneIndex;
+        public float Playtime;
     }
 }

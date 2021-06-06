@@ -14,6 +14,8 @@ namespace Assets.Scripts.UI.UIContext
         private GameObject player;
         private PlayerData playerData;
 
+        private GameObject InventoryUI;
+
         private void Start()
         {
             //tìm kiếm Player trong scene
@@ -21,10 +23,17 @@ namespace Assets.Scripts.UI.UIContext
             //lấy PlayerData component
             playerData = player.GetComponent<PlayerData>();
             uController = GetComponent<UIController>();
+
+            InventoryUI = transform.Find("InventoryUI").gameObject;
+            InventoryUI.SetActive(true);
         }
 
         public override void LogicUpdate()
         {
+            if (InventoryUI.activeSelf)
+            {
+                InventoryUI.SetActive(false);
+            }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 NewUI = uController.PauseMenu;

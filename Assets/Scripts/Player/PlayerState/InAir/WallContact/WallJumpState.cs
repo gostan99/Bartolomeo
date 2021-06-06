@@ -17,6 +17,7 @@ namespace Assets.Scripts.Player
             newState = this;
             timer = 0f;
             hasAddForce = false;
+            pInput.JumpInputCounter = 1;
         }
 
         public override void Exit()
@@ -29,19 +30,31 @@ namespace Assets.Scripts.Player
             timer += Time.deltaTime;
             pInput.InputUpdate();
             WallJumpDirectionUpdate();
-
-            if (hasAddForce && pData.Rb.velocity.y < 0f)
+            if (pData.DashCooldownTimer > 0)
             {
-                pInput.JumpInputCounter = 1;
-                newState = pController.StartFallingState;
+                pData.DashCooldownTimer -= Time.deltaTime;
             }
-            else if (pInput.DashInput)
+
+            if (timer >= animtionLength)
             {
-                FacingDirectionUpdate();
-                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                Debug.Log(pInput.JumpInput);
+                if (pInput.JumpInput)
                 {
-                    newState = pController.DashingState;
-                    pData.canDash = false;
+                    newState = pController.JumpState;
+                }
+                else if (pInput.DashInput)
+                {
+                    FacingDirectionUpdate();
+                    if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
+                    {
+                        newState = pController.DashingState;
+                        pData.canDash = false;
+                    }
+                }
+                else if (pData.Rb.velocity.y < -23f)
+                {
+                    pInput.JumpInputCounter = 1;
+                    newState = pController.StartFallingState;
                 }
             }
         }
@@ -50,7 +63,7 @@ namespace Assets.Scripts.Player
         {
             if (timer >= animtionLength && !hasAddForce)
             {
-                pData.Rb.velocity = pData.WallJumpDirection * pData.WallJumpVelocity;
+                pData.Rb.AddForce(pData.WallJumpDirection * pData.WallJumpVelocity, ForceMode2D.Impulse);
                 hasAddForce = true;
             }
             else if (timer <= animtionLength)

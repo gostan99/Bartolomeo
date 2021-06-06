@@ -14,6 +14,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         private Text AttackStat;
         private Text HealthStat;
         private Text ManaStat;
+        private Text MoneyStat;
 
         private GameObject player;
         private PlayerData pData;
@@ -26,6 +27,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             AttackStat = transform.Find("Attack").Find("Content").GetComponent<Text>();
             HealthStat = transform.Find("Health").Find("Content").GetComponent<Text>();
             ManaStat = transform.Find("Mana").Find("Content").GetComponent<Text>();
+            MoneyStat = transform.Find("Money").Find("Content").GetComponent<Text>();
         }
 
         private void Update()
@@ -33,6 +35,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             AttackStat.text = pData.AttackDamage.ToString();
             HealthStat.text = pData.currentHealth.ToString() + "/" + pData.maxHealth.ToString();
             ManaStat.text = pData.currentMana.ToString() + "/" + pData.maxMana.ToString();
+            MoneyStat.text = pData.Money.ToString();
         }
     }
 }

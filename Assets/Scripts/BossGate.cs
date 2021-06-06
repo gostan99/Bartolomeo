@@ -8,22 +8,24 @@ public class BossGate : MonoBehaviour
     public GameObject bossGoat;
     public GameObject TuongChan;
     public Canvas BossHealthBar;
+    public EnemyData BossData;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         bossGoat.SetActive(false);
         TuongChan.SetActive(false);
         BossHealthBar.gameObject.SetActive(false);
-
+        BossData = bossGoat.GetComponent<EnemyData>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         KiemTraMauBoss();
     }
 
-     void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer.Equals(12))
         {
@@ -33,13 +35,16 @@ public class BossGate : MonoBehaviour
         }
     }
 
-    void KiemTraMauBoss()
+    private void KiemTraMauBoss()
     {
-
-        if (!bossGoat.gameObject.activeSelf)
+        if (bossGoat.gameObject.activeSelf)
         {
-            TuongChan.SetActive(false);
-            BossHealthBar.gameObject.SetActive(false);
+            if (BossData.CurrentHealth <= 0)
+            {
+                TuongChan.SetActive(false);
+                BossHealthBar.gameObject.SetActive(false);
+                Destroy(this.gameObject);
+            }
         }
     }
 }

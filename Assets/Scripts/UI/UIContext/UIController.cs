@@ -25,6 +25,8 @@ namespace Assets.Scripts.UI
             currentUI = None;
             PauseMenu = GetComponent<PauseMenu>();
             InventoryMenu = GetComponent<InventoryMenu>();
+
+            Time.timeScale = 1;
         }
 
         private void Update()

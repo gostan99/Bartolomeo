@@ -16,6 +16,7 @@ public partial class PlayerController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private float timer = 0.2f;
+    private float playtime;
 
     #region States
 
@@ -43,19 +44,29 @@ public partial class PlayerController : MonoBehaviour
     #endregion States
 
     public PlayerState currentState { get; private set; }
-    private string saveDataPath = @"Assets\Data\Save\playerdata.json";
+
+    private string selectedProfile;
+    private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
+    private string saveDataPath = @"Assets\Data\Save\playerdata";
 
     private void Start()
     {
+        playtime = 0;
         pData = GetComponent<PlayerData>();
-        if (File.Exists(saveDataPath))
+        if (File.Exists(selectedProfilePath))
         {
-            string json = File.ReadAllText(saveDataPath);
-            pData.serializeData = JsonConvert.DeserializeObject<PlayerDTO>(json).playerSerializeData;
-
-            if (pData.HasCheckPoint)
+            selectedProfile = File.ReadAllText(selectedProfilePath);
+            saveDataPath += selectedProfile + ".json";
+            if (File.Exists(saveDataPath))
             {
-                transform.position = new Vector2(pData.PosX, pData.PosY);
+                string json = File.ReadAllText(saveDataPath);
+                var dto = JsonConvert.DeserializeObject<PlayerDTO>(json);
+                pData.serializeData = dto.playerSerializeData;
+                playtime = dto.Playtime;
+                if (pData.HasCheckPoint)
+                {
+                    transform.position = new Vector2(pData.PosX, pData.PosY);
+                }
             }
         }
 
@@ -98,7 +109,8 @@ public partial class PlayerController : MonoBehaviour
         }
         PlayerDTO playerDTO = new PlayerDTO();
         playerDTO.playerSerializeData = pData.serializeData;
-        playerDTO.Level = SceneManager.GetActiveScene().path;
+        playerDTO.SceneIndex = SceneManager.GetActiveScene().buildIndex;
+        playerDTO.Playtime = playtime;
 
         string json = JsonConvert.SerializeObject(playerDTO, Formatting.Indented);
 
@@ -110,6 +122,7 @@ public partial class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        playtime += Time.deltaTime;
         if (Time.timeScale == 0)
         {
             return;
@@ -134,7 +147,6 @@ public partial class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         currentState.PhysicUpdate();
-        Debug.Log(pData.currentHealth);
     }
 
     public void CheckPrimaryAttackHit()

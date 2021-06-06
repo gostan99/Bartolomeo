@@ -7,7 +7,7 @@ using Assets.Scripts.Player;
 
 public class BasicEnemy : MonoBehaviour
 {
-    private EnemyData eData;
+    public EnemyData eData;
     private PlayerData pData;
 
     public float Speed = 150f;
@@ -85,6 +85,10 @@ public class BasicEnemy : MonoBehaviour
 
     private void Move()
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         if (!IsInAir())
         {
             rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
@@ -102,34 +106,41 @@ public class BasicEnemy : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
+        // trừ máu
+        eData.CurrentHealth -= Convert.ToSingle(package[0]);
+        if (eData.CurrentHealth <= 0)
+        {
+            if (package.Length == 3)
+            {
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
+            }
+            Die();
+            return;
+        }
         if (!healthCanvas.isActiveAndEnabled)
         {
             healthCanvas.enabled = true;
         }
-        // trừ máu
-        eData.CurrentHealth -= Convert.ToSingle(package[0]);
         // bị đẩy lùi
         Knockback(Convert.ToInt32(package[1]));
-        if (eData.CurrentHealth <= 0)
-        {
-            PlayerData playerData = (PlayerData)package[2];
-            if (playerData.currentMana == playerData.maxMana)
-            {
-                playerData.currentMana += 0;
-            }
-            else
-            {
-                playerData.currentMana += 10;
-            }
-            Die();
-            var bc = GetComponent<BoxCollider2D>();
-            bc.enabled = false;
-        }
     }
 
     private void Die()
     {
-        gameObject.SetActive(false);
+        GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(this.gameObject, 5);
     }
 
     private void Knockback(int hitDirection)

@@ -18,21 +18,27 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         }
 
         private List<SlotData> SlotDataList;
-        private const string savePath = @"Assets\Data\Save\inventoryItemData.json";
+        private string selectedProfile;
+        private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
+        private string savePath = @"Assets\Data\Save\inventoryItemData";
         private bool isLoadingData = false;
 
-        protected GameObject[] ItemSlots;
+        protected GameObject[] ItemSlots = new GameObject[45];
         private int lastSlotHasAnItem = -1;
 
         private void Start()
         {
-            ItemSlots = new GameObject[transform.childCount];
             for (int i = 0; i < transform.childCount; i++)
             {
                 ItemSlots[i] = transform.GetChild(i).gameObject;
             }
 
             SlotDataList = new List<SlotData>();
+            if (File.Exists(selectedProfilePath))
+            {
+                selectedProfile = File.ReadAllText(selectedProfilePath);
+                savePath += selectedProfile + ".json";
+            }
             LoadSavedSlotData();
         }
 

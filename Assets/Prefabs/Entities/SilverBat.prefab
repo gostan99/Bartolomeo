@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4372586683973588375}
   - component: {fileID: 3415407956965140848}
   - component: {fileID: 8430170826480812279}
+  - component: {fileID: -471648683853966898}
   m_Layer: 11
   m_Name: SilverBat
   m_TagString: Untagged
@@ -119,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06faa77566b23da4d82324a903c4e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eData: {fileID: 0}
   Speed: 1.5
   KnockBackSpeed: 8
   KnockBackDistance: 80
@@ -179,8 +181,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
-  Odd: 10
-  Host: {fileID: 4372586683973588396}
+  Odd: 25
+  Amount: 1
+--- !u!114 &-471648683853966898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372586683973588396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 80
+  Amount: 5
 --- !u!1001 &7979144136924960405
 PrefabInstance:
   m_ObjectHideFlags: 0

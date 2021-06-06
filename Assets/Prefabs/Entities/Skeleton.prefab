@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 3619102758061849135}
   - component: {fileID: 3619102758061849128}
   - component: {fileID: 8673686176751142852}
-  - component: {fileID: 1247399560}
   - component: {fileID: 188676306840286481}
   - component: {fileID: -5000029706273495475}
+  - component: {fileID: 7826016545994269301}
   m_Layer: 11
   m_Name: Skeleton
   m_TagString: Untagged
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a948b51b7abdbd43b246a575445cd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eData: {fileID: 0}
   Speed: 140
   PatrolPoint: {fileID: 0}
   PatrolDistance: 100
@@ -210,20 +211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   CurrentHealth: 0
---- !u!114 &1247399560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3619102758061849109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaadac700fa87c54b88305df6476a295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 100
-  CurrentHealth: 0
 --- !u!114 &188676306840286481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,8 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
-  Odd: 10
-  Host: {fileID: 3619102758061849109}
+  Odd: 40
+  Amount: 1
 --- !u!114 &-5000029706273495475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,9 +238,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 80
+  Amount: 5
+--- !u!114 &7826016545994269301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619102758061849109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
-  Odd: 5
-  Host: {fileID: 3619102758061849109}
+  Odd: 25
+  Amount: 1
 --- !u!1 &3619102759220868852
 GameObject:
   m_ObjectHideFlags: 0

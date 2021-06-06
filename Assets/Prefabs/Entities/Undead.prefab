@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 3130793734433606671}
   - component: {fileID: 3130793734433606667}
   - component: {fileID: 3130793734433606666}
-  - component: {fileID: 5711306387326849222}
   - component: {fileID: 468910553}
   - component: {fileID: 9085386288370384430}
   - component: {fileID: 5963255683669591734}
   - component: {fileID: 1725201312799415913}
+  - component: {fileID: -2515800787231429630}
   m_Layer: 11
   m_Name: Undead
   m_TagString: Untagged
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e7288702a186348bd1996e1daea69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eData: {fileID: 0}
   Speed: 1.5
   KnockBackSpeed: 8
   KnockBackDistance: 80
@@ -158,20 +159,6 @@ MonoBehaviour:
   AttackRadius: 31
   PatrolPoint: {fileID: 0}
   PatrolDistance: 100
---- !u!114 &5711306387326849222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3130793734433606670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaadac700fa87c54b88305df6476a295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 100
-  CurrentHealth: 0
 --- !u!114 &468910553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,8 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 2747135559706316300, guid: 09513edf910ac9a438513bb4e60ef8ac, type: 3}
-  Odd: 10
-  Host: {fileID: 3130793734433606670}
+  Odd: 25
+  Amount: 1
 --- !u!114 &5963255683669591734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,9 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
-  Odd: 15
-  Host: {fileID: 3130793734433606670}
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 80
+  Amount: 5
 --- !u!114 &1725201312799415913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,8 +216,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
-  Odd: 10
-  Host: {fileID: 3130793734433606670}
+  Odd: 25
+  Amount: 1
+--- !u!114 &-2515800787231429630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130793734433606670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
+  Odd: 25
+  Amount: 1
 --- !u!1001 &5069080182829720712
 PrefabInstance:
   m_ObjectHideFlags: 0

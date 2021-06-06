@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class Undead : MonoBehaviour
 {
-    EnemyData eData;
-    PlayerData pData;
+    public EnemyData eData;
+    private PlayerData pData;
 
     public float Speed = 2.5f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
@@ -19,9 +19,9 @@ public class Undead : MonoBehaviour
 
     public float AttackDamage = 5;
 
-    public float HoiMana=10f;
+    public float HoiMana = 10f;
 
-    Collider2D playerDetector = null;
+    private Collider2D playerDetector = null;
     public float PlayerDetectRadius = 160f;                 // bán kính phát hiện player
 
     public Vector3 AttackOffSet = new Vector3(15, 6, 0);    // vị trí đánh
@@ -32,16 +32,18 @@ public class Undead : MonoBehaviour
 
     private LayerMask PlayerMask;
 
-    enum State { Patrol, Chase, Knockback, Dead, Attack }
-    State state = State.Patrol;
+    private enum State
+    { Patrol, Chase, Knockback, Dead, Attack }
 
-    Animator animator;
-    string currentAnimation = "Idle";
+    private State state = State.Patrol;
+
+    private Animator animator;
+    private string currentAnimation = "Idle";
 
     private Canvas healthCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         eData = GetComponent<EnemyData>();
         pData = GetComponent<PlayerData>();
@@ -59,7 +61,7 @@ public class Undead : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // dò tìm Player
         LookingForPlayer();
@@ -82,25 +84,29 @@ public class Undead : MonoBehaviour
                 currentAnimation = "Idle";
                 Move();
                 break;
+
             case State.Chase:
                 currentAnimation = "Idle";
                 Chase();
                 break;
+
             case State.Attack:
                 currentAnimation = "Attack";
                 break;
+
             case State.Knockback:
                 currentAnimation = "Idle";
                 Knockback();
                 break;
+
             case State.Dead:
                 currentAnimation = "Dead";
-                break;        
+                break;
         }
     }
 
     //cập nhật hướng quay mặt
-    void FacingDirectionUpdate()
+    private void FacingDirectionUpdate()
     {
         if (moveDirection.x > 0)
         {
@@ -112,7 +118,7 @@ public class Undead : MonoBehaviour
         }
     }
 
-    void Move()
+    private void Move()
     {
         if (playerDetector)
         {
@@ -133,6 +139,10 @@ public class Undead : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         if (!healthCanvas.isActiveAndEnabled)
         {
             healthCanvas.enabled = true;
@@ -148,25 +158,23 @@ public class Undead : MonoBehaviour
 
         if (eData.CurrentHealth <= 0)
         {
-            PlayerData playerData = (PlayerData)package[2];
-            if (playerData.currentMana == playerData.maxMana)
+            if (package.Length == 3)
             {
-                playerData.currentMana += 0;
-            }
-            else
-            {
-                playerData.currentMana += 10;
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
             }
             state = State.Dead;
-            var bc = GetComponent<BoxCollider2D>();
-            bc.enabled = false;
-        }  
-
-        
-
+        }
     }
 
-    void Knockback()
+    private void Knockback()
     {
         var velocity = new Vector3(KnockBackSpeed * KnockbackDirection, 0, 0);
         transform.position += velocity;
@@ -178,7 +186,7 @@ public class Undead : MonoBehaviour
         }
     }
 
-    void Chase()
+    private void Chase()
     {
         //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
         if (playerDetector == null)
@@ -198,15 +206,19 @@ public class Undead : MonoBehaviour
         }
     }
 
-    bool CanAttack()
+    private bool CanAttack()
     {
         Collider2D collider = Physics2D.OverlapCircle(transform.position + AttackOffSet, AttackRadius, PlayerMask);
         return collider;
     }
 
     //Được gọi trong animation Attack
-    void Attack()
+    private void Attack()
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         Collider2D hit = Physics2D.OverlapCircle(transform.position + AttackOffSet, AttackRadius, PlayerMask);
         if (hit)
         {
@@ -217,20 +229,20 @@ public class Undead : MonoBehaviour
     }
 
     //Được gọi cuối animation Attack
-    void BackToChase()
+    private void BackToChase()
     {
         state = State.Chase;
     }
 
     //Được gọi trong animation Dead
-    void Die()
+    private void Die()
     {
         //var sp = GetComponent<SpriteRenderer>();
         //sp.enabled = false;
         Destroy(this.gameObject);
     }
 
-    void LookingForPlayer()
+    private void LookingForPlayer()
     {
         Collider2D collider = Physics2D.OverlapCircle(transform.position, PlayerDetectRadius, PlayerMask);
         if (collider)

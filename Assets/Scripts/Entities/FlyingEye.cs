@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class FlyingEye : MonoBehaviour
 {
-    private EnemyData eData;
+    public EnemyData eData;
     public float Speed = 0.8f;
     private Vector3 moveDirection = Vector2.right;          //hướng di chuyển
 
@@ -131,32 +131,38 @@ public class FlyingEye : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
-        if (!healthCanvas.isActiveAndEnabled)
+        if (eData.CurrentHealth <= 0)
         {
-            healthCanvas.enabled = true;
+            return;
         }
         //trừ máu
         eData.CurrentHealth -= Convert.ToSingle(package[0]);
 
-        //chuyển sang trạng thái bị đánh
-        state = State.TakeHit;
-
         if (eData.CurrentHealth <= 0)
         {
-            PlayerData playerData = (PlayerData)package[2];
-            if (playerData.currentMana == playerData.maxMana)
+            if (package.Length == 3)
             {
-                playerData.currentMana += 0;
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
             }
-            else
-            {
-                playerData.currentMana += 10;
-            }
-            Dead();
             state = State.Falling;
-            var bc = GetComponent<BoxCollider2D>();
-            bc.enabled = false;
+            Dead();
+            return;
         }
+        if (!healthCanvas.isActiveAndEnabled)
+        {
+            healthCanvas.enabled = true;
+        }
+
+        //chuyển sang trạng thái bị đánh
+        state = State.TakeHit;
     }
 
     private void LookingForPlayer()
@@ -175,6 +181,10 @@ public class FlyingEye : MonoBehaviour
     //Được gọi trong animation Attack
     private void Attack()
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         //nếu không phát hiện player nữa thì chuyển sang trạng thái tuần tra
         if (playerDetector == null)
         {
@@ -209,8 +219,7 @@ public class FlyingEye : MonoBehaviour
 
     private void Dead()
     {
-        var b = gameObject.GetComponent<BoxCollider2D>();
-        b.enabled = false;
+        Destroy(this.gameObject, 5);
     }
 
     // được gọi vào cuối animation Falling

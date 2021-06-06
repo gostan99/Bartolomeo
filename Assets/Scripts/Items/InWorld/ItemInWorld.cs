@@ -12,22 +12,25 @@ namespace Assets.Scripts.Items
 
         private void Start()
         {
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("ItemInWorld"), LayerMask.NameToLayer("Entity"));
+
             var canvas = GameObject.FindGameObjectWithTag("Canvas");
             var inventoryUI = canvas.transform.Find("InventoryUI");
             itemSlotManager = inventoryUI.Find("Items").GetComponent<ItemSlotManager>();
 
             var rb = GetComponent<Rigidbody2D>();
             float rand = UnityEngine.Random.Range(-0.6f, 0.6f);
-            float thrust = 200f;
+            float thrust = UnityEngine.Random.Range(200f, 300f);
             Vector2 direction = new Vector2(rand, 1);
             rb.AddForce(direction * thrust, ForceMode2D.Impulse);
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             if (isCollided)
             {
                 itemSlotManager.AddItemToInventorySlot(typeof(T), 1);
+                GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(this.gameObject);
             }
         }

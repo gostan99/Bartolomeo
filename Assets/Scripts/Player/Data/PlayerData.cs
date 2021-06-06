@@ -88,6 +88,7 @@ namespace Assets.Scripts.Player
 
         public ref int MaxJumpCounter { get { return ref serializeData.MaxJumpCounter; } }
         public ref bool HasDash { get { return ref serializeData.HasDash; } }
+        public ref int Money { get { return ref serializeData.Money; } }
 
         //--TAKEHIT----------------------------------------------------
         public float invulnerableTimer = 0f;
@@ -172,6 +173,7 @@ namespace Assets.Scripts.Player
             public float WallJumpVelocity = 110;
             public int MaxJumpCounter = 2;
             public bool HasDash = true;
+            public int Money = 0;
         }
     }
 }

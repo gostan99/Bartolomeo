@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 1855157563870012956}
   - component: {fileID: 744535318774331933}
   - component: {fileID: 6044853176787951672}
+  - component: {fileID: -7864671513866802773}
   m_Layer: 11
   m_Name: Devil
   m_TagString: Untagged
@@ -190,6 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4052cee3f40d6fe44b9287688c663caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eData: {fileID: 0}
   Speed: 150
   KnockBackForce: 150
   groundDetectorLength: 24
@@ -248,8 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
-  Odd: 10
-  Host: {fileID: 0}
+  Odd: 25
+  Amount: 1
 --- !u!114 &6044853176787951672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,9 +264,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 80
+  Amount: 5
+--- !u!114 &-7864671513866802773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633465495222359961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
-  Odd: 7
-  Host: {fileID: 2633465495222359961}
+  Odd: 25
+  Amount: 1
 --- !u!1001 &4200364215284682595
 PrefabInstance:
   m_ObjectHideFlags: 0

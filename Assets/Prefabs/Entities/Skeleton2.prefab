@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 2002471130}
   - component: {fileID: 3283492908875701792}
   - component: {fileID: -27709513353076451}
+  - component: {fileID: -570261961823530447}
   m_Layer: 11
   m_Name: Skeleton2
   m_TagString: Untagged
@@ -195,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a948b51b7abdbd43b246a575445cd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eData: {fileID: 0}
   Speed: 110
   PatrolPoint: {fileID: 0}
   PatrolDistance: 100
@@ -252,8 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 2747135559706316300, guid: 09513edf910ac9a438513bb4e60ef8ac, type: 3}
-  Odd: 5
-  Host: {fileID: 1047520446693176084}
+  Odd: 25
+  Amount: 1
 --- !u!114 &-27709513353076451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,9 +268,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 80
+  Amount: 5
+--- !u!114 &-570261961823530447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047520446693176084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
-  Odd: 5
-  Host: {fileID: 1047520446693176084}
+  Odd: 25
+  Amount: 1
 --- !u!1 &1047520446790411778
 GameObject:
   m_ObjectHideFlags: 0

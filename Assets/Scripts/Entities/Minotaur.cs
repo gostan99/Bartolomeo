@@ -7,12 +7,15 @@ using UnityEngine;
 
 public class Minotaur : MonoBehaviour
 {
-    EnemyData eData;
+    public EnemyData eData;
 
-    private enum State { Idle, Patrol, Attack, Dead,
+    private enum State
+    {
+        Idle, Patrol, Attack, Dead,
         TakeHit
     }
-    State state = State.Patrol;
+
+    private State state = State.Patrol;
 
     public float Speed = 150f;
     private int moveDirection = 1;          //hướng di chuyển
@@ -32,20 +35,20 @@ public class Minotaur : MonoBehaviour
     public Vector3 AttackOffSet = new Vector3(16, 12, 0); // vị trí đánh
     public Vector2 AttackRange = new Vector2(44, 56);     // tầm đánh
 
-    Animator animator;
-    string currentAnimation = "Patrol";
+    private Animator animator;
+    private string currentAnimation = "Patrol";
 
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
 
-    LayerMask playerMask;
+    private LayerMask playerMask;
 
     public float idleTime = 2f; // thời gian ở trạng thái idle là 2s
-    float idleTimer;            // đếm thời gian ở trạng thái idle còn lại
+    private float idleTimer;            // đếm thời gian ở trạng thái idle còn lại
 
     private Canvas healthCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         eData = GetComponent<EnemyData>();
 
@@ -66,7 +69,7 @@ public class Minotaur : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         switch (state)
         {
@@ -74,16 +77,20 @@ public class Minotaur : MonoBehaviour
                 currentAnimation = "Idle";
                 Idle();
                 break;
+
             case State.Patrol:
                 currentAnimation = "Walk";
                 Patrol();
                 break;
+
             case State.Attack:
                 currentAnimation = "Attack";
                 break;
+
             case State.TakeHit:
                 currentAnimation = "TakeHit";
                 break;
+
             case State.Dead:
                 currentAnimation = "Dead";
                 break;
@@ -106,7 +113,7 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    void Idle()
+    private void Idle()
     {
         // giảm thời gian ở trạng thái idle còn lại
         idleTimer -= Time.deltaTime;
@@ -125,7 +132,7 @@ public class Minotaur : MonoBehaviour
         }
     }
 
-    void Patrol()
+    private void Patrol()
     {
         if (Vector2.Distance(transform.position, PatrolPoint.transform.position) >= PatrolDistance)
         {
@@ -153,8 +160,12 @@ public class Minotaur : MonoBehaviour
     }
 
     // được gọi bơi Attack animation
-    void Attack()
+    private void Attack()
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         Collider2D hit = Physics2D.OverlapCapsule(transform.position + AttackOffSet, AttackRange, CapsuleDirection2D.Vertical, 0, playerMask);
         if (hit)
         {
@@ -165,18 +176,18 @@ public class Minotaur : MonoBehaviour
     }
 
     // được gọi bởi Attack animation và TakeHit animaiton sau khi nó kết thúc hoạt ảnh
-    void BackToPatrol()
+    private void BackToPatrol()
     {
         state = State.Patrol;
     }
 
-    bool PlayerIsInAttackRange()
+    private bool PlayerIsInAttackRange()
     {
         var hit = Physics2D.Raycast(transform.position, Vector2.right * moveDirection, PlayerDetectRange, playerMask);
         return hit;
     }
 
-    bool IsInAir()
+    private bool IsInAir()
     {
         return rb.velocity.y != 0f;
     }
@@ -185,6 +196,10 @@ public class Minotaur : MonoBehaviour
     //Packege[0] là lượng dame, Package[1] là hướng bị đánh
     public void TakeDamage(object[] package)
     {
+        if (eData.CurrentHealth <= 0)
+        {
+            return;
+        }
         if (!healthCanvas.isActiveAndEnabled)
         {
             healthCanvas.enabled = true;
@@ -202,39 +217,41 @@ public class Minotaur : MonoBehaviour
         ApplyKnockback(Convert.ToInt32(package[1]));
         if (eData.CurrentHealth <= 0)
         {
-            PlayerData playerData = (PlayerData)package[2];
-            if (playerData.currentMana == playerData.maxMana)
+            if (package.Length == 3)
             {
-                playerData.currentMana += 0;
-            }
-            else
-            {
-                playerData.currentMana += 10;
+                PlayerData playerData = (PlayerData)package[2];
+                if (playerData.currentMana == playerData.maxMana)
+                {
+                    playerData.currentMana += 0;
+                }
+                else
+                {
+                    playerData.currentMana += 10;
+                }
             }
             state = State.Dead;
-            var bc = GetComponent<BoxCollider2D>();
-            bc.enabled = false;
+            Destroy(this.gameObject, 5);
         }
     }
 
-    void ApplyMovement()
+    private void ApplyMovement()
     {
         rb.velocity = new Vector2(Speed * moveDirection, rb.velocity.y);
     }
 
-    void ApplyKnockback(int hitDirection)
+    private void ApplyKnockback(int hitDirection)
     {
         rb.velocity = new Vector2(KnockBackForce * hitDirection, KnockBackForce);
     }
 
     //cập nhật hướng quay mặt
-    void FacingDirectionUpdate()
+    private void FacingDirectionUpdate()
     {
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * moveDirection, transform.localScale.y, transform.localScale.z);
     }
 
     //moveDiection có đang hướng về PatrolPoint?
-    bool IsDirectToPatrolPoint()
+    private bool IsDirectToPatrolPoint()
     {
         if (transform.position.x < PatrolPoint.transform.position.x)
         {
@@ -262,7 +279,7 @@ public class Minotaur : MonoBehaviour
 
     // kiểm  tra có tới đường cụt?
     // đường cụt là khi phía trước gặp vực hoặc tường
-    bool IsDeadEnd()
+    private bool IsDeadEnd()
     {
         //Physics2D.Raycast() sẽ trả giá trị true nếu nó va chạm với groundMask
         //groundDetector.transform.position là gốc của tia Raycast

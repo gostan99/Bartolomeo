@@ -134,6 +134,13 @@ GameObject:
   - component: {fileID: 7179453816454028888}
   - component: {fileID: 1515404774}
   - component: {fileID: 1515404779}
+  - component: {fileID: 6462244512039840397}
+  - component: {fileID: -3103128639007134277}
+  - component: {fileID: -2340541157135031244}
+  - component: {fileID: 1765665347389060220}
+  - component: {fileID: -6637056727525832623}
+  - component: {fileID: -2145345260258238556}
+  - component: {fileID: 790921653409479785}
   m_Layer: 11
   m_Name: Boss_Goat
   m_TagString: Untagged
@@ -289,8 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 130
-  MaxHealth: 2000
-  CurrentHealth: 2000
+  eData: {fileID: 0}
   DamageSlash: 10
   DamageStomp: 20
   DamageSmash: 30
@@ -300,6 +306,110 @@ MonoBehaviour:
   smashRange: {x: 200, y: 178, z: 0}
   stompRange: {x: 175, y: 80, z: 0}
   Player: {fileID: 0}
+--- !u!114 &6462244512039840397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaadac700fa87c54b88305df6476a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 3000
+  CurrentHealth: 0
+--- !u!114 &-3103128639007134277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 1759879846111663664, guid: f1195368e52c9ce40831bed06f10c799, type: 3}
+  Odd: 100
+  Amount: 1
+--- !u!114 &-2340541157135031244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 7118329965705935821, guid: da63622df82dd2d448ef17aa27ac6501, type: 3}
+  Odd: 100
+  Amount: 1
+--- !u!114 &1765665347389060220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 433409342545248893, guid: 32fd3cea31fd28849b9c14a8ed5616d8, type: 3}
+  Odd: 100
+  Amount: 1
+--- !u!114 &-6637056727525832623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 2747135559706316300, guid: 09513edf910ac9a438513bb4e60ef8ac, type: 3}
+  Odd: 100
+  Amount: 3
+--- !u!114 &-2145345260258238556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
+  Odd: 100
+  Amount: 3
+--- !u!114 &790921653409479785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179453816454028889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 7535139474920115439, guid: 96c942b9add33fa4f8376f984bfe96d6, type: 3}
+  Odd: 100
+  Amount: 50
 --- !u!1 &8767917925783041770
 GameObject:
   m_ObjectHideFlags: 0

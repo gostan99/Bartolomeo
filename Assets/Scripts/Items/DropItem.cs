@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Items;
+using Assets.Scripts.Entities;
 
 namespace Assets.Scripts.Items
 {
@@ -8,14 +9,14 @@ namespace Assets.Scripts.Items
     {
         public GameObject Item;
         public int Odd;
-        public GameObject Host;
+        public int Amount = 1;
 
-        private BoxCollider2D boxCollider2D;
+        private EnemyData eData;
         private bool willDrop = false;
 
         private void Start()
         {
-            boxCollider2D = Host.GetComponentInChildren<BoxCollider2D>();
+            eData = GetComponent<EnemyData>();
             int val = Random.Range(1, 101);// random số từ 1 đến 100
             if (val <= Odd)
             {
@@ -29,12 +30,15 @@ namespace Assets.Scripts.Items
 
         private void Update()
         {
-            if (!boxCollider2D.enabled)
+            if (eData.CurrentHealth <= 0)
             {
                 if (willDrop)
                 {
-                    Vector2 pos = new Vector2(Host.transform.position.x, Host.transform.position.y + 5);
-                    Instantiate(Item, pos, Quaternion.identity);
+                    Vector2 pos = new Vector2(transform.position.x, transform.position.y + 5);
+                    for (int i = 0; i < Amount; i++)
+                    {
+                        Instantiate(Item, pos, Quaternion.identity);
+                    }
                     Destroy(this);
                 }
             }
