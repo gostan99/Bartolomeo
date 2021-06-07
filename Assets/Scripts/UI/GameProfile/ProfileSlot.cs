@@ -21,19 +21,22 @@ namespace Assets.Scripts.UI.GameProfile
 
         private void Start()
         {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                slots[i] = transform.GetChild(i).gameObject;
+            }
             UpdateSlot();
         }
 
         public void UpdateSlot()
         {
-            for (int i = 0; i < transform.childCount; i++)
+            for (int i = 0; i < slots.Length; i++)
             {
-                slots[i] = transform.GetChild(i).gameObject;
                 string slot = (i + 1).ToString();
-                savePlayerDataPath += slot + ".json";
-                saveItemPath += slot + ".json";
-                saveEquipmentPath += slot + ".json";
-                if (!File.Exists(savePlayerDataPath) && !File.Exists(saveItemPath) && !File.Exists(saveEquipmentPath))
+                string pDataPath = savePlayerDataPath + slot + ".json";
+                string iDataPath = saveItemPath + slot + ".json";
+                string eDataPath = saveEquipmentPath + slot + ".json";
+                if (!File.Exists(pDataPath) && !File.Exists(iDataPath) && !File.Exists(eDataPath))
                 {
                     //tắt contents
                     slots[i].transform.Find("Contents").gameObject.SetActive(false);
@@ -41,7 +44,7 @@ namespace Assets.Scripts.UI.GameProfile
                 else
                 {
                     //Thiết lập nội dung
-                    string json = File.ReadAllText(savePlayerDataPath);
+                    string json = File.ReadAllText(pDataPath);
                     PlayerDTO dto = JsonConvert.DeserializeObject<PlayerDTO>(json);
                     var contents = slots[i].transform.Find("Contents").gameObject;
                     var level = contents.transform.Find("Level").GetComponent<Text>();
