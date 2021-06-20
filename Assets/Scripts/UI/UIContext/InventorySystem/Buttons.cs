@@ -9,14 +9,12 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
 {
     public class Buttons : MonoBehaviour
     {
-        private PlayerInput pInput;
-
         private GameObject EquipBtn;
         private GameObject UnequipBtn;
         private GameObject UseBtn;
         private GameObject DropBtn;
 
-        private GameObject SelectedItemSlot;
+        public GameObject SelectedItemSlot;
         private GameObject SelectedEquipmentSlot;
         private GameObject currentSelectedObj;
 
@@ -25,8 +23,6 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
 
         private void Start()
         {
-            pInput = GameObject.Find("Player").GetComponent<PlayerController>().pInput;
-
             EquipBtn = transform.Find("EquipBtn").gameObject;
             UnequipBtn = transform.Find("UnequipBtn").gameObject;
             UseBtn = transform.Find("UseBtn").gameObject;
@@ -66,21 +62,6 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
                 DisableUnequipBtn();
                 DisableUseBtn();
                 DisableDropBtn();
-            }
-
-            if (pInput.LargePotionInput)
-            {
-                if (itemSlotManager.TryGetLargePotionItemSlot(out SelectedItemSlot))
-                {
-                    Use();
-                }
-            }
-            else if (pInput.SmallPotionInput)
-            {
-                if (itemSlotManager.TryGetSmallPotionItemSlot(out SelectedItemSlot))
-                {
-                    Use();
-                }
             }
         }
 

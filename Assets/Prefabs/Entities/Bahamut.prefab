@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 7225697033324808715}
   - component: {fileID: 3591873798008875822}
   - component: {fileID: 1522853541704069688}
-  - component: {fileID: -7191184132321897782}
   - component: {fileID: 4568276958053658703}
   - component: {fileID: 9053027826451815966}
+  - component: {fileID: 2967587185606195681}
   m_Layer: 11
   m_Name: Bahamut
   m_TagString: Untagged
@@ -207,21 +207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   CurrentHealth: 0
---- !u!114 &-7191184132321897782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7225697033324808712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item: {fileID: 3549761008440349749, guid: f2ff6d69d8cb7b449a74052a60ff54b4, type: 3}
-  Odd: 25
-  Amount: 1
 --- !u!114 &4568276958053658703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +236,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Item: {fileID: 5844348546276812107, guid: 2f2b463264dfb524aa6816e2c22c6ec9, type: 3}
   Odd: 25
+  Amount: 1
+--- !u!114 &2967587185606195681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225697033324808712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3128b6e42b664886893eaa15ab24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 2747135559706316300, guid: 09513edf910ac9a438513bb4e60ef8ac, type: 3}
+  Odd: 27
   Amount: 1
 --- !u!1 &7225697034300258399
 GameObject:

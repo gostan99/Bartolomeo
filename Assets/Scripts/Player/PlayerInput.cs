@@ -10,7 +10,7 @@ namespace Assets.Scripts.Player
         public bool DashInput { get; private set; }
 
         public bool LargePotionInput { get; private set; }
-        public bool SmallPotionInput { get; private set; }
+        public bool ManaPotionInput { get; private set; }
         //public bool HandelInput { get; private set; }
         //public int CheckInput = 0;
 
@@ -84,11 +84,11 @@ namespace Assets.Scripts.Player
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SmallPotionInput = true;
+                ManaPotionInput = true;
             }
             else
             {
-                SmallPotionInput = false;
+                ManaPotionInput = false;
             }
         }
 

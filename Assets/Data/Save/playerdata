@@ -5,24 +5,24 @@
     "PosY": 0.0,
     "AttackDamage": 20.0,
     "maxMana": 100.0,
-    "currentMana": 100.0,
+    "currentMana": 46.0,
     "manaCost": 50.0,
-    "manaGenerationTimer": 0.25,
-    "currentHealth": 100.0,
+    "manaGenerationTimer": 0.1536186,
+    "currentHealth": 70.0,
     "maxHealth": 100.0,
     "Speed": 178.0,
-    "DashCooldownTimer": 0.0,
+    "DashCooldownTimer": -0.0132519025,
     "DashCooldown": 0.4,
     "DashVelocityX": 973.0,
-    "DashDuration": 0.15625,
-    "canDash": true,
+    "DashDistance": 154.74,
+    "canDash": false,
     "JumpVelocityY": 260.0,
     "WallSlideVelocityY": 20.0,
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 0
+    "Money": 5
   },
-  "SceneIndex": 2,
-  "Playtime": 5.076417
+  "SceneIndex": 7,
+  "Playtime": 33.5772858
 }

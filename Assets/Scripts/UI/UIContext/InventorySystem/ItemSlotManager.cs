@@ -90,17 +90,17 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             return false;
         }
 
-        public bool TryGetSmallPotionItemSlot(out GameObject smallPotionItemSlot)
+        public bool TryGetManaPotionItemSlot(out GameObject manaPotionItemSlot)
         {
             GameObject slot = new GameObject();
-            smallPotionItemSlot = slot;
+            manaPotionItemSlot = slot;
 
             for (int i = 0; i < ItemSlots.Length; i++)
             {
                 slot = ItemSlots[i];
-                if (slot.transform.Find("Item").TryGetComponent<SmallHealthPotion>(out _))
+                if (slot.transform.Find("Item").TryGetComponent<ManaPotion>(out _))
                 {
-                    smallPotionItemSlot = slot;
+                    manaPotionItemSlot = slot;
                     return true;
                 }
             }

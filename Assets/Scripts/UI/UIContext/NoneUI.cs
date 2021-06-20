@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Player;
+using Assets.Scripts.UI.UIContext.InventorySystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,13 @@ namespace Assets.Scripts.UI.UIContext
     public class NoneUI : UI
     {
         private UIController uController;
+        private PlayerInput pInput;
+        private ItemSlotManager itemSlotManager;
         private GameObject player;
         private PlayerController pController;
         private PlayerData playerData;
+
+        private Buttons buttons;
 
         private GameObject InventoryUI;
 
@@ -28,6 +33,10 @@ namespace Assets.Scripts.UI.UIContext
 
             InventoryUI = transform.Find("InventoryUI").gameObject;
             InventoryUI.SetActive(true);
+
+            pInput = GameObject.Find("Player").GetComponent<PlayerController>().pInput;
+            itemSlotManager = InventoryUI.transform.Find("Items").GetComponent<ItemSlotManager>();
+            buttons = InventoryUI.transform.Find("Buttons").GetComponent<Buttons>();
         }
 
         public override void LogicUpdate()
@@ -50,6 +59,30 @@ namespace Assets.Scripts.UI.UIContext
                 {
                     NewUI = uController.PauseMenu;
                 }
+            }
+
+
+            if (pInput.LargePotionInput)
+            {
+                InventoryUI.SetActive(true);
+                var SelectedItemSlot = buttons.SelectedItemSlot;
+                if (itemSlotManager.TryGetLargePotionItemSlot(out SelectedItemSlot))
+                {
+                    buttons.SelectedItemSlot = SelectedItemSlot;
+                    buttons.Use();
+                }
+                InventoryUI.SetActive(false);
+            }
+            else if (pInput.ManaPotionInput)
+            {
+                InventoryUI.SetActive(true);
+                var SelectedItemSlot = buttons.SelectedItemSlot;
+                if (itemSlotManager.TryGetManaPotionItemSlot(out SelectedItemSlot))
+                {
+                    buttons.SelectedItemSlot = SelectedItemSlot;
+                    buttons.Use();
+                }
+                InventoryUI.SetActive(false);
             }
         }
 
