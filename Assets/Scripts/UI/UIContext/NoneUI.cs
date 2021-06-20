@@ -12,6 +12,7 @@ namespace Assets.Scripts.UI.UIContext
     {
         private UIController uController;
         private GameObject player;
+        private PlayerController pController;
         private PlayerData playerData;
 
         private GameObject InventoryUI;
@@ -22,6 +23,7 @@ namespace Assets.Scripts.UI.UIContext
             player = GameObject.Find("Player");
             //lấy PlayerData component
             playerData = player.GetComponent<PlayerData>();
+            pController = player.GetComponent<PlayerController>();
             uController = GetComponent<UIController>();
 
             InventoryUI = transform.Find("InventoryUI").gameObject;
@@ -44,7 +46,10 @@ namespace Assets.Scripts.UI.UIContext
             }
             else if (playerData.currentHealth <= 0)
             {
-                NewUI = uController.PauseMenu;
+                if (pController.DeathState.AnimationIsFinished)
+                {
+                    NewUI = uController.PauseMenu;
+                }
             }
         }
 

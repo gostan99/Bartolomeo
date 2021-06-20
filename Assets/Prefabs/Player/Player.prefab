@@ -1755,21 +1755,7 @@ MonoBehaviour:
   InAirUpwardHitboxPos: {fileID: 0}
   InAirUpwardHitboxSize: {x: 79, y: 102}
   InAirUpwardHitboxDirection: 0
-  AttackDamage: 20
-  maxMana: 100
-  currentMana: 100
-  manaCost: 50
-  manaGenerationTimer: 0.25
-  Speed: 178
-  DashCooldownTimer: 0
-  DashCooldown: 0.4
-  DashVelocityX: 937
-  DashDuration: 0.15
-  canDash: 1
-  JumpVelocityY: 243
-  WallSlideVelocityY: 20
   WallJumpDirection: {x: 0, y: 0}
-  WallJumpVelocity: 110
   invulnerableTimer: 0
   invulnerableTime: 2
   GroundDetectorSize: {x: 20, y: 11}

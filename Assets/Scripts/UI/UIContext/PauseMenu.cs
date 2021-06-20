@@ -65,11 +65,11 @@ namespace Assets.Scripts.UI.UIContext
             //nếu player hết máu thì tắt Image và Button component
             if (playerData.currentHealth <= 0)
             {
-                var resumeBtn = pauseUI.transform.Find("ResumeButton");
-                resumeBtn.GetComponent<Image>().enabled = false;
-                resumeBtn.GetComponent<Button>().enabled = false;
+                    var resumeBtn = pauseUI.transform.Find("ResumeButton");
+                    resumeBtn.GetComponent<Image>().enabled = false;
+                    resumeBtn.GetComponent<Button>().enabled = false;
 
-                playerData.currentHealth = playerData.maxHealth;
+                    playerData.currentHealth = playerData.maxHealth;
             }
             else
             {

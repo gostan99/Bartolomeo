@@ -12,7 +12,7 @@ namespace Assets.Scripts.Items
         public int HealValue => 50;
 
         public override bool IsEquipable => false;
-        public override bool IsUseable => true;
+        public override bool IsUseable => false;
         public override string Description => "Heal " + HealValue.ToString() + " Health";
         public override Sprite Sprite => Resources.LoadAll<Sprite>("Images/Items/HealthPotion/Large_Health_Postion")[0];
         public override float ImageWidth => 62;
@@ -38,8 +38,7 @@ namespace Assets.Scripts.Items
             {
                 pData.currentHealth += HealValue;
             }
-            //TO DO: Đưa player vào state hồi máu
-            //pController.currentState.SetNewState(pController.HeallingState);
+            pController.currentState.SetNewState(pController.HealState);
         }
 
         public override void EquipItem()

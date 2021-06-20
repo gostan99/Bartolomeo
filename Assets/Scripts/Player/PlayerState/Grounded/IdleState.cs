@@ -58,6 +58,28 @@ namespace Assets.Scripts.Player
                     newState = pController.GroundedUpwardAttackState;
                 }
             }
+            //else if(pData.currentHealth<=0)
+            //{
+            //    newState = pController.DeathState;
+            //    pData.canDash = false;
+            //    pInput.AttackInput = false;
+            //}
+            //else if(pInput.HandelInput)
+            //{
+            //    if(pInput.CheckInput == 1)
+            //    {
+            //        newState = pController.CheckPointState;
+            //    }
+            //    else if(pInput.CheckInput == 2)
+            //    {
+            //        newState = pController.ParryState;
+            //    }
+            //    else if (pInput.CheckInput == 3)
+            //    {
+            //        newState = pController.HealState;
+            //    }
+            //}
+
             //Debug.Log(pInput.JumpInput && pInput.AttackInput);
         }
 

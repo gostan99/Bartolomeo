@@ -75,7 +75,7 @@ namespace Assets.Scripts.Player
 
         public ref float DashVelocityX { get { return ref serializeData.DashVelocityX; } }
 
-        public ref float DashDuration { get { return ref serializeData.DashDuration; } }
+        public ref float DashDistance { get { return ref serializeData.DashDistance; } }
 
         public ref bool canDash { get { return ref serializeData.canDash; } }
 
@@ -111,7 +111,7 @@ namespace Assets.Scripts.Player
         public Dictionary<string, float> AnimationLength { get; private set; }
 
         private void Awake()
-        {
+        {            
             Rb = GetComponent<Rigidbody2D>();
             Animator = GetComponent<Animator>();
             CapsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -146,7 +146,11 @@ namespace Assets.Scripts.Player
                 {"Right_swing_jump",0.263f },
                 {"Left_swing_jump",0.294f },
                 {"Upward_clamped",0.267f },
-                {"Upward_jump",0.222f }
+                {"Upward_jump",0.222f },
+                {"Death_Animation",2.096f},
+                {"Parry_Animation",0.560f},
+                {"CheckPoint_Animation",0.817f},
+                {"Heal_Animation",0.556f }
             };
         }
 
@@ -163,10 +167,10 @@ namespace Assets.Scripts.Player
             public float currentHealth = 100;
             public float maxHealth = 100;
             public float Speed = 178f;
-            public float DashCooldownTimer = 0.0f;
+            public float DashCooldownTimer = 0.0f; 
             public float DashCooldown = 0.4f;
             public float DashVelocityX = 973;
-            public float DashDuration = 0.625f / 4f;// = 0.15625f
+            public float DashDistance = 154.74f; // Phạm vi Dash
             public bool canDash = true;
             public float JumpVelocityY = 260.0f;
             public float WallSlideVelocityY = 20.0f;

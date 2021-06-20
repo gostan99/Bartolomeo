@@ -12,7 +12,7 @@ using static Assets.Scripts.Player.PlayerData;
 public partial class PlayerController : MonoBehaviour
 {
     private PlayerData pData;
-    private PlayerInput pInput;
+    public PlayerInput pInput;
 
     private SpriteRenderer spriteRenderer;
     private float timer = 0.2f;
@@ -40,6 +40,10 @@ public partial class PlayerController : MonoBehaviour
     public InAirPrimaryAttackState InAirPrimaryAttackState { get; private set; }
     public InAirSecondaryAttackState InAirSecondaryAttackState { get; private set; }
     public InAirUpwardAttackState InAirUpwardAttackState { get; private set; }
+    public DeathState DeathState { get; private set; }
+    public ParryState ParryState { get; private set; }
+    public CheckPointState CheckPointState { get; private set; }
+    public HealState HealState { get; private set; }
 
     #endregion States
 
@@ -95,6 +99,10 @@ public partial class PlayerController : MonoBehaviour
         InAirPrimaryAttackState = new InAirPrimaryAttackState(this, pInput, pData, "Right_swing_jump");
         InAirSecondaryAttackState = new InAirSecondaryAttackState(this, pInput, pData, "Left_swing_jump");
         InAirUpwardAttackState = new InAirUpwardAttackState(this, pInput, pData, "Upward_jump");
+        DeathState = new DeathState(this, pInput, pData, "Death_Animation");
+        ParryState = new ParryState(this, pInput, pData, "Parry_Animation");
+        CheckPointState = new CheckPointState(this, pInput, pData, "CheckPoint_Animation");
+        HealState = new HealState(this, pInput, pData, "Heal_Animation");
 
         currentState = IdleState;
 
@@ -179,6 +187,11 @@ public partial class PlayerController : MonoBehaviour
 
     private void InvulnerableEffect()
     {
+        if (pData.currentHealth<=0)
+        {
+            return;
+        }
+
         if (pData.invulnerableTimer >= 0)
         {
             pData.invulnerableTimer -= Time.deltaTime;
@@ -224,10 +237,11 @@ public partial class PlayerController : MonoBehaviour
         timer = 0f;
         // trừ máu
         pData.currentHealth -= Convert.ToSingle(package[0]);
-        //if (pData.currentHealth <= 0)
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //}
+        if (pData.currentHealth <= 0)
+        {
+            currentState = DeathState;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void CanDash()

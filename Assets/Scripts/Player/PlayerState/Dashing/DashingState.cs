@@ -5,13 +5,15 @@ namespace Assets.Scripts.Player
 {
     public class DashingState : PlayerState
     {
+        float startPosX;
+
         public DashingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
         }
 
         public override void Enter()
         {
-            timer = 0f;
+            startPosX = pController.transform.position.x;
             newState = this;
             pInput.JumpInputCounter = pData.MaxJumpCounter - 1;
             pData.currentMana -= pData.manaCost;
@@ -24,9 +26,9 @@ namespace Assets.Scripts.Player
 
         public override void LogicUpdate()
         {
-            timer += Time.deltaTime;
+            float distanceBeenDashed = Mathf.Abs(pController.transform.position.x - startPosX);
             pInput.InputUpdate();
-            if (timer >= pData.DashDuration)
+            if (distanceBeenDashed >= pData.DashDistance)
             {
                 if (IsGrounded())
                 {

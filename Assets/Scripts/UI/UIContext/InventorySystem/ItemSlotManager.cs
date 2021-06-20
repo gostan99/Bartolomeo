@@ -73,6 +73,40 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
             isLoadingData = false;
         }
 
+        public bool TryGetLargePotionItemSlot(out GameObject largePotionItemSlot)
+        {
+            GameObject slot = new GameObject();
+            largePotionItemSlot = slot;
+
+            for (int i = 0; i < ItemSlots.Length; i++)
+            {
+                slot = ItemSlots[i];
+                if (slot.transform.Find("Item").TryGetComponent<LargeHealthPotion>(out _))
+                {
+                    largePotionItemSlot = slot;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool TryGetSmallPotionItemSlot(out GameObject smallPotionItemSlot)
+        {
+            GameObject slot = new GameObject();
+            smallPotionItemSlot = slot;
+
+            for (int i = 0; i < ItemSlots.Length; i++)
+            {
+                slot = ItemSlots[i];
+                if (slot.transform.Find("Item").TryGetComponent<SmallHealthPotion>(out _))
+                {
+                    smallPotionItemSlot = slot;
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public void AddItemToInventorySlot(Type itemType, int amount)
         {
             Component item;

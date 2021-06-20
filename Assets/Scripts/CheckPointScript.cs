@@ -9,15 +9,17 @@ public class CheckPointScript : MonoBehaviour
     public Vector2 size = new Vector2(93, 138);
     private LayerMask PlayerLayer;
     private PlayerData playerData;
-    private Text text;
+    private PlayerController playerController;
+    private Text hintText; // text gợi ý
 
     // Start is called before the first frame update
     private void Start()
     {
         playerData = GameObject.Find("Player").GetComponent<PlayerData>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         PlayerLayer = LayerMask.GetMask("Player");
-        text = transform.Find("Canvas").Find("Text").GetComponent<Text>();
-        text.enabled = false;
+        hintText = transform.Find("Canvas").Find("Text").GetComponent<Text>();
+        hintText.enabled = false;
     }
 
     // Update is called once per frame
@@ -26,18 +28,19 @@ public class CheckPointScript : MonoBehaviour
         Collider2D collided = Physics2D.OverlapBox(transform.position, size, 0, PlayerLayer);
         if (collided)
         {
-            text.enabled = true;
+            hintText.enabled = true;
             if (Input.GetKey(KeyCode.E))
             {
-                text.text = "Saved!";
+                hintText.text = "Saved!";
                 playerData.HasCheckPoint = true;
                 playerData.PosX = transform.position.x;
                 playerData.PosY = transform.position.y;
+                playerController.currentState.SetNewState(playerController.CheckPointState);
             }
         }
         else
         {
-            text.enabled = false;
+            hintText.enabled = false;
         }
     }
 }
