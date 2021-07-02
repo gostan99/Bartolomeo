@@ -5,7 +5,7 @@ namespace Assets.Scripts.Player
 {
     public class DashingState : PlayerState
     {
-        float startPosX;
+        private float startPosX;
 
         public DashingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
@@ -28,7 +28,7 @@ namespace Assets.Scripts.Player
         {
             float distanceBeenDashed = Mathf.Abs(pController.transform.position.x - startPosX);
             pInput.InputUpdate();
-            if (distanceBeenDashed >= pData.DashDistance)
+            if (distanceBeenDashed >= pData.DashDistance || IsWallContacted())
             {
                 if (IsGrounded())
                 {
