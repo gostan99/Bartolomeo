@@ -4,13 +4,20 @@ namespace Assets.Scripts.Player
 {
     public class WallSlideState : PlayerState
     {
+        private AudioClip sound;
+
         public WallSlideState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
+            sound = Resources.Load<AudioClip>(@"Sounds/hero_wall_slide");
         }
 
         public override void Enter()
         {
             newState = this;
+            pController.audioSource.Stop();
+            pController.audioSource.clip = sound;
+            pController.audioSource.loop = true;
+            pController.audioSource.Play();
         }
 
         public override void Exit()
@@ -39,6 +46,10 @@ namespace Assets.Scripts.Player
                     newState = pController.DashingState;
                     pData.canDash = false;
                 }
+            }
+            if (newState != this)
+            {
+                pController.audioSource.Stop();
             }
         }
 

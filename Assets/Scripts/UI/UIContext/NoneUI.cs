@@ -41,6 +41,15 @@ namespace Assets.Scripts.UI.UIContext
 
         public override void LogicUpdate()
         {
+            if (playerData.currentHealth <= 0)
+            {
+                if (pController.DeathState.AnimationIsFinished)
+                {
+                    NewUI = uController.PauseMenu;
+                }
+                return;
+            }
+
             if (InventoryUI.activeSelf)
             {
                 InventoryUI.SetActive(false);
@@ -53,14 +62,8 @@ namespace Assets.Scripts.UI.UIContext
             {
                 NewUI = uController.InventoryMenu;
             }
-            else if (playerData.currentHealth <= 0)
-            {
-                if (pController.DeathState.AnimationIsFinished)
-                {
-                    NewUI = uController.PauseMenu;
-                }
-            }
 
+            if (pInput == null) pInput = GameObject.Find("Player").GetComponent<PlayerController>().pInput;
 
             if (pInput.LargePotionInput)
             {
@@ -83,7 +86,7 @@ namespace Assets.Scripts.UI.UIContext
                     buttons.Use();
                 }
                 InventoryUI.SetActive(false);
-            }
+            };
         }
 
         public override void Enter()

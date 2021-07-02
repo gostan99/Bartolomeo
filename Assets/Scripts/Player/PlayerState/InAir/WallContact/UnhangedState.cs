@@ -5,15 +5,18 @@ namespace Assets.Scripts.Player
     public class UnhangedState : PlayerState
     {
         private float animationLength;
+        private AudioClip sound;
 
         public UnhangedState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/garden_zombie_prepare - Reverse");
         }
 
         public override void Enter()
         {
             timer = 0;
+            pController.audioSource.PlayOneShot(sound);
             newState = this;
         }
 

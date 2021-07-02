@@ -4,13 +4,13 @@ namespace Assets.Scripts.Player
 {
     public class WallContactState : PlayerState
     {
-        float animationLength;  
-
+        private float animationLength;
+        private AudioClip sound;
 
         public WallContactState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
-
+            sound = Resources.Load<AudioClip>(@"Sounds/garden_zombie_prepare");
         }
 
         public override void Enter()
@@ -18,7 +18,7 @@ namespace Assets.Scripts.Player
             timer = 0;
             newState = this;
             pInput.JumpInputCounter = 1;
-
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()

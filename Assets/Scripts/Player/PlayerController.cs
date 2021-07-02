@@ -14,6 +14,8 @@ public partial class PlayerController : MonoBehaviour
     private PlayerData pData;
     public PlayerInput pInput;
 
+    public AudioSource audioSource;
+
     private SpriteRenderer spriteRenderer;
     private float timer = 0.2f;
     private float playtime;
@@ -76,6 +78,7 @@ public partial class PlayerController : MonoBehaviour
 
         pInput = new PlayerInput(pData);
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         #region Initialize States
 
@@ -187,7 +190,7 @@ public partial class PlayerController : MonoBehaviour
 
     private void InvulnerableEffect()
     {
-        if (pData.currentHealth<=0)
+        if (pData.currentHealth <= 0)
         {
             return;
         }
@@ -239,7 +242,7 @@ public partial class PlayerController : MonoBehaviour
         pData.currentHealth -= Convert.ToSingle(package[0]);
         if (pData.currentHealth <= 0)
         {
-            currentState = DeathState;
+            currentState.SetNewState(DeathState);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

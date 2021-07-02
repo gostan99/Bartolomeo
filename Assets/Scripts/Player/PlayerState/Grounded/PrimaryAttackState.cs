@@ -10,15 +10,17 @@ namespace Assets.Scripts.Player
 {
     public class PrimaryAttackState : PlayerState
     {
-
-        float animationLength;
-        bool hasAttackTwice = false;
+        private float animationLength;
+        private bool hasAttackTwice = false;
         private bool hasAttackUp = false;
+        private AudioClip sound;
 
         public PrimaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/mage_knight_sword");
         }
+
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
@@ -30,18 +32,20 @@ namespace Assets.Scripts.Player
             pInput.UpwardAttackInput = false;
             pInput.DownwardAttackInput = false;
             FacingDirectionUpdate();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
 
-            if (pData.CollidedObjects.Count !=0 )
+            if (pData.CollidedObjects.Count != 0)
             {
                 foreach (var collider in pData.CollidedObjects)
                 {
@@ -63,7 +67,6 @@ namespace Assets.Scripts.Player
             {
                 if (hasAttackTwice || hasAttackTwice)
                 {
-
                 }
                 else if (pInput.xInput == 0)
                 {
@@ -89,7 +92,7 @@ namespace Assets.Scripts.Player
             pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
         }
 
-        IEnumerator WaitAfter(float seconds)
+        private IEnumerator WaitAfter(float seconds)
         {
             yield return new WaitForSeconds(seconds);
             if (hasAttackTwice)

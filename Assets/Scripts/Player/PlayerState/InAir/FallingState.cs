@@ -4,13 +4,19 @@ namespace Assets.Scripts.Player
 {
     public class FallingState : PlayerState
     {
+        private AudioClip sound;
+
         public FallingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
+            sound = Resources.Load<AudioClip>(@"Sounds/hero_falling");
         }
 
         public override void Enter()
         {
             newState = this;
+            pController.audioSource.clip = sound;
+            pController.audioSource.loop = true;
+            pController.audioSource.PlayDelayed(0.3f);
         }
 
         public override void Exit()
@@ -47,7 +53,7 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.WallContactState;
             }
-            if (pData.Rb.velocity.y < -750.0f && IsNearGround())
+            if (pData.Rb.velocity.y < -600.0f && IsNearGround())
             {
                 newState = pController.LandingState;
             }
@@ -69,6 +75,10 @@ namespace Assets.Scripts.Player
                 {
                     newState = pController.InAirPrimaryAttackState;
                 }
+            }
+            if (newState != this)
+            {
+                pController.audioSource.Stop();
             }
         }
 

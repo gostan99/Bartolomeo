@@ -11,10 +11,12 @@ namespace Assets.Scripts.Player
     public class InAirUpwardAttackState : PlayerState
     {
         private float animationLength;
+        private AudioClip sound;
 
         public InAirUpwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/mage_knight_sword");
         }
 
         public override void Enter()
@@ -23,6 +25,7 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.AttackInput = false;
             FacingDirectionUpdate();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()

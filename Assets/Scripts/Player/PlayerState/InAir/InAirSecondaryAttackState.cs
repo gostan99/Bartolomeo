@@ -13,10 +13,12 @@ namespace Assets.Scripts.Player
         private float animationLength;
         private bool hasAttackTwice = false;
         private bool hasAttackUp = false;
+        private AudioClip sound;
 
         public InAirSecondaryAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/mage_knight_sword");
         }
 
         public override void Enter()
@@ -28,6 +30,7 @@ namespace Assets.Scripts.Player
             hasAttackTwice = false;
             hasAttackUp = false;
             FacingDirectionUpdate();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()

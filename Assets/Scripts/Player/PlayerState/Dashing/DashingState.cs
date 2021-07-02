@@ -6,9 +6,11 @@ namespace Assets.Scripts.Player
     public class DashingState : PlayerState
     {
         private float startPosX;
+        private AudioClip sound;
 
         public DashingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
+            sound = Resources.Load<AudioClip>(@"Sounds/hero_dash");
         }
 
         public override void Enter()
@@ -17,6 +19,7 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.JumpInputCounter = pData.MaxJumpCounter - 1;
             pData.currentMana -= pData.manaCost;
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()
@@ -28,7 +31,7 @@ namespace Assets.Scripts.Player
         {
             float distanceBeenDashed = Mathf.Abs(pController.transform.position.x - startPosX);
             pInput.InputUpdate();
-            if (distanceBeenDashed >= pData.DashDistance || IsWallContacted())
+            if (distanceBeenDashed >= pData.DashDistance || pData.Rb.velocity.x == 0)
             {
                 if (IsGrounded())
                 {

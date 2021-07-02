@@ -4,9 +4,12 @@ namespace Assets.Scripts.Player
 {
     public class RunningState : PlayerState
     {
+        private AudioClip sound;
+
         public RunningState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pInput.JumpInputCounter = 0;
+            sound = Resources.Load<AudioClip>(@"Sounds/hero_run_footsteps_stone");
         }
 
         public override void Enter()
@@ -14,6 +17,9 @@ namespace Assets.Scripts.Player
             pInput.JumpInputCounter = 0;
             newState = this;
             pData.canDash = true;
+            pController.audioSource.clip = sound;
+            pController.audioSource.loop = true;
+            pController.audioSource.Play();
         }
 
         public override void Exit()
@@ -65,6 +71,10 @@ namespace Assets.Scripts.Player
                 {
                     newState = pController.GroundedUpwardAttackState;
                 }
+            }
+            if (newState != this)
+            {
+                pController.audioSource.Stop();
             }
         }
 

@@ -9,6 +9,9 @@ namespace Assets.Scripts.Items
     {
         protected ItemSlotManager itemSlotManager;
         protected bool isCollided;
+        protected AudioSource audioSource;
+        protected AudioClip sound;
+        protected bool soundHasPlayed = false;
 
         private void Start()
         {
@@ -18,6 +21,8 @@ namespace Assets.Scripts.Items
             var inventoryUI = canvas.transform.Find("InventoryUI");
             itemSlotManager = inventoryUI.Find("Items").GetComponent<ItemSlotManager>();
 
+            audioSource = GetComponent<AudioSource>();
+            sound = Resources.Load<AudioClip>(@"Sounds/geo_small_collect_1");
             var rb = GetComponent<Rigidbody2D>();
             float rand = UnityEngine.Random.Range(-0.6f, 0.6f);
             float thrust = UnityEngine.Random.Range(200f, 300f);
@@ -31,7 +36,16 @@ namespace Assets.Scripts.Items
             {
                 itemSlotManager.AddItemToInventorySlot(typeof(T), 1);
                 GetComponent<SpriteRenderer>().enabled = false;
-                Destroy(this.gameObject);
+                GetComponent<BoxCollider2D>().enabled = false;
+                if (!soundHasPlayed)
+                {
+                    soundHasPlayed = true;
+                    audioSource.PlayOneShot(sound);
+                }
+                if (soundHasPlayed && !audioSource.isPlaying)
+                {
+                    Destroy(this.gameObject);
+                }
             }
         }
 

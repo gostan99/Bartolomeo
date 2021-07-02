@@ -9,8 +9,11 @@ namespace Assets.Scripts.Player
 {
     public class JumpState : PlayerState
     {
+        private AudioClip sound;
+
         public JumpState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
+            sound = Resources.Load<AudioClip>(@"Sounds/hero_jump");
         }
 
         public override void LogicUpdate()
@@ -51,8 +54,6 @@ namespace Assets.Scripts.Player
         {
             //Movment
             pData.Rb.velocity = new Vector2(pData.Speed * pInput.xInput, pData.Rb.velocity.y);
-
-            //Jumping
             if (pInput.JumpInput)
             {
                 pData.Rb.velocity = new Vector2(pData.Rb.velocity.x, pData.JumpVelocityY);
@@ -62,6 +63,8 @@ namespace Assets.Scripts.Player
         public override void Enter()
         {
             newState = this;
+            pController.audioSource.Stop();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()

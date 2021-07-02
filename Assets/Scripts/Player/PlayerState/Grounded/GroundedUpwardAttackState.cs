@@ -7,27 +7,32 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
-{ 
+{
     public class GroundedUpwardAttackState : PlayerState
     {
-        float animationLength;
+        private float animationLength;
+        private AudioClip sound;
+
         public GroundedUpwardAttackState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/mage_knight_sword");
         }
+
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
             timer = 0f;
             newState = this;
             pInput.UpwardAttackInput = false;
-            
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
@@ -72,8 +77,5 @@ namespace Assets.Scripts.Player
         {
             pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
         }
-
-
-
     }
 }

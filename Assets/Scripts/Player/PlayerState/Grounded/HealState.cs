@@ -10,24 +10,31 @@ namespace Assets.Scripts.Player
 {
     public class HealState : PlayerState
     {
-        float animationLength;
+        private float animationLength;
+        private AudioClip sound;
+
         public HealState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/focus_health_heal");
         }
+
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
             timer = 0f;
             newState = this;
             pInput.UpwardAttackInput = false;
-            fullHeath();
+            //fullHeath(); // không gọi phương thức này vì đã có item hồi máu lo nhiệm vụ thêm máu cho player
+            pController.audioSource.Stop();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();

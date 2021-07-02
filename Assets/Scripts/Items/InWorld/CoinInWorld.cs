@@ -14,7 +14,17 @@ namespace Assets.Scripts.Items.InWorld
             {
                 pData = GameObject.Find("Player").GetComponent<PlayerData>();
                 pData.Money += 1;
-                Destroy(this.gameObject);
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+                if (!soundHasPlayed)
+                {
+                    soundHasPlayed = true;
+                    audioSource.PlayOneShot(sound);
+                }
+                if (soundHasPlayed && !audioSource.isPlaying)
+                {
+                    Destroy(this.gameObject);
+                }
             }
         }
     }
