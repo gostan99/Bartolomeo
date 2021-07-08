@@ -110,7 +110,7 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         public void AddItemToInventorySlot(Type itemType, int amount)
         {
             Component item;
-            bool hasAnSpecificItem;
+            bool hasASpecificItem;
             bool hasAnyItem;
             //Duyệt hết các slot, nếu đã tồn tại 1 item thuộc kiểu của class này tăng số lương lên thôi
             for (int i = 0; i < ItemSlots.Length; i++)
@@ -118,8 +118,8 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
                 hasAnyItem = ItemSlots[i].transform.Find("Item").TryGetComponent(typeof(Item), out item);
                 if (hasAnyItem)
                 {
-                    hasAnSpecificItem = ItemSlots[i].transform.Find("Item").TryGetComponent(itemType, out item);
-                    if (hasAnSpecificItem)
+                    hasASpecificItem = ItemSlots[i].transform.Find("Item").TryGetComponent(itemType, out item);
+                    if (hasASpecificItem)
                     {
                         int currentAmount = Convert.ToInt32(ItemSlots[i].transform.Find("Amount").GetComponent<Text>().text);
                         currentAmount += amount;

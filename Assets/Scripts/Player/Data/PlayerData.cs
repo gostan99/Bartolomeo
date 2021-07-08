@@ -111,7 +111,7 @@ namespace Assets.Scripts.Player
         public Dictionary<string, float> AnimationLength { get; private set; }
 
         private void Awake()
-        {            
+        {
             Rb = GetComponent<Rigidbody2D>();
             Animator = GetComponent<Animator>();
             CapsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -149,7 +149,7 @@ namespace Assets.Scripts.Player
                 {"Upward_jump",0.222f },
                 {"Death_Animation",2.096f},
                 {"Parry_Animation",0.560f},
-                {"CheckPoint_Animation",0.817f},
+                {"CheckPoint_Animation",4.383f},
                 {"Heal_Animation",0.556f }
             };
         }
@@ -167,7 +167,7 @@ namespace Assets.Scripts.Player
             public float currentHealth = 100;
             public float maxHealth = 100;
             public float Speed = 178f;
-            public float DashCooldownTimer = 0.0f; 
+            public float DashCooldownTimer = 0.0f;
             public float DashCooldown = 0.4f;
             public float DashVelocityX = 973;
             public float DashDistance = 154.74f; // Phạm vi Dash

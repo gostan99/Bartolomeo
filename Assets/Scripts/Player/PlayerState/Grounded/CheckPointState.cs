@@ -10,11 +10,15 @@ namespace Assets.Scripts.Player
 {
     public class CheckPointState : PlayerState
     {
-        float animationLength;
+        private float animationLength;
+        private AudioClip sound;
+
         public CheckPointState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
             pData.AnimationLength.TryGetValue(animation, out animationLength);
+            sound = Resources.Load<AudioClip>(@"Sounds/bench_rest");
         }
+
         public override void Enter()
         {
             pInput.JumpInputCounter = 0;
@@ -22,17 +26,21 @@ namespace Assets.Scripts.Player
             newState = this;
             pInput.UpwardAttackInput = false;
 
+            pController.audioSource.Stop();
+            pController.audioSource.PlayOneShot(sound);
         }
 
         public override void Exit()
         {
             throw new NotImplementedException();
         }
+
         public override void LogicUpdate()
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            FacingDirectionUpdate();
+            // không cập cập Facing
+            //FacingDirectionUpdate();
 
             if (pData.CollidedObjects.Count != 0)
             {
@@ -72,8 +80,5 @@ namespace Assets.Scripts.Player
         {
             pData.Rb.velocity = new Vector2(0, pData.Rb.velocity.y);
         }
-
-
-
     }
 }

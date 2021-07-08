@@ -56,7 +56,7 @@ namespace Assets.Scripts.Player
 
         public override void PhysicUpdate()
         {
-            pData.Rb.velocity = Vector2.right * pData.FacingDirection * pData.DashVelocityX;
+            pData.Rb.velocity = pData.DashVelocityX * pData.FacingDirection * Vector2.right;
         }
     }
 }

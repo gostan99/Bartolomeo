@@ -8,7 +8,7 @@
     "currentMana": 100.0,
     "manaCost": 50.0,
     "manaGenerationTimer": 0.25,
-    "currentHealth": 100.0,
+    "currentHealth": 70.0,
     "maxHealth": 100.0,
     "Speed": 178.0,
     "DashCooldownTimer": 0.0,
@@ -21,8 +21,8 @@
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 0
+    "Money": 82
   },
   "SceneIndex": 7,
-  "Playtime": 8.026143
+  "Playtime": 14.2850447
 }
