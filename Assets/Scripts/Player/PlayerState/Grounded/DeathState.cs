@@ -38,7 +38,7 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             timer += Time.deltaTime;
-            if (timer >= animationLength && IsGrounded())
+            if (timer >= animationLength)
             {
                 AnimationIsFinished = true;
                 // newState = pController.IdleState;
