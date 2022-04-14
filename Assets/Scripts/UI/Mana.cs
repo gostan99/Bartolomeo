@@ -11,8 +11,9 @@ public class Mana : MonoBehaviour
     public Slider slider { get; private set; }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        Player = GameObject.FindWithTag("Player");
         playerData = Player.GetComponent<PlayerData>();
         slider = gameObject.GetComponent<Slider>();
 
@@ -22,7 +23,7 @@ public class Mana : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         slider.value = playerData.currentMana;
     }

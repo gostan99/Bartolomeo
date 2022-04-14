@@ -18,6 +18,7 @@ public partial class PlayerController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private float playtime;
+    private bool invinceble = false;
 
     #region States
 
@@ -165,13 +166,28 @@ public partial class PlayerController : MonoBehaviour
 
     public void TakeDamage(object[] package)
     {
+        if (invinceble)
+        {
+            return;
+        }
+        else
+        {
+            invinceble = true;
+        }
         // trừ máu
-        //pData.currentHealth -= Convert.ToSingle(package[0]);
+        pData.currentHealth -= Convert.ToSingle(package[0]);
         if (pData.currentHealth <= 0)
         {
             currentState.SetNewState(DeathState);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        StartCoroutine(Invinceble());
+    }
+
+    private IEnumerator Invinceble()
+    {
+        yield return new WaitForSeconds(0.5f);
+        invinceble = false;
     }
 
     public void CanDash()

@@ -11,7 +11,7 @@
     "currentHealth": 100.0,
     "maxHealth": 100.0,
     "Speed": 178.0,
-    "DashCooldownTimer": 0.0,
+    "DashCooldownTimer": -0.0003575408,
     "DashCooldown": 0.4,
     "DashVelocityX": 973.0,
     "DashDuration": 0.092,
@@ -21,8 +21,8 @@
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 5
+    "Money": 10
   },
-  "SceneIndex": 1,
-  "Playtime": 10.2817621
+  "SceneIndex": 9,
+  "Playtime": 48.9538345
 }

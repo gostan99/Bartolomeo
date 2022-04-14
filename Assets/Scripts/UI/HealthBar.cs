@@ -15,6 +15,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        Player = GameObject.FindWithTag("Player");
         playerData = Player.GetComponent<PlayerData>();
         slider = gameObject.GetComponent<Slider>();
 
