@@ -41,7 +41,7 @@ public partial class PlayerController : MonoBehaviour
 
     private string selectedProfile;
     private string selectedProfilePath = @"selectedProfile.txt";
-    private string saveDataPath = @"Assets\Data\Save\playerdata";
+    private string saveDataPath = @"playerdata";
 
     private void Start()
     {

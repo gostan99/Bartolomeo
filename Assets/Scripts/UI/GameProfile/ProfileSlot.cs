@@ -15,9 +15,9 @@ namespace Assets.Scripts.UI.GameProfile
     public class ProfileSlot : MonoBehaviour
     {
         private GameObject[] slots = new GameObject[3];
-        private string savePlayerDataPath = @"Assets\Data\Save\playerdata";
+        private string savePlayerDataPath = @"playerdata";
         private string saveItemPath = @"inventoryItemData";
-        private string saveEquipmentPath = @"Assets\Data\Save\inventoryEpuipmentData";
+        private string saveEquipmentPath = @"inventoryEpuipmentData";
 
         private void Start()
         {

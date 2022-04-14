@@ -199,7 +199,7 @@ MonoBehaviour:
   InAirUpwardHitboxPos: {fileID: 0}
   InAirUpwardHitboxSize: {x: 79, y: 102}
   InAirUpwardHitboxDirection: 0
-  WallJumpDirection: {x: -0.5, y: 1}
+  WallJumpDirection: {x: -0.25, y: 1}
   invulnerableTimer: 0
   invulnerableTime: 2
   GroundDetectorSize: {x: 20, y: 11}
