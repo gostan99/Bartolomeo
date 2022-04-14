@@ -38,7 +38,6 @@ namespace Assets.Scripts.Items
             {
                 pData.currentHealth += HealValue;
             }
-            pController.currentState.SetNewState(pController.HealState);
         }
 
         public override void EquipItem()

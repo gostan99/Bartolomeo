@@ -5,7 +5,6 @@ namespace Assets.Scripts.Player
     public class WallJumpState : PlayerState
     {
         private float animtionLength;
-        private bool hasAddForce = false;
 
         public WallJumpState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
         {
@@ -16,8 +15,8 @@ namespace Assets.Scripts.Player
         {
             newState = this;
             timer = 0f;
-            hasAddForce = false;
-            pInput.JumpInputCounter = 1;
+            pInput.JumpInputCounter = 0;
+            pData.Rb.AddForce(pData.WallJumpDirection * pData.WallJumpVelocity, ForceMode2D.Impulse);
         }
 
         public override void Exit()
@@ -35,41 +34,32 @@ namespace Assets.Scripts.Player
                 pData.DashCooldownTimer -= Time.deltaTime;
             }
 
-            if (timer >= animtionLength)
+            if (pInput.DashInput)
             {
-                Debug.Log(pInput.JumpInput);
-                if (pInput.JumpInput)
+                FacingDirectionUpdate();
+                if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
-                    newState = pController.JumpState;
+                    newState = pController.DashingState;
+                    pData.canDash = false;
                 }
-                else if (pInput.DashInput)
-                {
-                    FacingDirectionUpdate();
-                    if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
-                    {
-                        newState = pController.DashingState;
-                        pData.canDash = false;
-                    }
-                }
-                else if (pData.Rb.velocity.y < -23f)
-                {
-                    pInput.JumpInputCounter = 1;
-                    newState = pController.StartFallingState;
-                }
+            }
+            else if (pData.Rb.velocity.y < 0)
+            {
+                newState = pController.StartFallingState;
+                pInput.JumpInputCounter = 1;
             }
         }
 
         public override void PhysicUpdate()
         {
-            if (timer >= animtionLength && !hasAddForce)
-            {
-                pData.Rb.AddForce(pData.WallJumpDirection * pData.WallJumpVelocity, ForceMode2D.Impulse);
-                hasAddForce = true;
-            }
-            else if (timer <= animtionLength)
-            {
-                pData.Rb.velocity = Vector2.zero;
-            }
+            //if (timer >= jumpTime && !hasAddForce)
+            //{
+            //    hasAddForce = true;
+            //}
+            //else if (timer <= jumpTime)
+            //{
+            //    pData.Rb.velocity = Vector2.zero;
+            //}
         }
     }
 }

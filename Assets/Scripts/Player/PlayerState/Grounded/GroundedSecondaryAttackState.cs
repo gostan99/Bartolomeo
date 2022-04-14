@@ -74,7 +74,7 @@ namespace Assets.Scripts.Player
                 }
                 else if (pInput.xInput != 0)
                 {
-                    newState = pController.StartRunState;
+                    newState = pController.RunningState;
                 }
             }
             else if (pInput.DashInput)
@@ -98,10 +98,6 @@ namespace Assets.Scripts.Player
             if (hasAttackTwice)
             {
                 newState = pController.PrimaryAttackState;
-            }
-            else if (hasAttackUp)
-            {
-                newState = pController.GroundedUpwardAttackState;
             }
         }
     }

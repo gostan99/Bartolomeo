@@ -8,21 +8,21 @@
     "currentMana": 100.0,
     "manaCost": 50.0,
     "manaGenerationTimer": 0.25,
-    "currentHealth": 70.0,
+    "currentHealth": 100.0,
     "maxHealth": 100.0,
     "Speed": 178.0,
-    "DashCooldownTimer": 0.0,
+    "DashCooldownTimer": -0.00344381668,
     "DashCooldown": 0.4,
     "DashVelocityX": 973.0,
-    "DashDistance": 154.74,
+    "DashDuration": 0.5,
     "canDash": true,
     "JumpVelocityY": 260.0,
     "WallSlideVelocityY": 20.0,
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 82
+    "Money": 0
   },
-  "SceneIndex": 7,
-  "Playtime": 14.2850447
+  "SceneIndex": 4,
+  "Playtime": 7.09814739
 }

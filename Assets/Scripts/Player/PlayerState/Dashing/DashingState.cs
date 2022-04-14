@@ -5,7 +5,6 @@ namespace Assets.Scripts.Player
 {
     public class DashingState : PlayerState
     {
-        private float startPosX;
         private AudioClip sound;
 
         public DashingState(PlayerController playerController, PlayerInput playerInput, PlayerData playerData, string animation) : base(playerController, playerInput, playerData, animation)
@@ -15,11 +14,12 @@ namespace Assets.Scripts.Player
 
         public override void Enter()
         {
-            startPosX = pController.transform.position.x;
             newState = this;
             pInput.JumpInputCounter = pData.MaxJumpCounter - 1;
             pData.currentMana -= pData.manaCost;
             pController.audioSource.PlayOneShot(sound);
+            timer = 0;
+            pInput.DashInput = false;
         }
 
         public override void Exit()
@@ -29,22 +29,13 @@ namespace Assets.Scripts.Player
 
         public override void LogicUpdate()
         {
-            float distanceBeenDashed = Mathf.Abs(pController.transform.position.x - startPosX);
-            pInput.InputUpdate();
-            if (distanceBeenDashed >= pData.DashDistance || pData.Rb.velocity.x == 0)
+            timer += Time.deltaTime;
+            if (timer >= pData.DashDuration)
             {
                 if (IsGrounded())
                 {
-                    if (pInput.xInput == 0)
-                    {
-                        pData.DashCooldownTimer = pData.DashCooldown;
-                        newState = pController.StopDashingState;
-                    }
-                    else
-                    {
-                        pData.DashCooldownTimer = pData.DashCooldown;
-                        newState = pController.RunningState;
-                    }
+                    pData.DashCooldownTimer = pData.DashCooldown;
+                    newState = pController.IdleState;
                 }
                 else
                 {

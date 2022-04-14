@@ -7,7 +7,7 @@ namespace Assets.Scripts.Player
         public float xInput { get; private set; }
         public float yInput { get; private set; }
 
-        public bool DashInput { get; private set; }
+        public bool DashInput { get; set; }
 
         public bool LargePotionInput { get; private set; }
         public bool ManaPotionInput { get; private set; }
@@ -65,7 +65,7 @@ namespace Assets.Scripts.Player
             {
                 DashInput = true;
             }
-            else if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
+            else
             {
                 DashInput = false;
             }
@@ -98,13 +98,13 @@ namespace Assets.Scripts.Player
         //    {
         //        CheckInput = 1;
         //        HandelInput = true;
-        //        
+        //
         //    }
         //    else if(Input.GetKeyDown(KeyCode.E))
         //    {
         //        CheckInput = 2;
         //        HandelInput = true;
-        //        
+        //
         //    }
         //    else if(Input.GetKeyDown(KeyCode.R))
         //    {

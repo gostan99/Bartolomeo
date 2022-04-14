@@ -24,7 +24,7 @@ namespace Assets.Scripts.Player
             pInput.InputUpdate();
             if (pInput.xInput != 0)
             {
-                newState = pController.StartRunState;
+                newState = pController.RunningState;
             }
             else if (pInput.JumpInput)
             {
@@ -52,10 +52,6 @@ namespace Assets.Scripts.Player
                 else if (pInput.yInput > 0)
                 {
                     newState = pController.GroundedDownwardAttackState;
-                }
-                else if (pInput.yInput < 0)
-                {
-                    newState = pController.GroundedUpwardAttackState;
                 }
             }
             //else if(pData.currentHealth<=0)
@@ -89,6 +85,7 @@ namespace Assets.Scripts.Player
 
         public override void Enter()
         {
+            pData.Rb.velocity = Vector2.zero;
             pInput.JumpInputCounter = 0;
             newState = this;
             pData.canDash = true;

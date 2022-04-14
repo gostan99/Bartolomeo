@@ -51,11 +51,7 @@ namespace Assets.Scripts.Player
             }
             else if (IsWallContacted() && pInput.xInput != 0)
             {
-                newState = pController.WallContactState;
-            }
-            if (pData.Rb.velocity.y < -600.0f && IsNearGround())
-            {
-                newState = pController.LandingState;
+                newState = pController.WallSlideState;
             }
             else if (pInput.DashInput)
             {
@@ -63,17 +59,6 @@ namespace Assets.Scripts.Player
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
-                }
-            }
-            else if (pInput.AttackInput)
-            {
-                if (pInput.yInput < 0)
-                {
-                    newState = pController.InAirUpwardAttackState;
-                }
-                else
-                {
-                    newState = pController.InAirPrimaryAttackState;
                 }
             }
             if (newState != this)

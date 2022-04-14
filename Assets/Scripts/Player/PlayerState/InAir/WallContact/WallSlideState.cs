@@ -18,6 +18,7 @@ namespace Assets.Scripts.Player
             pController.audioSource.clip = sound;
             pController.audioSource.loop = true;
             pController.audioSource.Play();
+            pInput.JumpInputCounter = 0;
         }
 
         public override void Exit()
@@ -29,14 +30,9 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             WallDetectorDirectionUpdate();
-            WallJumpDirectionUpdate();
-
-            if (!IsWallContacted() || IsGrounded() || pInput.xInput == 0)
+            if (pInput.JumpInput)
             {
-                newState = pController.UnhangedState;
-            }
-            else if (pInput.JumpInput && IsWallContacted())
-            {
+                WallJumpDirectionUpdate();
                 newState = pController.WallJumpState;
             }
             else if (pInput.DashInput)
@@ -46,6 +42,10 @@ namespace Assets.Scripts.Player
                     newState = pController.DashingState;
                     pData.canDash = false;
                 }
+            }
+            else if (!IsWallContacted() || IsGrounded() || pInput.xInput == 0)
+            {
+                newState = pController.StartFallingState;
             }
             if (newState != this)
             {

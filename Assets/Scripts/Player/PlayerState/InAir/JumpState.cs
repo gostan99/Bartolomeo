@@ -20,6 +20,7 @@ namespace Assets.Scripts.Player
         {
             pInput.InputUpdate();
             FacingDirectionUpdate();
+            WallDetectorDirectionUpdate();
             if (pData.DashCooldownTimer > 0)
             {
                 pData.DashCooldownTimer -= Time.deltaTime;
@@ -29,23 +30,16 @@ namespace Assets.Scripts.Player
             {
                 newState = pController.StartFallingState;
             }
+            else if (IsWallContacted() && pInput.xInput != 0)
+            {
+                newState = pController.WallSlideState;
+            }
             else if (pInput.DashInput)
             {
                 if (pData.DashCooldownTimer <= 0 && pData.canDash && pData.HasDash)
                 {
                     newState = pController.DashingState;
                     pData.canDash = false;
-                }
-            }
-            else if (pInput.AttackInput)
-            {
-                if (pInput.yInput < 0)
-                {
-                    newState = pController.InAirUpwardAttackState;
-                }
-                else
-                {
-                    newState = pController.InAirPrimaryAttackState;
                 }
             }
         }

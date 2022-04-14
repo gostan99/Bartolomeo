@@ -67,10 +67,6 @@ namespace Assets.Scripts.Player
                 {
                     newState = pController.GroundedDownwardAttackState;
                 }
-                else if (pInput.yInput < 0)
-                {
-                    newState = pController.GroundedUpwardAttackState;
-                }
             }
             if (newState != this)
             {

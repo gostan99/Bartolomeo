@@ -54,41 +54,73 @@ namespace Assets.Scripts.Player
         //--PARAMETER--------------------------------------------------
         public PlayerSerializeData serializeData = new PlayerSerializeData();
 
-        public ref bool HasCheckPoint { get { return ref serializeData.HasCheckPoint; } }
-        public ref float PosX { get { return ref serializeData.PosX; } }
-        public ref float PosY { get { return ref serializeData.PosY; } }
-        public ref float AttackDamage { get { return ref serializeData.AttackDamage; } }
-        public ref float maxMana { get { return ref serializeData.maxMana; } }
-        public ref float currentMana { get { return ref serializeData.currentMana; } }
-        public ref float manaCost { get { return ref serializeData.manaCost; } }
+        public ref bool HasCheckPoint
+        { get { return ref serializeData.HasCheckPoint; } }
 
-        public ref float manaGenerationTimer { get { return ref serializeData.manaGenerationTimer; } }
+        public ref float PosX
+        { get { return ref serializeData.PosX; } }
 
-        public ref float currentHealth { get { return ref serializeData.currentHealth; } }
-        public ref float maxHealth { get { return ref serializeData.maxHealth; } }
+        public ref float PosY
+        { get { return ref serializeData.PosY; } }
 
-        public ref float Speed { get { return ref serializeData.Speed; } }
+        public ref float AttackDamage
+        { get { return ref serializeData.AttackDamage; } }
 
-        public ref float DashCooldownTimer { get { return ref serializeData.DashCooldownTimer; } }
+        public ref float maxMana
+        { get { return ref serializeData.maxMana; } }
 
-        public ref float DashCooldown { get { return ref serializeData.DashCooldown; } }
+        public ref float currentMana
+        { get { return ref serializeData.currentMana; } }
 
-        public ref float DashVelocityX { get { return ref serializeData.DashVelocityX; } }
+        public ref float manaCost
+        { get { return ref serializeData.manaCost; } }
 
-        public ref float DashDistance { get { return ref serializeData.DashDistance; } }
+        public ref float manaGenerationTimer
+        { get { return ref serializeData.manaGenerationTimer; } }
 
-        public ref bool canDash { get { return ref serializeData.canDash; } }
+        public ref float currentHealth
+        { get { return ref serializeData.currentHealth; } }
 
-        public ref float JumpVelocityY { get { return ref serializeData.JumpVelocityY; } }
+        public ref float maxHealth
+        { get { return ref serializeData.maxHealth; } }
 
-        public ref float WallSlideVelocityY { get { return ref serializeData.WallSlideVelocityY; } }
-        public ref float WallJumpVelocity { get { return ref serializeData.WallJumpVelocity; } }
+        public ref float Speed
+        { get { return ref serializeData.Speed; } }
+
+        public ref float DashCooldownTimer
+        { get { return ref serializeData.DashCooldownTimer; } }
+
+        public ref float DashCooldown
+        { get { return ref serializeData.DashCooldown; } }
+
+        public ref float DashVelocityX
+        { get { return ref serializeData.DashVelocityX; } }
+
+        public ref float DashDuration
+        { get { return ref serializeData.DashDuration; } }
+
+        public ref bool canDash
+        { get { return ref serializeData.canDash; } }
+
+        public ref float JumpVelocityY
+        { get { return ref serializeData.JumpVelocityY; } }
+
+        public ref float WallSlideVelocityY
+        { get { return ref serializeData.WallSlideVelocityY; } }
+
+        public ref float WallJumpVelocity
+        { get { return ref serializeData.WallJumpVelocity; } }
 
         public Vector2 WallJumpDirection;
 
-        public ref int MaxJumpCounter { get { return ref serializeData.MaxJumpCounter; } }
-        public ref bool HasDash { get { return ref serializeData.HasDash; } }
-        public ref int Money { get { return ref serializeData.Money; } }
+        public ref int MaxJumpCounter
+        { get { return ref serializeData.MaxJumpCounter; } }
+
+        public ref bool HasDash
+        { get { return ref serializeData.HasDash; } }
+
+        public ref int Money
+        { get { return ref serializeData.Money; } }
 
         //--TAKEHIT----------------------------------------------------
         public float invulnerableTimer = 0f;
@@ -147,9 +179,9 @@ namespace Assets.Scripts.Player
                 {"Left_swing_jump",0.294f },
                 {"Upward_clamped",0.267f },
                 {"Upward_jump",0.222f },
-                {"Death_Animation",2.096f},
+                {"Death_Animation",0.446f},
                 {"Parry_Animation",0.560f},
-                {"CheckPoint_Animation",4.383f},
+                {"CheckPoint_Animation",2.383f},
                 {"Heal_Animation",0.556f }
             };
         }
@@ -159,24 +191,43 @@ namespace Assets.Scripts.Player
             public bool HasCheckPoint = false;
             public float PosX;
             public float PosY;
+
             public float AttackDamage = 20f;
+
             public float maxMana = 100;
+
             public float currentMana = 100;
+
             public float manaCost = 50;
+
             public float manaGenerationTimer = 0.25f;
+
             public float currentHealth = 100;
+
             public float maxHealth = 100;
+
             public float Speed = 178f;
+
             public float DashCooldownTimer = 0.0f;
+
             public float DashCooldown = 0.4f;
+
             public float DashVelocityX = 973;
-            public float DashDistance = 154.74f; // Phạm vi Dash
+
+            public float DashDuration = 0.0920f;
+
             public bool canDash = true;
+
             public float JumpVelocityY = 260.0f;
+
             public float WallSlideVelocityY = 20.0f;
+
             public float WallJumpVelocity = 110;
+
             public int MaxJumpCounter = 2;
+
             public bool HasDash = true;
+
             public int Money = 0;
         }
     }

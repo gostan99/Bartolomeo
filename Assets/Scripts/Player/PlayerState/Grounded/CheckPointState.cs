@@ -63,7 +63,7 @@ namespace Assets.Scripts.Player
                 }
                 else
                 {
-                    newState = pController.StartRunState;
+                    newState = pController.RunningState;
                 }
             }
             else if (pInput.DashInput)
