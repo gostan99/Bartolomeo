@@ -32,20 +32,9 @@ namespace Assets.Scripts.Items
 
         protected virtual void Update()
         {
-            if (isCollided)
+            if (soundHasPlayed && !audioSource.isPlaying)
             {
-                itemSlotManager.AddItemToInventorySlot(typeof(T), 1);
-                GetComponent<SpriteRenderer>().enabled = false;
-                GetComponent<BoxCollider2D>().enabled = false;
-                if (!soundHasPlayed)
-                {
-                    soundHasPlayed = true;
-                    audioSource.PlayOneShot(sound);
-                }
-                if (soundHasPlayed && !audioSource.isPlaying)
-                {
-                    Destroy(this.gameObject);
-                }
+                Destroy(this.gameObject);
             }
         }
 
@@ -54,6 +43,11 @@ namespace Assets.Scripts.Items
             if (collision.gameObject.layer.Equals(12))//12 là player
             {
                 isCollided = true;
+                itemSlotManager.AddItemToInventorySlot(typeof(T), 1);
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+                soundHasPlayed = true;
+                audioSource.PlayOneShot(sound);
             }
         }
     }

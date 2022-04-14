@@ -21,8 +21,8 @@
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 5
+    "Money": 0
   },
   "SceneIndex": 1,
-  "Playtime": 10.2817621
+  "Playtime": 24.4345417
 }

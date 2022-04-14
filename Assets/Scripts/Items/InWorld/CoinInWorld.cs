@@ -10,7 +10,7 @@ namespace Assets.Scripts.Items.InWorld
 
         protected override void Update()
         {
-            if (isCollided)
+            if (isCollided && GetComponent<BoxCollider2D>().enabled)
             {
                 pData = GameObject.Find("Player").GetComponent<PlayerData>();
                 pData.Money += 1;
