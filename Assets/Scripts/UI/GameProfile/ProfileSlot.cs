@@ -16,7 +16,7 @@ namespace Assets.Scripts.UI.GameProfile
     {
         private GameObject[] slots = new GameObject[3];
         private string savePlayerDataPath = @"Assets\Data\Save\playerdata";
-        private string saveItemPath = @"Assets\Data\Save\inventoryItemData";
+        private string saveItemPath = @"inventoryItemData";
         private string saveEquipmentPath = @"Assets\Data\Save\inventoryEpuipmentData";
 
         private void Start()

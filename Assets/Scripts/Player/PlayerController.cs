@@ -40,7 +40,7 @@ public partial class PlayerController : MonoBehaviour
     public PlayerState currentState { get; private set; }
 
     private string selectedProfile;
-    private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
+    private string selectedProfilePath = @"selectedProfile.txt";
     private string saveDataPath = @"Assets\Data\Save\playerdata";
 
     private void Start()

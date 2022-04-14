@@ -16,9 +16,9 @@ namespace Assets.Scripts.UI.GameProfile
     public class Buttons : MonoBehaviour
     {
         private string savePlayerDataPath = @"Assets\Data\Save\playerdata";
-        private string saveItemPath = @"Assets\Data\Save\inventoryItemData";
+        private string saveItemPath = @"inventoryItemData";
         private string saveEquipmentPath = @"Assets\Data\Save\inventoryEpuipmentData";
-        private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
+        private string selectedProfilePath = @"selectedProfile.txt";
         private GameObject selectedProfile;
         private GameObject selectedObj;
         private ProfileSlot profileSlot;

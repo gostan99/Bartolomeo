@@ -19,8 +19,8 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
 
         private List<SlotData> SlotDataList;
         private string selectedProfile;
-        private string selectedProfilePath = @"Assets\Data\Save\selectedProfile.txt";
-        private string savePath = @"Assets\Data\Save\inventoryItemData";
+        private string selectedProfilePath = @"selectedProfile.txt";
+        private string savePath = @"inventoryItemData";
         private bool isLoadingData = false;
 
         protected GameObject[] ItemSlots = new GameObject[45];
