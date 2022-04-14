@@ -11,7 +11,7 @@ namespace Assets.Scripts.Items
         private PlayerController pController;
 
         public override bool IsEquipable => false;
-        public override bool IsUseable => false;
+        public override bool IsUseable => true;
         public override string Description => "Fill Up Full Mana Bar";
         public override Sprite Sprite => Resources.LoadAll<Sprite>("Images/Items/ManaPotion/Mana_Potion")[0];
         public override float ImageWidth => 62;

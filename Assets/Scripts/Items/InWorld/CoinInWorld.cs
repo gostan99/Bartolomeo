@@ -21,10 +21,10 @@ namespace Assets.Scripts.Items.InWorld
                     soundHasPlayed = true;
                     audioSource.PlayOneShot(sound);
                 }
-                if (soundHasPlayed && !audioSource.isPlaying)
-                {
-                    Destroy(this.gameObject);
-                }
+            }
+            if (soundHasPlayed && !audioSource.isPlaying)
+            {
+                Destroy(this.gameObject);
             }
         }
     }
