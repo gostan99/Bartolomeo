@@ -40,7 +40,7 @@ namespace Assets.Scripts.Items
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.layer.Equals(12))//12 là player
+            if (collision.gameObject.tag == "Player")
             {
                 isCollided = true;
                 itemSlotManager.AddItemToInventorySlot(typeof(T), 1);
