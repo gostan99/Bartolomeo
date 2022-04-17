@@ -16,6 +16,7 @@ namespace Assets.Scripts.Player
             newState = this;
             timer = 0f;
             pInput.JumpInputCounter = 0;
+            pData.Rb.velocity = Vector2.zero;
             pData.Rb.AddForce(pData.WallJumpDirection * pData.WallJumpVelocity, ForceMode2D.Impulse);
         }
 

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -85129,9 +85129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 273924099}
-  OffSetX: 4.77
+  OffSetX: 0
   OffSetY: 6.19
-  MinX: -1550
+  MinX: -1554.86
   MaxX: 5300
   MinY: -428
   MaxY: -428
