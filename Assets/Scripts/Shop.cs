@@ -11,6 +11,7 @@ public class Shop : MonoBehaviour
     private PlayerData playerData;
     private PlayerController playerController;
     private Text hintText; // text gợi ý
+    public GameObject storeUI;
 
     // Start is called before the first frame update
     private void Start()
@@ -18,7 +19,7 @@ public class Shop : MonoBehaviour
         playerData = GameObject.Find("Player").GetComponent<PlayerData>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         PlayerLayer = LayerMask.GetMask("Player");
-        hintText = transform.Find("Canvas").Find("Text").GetComponent<Text>();
+        hintText = transform.Find("Canvas").Find("HintText").GetComponent<Text>();
         hintText.enabled = false;
     }
 
@@ -31,6 +32,7 @@ public class Shop : MonoBehaviour
             hintText.enabled = true;
             if (Input.GetKey(KeyCode.E))
             {
+                storeUI.SetActive(true);
                 hintText.text = "Saved!";
                 playerData.HasCheckPoint = true;
                 playerData.PosX = transform.position.x;
