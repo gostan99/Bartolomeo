@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.Items.InWorld
 {
-    public class NeckLaceInWorld : ItemInWorld<NeckLaceK>
+    public class NeckLaceInWorld : ItemInWorld<NeckLace>
     {
     }
 }

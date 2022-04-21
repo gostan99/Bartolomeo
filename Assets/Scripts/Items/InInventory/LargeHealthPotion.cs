@@ -9,7 +9,7 @@ namespace Assets.Scripts.Items
         private GameObject player;
         private PlayerData pData;
         private PlayerController pController;
-        public int HealValue => 25;
+        public int HealValue => 50;
 
         public override bool IsEquipable => false;
         public override bool IsUseable => true;

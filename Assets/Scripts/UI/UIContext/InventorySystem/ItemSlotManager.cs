@@ -23,11 +23,12 @@ namespace Assets.Scripts.UI.UIContext.InventorySystem
         private string savePath = @"inventoryItemData";
         private bool isLoadingData = false;
 
-        protected GameObject[] ItemSlots = new GameObject[45];
+        protected GameObject[] ItemSlots;
         private int lastSlotHasAnItem = -1;
 
         private void Start()
         {
+            ItemSlots = new GameObject[transform.childCount];
             for (int i = 0; i < transform.childCount; i++)
             {
                 ItemSlots[i] = transform.GetChild(i).gameObject;

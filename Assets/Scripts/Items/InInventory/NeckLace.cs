@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Items.InInventory
 {
-    public class NeckLaceK : Item
+    public class NeckLace : Item
     {
         private GameObject player;
         private PlayerData pData;
