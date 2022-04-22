@@ -12,6 +12,7 @@ TagManager:
   - InventorySlot
   - EquipmentSlot
   - ProfileSlot
+  - Button
   layers:
   - Default
   - TransparentFX

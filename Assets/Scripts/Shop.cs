@@ -20,7 +20,6 @@ public class Shop : MonoBehaviour
     public GameObject selectedItemSlot;
     private GameObject buyBtn;
     protected ItemSlotManager itemSlotManagerInventory;
-    private bool isBuying = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -59,33 +58,44 @@ public class Shop : MonoBehaviour
 
         if (storeUI.activeSelf)
         {
+            Time.timeScale = 0;
             currentSelectedObj = EventSystem.current.currentSelectedGameObject;
-            if (currentSelectedObj != null)
+            if (currentSelectedObj != null && currentSelectedObj.CompareTag("InventorySlot"))
             {
-                if (currentSelectedObj.CompareTag("InventorySlot"))
-                {
-                    selectedItemSlot = currentSelectedObj;
+                selectedItemSlot = currentSelectedObj;
 
-                    buyBtn.GetComponent<Button>().enabled = true;
-                    buyBtn.GetComponent<Image>().enabled = true;
-                }
+                buyBtn.GetComponent<Button>().enabled = true;
+                buyBtn.GetComponent<Image>().enabled = true;
             }
         }
-        if (isBuying)
+        else
         {
-            Item item = selectedItemSlot.transform.Find("Item").GetComponent<Item>();
-            if (item != null)
-            {
-                itemSlotManagerInventory.AddItemToInventorySlot(item.GetType(), 1);
-            }
+            Time.timeScale = 1;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (currentSelectedObj == null)
+        {
             buyBtn.GetComponent<Button>().enabled = false;
             buyBtn.GetComponent<Image>().enabled = false;
-            isBuying = false;
         }
     }
 
     public void Buy()
     {
-        isBuying = true;
+        var text = selectedItemSlot.transform.Find("Price").GetComponent<Text>().text;
+        var price = Convert.ToInt32(text.Remove(text.Length - 1));
+        if (playerData.Money - price >= 0)
+        {
+            playerData.Money -= price;
+            Item item = selectedItemSlot.transform.Find("Item").GetComponent<Item>();
+            if (item != null)
+            {
+                itemSlotManagerInventory.AddItemToInventorySlot(item.GetType(), 1);
+            }
+        }
+        currentSelectedObj = null;
     }
 }
