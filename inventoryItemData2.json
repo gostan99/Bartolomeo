@@ -1,10 +1,1 @@
-[
-  {
-    "ItemType": "Assets.Scripts.Items.ManaPotion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 2
-  },
-  {
-    "ItemType": "Assets.Scripts.Items.LargeHealthPotion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "Amount": 2
-  }
-]
+[]

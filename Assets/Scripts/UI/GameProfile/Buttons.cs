@@ -127,6 +127,10 @@ namespace Assets.Scripts.UI.GameProfile
         {
             using (StreamWriter writer = new StreamWriter(selectedProfilePath))
             {
+
+                savePlayerDataPath = @"playerdata";
+                saveItemPath = @"inventoryItemData";
+                saveEquipmentPath = @"inventoryEpuipmentData";
                 switch (selectedProfile.name)
                 {
                     default:
@@ -162,6 +166,9 @@ namespace Assets.Scripts.UI.GameProfile
 
         public void Delete()
         {
+            savePlayerDataPath = @"playerdata";
+            saveItemPath = @"inventoryItemData";
+            saveEquipmentPath = @"inventoryEpuipmentData";
             switch (selectedProfile.name)
             {
                 default:

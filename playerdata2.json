@@ -1,14 +1,14 @@
 {
   "playerSerializeData": {
-    "HasCheckPoint": false,
-    "PosX": 0.0,
-    "PosY": 0.0,
+    "HasCheckPoint": true,
+    "PosX": 354.349579,
+    "PosY": -129.8,
     "AttackDamage": 20.0,
     "maxMana": 100.0,
     "currentMana": 100.0,
     "manaCost": 50.0,
     "manaGenerationTimer": 0.25,
-    "currentHealth": 80.0,
+    "currentHealth": 20.0,
     "maxHealth": 100.0,
     "Speed": 178.0,
     "DashCooldownTimer": 0.0,
@@ -21,8 +21,8 @@
     "WallJumpVelocity": 110.0,
     "MaxJumpCounter": 2,
     "HasDash": true,
-    "Money": 9
+    "Money": 0
   },
   "SceneIndex": 1,
-  "Playtime": 39.0412979
+  "Playtime": 20.4344559
 }
